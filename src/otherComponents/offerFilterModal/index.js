@@ -1,0 +1,51 @@
+import React, { useState } from "react";
+import { View, Text, FlatList, TouchableOpacity } from "react-native";
+import styles from "./styles";
+import appColors from "../../theme/appColors";
+import { offersFilter } from "../../screens/data";
+import { GlobalStyle } from "../../styles/style";
+import { OptionButton } from "../../commonComponents";
+
+export function OfferFilterModal({ showModal }) {
+    const [selectedOffer, setSelectedOffer] = useState(0);
+
+    return (
+        <View style={[GlobalStyle.modal, { backgroundColor: appColors.white }]}>
+            <Text style={[styles.filter]}>Filter</Text>
+            <FlatList
+                data={offersFilter}
+                numColumns={2}
+                columnWrapperStyle={styles.columnWrapperStyle}
+                renderItem={({ item, index }) => (
+                    <TouchableOpacity
+                        activeOpacity={0.7}
+                        onPress={() => setSelectedOffer(index)}
+                        style={[
+                            styles.listView,
+                            {
+                                backgroundColor: selectedOffer === index ? appColors.primary : appColors.white,
+                                borderColor: appColors.primary,
+                            },
+                        ]}
+                    >
+                        <Text
+                            style={[
+                                styles.txt,
+                                { color: selectedOffer === index ? appColors.white : appColors.black },
+                            ]}
+                        >
+                            {item.offer}
+                        </Text>
+                    </TouchableOpacity>
+                )}
+                keyExtractor={(item, index) => index.toString()}
+            />
+            <OptionButton
+                txt1={'Close'}
+                txt2={'Apply'}
+                onPress1={showModal}
+                onPress2={showModal}
+            />
+        </View>
+    );
+}
