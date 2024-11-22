@@ -1,4 +1,4 @@
-import { hidePassword, showPassword, category, fullName, atSign, location, search, voiceSearch, decrease, increase, wishlist, home, pageList, order, language, profile, notification, currencyConverter, settings, headerArrow, markRead, discount, offer, passChange, topUp, editProfileImage,call,calender,password ,BottomHome,BottomSearch,BottomCategory,BottomCart,facebook,linkedIn, twitter,orderId} from "../assets/icons";
+import { hidePassword, showPassword, category, fullName, atSign, location, search, voiceSearch, decrease, increase, wishlist, home, pageList, order, language, profile, notification, currencyConverter, settings, headerArrow, markRead, discount, offer, passChange, topUp, editProfileImage,call,calender,password ,BottomHome,BottomSearch,BottomCategory,BottomCart,facebook,linkedIn, twitter,orderId,chat,sideArrow,unSelected,Selected,cart,selectedTab} from "../assets/icons";
 
 
 export const Icons = {
@@ -38,5 +38,11 @@ export const Icons = {
     LinkedIn:linkedIn,
     Facebook:facebook,
     twitter:twitter,
+    chat:chat,
     orderId:orderId,
+    sideArrow:sideArrow,
+    unSelected:unSelected,
+    Selected:Selected,
+    cart:cart,
+    selectedTab:selectedTab,
 }

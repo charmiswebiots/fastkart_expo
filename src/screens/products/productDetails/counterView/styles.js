@@ -4,15 +4,14 @@ import {
     windowHeight,
     windowWidth,
 } from "../../../../theme/appConstant";
-import Appcolor from '../../../../theme/colors';
-import Commonfonts from "../../../../theme/commonfonts";
+import appColors from "../../../../theme/appColors";
 
 export default counterViewStyles = StyleSheet.create({
     counterView: {
         alignItems: 'center',
         position: 'absolute',
         bottom: windowHeight(80),
-        backgroundColor: Appcolor.primary,
+        backgroundColor: appColors.primary,
         width: '94%',
         height: windowHeight(56),
         justifyContent: 'space-between',
@@ -26,8 +25,8 @@ export default counterViewStyles = StyleSheet.create({
     },
     addToCart: {
         fontSize: fontSizes.FONT20,
-        fontFamily: Commonfonts.mulishBold,
-        color: Appcolor.white,
+        fontFamily: 'mulishBold',
+        color: appColors.white,
         marginRight: windowWidth(6)
     },
 });

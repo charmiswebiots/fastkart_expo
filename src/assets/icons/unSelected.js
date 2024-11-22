@@ -5,7 +5,7 @@ import Svg, {
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 
-export default unSelected = () => {
+export function unSelected ()  {
 	return (
 		<Svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width={windowWidth(24)} height={windowHeight(24)} viewBox="0 0 24 24">
 			<Path id="Oval-Copy" fill="#0BAF9A" d="M12,22.002c5.523,0,10.002-4.478,10.002-10.001S17.523,1.999,12,1.999

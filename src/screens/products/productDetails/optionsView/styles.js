@@ -4,7 +4,6 @@ import {
     windowHeight,
     windowWidth,
 } from "../../../../theme/appConstant";
-import Commonfonts from "../../../../theme/commonfonts";
 
 export default optionViewStyles = StyleSheet.create({
     option: {
@@ -17,7 +16,7 @@ export default optionViewStyles = StyleSheet.create({
     },
     optionTxt: {
         fontSize: fontSizes.FONT18,
-        fontFamily: Commonfonts.mulish,
+        fontFamily: 'mulishSemiBold',
     },
     optionMainView: {
         marginTop: windowHeight(10),

@@ -4,7 +4,7 @@ import Svg, {
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 
-export default cart = () => {
+export function cart  () {
     return (
         <Svg width={windowWidth(28)} height={windowHeight(28)} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <Path d="M16.4301 9.69274V6.53441C16.4301 4.36358 14.6707 2.60416 12.5009 2.60416C10.3301 2.59483 8.56235 4.34587 8.55298 6.5167V6.53441V9.69274" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

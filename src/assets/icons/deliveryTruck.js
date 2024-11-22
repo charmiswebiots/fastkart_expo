@@ -4,7 +4,7 @@ import Svg, {
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
-import Appcolor from "../../theme/colors";
+
 
 export default deliveryTruck = (props) => {
 	const { colors } = useTheme();

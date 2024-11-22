@@ -5,7 +5,7 @@ import appColors from "../../theme/appColors";
 import { useState } from "react";
 
 
-export function Input({ placeholder, editable, value, keyboardType, onChangeText, secureTextEntry, onPress, onPress1, isText, leftIcon, rightIcon, style }) {
+export function Input({ placeholder, editable, value, keyboardType, onChangeText, secureTextEntry, onPress, onPress1, isText,maxLength, leftIcon, rightIcon, style }) {
     const [isFocus, setIsFocus] = useState(false);
 
 
@@ -36,6 +36,7 @@ export function Input({ placeholder, editable, value, keyboardType, onChangeText
                     style={[styles.input, style,
                     ]}
                     keyboardType={keyboardType}
+                    maxLength={maxLength}
                 />
                 <TouchableOpacity style={styles.leftIcon} onPress={onPress} activeOpacity={0.7}>
                     {leftIcon}

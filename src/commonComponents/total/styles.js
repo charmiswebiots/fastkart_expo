@@ -33,7 +33,7 @@ const styles=StyleSheet.create({
     amountView: {
         marginTop: windowHeight(8),
         justifyContent: 'space-between',
-        marginBottom: windowHeight(80),
+        marginBottom: windowHeight(14),
         flexDirection:"row",
     },
     amount: {

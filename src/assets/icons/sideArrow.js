@@ -5,7 +5,7 @@ import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
-export default sideArrow = (props) => {
+export function sideArrow (props)  {
     const { colors } = useTheme();
     return (
         <Svg width={windowWidth(24)} height={windowHeight(24)} viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

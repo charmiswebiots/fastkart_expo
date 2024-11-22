@@ -4,13 +4,12 @@ import {
     windowHeight,
     windowWidth,
 } from "../../../../theme/appConstant";
-import Commonfonts from "../../../../theme/commonfonts";
-import Appcolor from '../../../../theme/colors';
+import appColors from "../../../../theme/appColors";
 
 export default productDetailsStyles = StyleSheet.create({
     txt: {
         fontSize: fontSizes.FONT20,
-        fontFamily: Commonfonts.mulishBold,
+        fontFamily: 'mulishBold',
     },
     sideArrow: {
         flexDirection: 'row'
@@ -25,7 +24,7 @@ export default productDetailsStyles = StyleSheet.create({
     },
     ratings: {
         fontSize: fontSizes.FONT16,
-        fontFamily: Commonfonts.mulish,
+        fontFamily: 'mulishSemiBold',
         marginLeft: windowWidth(10)
     },
     view: {
@@ -33,14 +32,14 @@ export default productDetailsStyles = StyleSheet.create({
     },
     originalPrice: {
         fontSize: fontSizes.FONT19,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.content,
+        fontFamily: 'mulishSemiBold',
+        color: appColors.content,
         marginHorizontal: windowWidth(10),
         textDecorationLine: 'line-through'
     },
     discount: {
         fontSize: fontSizes.FONT19,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.primary,
+        fontFamily: 'mulishSemiBold',
+        color: appColors.primary,
     },
 });

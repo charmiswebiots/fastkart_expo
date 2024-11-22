@@ -1,8 +1,8 @@
 import React from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
 import Styles from './styles';
-import Appcolor from "../../../../theme/colors";
 import SideArrow from '../../../../assets/icons/sideArrow';
+import appColors from '../../../../theme/appColors';
 
 export default priceView = (props) => {
 
@@ -20,7 +20,7 @@ export default priceView = (props) => {
             <TouchableOpacity activeOpacity={0.7} onPress={gotoCart} style={{ flexDirection: props.viewAlign }}>
                 <Text style={Styles.viewCart}>{props.t('productList.viewCart')}</Text>
                 <View style={{ transform: [{ scaleX: props.imageAlign }] }}>
-                    <SideArrow color={Appcolor.white} />
+                    <SideArrow color={appColors.white} />
                 </View>
             </TouchableOpacity>
         </View>

@@ -6,9 +6,9 @@ import {
 } from 'react-native'
 import Styles from './styles';
 import { Counter } from "../../../../commonComponents";
-import Appcolor from '../../../../theme/colors';
 import { windowHeight, windowWidth } from '../../../../theme/appConstant';
 import SideArrow from "../../../../assets/icons/sideArrow";
+import appColors from '../../../../theme/appColors';
 
 export default counterView = (props) => {
 
@@ -19,11 +19,11 @@ export default counterView = (props) => {
     return (
         !props.showLoader &&
         <View style={[Styles.counterView, { flexDirection: props.viewAlign }]}>
-            <Counter context={props.context} viewAlign={props.viewAlign} bgColor={Appcolor.white} height={windowHeight(38)} width={windowWidth(120)} color={Appcolor.primary} textColor={Appcolor.primary} />
+            <Counter context={props.context} viewAlign={props.viewAlign} bgColor={appColors.white} height={windowHeight(38)} width={windowWidth(120)} color={appColors.primary} textColor={appColors.primary} />
             <TouchableOpacity activeOpacity={0.7} onPress={goToCart} style={{ flexDirection: props.viewAlign }}>
                 <Text style={Styles.addToCart}>{props.t('productDetailsPage.addToCart')}</Text>
                 <View style={{ transform: [{ scaleX: props.imageAlign }] }}>
-                    <SideArrow color={Appcolor.white} />
+                    <SideArrow color={appColors.white} />
                 </View>
             </TouchableOpacity>
         </View>

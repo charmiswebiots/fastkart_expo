@@ -1,88 +1,99 @@
+import React from "react";
+import { View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import styles from "./styles";
-import { Home,Offers } from "../../screens";
-import { windowHeight,windowWidth } from "../../theme/appConstant";
+import { Home, Search, Offers, Category, Cart } from "../../screens";
 import { Icons } from "../../utils/icons";
+import { Image } from "react-native";
+import styles from "./styles";
 import images from "../../utils/images";
-import { Text,View } from "react-native";
-import search from "../../screens/dashBoard/search";
-
+import appColors from "../../theme/appColors";
 
 const Tab = createBottomTabNavigator();
-
-const tabScreens = [
-    {
-        name: 'Home',
-        component: Home,
-        icon: Icons.BottomHome,
-        label: 'Home',
-    },
-    {
-        name: 'Offers',
-        component: Offers,
-        icon: Icons.BottomCategory,
-        label: 'Offers',
-    },
-    {
-        name: 'Search',
-        component: search,
-        icon: Icons.BottomSearch,
-        label: 'Search',
-    },
-    // {
-    //     name: 'Cart',
-    //     component: Search,
-    //     icon: Icons.BottomCart,
-    //     label: 'Cart',
-    // },
-
-];
 
 export function TabNavigation() {
     return (
         <Tab.Navigator
+            initialRouteName="Home"
             screenOptions={{
                 headerShown: false,
-                tabBarStyle: [
-                    styles.tabBar,
-                ],
+                tabBarStyle: styles.tabBar,
+                tabBarLabelStyle: styles.text,
             }}
         >
-            {tabScreens.map((tab, index) => (
-                <Tab.Screen
-                    key={tab.name}
-                    name={tab.name}
-                    component={tab.component}
-                    options={{
-                        tabBarIcon: ({ focused }) => (
-                            <View
-                                style={{
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    flexDirection:'row',
-                                }}
-                            >
-                           
-                                <tab.icon
-                                    height={windowHeight(6)}
-                                    width={windowWidth(6)}
-                                  
-                                />
-                            </View>
-                        ),
-                        tabBarLabel: ({ focused }) => (
-                            <Text
+            <Tab.Screen
+                name="Home"
+                component={Home}
+                options={{
+                    tabBarLabel: 'Home',
+                    tabBarIcon: ({ focused }) => (
+                        <View style={styles.icon}>
+                            <Icons.home color={focused ? appColors.white : appColors.white} />
+                        </View>
+                    ),
+                }}
+            />
+
+            <Tab.Screen
+                name="Category"
+                component={Category}
+                options={{
+                    tabBarLabel: 'Category',
+                    tabBarIcon: ({ focused }) => (
+                        <View style={styles.icon}>
+                            <Icons.category color={focused ? appColors.white : appColors.white} />
+                        </View>
+                    ),
+                }}
+            />
+
+            <Tab.Screen
+                name="Search"
+                component={Search}
+                options={{
+                    tabBarLabel: 'Search',
+                    tabBarIcon: ({ focused }) => (
+                        <View style={styles.icon}>
+                            <Icons.search color={focused ? appColors.white : appColors.white} />
+                        </View>
+                    ),
+                }}
+            />
+
+            <Tab.Screen
+                name="Offers"
+                component={Offers}
+                options={{
+                    tabBarLabel: 'Offers',
+                    tabBarIcon: ({ focused }) => (
+                        <View style={styles.icon}>
+
+                            <Image
+                                source={images.offer}
                                 style={[
-                                    styles.text,
-                                    
+                                    styles.img,
+                                    { tintColor: focused ? appColors.white : appColors.white },
                                 ]}
-                            >
-                                {tab.label}
-                            </Text>
-                        ),
-                    }}
-                />
-            ))}
+                            />
+                        </View>
+
+                    ),
+                }}
+            />
+
+            <Tab.Screen
+                name="Cart"
+                component={Cart}
+                options={{
+                    tabBarLabel: 'Cart',
+                    tabBarIcon: ({ focused }) => (
+                        <View style={styles.icon}>
+                            <Icons.cart color={focused ? appColors.white : appColors.white} />
+                        </View>
+
+                    ),
+                }}
+            />
         </Tab.Navigator>
-    )
+    );
 }
+

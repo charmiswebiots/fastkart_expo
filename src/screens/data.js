@@ -171,7 +171,7 @@ export const orderHistoryTime = [
     { time: 'October' },
 ];
 
-export const  orderHistory= [
+export const orderHistory = [
     {
         id: '#5151515',
         date: '20 Dec, 2020',
@@ -239,7 +239,7 @@ export const  orderHistory= [
 ];
 
 
-export const orderHistoryFilter= [
+export const orderHistoryFilter = [
     {
         day: 'Filter',
         value: [
@@ -256,6 +256,49 @@ export const orderHistoryFilter= [
             { txt: 'Last 6 Month', id: 5 },
             { txt: '2021', id: 6 },
             { txt: '2022', id: 7 },
+        ]
+    },
+];
+
+export const payments = [
+    {
+        type: 'Select Card',
+        isCard: true,
+        values: [
+            { value: "9800 XXXX XXXX 0545", icons: images.mastercard },
+            { value: "6580 XXXX XXXX 2562", icons: images.visacard },
+            { value: "5125 XXXX XXXX 6262", icons: images.discovercard },
+        ]
+    },
+    {
+        type: 'Net Banking',
+        isCard: false,
+        values: [
+            { value: "Industrial & Commercial Bank"},
+            { value: "Agricultural Bank" },
+            { value: "Bank of America" },
+            { value: "Construction Bank Corp." },
+            { value: "HSBC Holdings" },
+            { value: "JPMorgan Chase & Co." },
+        ]
+    },
+    {
+        type: 'Wallet/UPI',
+        isCard: false,
+        values: [
+            { value: 'Adyen' },
+            { value: 'AlliedWallet' },
+            { value: 'Brinks' },
+            { value: 'Airtel Money' },
+            { value: 'Apple Pay' },
+            { value: 'CardFree' },
+        ]
+    },
+    {
+        type: 'Cash on Delivery',
+        isCard: true,
+        values: [
+            { value: 'Cash on Delivery' },
         ]
     },
 ];

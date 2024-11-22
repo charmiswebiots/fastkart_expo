@@ -3,30 +3,30 @@ import {
     fontSizes,
     windowHeight,
 } from "../../../../theme/appConstant";
-import Appcolor from '../../../../theme/colors';
-import Commonfonts from "../../../../theme/commonfonts";
+import appColors from "../../../../theme/appColors";
+
 
 export default detailsViewStyles = StyleSheet.create({
     txt: {
         fontSize: fontSizes.FONT20,
-        fontFamily: Commonfonts.mulish,
+        fontFamily: 'mulishSemiBold',
     },
     detail: {
         fontSize: fontSizes.FONT20,
-        fontFamily: Commonfonts.mulishBold,
+        fontFamily: 'mulishBold',
         marginTop: windowHeight(14)
     },
     title: {
         fontSize: fontSizes.FONT18,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.content,
+        fontFamily: 'mulishSemiBold',
+        color: appColors.content,
         marginTop: windowHeight(4)
     },
     manufacturer: {
         borderTopWidth: 0.7,
         borderBottomWidth: 0.7,
-        borderTopColor: Appcolor.content,
-        borderBottomColor: Appcolor.content,
+        borderTopColor: appColors.content,
+        borderBottomColor: appColors.content,
         marginTop: windowHeight(14),
         paddingVertical: windowHeight(10)
     },
@@ -38,7 +38,7 @@ export default detailsViewStyles = StyleSheet.create({
     product: {
         marginTop: windowHeight(14),
         borderBottomWidth: 0.7,
-        borderBottomColor: Appcolor.content,
+        borderBottomColor: appColors.content,
         paddingBottom: windowHeight(10)
     },
 });

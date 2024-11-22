@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { windowWidth } from "../../../../../theme/appConstant";
-import Appcolor from "../../../../../theme/colors";
+import appColors from "../../../../../theme/appColors";
 import { Loader } from "../../../../../commonComponents";
 import Styles from "./styles";
 
@@ -10,7 +10,7 @@ const ratings = [{}, {}]
 export default reviewViewLoader = (props) => {
     return (
         ratings.map(() =>
-            <View style={[Styles.reviewView, { backgroundColor: props.context.isDark ? Appcolor.darkDrawer : Appcolor.gray, }]}>
+            <View style={[Styles.reviewView, { backgroundColor: props.context.isDark ? appColors.darkDrawer : appColors.gray, }]}>
                 <View style={[Styles.ratingsView, { flexDirection: props.viewAlign }]}>
                     <Loader
                         context={props.context}

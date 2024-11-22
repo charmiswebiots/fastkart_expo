@@ -4,8 +4,8 @@ import {
     windowHeight,
     windowWidth,
 } from "../../../theme/appConstant";
-import Appcolor from '../../../theme/colors';
-import Commonfonts from "../../../theme/commonfonts";
+import appColors from "../../../theme/appColors";
+
 
 export default productDetailsStyles = StyleSheet.create({
     scrollView: {
@@ -23,7 +23,7 @@ export default productDetailsStyles = StyleSheet.create({
     },
     txt: {
         fontSize: fontSizes.FONT20,
-        fontFamily: Commonfonts.mulish,
+        fontFamily: 'mulishSemiBold',
     },
     view: {
         flexDirection: 'row',
@@ -31,33 +31,33 @@ export default productDetailsStyles = StyleSheet.create({
     },
     originalPrice: {
         fontSize: fontSizes.FONT19,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.content,
+        fontFamily: 'mulishSemiBold',
+        color: appColors.content,
         marginLeft: windowWidth(6),
         textDecorationLine: 'line-through'
     },
     discount: {
         fontSize: fontSizes.FONT19,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.primary,
+        fontFamily: 'mulishSemiBold',
+        color: appColors.primary,
         marginLeft: windowWidth(10)
     },
     detail: {
         fontSize: fontSizes.FONT20,
-        fontFamily: Commonfonts.mulishBold,
+        fontFamily: 'mulishBold',
         marginTop: windowHeight(14)
     },
     title: {
         fontSize: fontSizes.FONT18,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.content,
+        fontFamily: 'mulishSemiBold',
+        color: appColors.content,
         marginTop: windowHeight(4)
     },
     manufacturer: {
         borderTopWidth: 0.7,
         borderBottomWidth: 0.7,
-        borderTopColor: Appcolor.content,
-        borderBottomColor: Appcolor.content,
+        borderTopColor: appColors.content,
+        borderBottomColor: appColors.content,
         marginTop: windowHeight(14),
         paddingVertical: windowHeight(10)
     },
@@ -69,7 +69,7 @@ export default productDetailsStyles = StyleSheet.create({
     product: {
         marginTop: windowHeight(14),
         borderBottomWidth: 0.7,
-        borderBottomColor: Appcolor.content,
+        borderBottomColor: appColors.content,
         paddingBottom: windowHeight(10)
     },
     reviewView: {
@@ -79,8 +79,8 @@ export default productDetailsStyles = StyleSheet.create({
     },
     seeAll: {
         fontSize: fontSizes.FONT18,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.primary
+        fontFamily: 'mulishSemiBold',
+        color: appColors.primary
     },
     list: {
         marginBottom: windowHeight(20)
@@ -103,13 +103,13 @@ export default productDetailsStyles = StyleSheet.create({
         marginLeft: windowWidth(14)
     },
     reviewName: {
-        fontFamily: Commonfonts.mulish,
+        fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT20
     },
     reviewTxt: {
         fontSize: fontSizes.FONT20,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.content,
+        fontFamily: 'mulishSemiBold',
+        color: appColors.content,
         width: '100%'
     },
     line: {
@@ -119,7 +119,7 @@ export default productDetailsStyles = StyleSheet.create({
         alignItems: 'center',
         position: 'absolute',
         bottom: windowHeight(60),
-        backgroundColor: Appcolor.primary,
+        backgroundColor: appColors.primary,
         width: '94%',
         height: windowHeight(56),
         flexDirection: 'row',
@@ -134,18 +134,18 @@ export default productDetailsStyles = StyleSheet.create({
     },
     addToCart: {
         fontSize: fontSizes.FONT20,
-        fontFamily: Commonfonts.mulishBold,
-        color: Appcolor.white,
+        fontFamily: 'mulishBold',
+        color: appColors.white,
         marginRight: windowWidth(6)
     },
     checkDelivery: {
         fontSize: fontSizes.FONT21,
-        fontFamily: Commonfonts.mulishBold,
+        fontFamily: 'mulishBold',
     },
     content: {
         fontSize: fontSizes.FONT17,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.content,
+        fontFamily: 'mulishSemiBold',
+        color: appColors.content,
     },
     contentView: {
         flexDirection: 'row',
@@ -166,7 +166,7 @@ export default productDetailsStyles = StyleSheet.create({
     },
     optionTxt: {
         fontSize: fontSizes.FONT18,
-        fontFamily: Commonfonts.mulish,
+        fontFamily: 'mulishSemiBold',
     },
     optionMainView: {
         flexDirection: 'row',
@@ -184,7 +184,7 @@ export default productDetailsStyles = StyleSheet.create({
     },
     ratings: {
         fontSize: fontSizes.FONT16,
-        fontFamily: Commonfonts.mulish,
+        fontFamily: 'mulishSemiBold',
         marginLeft: windowWidth(10)
     },
 });

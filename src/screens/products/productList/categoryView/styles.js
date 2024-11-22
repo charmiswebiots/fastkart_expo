@@ -4,7 +4,6 @@ import {
     windowHeight,
     windowWidth,
 } from "../../../../theme/appConstant";
-import Commonfonts from "../../../../theme/commonfonts";
 
 export default categoryViewStyles = StyleSheet.create({
     list: {
@@ -13,7 +12,7 @@ export default categoryViewStyles = StyleSheet.create({
     },
     name: {
         fontSize: fontSizes.FONT22,
-        fontFamily: Commonfonts.mulish,
+        fontFamily: 'mulishSemiBold',
     },
     category: {
         paddingHorizontal: windowWidth(20),

@@ -4,8 +4,8 @@ import {
     windowHeight,
     windowWidth,
 } from "../../../../theme/appConstant";
-import Appcolor from '../../../../theme/colors';
-import Commonfonts from "../../../../theme/commonfonts";
+import appColors from "../../../../theme/appColors";
+
 
 export default reviewViewStyles = StyleSheet.create({
     reviewView: {
@@ -14,12 +14,12 @@ export default reviewViewStyles = StyleSheet.create({
     },
     txt: {
         fontSize: fontSizes.FONT20,
-        fontFamily: Commonfonts.mulish,
+        fontFamily: 'mulishSemiBold',
     },
     seeAll: {
         fontSize: fontSizes.FONT18,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.primary
+        fontFamily: 'mulishSemiBold',
+        color: appColors.primary
     },
     list: {
         marginBottom: windowHeight(20)
@@ -41,7 +41,7 @@ export default reviewViewStyles = StyleSheet.create({
         marginHorizontal: windowWidth(14)
     },
     reviewName: {
-        fontFamily: Commonfonts.mulish,
+        fontFamily: 'mulishBold',
         fontSize: fontSizes.FONT20,
     },
     star: {
@@ -51,8 +51,8 @@ export default reviewViewStyles = StyleSheet.create({
     },
     reviewTxt: {
         fontSize: fontSizes.FONT20,
-        fontFamily: Commonfonts.mulish,
-        color: Appcolor.content,
+        fontFamily: 'mulishBold',
+        color: appColors.content,
         width: '100%'
     },
 });

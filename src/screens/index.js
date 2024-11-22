@@ -7,3 +7,4 @@ export * from './editProfile';
 export * from './404';
 export * from './aboutUs';
 export * from './order';
+export * from './payment';

@@ -8,8 +8,8 @@ import {
 } from 'react-native'
 import Styles from './styles';
 import Data from '../../../../utils/json';
-import Appcolor from '../../../../theme/colors';
 import Images from '../../../../utils/images/images';
+import appColors from '../../../../theme/appColors';
 import Loader from "./loader";
 
 export default reviewView = (props) => {
@@ -32,7 +32,7 @@ export default reviewView = (props) => {
                 <View style={Styles.list}>
                     {reviewList.splice(0, 2).map((item) =>
                         <View style={[Styles.review, {
-                            backgroundColor: props.context.isDark ? Appcolor.darkDrawer : Appcolor.gray,
+                            backgroundColor: props.context.isDark ? appColors.darkDrawer : appColors.gray,
                         }]}>
                             <View style={[Styles.reviewDetail, { flexDirection: props.viewAlign }]}>
                                 <Image source={Images.demoProfile} style={Styles.demoProfile} />

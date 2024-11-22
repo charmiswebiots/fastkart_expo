@@ -27,11 +27,10 @@ export function Total(props) {
             </View>
             <View style={[styles.amountView]}>
                 <Text style={[styles.amount]}>Total Amount</Text>
-                
+        
                     <Text style={[styles.amount]}>$270.00</Text>
             </View>
             </View>
-
             {props.btn}
         </View>
     )

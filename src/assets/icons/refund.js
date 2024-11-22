@@ -7,7 +7,7 @@ import Svg, {
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
-import Appcolor from "../../theme/colors";
+import appColors from '../../theme/appColors';
 
 export default category = (props) => {
     const { colors } = useTheme();
