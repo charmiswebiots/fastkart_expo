@@ -22,12 +22,24 @@ const styles = StyleSheet.create({
         marginLeft: windowWidth(16),
         color:appColors.black,
     },
+    text1:{
+        // gap:20,
+        marginHorizontal:windowHeight(3),
+        fontFamily: 'mulishSemiBold',
+        fontSize: fontSizes.FONT19,
+
+        color:appColors.content,
+        paddingHorizontal:windowHeight(4),
+        width:windowWidth(40)
+    },
     image: {
         height: windowHeight(30),
         width: windowWidth(30)
     },
     headerImg: {
-        marginLeft: windowWidth(14)
+        marginLeft: windowWidth(14),
+        marginHorizontal:windowHeight(0),
+        resizeMode:"contain",
     },
     headerImgRight: {
         marginRight: windowWidth(14)

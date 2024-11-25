@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
     contentView: {
         position: 'absolute',
         alignSelf: 'center',
-        // paddingHorizontal:windowHeight(10),
         right:windowHeight(45)
     },
     title: {

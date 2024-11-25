@@ -1,1 +1,1 @@
-export * from './productView'
+export * from './totalView'

@@ -12,8 +12,6 @@ const styles=StyleSheet.create({
     btn: {
         width: '94%',
         backgroundColor: appColors.primary,
-        // position: 'absolute',
-        // bottom: windowHeight(0),
         alignSelf: 'center'
     },
 })

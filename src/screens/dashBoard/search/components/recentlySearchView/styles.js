@@ -19,7 +19,6 @@ const styles=StyleSheet.create({
         backgroundColor:appColors.drawer,
         fontSize: fontSizes.FONT20,
         paddingHorizontal: windowWidth(20),
-        // marginLeft: windowWidth(20),
         marginHorizontal:windowWidth(8.5),
         borderRadius: windowWidth(10),
         paddingVertical: windowHeight(7),

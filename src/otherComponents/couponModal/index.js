@@ -16,7 +16,7 @@ export function CouponModal(props) {
             <View style={styles.termsView}>
                 <Text style={[styles.txt]}>Terms & conditions</Text>
                 {termsCondition.map((item) =>
-                    <View style={[styles.keyView]}>
+                    <View style={[styles.keyView]} key={item.id}>
                         <Text style={[styles.txt]}>{item.terms}</Text>
                     </View>
                 )}

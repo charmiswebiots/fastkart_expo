@@ -10,9 +10,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor:appColors.white,
     },
-    input:{
-        // paddingHorizontal:windowHeight(4),
-        // width:windowWidth(437),
+    input:{        
     },
     scrollView: {
         paddingTop: windowHeight(10)

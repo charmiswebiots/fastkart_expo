@@ -4,7 +4,7 @@ import Svg, {
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 
-export default Delete = () => {
+export function Delete ()  {
     return (
         <Svg width={windowWidth(30)} height={windowHeight(30)} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <Path d="M3.89584 7.89017C3.89584 7.89017 4.34834 13.5027 4.61084 15.8668C4.73584 16.996 5.43334 17.6577 6.57584 17.6785C8.75001 17.7177 10.9267 17.7202 13.1 17.6743C14.1992 17.6518 14.885 16.9818 15.0075 15.8727C15.2717 13.4877 15.7217 7.89017 15.7217 7.89017" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

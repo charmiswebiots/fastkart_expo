@@ -20,10 +20,7 @@ export function Offers() {
                         price={item.price}
                         discount={item.discount}
                         showColor
-                        // onPress={goToDetail}
-                        // textAlign={props.textAlign}
-                        // viewAlign={props.viewAlign}
-                        // imageAlign={props.imageAlign}
+    
                     />
                     </View>
                 )}

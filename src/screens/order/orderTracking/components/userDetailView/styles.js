@@ -39,9 +39,7 @@ const styles=StyleSheet.create({
         height: windowHeight(32),
         alignItems: 'center',
         justifyContent: 'center',
-        // backgroundColor:appColors.primary,
         borderRadius: windowHeight(4),
-        // textAlign:'left',
     },
     chat: {
         marginLeft: windowWidth(16),
@@ -49,10 +47,10 @@ const styles=StyleSheet.create({
         borderColor: appColors.primary,
     },
     chatLeft: {
-        // marginLeft: windowWidth(16),
+        
     },
     chatRight: {
-        // marginRight: windowWidth(16),
+       
     },
 })
 export default styles;

@@ -21,9 +21,13 @@ export function TrendingProducts() {
                                 <View style={styles.discountView}>
                                     <Text style={styles.discount}>{item.discount}% </Text>
                                     <Text style={styles.discount}>off</Text>
+                                    
                                 </View>
+                                <Counter />
+
+
                             </View>
-                            <Counter />
+                            
                         </View>
                     </View>
                 </View>

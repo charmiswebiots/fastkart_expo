@@ -19,7 +19,7 @@ export default Images = {
     recentBought3: require("../../src/assets/images/recentBought3.png"),
     recentBought4: require("../../src/assets/images/recentBought4.png"),
     recentBought5: require("../../src/assets/images/recentBought5.png"),
-    recentBought6:require('../../src/assets/images/recentBought5.png'),
+    recentBought6:require('../../src/assets/images/recentBought6.png'),
     category1: require("../../src/assets/images/category1.png"),
     category2: require("../../src/assets/images/category2.png"),
     category3: require("../../src/assets/images/category3.png"),

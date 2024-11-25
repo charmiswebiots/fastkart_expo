@@ -12,7 +12,9 @@ export function Header({
     lightImage,
     showImage,
     image,
+    titleText1,
     imageOnPress,
+    lightStyle,
 }) {
     return (
         <View style={styles.mainView}>
@@ -26,11 +28,12 @@ export function Header({
                 )}
 
                 {isText ? (
-                    <Text style={[styles.text, styles.headerImg]}>{titleText}</Text>
+                    <Text style={[styles.text, styles.headerImg]}>{titleText}<Text style={styles.text1}>{titleText1}</Text></Text>
+                    
                 ) : (
                     <Image
                         source={lightImage}
-                        style={[styles.headerImg]}
+                        style={[styles.headerImg ,lightStyle]}
                     />
                 )}
             </TouchableOpacity>

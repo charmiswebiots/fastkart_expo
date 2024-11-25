@@ -1,4 +1,4 @@
-import { hidePassword, showPassword, category, fullName, atSign, location, search, voiceSearch, decrease, increase, wishlist, home, pageList, order, language, profile, notification, currencyConverter, settings, headerArrow, markRead, discount, offer, passChange, topUp, editProfileImage,call,calender,password ,BottomHome,BottomSearch,BottomCategory,BottomCart,facebook,linkedIn, twitter,orderId,chat,sideArrow,unSelected,Selected,cart,selectedTab} from "../assets/icons";
+import { hidePassword, showPassword, category, fullName, atSign, location, search, voiceSearch, decrease, increase, wishlist, home, pageList, order, language, profile, notification, currencyConverter, settings, headerArrow, markRead, discount, offer, passChange, topUp, editProfileImage,call,calender,password ,BottomHome,BottomSearch,BottomCategory,BottomCart,facebook,linkedIn, twitter,orderId,chat,sideArrow,unSelected,Selected,cart,selectedTab,Mywishlist,Delete,dropDown} from "../assets/icons";
 
 
 export const Icons = {
@@ -45,4 +45,7 @@ export const Icons = {
     Selected:Selected,
     cart:cart,
     selectedTab:selectedTab,
+    Mywishlist:Mywishlist,
+    Delete:Delete,
+    dropDown:dropDown,
 }

@@ -8,7 +8,6 @@ const styles=StyleSheet.create({
     },
     mainView: {
         width: '90%',
-        // top:windowHeight(3),
         marginTop: windowHeight(15.5),
         paddingVertical: windowHeight(5),
         borderRadius: windowHeight(10),

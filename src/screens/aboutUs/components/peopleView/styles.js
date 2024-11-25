@@ -6,7 +6,6 @@ const styles=StyleSheet.create({
     peopleWhoBuild: {
         fontSize: fontSizes.FONT22,
         fontFamily: 'mulishBold',
-        // margin: windowWidth(20),
         marginHorizontal:windowHeight(14),
         marginTop: windowHeight(40),
         color:appColors.black,
@@ -20,9 +19,6 @@ const styles=StyleSheet.create({
         alignSelf: 'center',
     },
     seprator: {
-        // height: windowHeight(10),
-        // backgroundColor:'blue',
-        // width: windowWidth(10),
     },
     socialView: {
         height: windowHeight(160),

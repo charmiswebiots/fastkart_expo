@@ -5,7 +5,7 @@ import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
-export default dropDown = () => {
+export function dropDown  () {
     const { colors } = useTheme();
     return (
         <Svg width={windowWidth(18)} height={windowHeight(18)} viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">

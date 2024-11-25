@@ -11,7 +11,6 @@ import Styles from './styles';
 import { Header } from "../../../commonComponents";
 import { useTheme } from "@react-navigation/native";
 import ShareImg from "../../../assets/icons/share";
-// import { useTranslation } from 'react-i18next';
 import { CommonContext } from '../../../../App';
 import { CommonModal, DeliveryTimeModal, QuanitityModal, ReviewModal } from "../../../otherComponents";
 import { ImageLoader } from "./loader";

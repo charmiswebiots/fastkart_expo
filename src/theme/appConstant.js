@@ -10,7 +10,6 @@ export const IsHaveNotch = SCREEN_HEIGHT > 750;
 
 export const Isiphone12promax = Platform.OS == "ios" && SCREEN_HEIGHT > 2778;
 
-// export const IsAndroid = Platform.OS == "android";
  
 
 export const windowHeight=(height)=>{

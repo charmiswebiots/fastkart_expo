@@ -274,7 +274,7 @@ export const payments = [
         type: 'Net Banking',
         isCard: false,
         values: [
-            { value: "Industrial & Commercial Bank"},
+            { value: "Industrial & Commercial Bank" },
             { value: "Agricultural Bank" },
             { value: "Bank of America" },
             { value: "Construction Bank Corp." },
@@ -301,4 +301,41 @@ export const payments = [
             { value: 'Cash on Delivery' },
         ]
     },
+];
+
+export const cart = [
+    { id: 1, name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
+    { id: 2, name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
+    { id: 3, name: 'Assorted Capsicum Combo', image: images.recentBought3, price: '$25.00', weight: '500g', discount: '50' },
+    { id: 4, name: 'Assorted Capsicum Combo', image: images.recentBought4, price: '$25.00', weight: '500g', discount: '50' },
+];
+
+export const shopCategory = [
+    { name: 'Fresh Vegetables' },
+    { name: 'Herbs & Seasonings' },
+    { name: 'Drinks & Beverages' },
+    { name: 'Instant Mixes' },
+];
+
+
+export const data = [
+    { name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought3, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought4, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought5, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought4, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought3, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
+];
+
+export const packSize= [
+    { size: '100g-500g'},
+    { size: 'p500g-1kg'},
+    { size: '1kg-1.5kg'},
+    { size: '1.5kg-2kg'},
 ];

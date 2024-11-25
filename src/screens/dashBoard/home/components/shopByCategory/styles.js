@@ -31,10 +31,9 @@ const styles = StyleSheet.create({
     },
     listView: {
         width: windowWidth(100),
-        // marginLeft: windowWidth(10),
         alignItems: 'center',
         justifyContent: 'center',
-        marginHorizontal:windowHeight(4),
+        marginHorizontal: windowHeight(4),
 
     },
     imageView: {
@@ -43,7 +42,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius: windowHeight(20),
         top: windowHeight(8),
-
         justifyContent: 'center'
     },
     image: {
@@ -51,8 +49,6 @@ const styles = StyleSheet.create({
         height: windowHeight(100),
     },
     name: {
-        // width: windowWidth(100),
-        // height:windowHeight(25),
         fontFamily: 'mulishBold',
         textAlign: 'center',
         marginTop: windowHeight(10)

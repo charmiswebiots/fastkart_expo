@@ -5,7 +5,7 @@ import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
-export default wishlist = () => {
+export function Mywishlist() {
     const { colors } = useTheme();
     return (
         <Svg width={windowWidth(27)} height={windowHeight(27)} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

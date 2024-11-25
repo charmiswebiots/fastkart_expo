@@ -1,0 +1,68 @@
+import React, { useState } from "react";
+import { View, Image, TouchableOpacity, Text } from "react-native";
+import { GestureHandlerRootView, Swipeable } from "react-native-gesture-handler";
+import { windowHeight } from "../../../../theme/appConstant";
+import { Counter } from "../../../../commonComponents";
+import styles from './styles';
+import { cart } from "../../../data";
+import { Icons } from "../../../../utils/icons";
+
+export function WhishListProduct({ onDelete }) {
+    const [cartItems, setCartItems] = useState(cart);
+
+
+    const renderRightActions = (progress, dragX, id) => {
+        const scale = dragX.interpolate({
+            inputRange: [-1, 0],
+            outputRange: [-1, 0],
+            extrapolate: "clamp",
+        });
+
+        return (
+            <TouchableOpacity onPress={onDelete}
+                style={[styles.deleteButton, { transform: [{ scale }] }]}
+            >
+                <Icons.Delete />
+            </TouchableOpacity>
+        );
+    };
+
+    return (
+        <GestureHandlerRootView style={styles.container}>
+            {cartItems.map((item) => (
+                <Swipeable
+                    key={item.id}
+                    renderRightActions={(progress, dragX) =>
+                        renderRightActions(progress, dragX, item.id)
+                    }
+                    friction={2}
+                    leftThreshold={80}
+                    rightThreshold={100}
+                >
+                    <View style={styles.mainView}>
+                        <Image source={item.image} style={styles.image} resizeMode="contain" />
+                        <View style={styles.lineView} />
+                        <View style={styles.counterView}>
+                            <TouchableOpacity activeOpacity={0.7}>
+                                <Text style={styles.name}>{item.name}</Text>
+                                <Text style={styles.weight}>{item.weight}</Text>
+                            </TouchableOpacity>
+                            <View style={styles.priceView}>
+                                <View style={styles.discountPriceView}>
+                                    <Text style={styles.price}>{item.price}</Text>
+                                    <View style={styles.discountView}>
+                                        <Text style={styles.discount}>{item.discount}% </Text>
+                                        <Text style={styles.discount}>off</Text>
+                                    </View>
+                                    <View style={{ paddingHorizontal: windowHeight(6.8) }}>
+                                        <Counter />
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+                    </View>
+                </Swipeable>
+            ))}
+        </GestureHandlerRootView>
+    );
+}

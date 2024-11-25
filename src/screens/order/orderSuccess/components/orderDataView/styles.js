@@ -20,7 +20,6 @@ const styles=StyleSheet.create({
     },
     option: {
         marginHorizontal:windowHeight(9),
-        // height:windowHeight(20),
         bottom:windowHeight(2),
     },
     orderDate: {

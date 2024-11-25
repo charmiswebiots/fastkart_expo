@@ -17,8 +17,6 @@ export function Search() {
          <TrendingCategoryView/>
          <Text style={[styles.txt]}>Trending Products</Text>
          <TrendingProducts/>
-
- 
       </ScrollView>
     </SafeAreaView>
   )
