@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     packSize: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        marginTop: windowHeight(100),
+        marginTop: windowHeight(70),
         marginBottom: windowHeight(10),
         color: appColors.black,
     },

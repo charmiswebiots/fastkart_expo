@@ -4,7 +4,7 @@ import Svg, {
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 
-export default currentLocation = () => {
+export function currentLocation  ()  {
     return (
         <Svg width={windowWidth(26)} height={windowHeight(26)} viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <Path opacity="0.4" d="M10.4747 5.47307L6.59399 9.59628" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

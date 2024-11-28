@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         marginLeft: windowWidth(16)
     },
     vegiesRight: {
-        marginRight: windowWidth(16)
+        // marginRight: windowWidth(16)
     },
 })
 export default styles;

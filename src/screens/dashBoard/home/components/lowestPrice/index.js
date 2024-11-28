@@ -7,14 +7,14 @@ import { SeeAllHeader } from "../seeAllHeader";
 import { windowHeight,windowWidth } from "../../../../../theme/appConstant";
 import appColors from "../../../../../theme/appColors";
 
-export function LowestPrice({props,headerData,onPress}) {
+export function LowestPrice({props,headerData,onPress,style}) {
     return (
         <View style={styles.mainView}>
             <SeeAllHeader onPress={onPress} {...headerData} />
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                 {
                     lowestPrice.map((item, key) =>
-                        <TouchableOpacity key={key} style={styles.lowestPriceView} activeOpacity={0.8} >
+                        <TouchableOpacity key={key} style={[styles.lowestPriceView,style]} activeOpacity={0.8}  >
                             <Image resizeMode='contain' source={item.image} style={styles.image} />
                             <Text style={[styles.name]} numberOfLines={2}>{item.name}</Text>
                             <Text style={[styles.gram]}>{item.weight}</Text>

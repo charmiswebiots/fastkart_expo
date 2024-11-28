@@ -9,6 +9,7 @@ export default appColors={
     placeholder: '#CACACA',
     error: '#FF0000',
     line: '#F1F1F1',
+    lightWhite:'#eeeeee',
     drawer: '#EDF8F8',
     category1: '#FFF6C3',
     category2: '#FFEAE0',
@@ -34,5 +35,6 @@ export default appColors={
     imgColo3:"#FFF2EC",
     imgColo3:"#FFF2F2",
     imgBorder:"#E0FFFB",
+    lowestPrice:"#F2FAFA",
   
 }

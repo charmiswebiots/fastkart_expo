@@ -1,4 +1,4 @@
-import { hidePassword, showPassword, category, fullName, atSign, location, search, voiceSearch, decrease, increase, wishlist, home, pageList, order, language, profile, notification, currencyConverter, settings, headerArrow, markRead, discount, offer, passChange, topUp, editProfileImage,call,calender,password ,BottomHome,BottomSearch,BottomCategory,BottomCart,facebook,linkedIn, twitter,orderId,chat,sideArrow,unSelected,Selected,cart,selectedTab,Mywishlist,Delete,dropDown} from "../assets/icons";
+import { hidePassword, showPassword, category, fullName, atSign, location, search, voiceSearch, decrease, increase, wishlist, home, pageList, order, language, profile, notification, currencyConverter, settings, headerArrow, markRead, discount, offer, passChange, topUp, editProfileImage,call,calender,password ,BottomHome,BottomSearch,BottomCategory,BottomCart,facebook,linkedIn, twitter,orderId,chat,sideArrow,unSelected,Selected,cart,selectedTab,Mywishlist,Delete,dropDown,truck,map,mapPin,currentLocation,work,OrderDetails,into,select,share,star,LightStar,deliveryTruck,payment,refund,drawerArrow} from "../assets/icons";
 
 
 export const Icons = {
@@ -48,4 +48,19 @@ export const Icons = {
     Mywishlist:Mywishlist,
     Delete:Delete,
     dropDown:dropDown,
+    truck:truck,
+    map:map,
+    mapPin:mapPin,
+    currentLocation:currentLocation,
+    work:work,
+    OrderDetails:OrderDetails,
+    into:into,
+    select:select,
+    share:share,
+    LightStar:LightStar,
+    star:star,
+    deliveryTruck:deliveryTruck,
+    payment:payment,
+    refund:refund,
+    drawerArrow:drawerArrow,
 }

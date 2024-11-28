@@ -10,3 +10,4 @@ export * from './coupon';
 export * from './optionButton';
 export * from './total';
 export * from './addNew';
+export * from './selected';

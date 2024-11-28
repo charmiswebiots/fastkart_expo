@@ -1,22 +1,21 @@
 import { StyleSheet } from "react-native";
-import { windowHeight, fontSizes, windowWidth } from "../../../theme/appConstant";
+import { windowHeight, windowWidth } from "../../../theme/appConstant";
 import appColors from "../../../theme/appColors";
-
-
-
 
 const styles = StyleSheet.create({
     mainView: {
         flex: 1,
-        backgroundColor:appColors.white,
+        backgroundColor: appColors.white,
     },
-    input:{        
+    input: {
+        paddingHorizontal: windowHeight(41),
+        width: windowWidth(437),
     },
     scrollView: {
         paddingTop: windowHeight(10)
     },
-    priceView:{
-        marginTop:windowHeight(8),
+    priceView: {
+        marginTop: windowHeight(8),
     },
 })
 export default styles;

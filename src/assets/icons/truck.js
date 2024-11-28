@@ -5,7 +5,7 @@ import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
-export default truck = () => {
+export function truck ()  {
     const { colors } = useTheme();
     return (
         <Svg width={windowWidth(30)} height={windowHeight(30)} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -3,7 +3,7 @@ import styles from "./styles";
 import { Icons } from "../../utils/icons";
 import { useState } from "react";
 
-export function Counter(props) {
+export function Counter({props,color,style}) {
 
     const [count, setCount] = useState(1)
 
@@ -18,13 +18,13 @@ export function Counter(props) {
         }
     }
     return (
-        <View style={[styles.mainView]}>
+        <View style={[styles.mainView,style]}>
             <TouchableOpacity style={[styles.decrease]} onPress={decreaseCount}>
-                <Icons.decrease color={props.color} />
+                <Icons.decrease color={color} />
             </TouchableOpacity>
             <Text style={[styles.txt]}>{count}</Text>
             <TouchableOpacity style={[ styles.increase]} onPress={increaseCount}>
-                <Icons.increase color={props.color} />
+                <Icons.increase color={color} />
             </TouchableOpacity>
         </View>
     )

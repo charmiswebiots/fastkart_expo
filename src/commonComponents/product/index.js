@@ -27,8 +27,9 @@ export function Product(props) {
                             <Text style={styles.discount}>off</Text>
                         </View>
                     </View>
+                    <Counter />
                 </View>
-                <Counter />
+               
             </View>
         </View>
     )

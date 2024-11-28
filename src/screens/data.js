@@ -31,14 +31,14 @@ export const recentlyBrought = [
 
 
 export const category = [
-    { name: 'Oils,Refined & Ghee', image: images.category1 },
-    { name: 'Rice, Flour & Grains', image: images.category2 },
-    { name: 'Food Cupboard', image: images.category3 },
-    { name: 'Fresh Fruits& Vegetables', image: images.category4 },
-    { name: 'Drinks & Beverages', image: images.category5 },
-    { name: 'Instant Mixes', image: images.category6 },
-    { name: 'Ready to Eat', image: images.category7 },
-    { name: 'Dals & Pulses', image: images.category8 },
+    { id: '1', name: 'Oils,Refined & Ghee', image: images.category1 },
+    { id: '2', name: 'Rice, Flour & Grains', image: images.category2 },
+    { id: '3', name: 'Food Cupboard', image: images.category3 },
+    { id: '4', name: 'Fresh Fruits& Vegetables', image: images.category4 },
+    { id: '5', name: 'Drinks & Beverages', image: images.category5 },
+    { id: '6', name: 'Instant Mixes', image: images.category6 },
+    { id: '7', name: 'Ready to Eat', image: images.category7 },
+    { id: '8', name: 'Dals & Pulses', image: images.category8 },
 ];
 
 
@@ -260,6 +260,7 @@ export const orderHistoryFilter = [
     },
 ];
 
+
 export const payments = [
     {
         type: 'Select Card',
@@ -303,6 +304,7 @@ export const payments = [
     },
 ];
 
+
 export const cart = [
     { id: 1, name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
     { id: 2, name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
@@ -333,9 +335,171 @@ export const data = [
     { name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
 ];
 
-export const packSize= [
-    { size: '100g-500g'},
-    { size: 'p500g-1kg'},
-    { size: '1kg-1.5kg'},
-    { size: '1.5kg-2kg'},
+export const packSize = [
+    { size: '100g-500g' },
+    { size: 'p500g-1kg' },
+    { size: '1kg-1.5kg' },
+    { size: '1.5kg-2kg' },
 ];
+
+export const location = [
+    { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: true },
+    { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: false },
+    { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: true },
+    { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: false },
+    // { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: false },
+    // { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: true },
+];
+
+export const cityArr = [
+    { title: "Paris" },
+    { title: "New York" },
+    { title: "Mumbai" },
+    { title: "Delhi" },
+    { title: "Chicago" },
+    { title: "Vancouver" },
+    { title: "Las Vegas" },
+    { title: "Seoul" },
+    { title: "Franklin" },
+    { title: "Madison" },
+];
+
+export const stateArr = [
+    { title: 'Assam' },
+    { title: 'Argentina' },
+    { title: 'Gujarat' },
+    { title: 'Andhra Pradesh' },
+    { title: 'Finland' },
+    { title: 'France' },
+    { title: 'Germany' },
+    { title: 'South Korea' },
+    { title: 'Himachal Pradesh' },
+    { title: 'Kerala' },
+];
+
+export const orderDetails = [
+    { name: 'Assorted Capsicum Combo ', gram: '500g', quantity: '2', price: '$25.00' },
+    { name: 'Assorted Capsicum Combo ', gram: '500g', quantity: '1', price: '$25.00' },
+    { name: 'Assorted Capsicum Combo ', gram: '500g', quantity: '1', price: '$25.00' },
+];
+
+export const reviewStar = [
+    {},
+    {},
+    {},
+    {},
+    {}
+];
+
+
+export const reviewList = [
+    {
+        reviewName: 'Andrea Joanne',
+        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+    },
+    {
+        reviewName: 'Andrea Joanne',
+        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+    },
+    {
+        reviewName: 'Andrea Joanne',
+        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+    },
+    {
+        reviewName: 'Andrea Joanne',
+        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+    },
+    {
+        reviewName: 'Andrea Joanne',
+        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+    },
+    {
+        reviewName: 'Andrea Joanne',
+        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+    },
+];
+
+
+export const quantity = [
+    { gram: '500 g', price: '$24.00' },
+    { gram: '700 g', price: '$34.00' },
+    { gram: '100 g', price: '$48.00' },
+    { gram: '1.5 Kg', price: '$70.00' },
+    { gram: '2 Kg', price: '$100.00' },
+    { gram: '5 Kg', price: '$150.00' },
+];
+
+export const delivery = [
+    { delivery: '7 Am' },
+    { delivery: '9 Am' },
+    { delivery: '11 Am' },
+    { delivery: '5 Pm' },
+    { delivery: '7 Pm' },
+    { delivery: '9 Pm' },
+];
+
+
+// export const categoryData = [
+//     {
+//         id: '1',
+//         name: 'Oils, Refined & Ghee',
+//         image: images.category1,
+//         subCategory: [
+//             { name: 'Apple', image: require('../assets/subcategories/apple.png') },
+//             { name: 'Banana', image: require('../assets/subcategories/banana.png') },
+//         ]
+//     },
+//     { id: '2', name: 'Rice, Flour & Grains', image: images.category2 },
+//     { id: '3', name: 'Food Cupboard', image: images.category3 },
+//     { id: '4', name: 'Fresh Fruits& Vegetables', image: images.category4 },
+//     { id: '5', name: 'Drinks & Beverages', image: images.category5 },
+//     { id: '6', name: 'Instant Mixes', image: images.category6 },
+//     { id: '7', name: 'Ready to Eat', image: images.category7 },
+//     { id: '8', name: 'Dals & Pulses', image: images.category8 },
+// ];
+
+
+export const categoryData = [
+    {
+        id: '1',
+        name: 'Oils, Refined & Ghee',
+        image: images.category1,
+        subCategory: [
+            { id: '1', name: 'Apple', image: images.categoryPro1 },
+            { id: '2', name: 'Banana', image: images.categoryPro8 },
+            { id: '3', name: 'Banana', image: images.categoryPro10 },
+            { id: '4', name: 'Banana', image: images.categoryPro10 },
+
+
+        ]
+    },
+    {
+        id: '2', name: 'Rice, Flour & Grains', image: images.category2, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
+        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+    },
+    {
+        id: '3', name: 'Food Cupboard', image: images.category3, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
+        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+    },
+    {
+        id: '4', name: 'Fresh Fruits & Vegetables', image: images.category4, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
+        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+    },
+    {
+        id: '5', name: 'Drinks & Beverages', image: images.category5, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
+        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+    },
+    {
+        id: '6', name: 'Instant Mixes', image: images.category6, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
+        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+    },
+    {
+        id: '7', name: 'Ready to Eat', image: images.category7, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
+        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+    },
+    {
+        id: '8', name: 'Dals & Pulses', image: images.category8, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
+        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+    },
+];
+

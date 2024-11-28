@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     mainView: {
         height: windowHeight(120),
         position: 'absolute',
-        top: windowHeight(70),
+        top: windowHeight(45),
         alignItems: 'center',
         width: '100%',
         alignSelf: 'center'
@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
         borderRadius: windowHeight(6),
         borderWidth: 1,
         borderColor: appColors.primary,
+        flexDirection:'row',
         padding: windowHeight(10),
         paddingHorizontal: windowWidth(20)
     },

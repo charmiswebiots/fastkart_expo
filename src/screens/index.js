@@ -7,4 +7,8 @@ export * from './404';
 export * from './aboutUs';
 export * from './order';
 export * from './payment';
-export * from './whishList'
+export * from './whishList';
+export * from './address';
+export * from './selectAddress';
+export * from './products';
+export * from './account';

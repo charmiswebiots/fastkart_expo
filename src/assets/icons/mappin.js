@@ -5,7 +5,7 @@ import Svg, {
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 
-export default mapPin = () => {
+export function mapPin ()  {
     return (
         <Svg width={windowWidth(30)} height={windowHeight(30)} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
             <Rect width={windowWidth(20)} height={windowHeight(20)} fill="none" />

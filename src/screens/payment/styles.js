@@ -1,8 +1,14 @@
 import { StyleSheet } from "react-native";
-import { windowHeight,windowWidth,fontSizes } from "../../theme/appConstant";
+import { windowHeight } from "../../theme/appConstant";
 import appColors from "../../theme/appColors";
 
-const styles=StyleSheet.create({
-
+const styles = StyleSheet.create({
+    btn: {
+        width: '90.5%',
+        backgroundColor: appColors.primary,
+        position: 'absolute',
+        bottom: windowHeight(10),
+        alignSelf: 'center'
+    },
 })
 export default styles;

@@ -12,7 +12,7 @@ export default productDetailsStyles = StyleSheet.create({
         marginBottom: windowHeight(50)
     },
     productImg: {
-        width: windowWidth(240),
+        width: windowWidth(260),
         height: windowHeight(240),
         alignSelf: 'center'
     },
@@ -20,6 +20,10 @@ export default productDetailsStyles = StyleSheet.create({
         borderTopStartRadius: windowWidth(25),
         borderTopEndRadius: windowWidth(25),
         padding: windowWidth(20)
+    },
+    color:{
+        backgroundColor:appColors.white,
+        borderColor:appColors.white,
     },
     txt: {
         fontSize: fontSizes.FONT20,
@@ -113,7 +117,7 @@ export default productDetailsStyles = StyleSheet.create({
         width: '100%'
     },
     line: {
-        height: windowHeight(120),
+        height: windowHeight(200),
     },
     counterView: {
         alignItems: 'center',

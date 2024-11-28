@@ -2,13 +2,13 @@ import { View, Text } from "react-native";
 import styles from "./styles";
 import { windowHeight, windowWidth } from "../../theme/appConstant";
 
-export function Total(props) {
+export function Total(props,style) {
     return (
         <View style={props.style ? [styles.mainView, {
             marginBottom: props.bottom,
         }] : { padding: windowWidth(0) }}>
             <View style={{paddingHorizontal:windowHeight(13)}}>
-            <Text style={[styles.title]}>{(props.title)}</Text>
+            <Text style={[styles.title,style]}>{(props.title)}</Text>
             <View style={[styles.dataView]}>
                 <Text style={styles.data}>Bag total</Text>
                     <Text style={styles.data}>$220.00</Text>

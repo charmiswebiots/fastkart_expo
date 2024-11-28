@@ -1,25 +1,26 @@
 import { StyleSheet } from "react-native";
-import { windowHeight,fontSizes,windowWidth } from "../../../../theme/appConstant";
+import { windowHeight, fontSizes, windowWidth } from "../../../../theme/appConstant";
 import appColors from "../../../../theme/appColors";
 
-const styles=StyleSheet.create({
+const styles = StyleSheet.create({
     separator: {
         width: '100%',
         height: windowHeight(1),
-        backgroundColor: appColors.placeholder
+        backgroundColor: appColors.placeholder,
+        marginTop: windowHeight(18)
     },
     list: {
         marginHorizontal: windowWidth(24),
-        marginTop: windowHeight(10)
+        marginTop: windowHeight(18)
     },
     listView: {
         paddingVertical: windowHeight(20),
-        flexDirection:"row"
+        flexDirection: "row"
     },
     arrowView: {
         justifyContent: 'space-between',
         width: '100%',
-        flexDirection:"row"
+        flexDirection: "row"
     },
     type: {
         fontSize: fontSizes.FONT22,
@@ -31,7 +32,7 @@ const styles=StyleSheet.create({
         borderRadius: windowHeight(13),
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor:appColors.drawer,
+        backgroundColor: appColors.drawer,
     },
     select: {
         flexDirection: 'row',
@@ -70,19 +71,24 @@ const styles=StyleSheet.create({
     valueList: {
         alignItems: 'center',
         marginTop: windowHeight(10),
+        // backgroundColor:'blue',
         borderColor: appColors.primary,
-        width: '49%',
-        flexDirection:"row",
+        // width: '38%',
+        width: windowWidth(190),
+        flexDirection: "row",
     },
     valueTxt: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
+        // backgroundColor:'pink',
+        width: windowWidth(190),
     },
     valueLeft: {
-        marginLeft: windowWidth(10),
+        // marginLeft: windowWidth(10),
+        marginHorizontal: windowHeight(5),
     },
     valueRight: {
-        marginRight: windowWidth(10),
+        // marginRight: windowWidth(10),
     }
 })
 export default styles;

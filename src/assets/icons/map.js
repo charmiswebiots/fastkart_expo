@@ -4,7 +4,7 @@ import Svg, {
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 
-export default map = () => {
+export function map  ()  {
     return (
         <Svg width={windowWidth(30)} height={windowHeight(30)} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <Path d="M9.99984 18.3333C14.6022 18.3333 18.3332 14.6024 18.3332 10C18.3332 5.39762 14.6022 1.66666 9.99984 1.66666C5.39746 1.66666 1.6665 5.39762 1.6665 10C1.6665 14.6024 5.39746 18.3333 9.99984 18.3333Z" stroke="#777777" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

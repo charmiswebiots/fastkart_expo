@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { windowHeight, fontSizes, windowWidth } from "../../theme/appConstant";
+import { windowHeight, fontSizes } from "../../theme/appConstant";
 
 const styles = StyleSheet.create({
     button: {
@@ -9,11 +9,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         height: windowHeight(46),
-    
     },
     buttonText: {
         fontSize: fontSizes.FONT22,
-        marginLeft: windowWidth(10),
         fontFamily: 'mulishSemiBold',
     },
 })

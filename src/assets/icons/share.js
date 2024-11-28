@@ -5,7 +5,7 @@ import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
-export default share = () => {
+export function share() {
     const { colors } = useTheme();
     return (
         <Svg width={windowWidth(30)} height={windowHeight(30)} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

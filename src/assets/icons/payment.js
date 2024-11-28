@@ -9,7 +9,7 @@ import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 import appColors from '../../theme/appColors';
 
-export default payment = (props) => {
+export function payment(props) {
     const { colors } = useTheme();
     return (
         <Svg xmlns="http://www.w3.org/2000/svg" width={windowWidth(20)} height={windowHeight(20)} viewBox="0 0 17 17" fill="none">

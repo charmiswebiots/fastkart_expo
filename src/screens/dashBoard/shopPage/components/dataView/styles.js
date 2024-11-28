@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         alignSelf: 'center',
-        backgroundColor: appColors.pink,
+        backgroundColor: appColors.gray,
     },
     img: {
         alignSelf: 'center',

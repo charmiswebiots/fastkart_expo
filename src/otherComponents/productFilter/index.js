@@ -5,7 +5,7 @@ import { GlobalStyle } from '../../styles/style'
 import appColors from "../../theme/appColors";
 import { OptionButton } from "../../commonComponents";
 import { packSize } from "../../screens/data";
-import { Picker } from "./components/picker";
+import { RangeSlider, Picker } from "./components";
 import { useState } from "react";
 
 export function ProductFilter(props) {
@@ -39,16 +39,9 @@ export function ProductFilter(props) {
                 }
             />
             <Text style={[styles.priceRange]}>Price Range</Text>
-            {/* <RangeSlider
-            t={t}
-            setValue={getValue}
-        /> */}
-            {/* <View style={Styles.rangeView}>
-            <Text>{commonContext.currSymbol}{low}</Text>
-            <Text>{commonContext.currSymbol}{high}</Text>
-        </View> */}
+            <RangeSlider />
             <OptionButton txt1={'Close'} txt2={'Apply'} onPress1={props.showModal} onPress2={props.showModal} />
-            <Picker  />
+            <Picker />
         </View>
     )
 }

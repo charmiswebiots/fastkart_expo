@@ -6,7 +6,7 @@ import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
 
-export default deliveryTruck = (props) => {
+export function deliveryTruck(props) {
 	const { colors } = useTheme();
 	return (
 		<Svg version="1.1" width={windowWidth(20)} height={windowHeight(20)} id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
