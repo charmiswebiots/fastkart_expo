@@ -1,56 +1,3 @@
-// import {
-//     View, Text, TouchableOpacity, LayoutAnimation,
-//     NativeModules,
-// } from "react-native";
-// import React from "react";
-// import { Icons } from "../../../../utils/icons";
-// import { category } from "../../../../screens/data";
-// import styles from "./styles";
-// import { useState } from "react";
-
-// export function Picker() {
-
- 
-//     const [selected, setSelected] = useState(category[0].name);
-//     const [show, setShow] = useState(false);
-//     const { UIManager } = NativeModules;
-
-//     UIManager.setLayoutAnimationEnabledExperimental &&
-//         UIManager.setLayoutAnimationEnabledExperimental(true);
-//     const setValue = (name) => {
-//         setSelected(name)
-//         showValue()
-//     }
-
-//     const showValue = () => {
-//         LayoutAnimation.easeInEaseOut();
-//         setShow(!show)
-//     }
-//     return (
-//         <View style={styles.mainView}>
-//             <TouchableOpacity activeOpacity={0.8} onPress={showValue} style={[styles.dropDownView]}>
-//                 <Text style={styles.selectedTxt}>{selected}</Text>
-//                 <Icons.dropDown />
-//             </TouchableOpacity>
-//             {show && <View style={styles.view}>
-//                 {category.map((item) =>
-//                     <TouchableOpacity activeOpacity={0.6} onPress={() => setValue(item.name)}>
-//                         <Text style={[styles.name]}>{item.name}</Text>
-//                     </TouchableOpacity>
-//                 )}
-//             </View>}
-//         </View>
-//     )
-// }
-
-
-
-
-
-
-
-
-
 import {
     View, Text, TouchableOpacity, LayoutAnimation,
     NativeModules,
@@ -65,7 +12,6 @@ export function Picker() {
     const [show, setShow] = useState(false);
     const { UIManager } = NativeModules;
 
-    // Check if UIManager exists
     if (UIManager && UIManager.setLayoutAnimationEnabledExperimental) {
         UIManager.setLayoutAnimationEnabledExperimental(true);
     }

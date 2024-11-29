@@ -3,11 +3,10 @@ import React from "react";
 import styles from "./styles";
 import images from "../../../utils/images";
 import { useEffect } from "react";
-import { useNavigation } from "@react-navigation/native";
 
 
-export function Splash() {
-    const navigation = useNavigation()
+
+export function Splash({navigation}) {
 
     useEffect(() => {
         setTimeout(() => {
@@ -24,3 +23,14 @@ export function Splash() {
         </SafeAreaView>
     )
 }
+
+// import { View, Text } from "react-native";
+// import React from "react";
+
+// export function Splash() {
+//     return (
+//         <View style={{ backgroundColor: 'red', flex: 1 }}>
+//             <Text style={{ color: 'blue' }}>dvf</Text>
+//         </View>
+//     )
+// }

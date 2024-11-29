@@ -5,7 +5,7 @@ import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
-export default signOut = () => {
+export function signOut() {
     const { colors } = useTheme();
     return (
         <Svg width={windowWidth(26)} height={windowHeight(26)} viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">

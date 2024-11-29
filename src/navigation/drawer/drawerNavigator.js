@@ -1,18 +1,13 @@
 import React, { useContext } from 'react';
-import {
-    createDrawerNavigator,
-} from '@react-navigation/drawer';
 import Tab from './tabStackNavigator';
 import { ProductsList, ProductsDetails, CartList, AddAddress, SelectAddress, SelectPayment, OrderSuccess, OrderTracking, OrderDetails, NotFound } from "../screens";
 import { windowWidth } from '../theme/appConstant';
-import DrawerContent from '../otherComponents/drawerComponents'
-import { CommonContext } from '../../App';
+import { DrawerComponent } from '../../otherComponents';
 
 const Drawer = createDrawerNavigator();
 
 export default MyDrawer = () => {
 
-    const commonContext = useContext(CommonContext);
     return (
         <Drawer.Navigator
             screenOptions={{
@@ -26,7 +21,7 @@ export default MyDrawer = () => {
                 swipeEnabled: false
             }}
             useLegacyImplementation
-            drawerContent={(props) => <DrawerContent {...props} />}>
+            drawerContent={(props) => <DrawerComponent {...props} />}>
             <Drawer.Screen name="Tab" component={Tab} options={{ headerShown: false }} />
             <Drawer.Screen name="ProductsList" component={ProductsList} options={{ headerShown: false }} />
             <Drawer.Screen name="ProductsDetails" component={ProductsDetails} options={{ headerShown: false }} />

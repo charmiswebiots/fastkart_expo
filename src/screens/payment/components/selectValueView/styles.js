@@ -71,24 +71,19 @@ const styles = StyleSheet.create({
     valueList: {
         alignItems: 'center',
         marginTop: windowHeight(10),
-        // backgroundColor:'blue',
         borderColor: appColors.primary,
-        // width: '38%',
         width: windowWidth(190),
         flexDirection: "row",
     },
     valueTxt: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        // backgroundColor:'pink',
         width: windowWidth(190),
     },
     valueLeft: {
-        // marginLeft: windowWidth(10),
         marginHorizontal: windowHeight(5),
     },
     valueRight: {
-        // marginRight: windowWidth(10),
     }
 })
 export default styles;

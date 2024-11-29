@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
     },
     containerStyle: {
         width: '100%',
-        // padding:windowHeight(10),
         marginTop: windowHeight(20),
         flexDirection: 'row'
     },

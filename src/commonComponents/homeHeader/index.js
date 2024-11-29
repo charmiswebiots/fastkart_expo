@@ -3,11 +3,14 @@ import { View, TouchableOpacity, Text, Image } from "react-native";
 import styles from "./styles";
 import images from "../../utils/images";
 import { Icons } from "../../utils/icons";
+import { useNavigation } from "@react-navigation/native";
 
 export function HomeHeader() {
+    const navigation = useNavigation()
+
 
     const toggleDrawer = () => {
-        navigation.toggleDrawer();
+        navigation.navigate('DrawerComponent');
     };
 
     return (

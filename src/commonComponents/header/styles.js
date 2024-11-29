@@ -23,11 +23,9 @@ const styles = StyleSheet.create({
         color:appColors.black,
     },
     text1:{
-        // gap:20,
         marginHorizontal:windowHeight(3),
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT19,
-
         color:appColors.content,
         paddingHorizontal:windowHeight(4),
         width:windowWidth(40)

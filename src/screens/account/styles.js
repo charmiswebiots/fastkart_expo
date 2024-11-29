@@ -50,7 +50,8 @@ const styles=StyleSheet.create({
     signOut: {
         marginLeft: windowWidth(10),
         fontSize: fontSizes.FONT20,
-        fontFamily: 'mulishSemiBold'
+        fontFamily: 'mulishSemiBold',
+        color:appColors.black,
     },
 })
 export default styles;

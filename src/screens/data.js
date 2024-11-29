@@ -438,27 +438,6 @@ export const delivery = [
     { delivery: '9 Pm' },
 ];
 
-
-// export const categoryData = [
-//     {
-//         id: '1',
-//         name: 'Oils, Refined & Ghee',
-//         image: images.category1,
-//         subCategory: [
-//             { name: 'Apple', image: require('../assets/subcategories/apple.png') },
-//             { name: 'Banana', image: require('../assets/subcategories/banana.png') },
-//         ]
-//     },
-//     { id: '2', name: 'Rice, Flour & Grains', image: images.category2 },
-//     { id: '3', name: 'Food Cupboard', image: images.category3 },
-//     { id: '4', name: 'Fresh Fruits& Vegetables', image: images.category4 },
-//     { id: '5', name: 'Drinks & Beverages', image: images.category5 },
-//     { id: '6', name: 'Instant Mixes', image: images.category6 },
-//     { id: '7', name: 'Ready to Eat', image: images.category7 },
-//     { id: '8', name: 'Dals & Pulses', image: images.category8 },
-// ];
-
-
 export const categoryData = [
     {
         id: '1',
@@ -469,8 +448,6 @@ export const categoryData = [
             { id: '2', name: 'Banana', image: images.categoryPro8 },
             { id: '3', name: 'Banana', image: images.categoryPro10 },
             { id: '4', name: 'Banana', image: images.categoryPro10 },
-
-
         ]
     },
     {
@@ -503,3 +480,16 @@ export const categoryData = [
     },
 ];
 
+
+export const DrawerItems = [
+    { name: 'Home', icons: <Icons.home />, showSwitch: false },
+    { name: 'FastKart Pages List', icons: <Icons.pageList />, showSwitch: false },
+    { name: 'Shop by Category', icons: <Icons.category />, showSwitch: false },
+    { name: 'Orders', icons: <Icons.order />, showSwitch: false },
+    { name: 'Your Wishlist', icons: <Icons.wishlist />, showSwitch: false },
+    { name: 'Langauge', icons: <Icons.language />, showSwitch: false },
+    { name: 'Your Account', icons: <Icons.profile />, showSwitch: false },
+    { name: 'Notification', icons: <Icons.notification />, showSwitch: false },
+    { name: 'Settings', icons: <Icons.settings />, showSwitch: false },
+    { name: 'Currency Converter', icons: <Icons.currencyConverter />, showSwitch: false },
+];

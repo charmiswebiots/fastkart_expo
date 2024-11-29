@@ -96,7 +96,6 @@ const styles = StyleSheet.create({
         position: 'absolute',
         alignSelf: 'center',
         width: '100%',
-        // left: windowWidth(60),
     },
 })
 export default styles;

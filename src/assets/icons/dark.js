@@ -6,7 +6,7 @@ import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
-export default dark = () => {
+export function dark() {
     const { colors } = useTheme();
     return (
         <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width={windowWidth(30)} height={windowHeight(30)}>

@@ -19,7 +19,6 @@ export function BottomCart() {
                         <Path
                             d="M0 0h23v23H0z"
                             style={{
-                                // fill: "#000",
                                 fillOpacity: 0.4,
                                 stroke: "red",
                             }}

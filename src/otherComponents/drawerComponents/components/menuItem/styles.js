@@ -1,23 +1,23 @@
 import { StyleSheet } from "react-native";
- import appColors from "../../../../theme/appColors";
+import appColors from "../../../../theme/appColors";
 import { windowHeight, fontSizes, windowWidth } from "../../../../theme/appConstant";
 
 const styles = StyleSheet.create({
     mainView: {
         alignItems: 'center',
         justifyContent: 'space-between',
-        marginTop: windowHeight(20)
+        marginTop: windowHeight(18)
     },
     txt: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        color:appColors.black,
+        color: appColors.black,
+        marginTop:windowHeight(3)
     },
     txtLeft: {
-        marginLeft: windowWidth(20),
+        marginHorizontal:windowHeight(12)
     },
     txtRight: {
-        marginRight: windowWidth(20),
     },
     arrow: {
         borderWidth: 0.5,
