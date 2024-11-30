@@ -29,17 +29,7 @@ const styles = StyleSheet.create({
         backgroundColor: appColors.primary,
     },
     guest: {
-        textAlign: 'center',
-        fontFamily: 'mulishSemiBold',
-        backgroundColor:'red',
-        fontSize: fontSizes.FONT18,
-        paddingHorizontal: windowWidth(20),
-        textDecorationLine: 'underline',
-        position: 'absolute',
-        bottom: 0,
-        color:appColors.black,
-        width: '100%',
-        paddingVertical: windowHeight(10)
+        paddingVertical: windowHeight(0)
     },
 })
 export default styles;

@@ -9,8 +9,9 @@ const styles = StyleSheet.create({
         marginHorizontal: windowWidth(20),
         justifyContent: 'space-between',
         alignItems: 'center',
-        height: windowHeight(50),
-        marginTop:windowHeight(30),
+        height: windowHeight(55),
+        marginTop:windowHeight(5),
+        // backgroundColor:'red'
     },
     arrowView: {
         flexDirection: 'row',

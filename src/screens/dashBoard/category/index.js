@@ -6,18 +6,21 @@ import { Icons } from "../../../utils/icons";
 import { CategoryView, BannerView, SubCategoryView } from "./components";
 
 export function Category({ navigation }) {
+
+    const shopPage=()=>{
+        navigation.navigate('ShopPage')
+    }
     return (
         <SafeAreaView style={styles.mainView}>
             <Header
                 onPress={() => navigation.goBack()}
                 lightImage={images.fastkart}
                 showImage
-                text={'dsf'}
                 image={images.offer} />
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
                 <Input placeholder={'Search Products here..'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} />
                 <View style={[styles.dataView]}>
-                    <CategoryView  />
+                    <CategoryView  onPress={shopPage}/>
                     <View style={[styles.vegiesRight]}>
                         <BannerView />
                         <SubCategoryView  />

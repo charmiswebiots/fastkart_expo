@@ -6,7 +6,7 @@ import { ContinueButton } from "../../../../commonComponents";
 import { useNavigation } from "@react-navigation/native";
 
 
-export function ContinueView({txt,signTxt,onPress,guest,onPress1}) {
+export function ContinueView({txt,signTxt,onPress,guest,onPress1,style}) {
 
     const navigation=useNavigation()
 
@@ -31,7 +31,7 @@ export function ContinueView({txt,signTxt,onPress,guest,onPress1}) {
                 </View>
             </View>
             <TouchableOpacity onPress={onPress1} >
-                <Text style={[styles.guest]}>{guest}</Text>
+                <Text style={[styles.guest,style]}>{guest}</Text>
             </TouchableOpacity>
 
             <View style={styles.view} />

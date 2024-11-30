@@ -7,7 +7,7 @@ import styles from './styles';
 import { cart } from "../../../data";
 import { Icons } from "../../../../utils/icons";
 
-export function WhishListProduct({ onDelete }) {
+export function WhishListProduct({ onDelete,onPress }) {
     const [cartItems, setCartItems] = useState(cart);
 
 
@@ -43,7 +43,7 @@ export function WhishListProduct({ onDelete }) {
                         <Image source={item.image} style={styles.image} resizeMode="contain" />
                         <View style={styles.lineView} />
                         <View style={styles.counterView}>
-                            <TouchableOpacity activeOpacity={0.7}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
                                 <Text style={styles.name}>{item.name}</Text>
                                 <Text style={styles.weight}>{item.weight}</Text>
                             </TouchableOpacity>

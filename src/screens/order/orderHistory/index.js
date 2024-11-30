@@ -7,7 +7,7 @@ import { CommonModal, OrderHistoryFilterModal } from '../../../otherComponents/i
 import { useState } from "react";
 
 
-export function OrderHistory() {
+export function OrderHistory({navigation}) {
     const [filterModal, setFilterModal] = useState(false);
 
 

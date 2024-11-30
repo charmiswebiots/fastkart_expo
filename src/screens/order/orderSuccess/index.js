@@ -7,7 +7,11 @@ import images from "../../../utils/images";
 import { ThankyouView, OrderDataView } from "./components";
 import { Icons } from "../../../utils/icons";
 
-export function OrderSuccess() {
+export function OrderSuccess({navigation}) {
+
+    const orderTracking=()=>{
+        navigation.navigate('OrderTracking')
+    }
     return (
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
             <View style={{ flex: 0.9 }}>
@@ -27,7 +31,7 @@ export function OrderSuccess() {
                 </ScrollView>
             </View>
             <View style={{ flex: 0.1 }}>
-                <Button text={'Track Package on Map'} style={styles.btn} color={appColors.white} />
+                <Button text={'Track Package on Map'} style={styles.btn} color={appColors.white} onPress={orderTracking} />
             </View>
 
 

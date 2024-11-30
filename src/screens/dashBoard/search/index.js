@@ -7,7 +7,12 @@ import { Icons } from '../../../utils/icons'
 import { Offers } from '../home/components'
 
 
-export function Search() {
+export function Search({navigation}) {
+
+  const productDetails=()=>{
+    navigation.navigate('ProductsDetails')
+  }
+
   return (
     <SafeAreaView style={styles.mainView}>
       <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
@@ -16,7 +21,7 @@ export function Search() {
          <RecentlySearchView/>
          <TrendingCategoryView/>
          <Text style={[styles.txt]}>Trending Products</Text>
-         <TrendingProducts/>
+         <TrendingProducts onPress={productDetails}/>
       </ScrollView>
     </SafeAreaView>
   )

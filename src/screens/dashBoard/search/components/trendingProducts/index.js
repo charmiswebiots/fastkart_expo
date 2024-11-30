@@ -3,7 +3,8 @@ import styles from "./styles";
 import { trendingProducts } from "../../../../data";
 import { Counter } from "../../../../../commonComponents";
 
-export function TrendingProducts() {
+export function TrendingProducts({onPress}) {
+ 
     return (
         <View style={styles.view}>
             {trendingProducts.map((item, index) => (
@@ -11,7 +12,7 @@ export function TrendingProducts() {
                     <Image source={item.image} style={styles.image} resizeMode='contain' />
                     <View style={styles.lineView} />
                     <View style={styles.counterView}>
-                        <TouchableOpacity onPress={item.onPress} activeOpacity={0.7}>
+                        <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
                             <Text style={styles.name}>{item.name}</Text>
                             <Text style={styles.weight}>{item.weight}</Text>
                         </TouchableOpacity>

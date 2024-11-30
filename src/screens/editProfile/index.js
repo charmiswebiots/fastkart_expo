@@ -33,13 +33,8 @@ export function EditProfile() {
                     isText
                     titleText={'Edit Profile'} />
                 <ProfileView />
-                <DetailsView
-                    date={date}
-                    onPress={openDatePicker}
-
-
-                />
-                {/* <DatePickerView onCancel={onCancel} onConfirm={onConfirm} showDatePicker={showDatePicker}  /> */}
+                <DetailsView date={date} onPress={openDatePicker}/>
+                <DatePickerView onCancel={onCancel} onConfirm={onConfirm} showDatePicker={showDatePicker}  />
                 <ChangePasswordView />
                 <Button
                     text={'Update Settings'}

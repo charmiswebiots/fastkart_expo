@@ -7,7 +7,7 @@ import { CouponsView } from "./components/couponsView";
 import { CommonModal, CouponModal, OfferFilterModal} from "../../../otherComponents/index";
 import { useState } from "react";
 
-export function Offers() {
+export function Offers({navigation}) {
     const [showModal, setShowModal] = useState(false);
     const [filterModal, setFilterModal] = useState(false);
     const [off, setOff] = useState(null);
@@ -28,7 +28,7 @@ export function Offers() {
     return (
         <SafeAreaView style={styles.mainView}>
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
-                <Header isText titleText={'My Offers'} onPress={() => props.navigation.goBack()} />
+                <Header isText titleText={'My Offers'} onPress={() => navigation.goBack()} />
                 <SearchFilter onPress={visibleFilterModal} />
                 <CouponsView visibleModal={visibleModal} />
             </ScrollView>

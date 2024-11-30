@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     fontSize: fontSizes.FONT3HALF,
     fontFamily: "mulishsemiBold",
     color: appColors.white,
-    top: windowHeight(5),
+    bottom:windowHeight(3.5)
   },
   icon: {
     top: windowHeight(4),

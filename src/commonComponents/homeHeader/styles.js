@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         flexDirection: 'row',
         paddingHorizontal: windowWidth(20),
-        marginTop: windowHeight(28),
+        height:windowHeight(60),
         textAlign:'left',
     },
     view: {

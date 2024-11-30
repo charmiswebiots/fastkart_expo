@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         width: windowWidth(437),
     },
     scrollView: {
-        paddingTop: windowHeight(10)
+        // paddingTop: windowHeight(10)
     },
     priceView: {
         marginTop: windowHeight(8),

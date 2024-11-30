@@ -8,11 +8,15 @@ import { AddNewCardModal, CommonModal } from "../../otherComponents";
 import { SelectValueView } from "./components";
 import { windowHeight } from "../../theme/appConstant";
 
-export function Payment() {
+export function Payment({navigation}) {
     const [showModal, setShowModal] = useState(false);
 
     const visibleModal = () => {
         setShowModal(!showModal)
+    }
+
+    const orderDetails=()=>{
+        navigation.navigate('OrderSuccess')
     }
 
     return (
@@ -32,7 +36,7 @@ export function Payment() {
                     <Total bottom={windowHeight(80)} style title={'Order Details'} />
                 </View>
                 <Button text={'Confirm Payment'} style={styles.btn}
-                    color={appColors.white} />
+                    color={appColors.white} onPress={orderDetails} />
             </ScrollView>
 
         </SafeAreaView>

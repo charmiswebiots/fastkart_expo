@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SafeAreaView, ScrollView, View,TouchableOpacity ,Text} from "react-native";
+import { SafeAreaView, ScrollView, View, TouchableOpacity, Text } from "react-native";
 import styles from "./styles";
 import { Header, Switch } from "../../commonComponents";
 import appColors from "../../theme/appColors";
@@ -15,12 +15,24 @@ export function Account({ navigation }) {
 
     const goToScreen = (screen) => {
         const screenMap = {
-            2: "Category",
-            3: "OrderHistory",
-            4: "Wishlist",
-            6: "Account",
-            7: "Notification",
-            8: "EditProfile",
+            // 1:"Home",
+            0: 'Home',
+            1: 'Category',
+            2: 'OrderHistory',
+            3: 'whishList',
+            4: '',
+            5: 'Notification',
+            // 2: 'Category',
+            // 3: 'OrderHistory',
+            // 4: 'WhishList',
+            // 4: 'Notification',
+            // 5: "Notification",
+            // 2: "Category",
+            // 3: "OrderHistory",
+            // 4: "WhishList",
+            // 6: "Account",
+            // 7: "Notification",
+            // 8: "EditProfile",
         };
 
         if (screen === 5) {
@@ -30,7 +42,7 @@ export function Account({ navigation }) {
         }
     };
 
-    const login=()=>{
+    const login = () => {
         navigation.navigate('Login')
     }
 
@@ -66,7 +78,7 @@ export function Account({ navigation }) {
                         isOn={darkMode}
                         onToggle={() => setDarkMode(!darkMode)}
                     />
-                     <TouchableOpacity onPress={login} activeOpacity={0.7} style={[styles.signOutView, { backgroundColor:appColors.gray }]}>
+                    <TouchableOpacity onPress={login} activeOpacity={0.7} style={[styles.signOutView, { backgroundColor: appColors.gray }]}>
                         <Icons.signOut />
                         <Text style={[styles.signOut]}>Sign Out</Text>
                     </TouchableOpacity>

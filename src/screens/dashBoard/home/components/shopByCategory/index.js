@@ -5,7 +5,7 @@ import { category } from "../../../../data";
 import { windowWidth } from "../../../../../theme/appConstant";
 
 
-export function ShopByCategory() {
+export function ShopByCategory({onPress}) {
     return (
         <View>
             <View style={styles.category}>
@@ -18,7 +18,7 @@ export function ShopByCategory() {
                 style={styles.list}
                 ItemSeparatorComponent={() => <View style={styles.separator} />}
                 renderItem={({ item, index }) =>
-                    <TouchableOpacity style={styles.listView} activeOpacity={0.7} >
+                    <TouchableOpacity style={styles.listView} activeOpacity={0.7} onPress={onPress} >
                         <View style={[styles.imageView, {
                         }]}>
                             <Image source={item.image} style={styles.image} resizeMode='contain' />

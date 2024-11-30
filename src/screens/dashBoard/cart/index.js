@@ -9,17 +9,21 @@ import { ScrollView, SafeAreaView, View } from "react-native";
 import styles from "./styles";
 import { TotalView } from "./components";
 
-export function Cart() {
-    const navigation = useNavigation()
+export function Cart({ navigation }) {
     const [showModal, setShowModal] = useState(false);
-        const [showDeleteModal, setShowDeleteModal] = useState(false);
+    const [showDeleteModal, setShowDeleteModal] = useState(false);
 
-
+    const productDetails = () => {
+        navigation.navigate('ProductsDetails')
+    }
     const visibleModal = () => {
         setShowModal(!showModal)
     }
     const visibleDeleteModal = () => {
         setShowDeleteModal(!showDeleteModal)
+    }
+    const address=()=>{
+        navigation.navigate('Address')
     }
     return (
         <SafeAreaView style={styles.mainView}>
@@ -28,11 +32,11 @@ export function Cart() {
                 isText
                 titleText={'My Cart'} />
             <ScrollView showsVerticalScrollIndicator={false}>
-                <WhishListProduct onDelete={visibleDeleteModal} />
+                <WhishListProduct onPress={productDetails} />
                 <CommonModal modal={<DeleteProductModal onPress={visibleDeleteModal} />} showModal={showDeleteModal} visibleModal={visibleDeleteModal} />
                 <View style={styles.view}>
                     <Coupon price={50} onPress={visibleModal} onOrder={'on your first order'} onOrderAbove={'on order above $250.00'} code={'SCD450'} />
-                    <TotalView/>
+                    <TotalView onPress={address} />
                 </View>
             </ScrollView>
             <CommonModal

@@ -7,7 +7,10 @@ import { Header, Button } from "../../../commonComponents";
 import { MapImageView, EstimatedDeliveryView, UserDetailView, AddressView } from "./components";
 
 
-export function OrderTracking() {
+export function OrderTracking({navigation}) {
+    const order=()=>{
+        navigation.navigate('OrderDetail')
+    }
     return (
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -26,7 +29,7 @@ export function OrderTracking() {
                         <UserDetailView />
                         <AddressView />
                         <Button text={'Order Details'} style={styles.btn}
-                            color={appColors.white} />
+                            color={appColors.white} onPress={order}/>
                     </ScrollView>
                 </View>
             </View>

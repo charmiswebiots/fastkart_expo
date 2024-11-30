@@ -5,7 +5,11 @@ import { SeeAllHeader } from "../../components";
 import { Product } from "../../../../../commonComponents";
 import { offers } from "../../../../data";
 
-export function Offers() {
+export function Offers({onPress}) {
+
+    const productDetails=()=>{
+        navigation.navigate('ProductsDetails')
+    }
     return (
         <View style={[styles.mainView]}>
 
@@ -19,8 +23,8 @@ export function Offers() {
                         weight={item.weight}
                         price={item.price}
                         discount={item.discount}
+                        onPress={onPress}
                         showColor
-    
                     />
                     </View>
                 )}

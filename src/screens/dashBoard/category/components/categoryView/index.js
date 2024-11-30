@@ -5,7 +5,7 @@ import { categoryData } from "../../../../data";
 import appColors from "../../../../../theme/appColors";
 import { windowHeight } from "../../../../../theme/appConstant";
 
-export function CategoryView() {
+export function CategoryView({onPress}) {
     const [categoryId, setCategoryId] = useState(1);
     const [subCategories, setSubCategories] = useState([]);
 
@@ -54,7 +54,7 @@ export function CategoryView() {
                     contentContainerStyle={styles.containerStyle}
 
                     renderItem={({ item }) => (
-                        <TouchableOpacity activeOpacity={0.8} onPress={() => navigation.navigate('ProductDetails')} style={styles.imgView}>
+                        <TouchableOpacity activeOpacity={0.8} onPress={onPress} style={styles.imgView}>
                             <View style={[styles.itemImg, { backgroundColor: appColors.drawer }]}>
                                 <Image resizeMode='contain' source={item.image} style={styles.img} />
                             </View>

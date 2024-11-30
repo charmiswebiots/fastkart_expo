@@ -7,6 +7,7 @@ import { Button } from "../../../commonComponents";
 import appColors from "../../../theme/appColors";
 import { ContinueView } from "../components";
 import { useNavigation } from "@react-navigation/native";
+import { windowHeight } from "../../../theme/appConstant";
 
 
 export function Login() {
@@ -30,11 +31,9 @@ export function Login() {
                     </View>
                     <Button text={'Sign in'} style={styles.btn}
                         color={appColors.white} onPress={Home} />
-                    <ContinueView txt={'If you are new, Create Now'} signTxt={'Or sign in with'} onPress={register} guest={'Continue as guest'} onPress1={Home} />
+                    <ContinueView txt={'If you are new, Create Now'} signTxt={'Or sign in with'} onPress={register} guest={'Continue as guest'} onPress1={Home} style={styles.guest} />
                 </ScrollView>
             </View>
-        
-
         </SafeAreaView>
     )
 }

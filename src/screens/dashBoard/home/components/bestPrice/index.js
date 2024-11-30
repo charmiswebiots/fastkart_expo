@@ -10,11 +10,11 @@ import appColors from "../../../../../theme/appColors";
 export function BestPrice({props,headerData,onPress}) {
     return (
         <View style={styles.mainView}>
-            <SeeAllHeader onPress={onPress} {...headerData} />
+            <SeeAllHeader  {...headerData} />
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                 {
                     bestPrice.map((item, key) =>
-                        <TouchableOpacity key={key} style={styles.lowestPriceView} activeOpacity={0.8} >
+                        <TouchableOpacity key={key} style={styles.lowestPriceView} activeOpacity={0.8} onPress={onPress}>
                             <Image resizeMode='contain' source={item.image} style={styles.image} />
                             <Text style={[styles.name]} numberOfLines={2}>{item.name}</Text>
                             <Text style={[styles.gram]}>{item.weight}</Text>

@@ -6,7 +6,11 @@ import appColors from "../../../theme/appColors";
 import { OrderDetailView, ItemsView, AddressView, PaymentsMethodView } from './components'
 import { windowHeight } from "../../../theme/appConstant";
 
-export function OrderDetail() {
+export function OrderDetail({navigation}) {
+
+    const shopPage=()=>{
+        navigation.navigate('ShopPage')
+    }
     return (
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -23,7 +27,7 @@ export function OrderDetail() {
                 <AddressView />
                 <PaymentsMethodView />
                 <Button text={'Reorder'} style={styles.btn}
-                color={appColors.white} />
+                color={appColors.white} onPress={shopPage} />
             </ScrollView>
 
            

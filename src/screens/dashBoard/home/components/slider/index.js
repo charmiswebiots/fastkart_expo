@@ -32,10 +32,10 @@ export function Slider() {
                                     item.id === 2 && { backgroundColor: appColors.white },
                                 ]}
                             >
-\                                <Text style={[
-                                styles.shopNow,
-                                item.id === 2 && { color: appColors.primary },
-                            ]}>{item.shopNow}</Text>
+                                <Text style={[
+                                    styles.shopNow,
+                                    item.id === 2 && { color: appColors.primary },
+                                ]}>{item.shopNow}</Text>
                             </TouchableOpacity>
                         </View>
                     </View>

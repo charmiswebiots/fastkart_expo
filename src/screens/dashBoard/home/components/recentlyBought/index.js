@@ -4,7 +4,9 @@ import images from "../../../../../utils/images";
 import styles from "./styles";
 import { recentlyBrought } from "../../../../data";
 
-export function RecentlyBought() {
+export function RecentlyBought({onPress}) {
+
+  
     return (
         <View style={styles.mainView}>
             <Image source={images.recentlyBought} style={[styles.mainView, {
@@ -18,7 +20,7 @@ export function RecentlyBought() {
                 <ScrollView showsHorizontalScrollIndicator={false} contentContainerStyle={styles.container} horizontal>
                     {
                         recentlyBrought.map((item, key) =>
-                            <TouchableOpacity activeOpacity={0.8} style={[styles.recentlyImage]}>
+                            <TouchableOpacity activeOpacity={0.8} style={[styles.recentlyImage]} onPress={onPress}>
                                 <Image source={item.image} style={styles.image} resizeMode='contain' />
                             </TouchableOpacity>
                         )}
