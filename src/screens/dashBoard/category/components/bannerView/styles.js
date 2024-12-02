@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     contentView: {
         position: 'absolute',
         alignSelf: 'center',
-        
     },
     title: {
         fontSize: fontSizes.FONT21,
@@ -14,20 +13,22 @@ const styles = StyleSheet.create({
         fontFamily: 'quickSandBold',
         alignSelf: 'center',
         color: appColors.title,
-        textAlign:'left'
+        textAlign: 'left'
     },
     subTitle: {
         fontSize: fontSizes.FONT20,
         width: windowWidth(240),
-        fontFamily:'quickSandMedium',
+        fontFamily: 'quickSandMedium',
         alignSelf: 'center',
         color: appColors.content,
         marginTop: windowHeight(4),
-        textAlign:'left'
+        textAlign: 'left'
     },
     view: {
         justifyContent: 'center',
-        right:windowHeight(123)
+        alignSelf: 'center',
+        alignItems: 'center',
+        right: windowHeight(130)
     },
     bannerImg: {
         width: windowWidth(280),

@@ -2,8 +2,6 @@ import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import styles from "./styles";
 import { Icons } from "../../../../utils/icons";
 import appColors from "../../../../theme/appColors";
-import { Input } from "../../../../commonComponents";
-import { windowHeight, windowWidth } from "../../../../theme/appConstant";
 import { useState } from "react";
 
 export function ChangePasswordView(props) {
@@ -33,7 +31,6 @@ export function ChangePasswordView(props) {
                     style={[styles.input
                     ]}
                 />
-
                 <TouchableOpacity style={styles.leftIcon}  activeOpacity={0.7}>
                     <Icons.password />
                 </TouchableOpacity>

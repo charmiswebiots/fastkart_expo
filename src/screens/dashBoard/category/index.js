@@ -7,7 +7,7 @@ import { CategoryView, BannerView, SubCategoryView } from "./components";
 
 export function Category({ navigation }) {
 
-    const shopPage=()=>{
+    const shopPage = () => {
         navigation.navigate('ShopPage')
     }
     return (
@@ -18,12 +18,11 @@ export function Category({ navigation }) {
                 showImage
                 image={images.offer} />
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
-                <Input placeholder={'Search Products here..'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} />
+                <Input placeholder={'Search Products here..'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
                 <View style={[styles.dataView]}>
-                    <CategoryView  onPress={shopPage}/>
+                    <CategoryView onPress={shopPage} />
                     <View style={[styles.vegiesRight]}>
                         <BannerView />
-                        <SubCategoryView  />
                     </View>
                 </View>
             </ScrollView>

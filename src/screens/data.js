@@ -444,42 +444,43 @@ export const categoryData = [
         name: 'Oils, Refined & Ghee',
         image: images.category1,
         subCategory: [
-            { id: '1', name: 'Apple', image: images.categoryPro1 },
-            { id: '2', name: 'Banana', image: images.categoryPro8 },
-            { id: '3', name: 'Banana', image: images.categoryPro10 },
-            { id: '4', name: 'Banana', image: images.categoryPro10 },
+            { id: '1', name: 'Vegetables', image: images.categoryPro1 },
+            { id: '2', name: 'Organic', image: images.categoryPro8 },
         ]
     },
     {
-        id: '2', name: 'Rice, Flour & Grains', image: images.category2, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
-        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+        id: '2', name: 'Rice, Flour & Grains', image: images.category2, subCategory: [{ id: '1', name: 'Fruits', image: images.categoryPro2 },
+        { id: '2', name: 'Herbs', image: images.categoryPro3 },
+        ]
     },
     {
-        id: '3', name: 'Food Cupboard', image: images.category3, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
-        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+        id: '3', name: 'Food Cupboard', image: images.category3, subCategory: [{ id: '1', name: 'Organic', image: images.categoryPro8 },
+        { id: '2', name: 'Cuts Fruits', image: images.categoryPro9 },]
     },
     {
-        id: '4', name: 'Fresh Fruits & Vegetables', image: images.category4, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
-        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+        id: '4', name: 'Fresh Fruits & Vegetables', image: images.category4, subCategory: [{ id: '1', name: 'Bouquets', image: images.categoryPro10 },
+        { id: '2', name: 'Fruits', image: images.categoryPro2 },]
     },
     {
-        id: '5', name: 'Drinks & Beverages', image: images.category5, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
-        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+        id: '5', name: 'Drinks & Beverages', image: images.category5, subCategory: [{ id: '1', name: 'Cuts Fruits', image: images.categoryPro7 },
+        { id: '2', name: 'Herbs', image: images.categoryPro3 },
+        ]
     },
     {
-        id: '6', name: 'Instant Mixes', image: images.category6, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
-        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+        id: '6', name: 'Instant Mixes', image: images.category6, subCategory: [{ id: '1', name: 'Sprouts', image: images.categoryPro5 },
+        { id: '2', name: 'Organic', image: images.categoryPro8 },
+        ]
     },
     {
-        id: '7', name: 'Ready to Eat', image: images.category7, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
-        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+        id: '7', name: 'Ready to Eat', image: images.category7, subCategory: [{ id: '1', name: 'Flowers', image: images.categoryPro6 },
+        { id: '2', name: 'Herbs', image: images.categoryPro3 },]
     },
     {
-        id: '8', name: 'Dals & Pulses', image: images.category8, subCategory: [{ id: '1', name: 'Apple', image: images.categoryPro1 },
-        { id: '2', name: 'Banana', image: images.categoryPro2 },]
+        id: '8', name: 'Dals & Pulses', image: images.category8, subCategory: [{ id: '1', name: 'Cuts Fruits', image: images.categoryPro9, }, { id: '2', name: 'Herbs', image: images.categoryPro3 },
+
+        ]
     },
 ];
-
 
 export const DrawerItems = [
     { name: 'Home', icons: <Icons.home />, showSwitch: false },

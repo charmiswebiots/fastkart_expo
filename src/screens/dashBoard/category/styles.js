@@ -6,6 +6,10 @@ const styles = StyleSheet.create({
     mainView:{
         backgroundColor:appColors.white,
     },
+    input:{
+        paddingHorizontal:windowHeight(41),
+        width:windowWidth(437),
+    },
     darkStyle: {
         height: windowHeight(24),
         width: windowWidth(160),
@@ -19,10 +23,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         flexDirection:"row",
     },
-    vegies: {
-        marginLeft: windowWidth(16)
-    },
     vegiesRight: {
+        marginHorizontal:windowHeight(10)
     },
 })
 export default styles;

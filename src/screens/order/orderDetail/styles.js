@@ -1,8 +1,12 @@
 import { StyleSheet } from "react-native";
-import { windowHeight} from "../../../theme/appConstant";
+import { windowHeight } from "../../../theme/appConstant";
 import appColors from "../../../theme/appColors";
 
-const styles=StyleSheet.create({
+const styles = StyleSheet.create({
+    view: {
+        marginTop: windowHeight(0),
+        bottom:windowHeight(10)
+    },
     btn: {
         width: '94%',
         backgroundColor: appColors.primary,

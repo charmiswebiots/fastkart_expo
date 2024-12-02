@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         top:windowHeight(8),
         textAlign:"left",
-        marginHorizontal:windowHeight(11),
+        marginHorizontal:windowHeight(9.4),
     },
     inputView: {
         marginHorizontal:windowHeight(11),
@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
         top:windowHeight(2),
         fontFamily: 'mulishSemiBold',
         marginHorizontal:windowHeight(9),
-
     },
     leftIcon: {
         position: 'absolute',

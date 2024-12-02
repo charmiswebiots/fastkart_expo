@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         backgroundColor: appColors.primary,
         alignSelf: 'center',
         height:windowHeight(20),
-        bottom:windowHeight(6),
+        bottom:windowHeight(16),
     },
 })
 export default styles

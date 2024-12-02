@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     separator: {
-        height: windowHeight(10)
+        height: windowHeight(10),
     },
     containerStyle: {
         width: '100%',
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     imgView: {
-        padding: windowHeight(3),
+        paddingHorizontal: windowHeight(3),
         width: windowWidth(90),
         height: windowHeight(80),
         alignItems: 'center',
@@ -52,13 +52,13 @@ const styles = StyleSheet.create({
     img: {
         width: windowWidth(50),
         height: windowHeight(50),
-        padding: windowHeight(3),
     },
     nameTxt: {
         color: appColors.content,
         marginTop: windowHeight(4),
         fontSize: fontSizes.FONT15,
-        fontFamily: 'mulishSemiBold'
+        fontFamily: 'mulishSemiBold',
+        paddingHorizontal: windowHeight(-5)
     },
 })
 export default styles;

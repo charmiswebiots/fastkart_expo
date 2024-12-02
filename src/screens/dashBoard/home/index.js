@@ -18,7 +18,8 @@ export function Home({ navigation }) {
     }
 
     const toggleDrawer = () => {
-        navigation.navigate('Account');
+        console.log('TOOGLE',toggleDrawer)
+        navigation.toggleDrawer();
     };
 
 

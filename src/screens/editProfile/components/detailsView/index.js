@@ -1,4 +1,4 @@
-import { View,TouchableOpacity } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import styles from "./styles";
 import { Input } from "../../../../commonComponents";
 import { Icons } from "../../../../utils/icons";
@@ -26,9 +26,9 @@ export function DetailsView(props) {
                 keyboardType={'numeric'}
                 rightIcon={<Icons.call color={appColors.black} />}
             />
-            <Input 
+            <Input
                 style={styles.input}
-                value={props.date} 
+                value={props.date}
                 editable={false}
                 rightIcon={
                     <TouchableOpacity onPress={props.onPress}>
