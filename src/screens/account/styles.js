@@ -20,7 +20,6 @@ const styles=StyleSheet.create({
         height: windowHeight(80)
     },
     dataView: {
-        marginLeft: windowWidth(20),
         width: windowWidth(230),
     },
     name: {
@@ -48,7 +47,7 @@ const styles=StyleSheet.create({
         marginTop: windowHeight(20)
     },
     signOut: {
-        marginLeft: windowWidth(10),
+        paddingHorizontal:windowHeight(5),
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
         color:appColors.black,

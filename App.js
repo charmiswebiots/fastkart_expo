@@ -3,6 +3,7 @@ import { useCustomFonts } from './src/theme/appFonts';
 import { StatusBar } from 'react-native';
 import { StackNavigation } from './src/navigation/stackNavigation';
 
+
 export default function App() {
   const fontsLoaded = useCustomFonts();
   const isDark = false;
@@ -21,6 +22,8 @@ export default function App() {
     </>
   );
 }
+
+
 
 
 

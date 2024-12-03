@@ -2,7 +2,6 @@ import React from "react";
 import { View,Image, Text } from "react-native";
 import styles from "./styles";
 import { reviewStar } from "../../../../data";
-import { Icons } from "../../../../../utils/icons";
 import images from "../../../../../utils/images";
 
 export function NameView() {

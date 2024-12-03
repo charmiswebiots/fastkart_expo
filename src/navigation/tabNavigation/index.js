@@ -7,13 +7,14 @@ import { Image } from "react-native";
 import styles from "./styles";
 import images from "../../utils/images";
 import appColors from "../../theme/appColors";
+import { DrawerNavigation } from "../drawer/drawerNavigator";
 
 const Tab = createBottomTabNavigator();
 
 export function TabNavigation() {
     return (
         <Tab.Navigator
-            initialRouteName="Home"
+            initialRouteName="Drawer"
             screenOptions={{
                 headerShown: false,
                 tabBarStyle: styles.tabBar,
@@ -21,8 +22,8 @@ export function TabNavigation() {
             }}
         >
             <Tab.Screen
-                name="Home"
-                component={Home}
+                name="DrawerNavigation"
+                component={DrawerNavigation}
                 options={{
                     tabBarLabel: 'Home',
                     tabBarIcon: ({ focused }) => (

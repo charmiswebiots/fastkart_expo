@@ -6,12 +6,10 @@ import appColors from "../../theme/appColors";
 import { Icons } from "../../utils/icons";
 import images from "../../utils/images";
 import { Header, Button, Input } from "../../commonComponents";
-import { useNavigation } from "@react-navigation/native";
 import { location } from "../data";
 import { windowHeight } from "../../theme/appConstant";
 
-export function Address() {
-    const navigation = useNavigation()
+export function Address({ navigation }) {
 
     const payment = () => {
         navigation.navigate('Payment')
@@ -50,7 +48,7 @@ export function Address() {
                             <Text style={[styles.locationTxt, { color: appColors.black }]}>Use current location</Text>
                         </View>
                         {location.slice(0, 2).map((item, index) => (
-                            <View key={index} style={[styles.addView, index === 0 && { borderBottomWidth: 0.5 ,borderBottomColor:appColors.placeholder,paddingBottom: windowHeight(0)}]}>
+                            <View key={index} style={[styles.addView, index === 0 && { borderBottomWidth: 0.5, borderBottomColor: appColors.placeholder, paddingBottom: windowHeight(0) }]}>
                                 <View style={[styles.nameView, { flexDirection: "row" }]}>
                                     <Icons.location />
                                     <Text style={[styles.name, { color: appColors.black }]}>

@@ -4,7 +4,7 @@ import images from "../../utils/images";
 import { Header } from "../../commonComponents";
 import { QuestionsView ,PeopleView} from './components';
 
-export function AboutUs(){
+export function AboutUs({navigation}){
     return(
         <SafeAreaView style={[styles.mainView]}>
         <ScrollView showsVerticalScrollIndicator={false}>

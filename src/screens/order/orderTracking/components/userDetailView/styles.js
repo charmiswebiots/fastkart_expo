@@ -46,11 +46,6 @@ const styles=StyleSheet.create({
         borderWidth: 1,
         borderColor: appColors.primary,
     },
-    chatLeft: {
-        
-    },
-    chatRight: {
-       
-    },
+ 
 })
 export default styles;

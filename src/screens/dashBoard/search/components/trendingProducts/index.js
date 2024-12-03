@@ -3,8 +3,7 @@ import styles from "./styles";
 import { trendingProducts } from "../../../../data";
 import { Counter } from "../../../../../commonComponents";
 
-export function TrendingProducts({onPress}) {
- 
+export function TrendingProducts({ onPress }) {
     return (
         <View style={styles.view}>
             {trendingProducts.map((item, index) => (
@@ -22,13 +21,9 @@ export function TrendingProducts({onPress}) {
                                 <View style={styles.discountView}>
                                     <Text style={styles.discount}>{item.discount}% </Text>
                                     <Text style={styles.discount}>off</Text>
-                                    
                                 </View>
                                 <Counter />
-
-
                             </View>
-                            
                         </View>
                     </View>
                 </View>

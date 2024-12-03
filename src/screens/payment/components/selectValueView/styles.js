@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     value: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        marginLeft: windowWidth(14)
+        marginHorizontal:windowWidth(14)
     },
     selectView: {
         backgroundColor: appColors.primary,
@@ -83,7 +83,6 @@ const styles = StyleSheet.create({
     valueLeft: {
         marginHorizontal: windowHeight(5),
     },
-    valueRight: {
-    }
+
 })
 export default styles;

@@ -44,22 +44,21 @@ const styles = StyleSheet.create({
     image: {
         width: windowWidth(80),
         height: windowHeight(80),
-        marginLeft: windowWidth(20)
+        left:windowHeight(12)
     },
     lineView: {
         width: windowWidth(1),
         height: windowHeight(50),
         backgroundColor: appColors.placeholder,
-        marginLeft: windowWidth(20)
+        left:windowHeight(21)
     },
     counterView: {
-        marginLeft: windowWidth(20),
+        marginHorizontal:windowWidth(45),
         justifyContent: 'center'
     },
     name: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-
     },
     weight: {
         fontSize: fontSizes.FONT18,
@@ -75,7 +74,6 @@ const styles = StyleSheet.create({
     discountPriceView: {
         alignItems: 'center',
         flexDirection: 'row',
-
     },
     price: {
         fontSize: fontSizes.FONT18,

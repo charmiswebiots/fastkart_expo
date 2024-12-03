@@ -9,7 +9,7 @@ import { CommonModal, AddAddressModal } from '../../otherComponents'
 import { AddressView } from "./components";
 import { useState } from "react";
 
-export function SelectAddress() {
+export function SelectAddress({ navigation }) {
     const [showModal, setShowModal] = useState(false);
 
     const visibleModal = () => [

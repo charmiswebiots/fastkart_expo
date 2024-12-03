@@ -86,10 +86,10 @@
 
 
 import React, { useState } from "react";
-import { View, TouchableOpacity, Text, ScrollView } from "react-native";
+import { SafeAreaView, TouchableOpacity, Text, ScrollView ,View} from "react-native";
 import styles from "./styles";
 import { ProfileView } from "../../screens/account/components";
-import { MenuItem } from "./components";
+import { MenuItem,SupportView } from "./components";
 import { DrawerItems } from "../../screens/data";
 import appColors from "../../theme/appColors";
 import { Switch } from "../../commonComponents";
@@ -103,32 +103,31 @@ export function DrawerComponent() {
     const [darkMode, setDarkMode] = useState(false);
 
     const goToScreen = (key) => {
-        if (key !== 5 && key !== 9) {
-            navigation.toggleDrawer(); // Close the drawer
+        if (key != 5 && key != 9) {
+            navigation.toggleDrawer();
         }
-
         if (key === 0) {
-            // Navigate to screen based on key
+
         } else if (key === 1) {
-            navigation.navigate("PagesList");
+            navigation.navigate('PagesList')
         } else if (key === 2) {
-            navigation.navigate("Category");
+            navigation.navigate('Category')
         } else if (key === 3) {
-            navigation.navigate("OrderHistory");
+            navigation.navigate('OrderHistory')
         } else if (key === 4) {
-            navigation.navigate("Wishlist");
+            navigation.navigate('Wishlist')
         } else if (key === 5) {
-            visibleModal();
+            visibleModal()
         } else if (key === 6) {
-            navigation.navigate("Account");
+            navigation.navigate('Account')
         } else if (key === 7) {
-            navigation.navigate("Notification");
+            navigation.navigate('Notification')
         } else if (key === 8) {
-            navigation.navigate("EditProfile");
+            navigation.navigate('EditProfile')
         } else if (key === 9) {
-            visibleCurrencyModal();
+            visibleCurrencyModal()
         }
-    };
+    }
 
     const visibleModal = () => {
         setShowModal(!showModal);
@@ -138,11 +137,15 @@ export function DrawerComponent() {
         setShowCurrencyModal(!showCurrencyModal);
     };
 
+    const login=()=>{
+        navigation.navigate('Login')
+    }
     return (
-        <View>
-            <ScrollView showsVerticalScrollIndicator={false} style={styles.mainView}>
+        <SafeAreaView style={{ backgroundColor: appColors.white, flex: 1 }}>
+        <ScrollView showsVerticalScrollIndicator={false}>
+            <View style={styles.mainView}>
                 <ProfileView />
-                {DrawerItems.filter((_, key) => key !== 1 && key !== 6).map((item, key) => (
+                {DrawerItems.filter((_, key) => key >= 0 && key <= 10 ).map((item, key) => (
                     <MenuItem
                         key={key}
                         width="100%"
@@ -164,15 +167,13 @@ export function DrawerComponent() {
                     isOn={darkMode}
                     onToggle={() => setDarkMode(!darkMode)}
                 />
-                <TouchableOpacity
-                    onPress={() => console.log("Sign Out")}
-                    activeOpacity={0.7}
-                    style={[styles.signOutView, { backgroundColor: appColors.gray }]}
-                >
+                <TouchableOpacity onPress={login}  activeOpacity={0.7} style={[styles.signOutView, { backgroundColor: appColors.gray }]}>
                     <Icons.signOut />
                     <Text style={[styles.signOut]}>Sign Out</Text>
                 </TouchableOpacity>
-            </ScrollView>
-        </View>
+                <SupportView/>
+            </View>
+        </ScrollView>
+    </SafeAreaView>
     );
 }

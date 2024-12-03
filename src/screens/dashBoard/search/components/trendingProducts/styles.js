@@ -19,16 +19,17 @@ const styles=StyleSheet.create({
     image: {
         width: windowWidth(80),
         height: windowHeight(80),
-        marginLeft: windowWidth(20)
+        left:windowWidth(20),
+        paddingHorizontal:windowWidth(30),
     },
     lineView: {
         width: windowWidth(1),
         height: windowHeight(50),
         backgroundColor: appColors.placeholder,
-        marginLeft: windowWidth(20)
+        left:windowWidth(32)
     },
     counterView: {
-        marginLeft: windowWidth(20),
+        paddingHorizontal:windowWidth(50),
         justifyContent: 'center'
     },
     name: {

@@ -36,12 +36,6 @@ const styles = StyleSheet.create({
         width: windowWidth(90),
         textAlign: 'center'
     },
-    lineViewLeft: {
-        marginLeft: windowWidth(30)
-    },
-    lineViewRight: {
-        marginRight: windowWidth(30)
-    },
     readView: {
         flexDirection: 'row',
         alignItems: 'center'

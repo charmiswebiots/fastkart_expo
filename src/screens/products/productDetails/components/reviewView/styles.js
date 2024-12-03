@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     star: {
         width: windowWidth(19),
         height: windowHeight(17),
-        marginLeft: windowWidth(4)
+        marginHorizontal:windowWidth(2),
     },
     reviewTxt: {
         fontSize: fontSizes.FONT20,

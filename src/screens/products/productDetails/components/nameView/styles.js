@@ -19,12 +19,12 @@ const styles = StyleSheet.create({
     star: {
         width: windowWidth(19),
         height: windowHeight(17),
-        marginLeft: windowWidth(4)
+        marginHorizontal:windowWidth(2)
     },
     ratings: {
         fontSize: fontSizes.FONT16,
         fontFamily: 'mulishSemiBold',
-        marginLeft: windowWidth(10),
+        marginHorizontal:windowWidth(10),
         color:appColors.black,
     },
     view: {

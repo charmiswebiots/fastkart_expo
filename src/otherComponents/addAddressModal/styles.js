@@ -27,17 +27,7 @@ const styles = StyleSheet.create({
         fontSize: fontSizes.FONT19,
         color: appColors.content,
         fontFamily: 'mulishSemiBold',
-        paddingLeft: windowWidth(10)
     },
-    listItem: {
-        fontFamily: 'mulishSemiBold',
-        fontSize: fontSizes.FONT18,
-        padding: 3,
-        marginLeft: windowWidth(10),
-    },
-    txtStyle: {
-        fontSize: fontSizes.FONT19,
-        paddingLeft: windowWidth(10)
-    },
+
 })
 export default styles;

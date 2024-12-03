@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     mainView: {
         alignItems: 'center',
         borderWidth: 1,
-        paddingHorizontal: windowWidth(6),
+        paddingHorizontal: windowWidth(30),
         borderRadius: windowHeight(6),
         borderColor: appColors.countBorder,
         justifyContent: 'space-between',
@@ -15,10 +15,10 @@ const styles = StyleSheet.create({
         marginHorizontal:windowHeight(5),
     },
     decrease: {
-        marginRight: windowWidth(18)
+        right:windowHeight(12)
     },
     increase: {
-        marginLeft: windowWidth(18)
+        left:windowHeight(11)
     },
     txt: {
         fontFamily: 'mulishSemiBold',

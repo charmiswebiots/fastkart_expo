@@ -16,7 +16,7 @@ const styles=StyleSheet.create({
     },
     number: {
         flexDirection: 'row',
-        marginLeft: windowWidth(20),
+        marginHorizontal:windowWidth(20),
         alignItems: 'center'
     },
     masterCardImg: {
@@ -25,7 +25,7 @@ const styles=StyleSheet.create({
         resizeMode: 'contain'
     },
     cardNumber: {
-        marginLeft: windowWidth(10),
+        marginHorizontal:windowWidth(10),
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT21,
         color:appColors.black,

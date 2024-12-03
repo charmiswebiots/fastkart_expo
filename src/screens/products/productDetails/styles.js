@@ -37,14 +37,12 @@ export default productDetailsStyles = StyleSheet.create({
         fontSize: fontSizes.FONT19,
         fontFamily: 'mulishSemiBold',
         color: appColors.content,
-        marginLeft: windowWidth(6),
         textDecorationLine: 'line-through'
     },
     discount: {
         fontSize: fontSizes.FONT19,
         fontFamily: 'mulishSemiBold',
         color: appColors.primary,
-        marginLeft: windowWidth(10)
     },
     detail: {
         fontSize: fontSizes.FONT20,
@@ -103,9 +101,7 @@ export default productDetailsStyles = StyleSheet.create({
         height: windowHeight(70),
         resizeMode: 'contain'
     },
-    reviewNameView: {
-        marginLeft: windowWidth(14)
-    },
+
     reviewName: {
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT20
@@ -128,10 +124,8 @@ export default productDetailsStyles = StyleSheet.create({
         height: windowHeight(56),
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingRight: windowWidth(10),
         alignSelf: 'center',
         borderRadius: windowHeight(4),
-        paddingLeft: windowWidth(20)
     },
     sideArrow: {
         flexDirection: 'row'
@@ -140,7 +134,6 @@ export default productDetailsStyles = StyleSheet.create({
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishBold',
         color: appColors.white,
-        marginRight: windowWidth(6)
     },
     checkDelivery: {
         fontSize: fontSizes.FONT21,
@@ -181,14 +174,6 @@ export default productDetailsStyles = StyleSheet.create({
         flexDirection: 'row',
         marginVertical: windowHeight(10)
     },
-    star: {
-        width: windowWidth(19),
-        height: windowHeight(17),
-        marginLeft: windowWidth(4)
-    },
-    ratings: {
-        fontSize: fontSizes.FONT16,
-        fontFamily: 'mulishSemiBold',
-        marginLeft: windowWidth(10)
-    },
+   
+    
 });

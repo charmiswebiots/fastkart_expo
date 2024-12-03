@@ -114,7 +114,7 @@ import { Button } from "../../commonComponents";
 import appColors from "../../theme/appColors";
 import styles from './styles';
 
-export function EditProfile() {
+export function EditProfile({navigation}) {
     const [date, setDate] = useState('28-12-1990');
     const [showDatePicker, setShowDatePicker] = useState(false);
 

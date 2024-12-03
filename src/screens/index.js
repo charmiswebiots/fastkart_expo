@@ -12,3 +12,4 @@ export * from './address';
 export * from './selectAddress';
 export * from './products';
 export * from './account';
+export * from './pagesList';

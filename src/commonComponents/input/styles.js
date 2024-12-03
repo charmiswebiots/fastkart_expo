@@ -31,13 +31,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         right: windowWidth(20)
     },
-    error: {
-        fontSize: fontSizes.FONT19,
-        marginLeft: windowWidth(4),
-        marginTop: windowHeight(4),
-        color: appColors.error,
-        fontFamily: 'mulishSemiBold',
-    },
+ 
     text: {
         color: appColors.primary,
         fontSize: fontSizes.FONT18,

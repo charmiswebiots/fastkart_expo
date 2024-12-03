@@ -4,7 +4,8 @@ import appColors from "../../theme/appColors";
 
 const styles = StyleSheet.create({
     mainView: {
-        paddingHorizontal: windowWidth(24)
+        paddingHorizontal: windowWidth(24),
+        marginTop:windowHeight(18)
     },
     switchView: {
         flexDirection: 'row',

@@ -12,7 +12,6 @@ const styles=StyleSheet.create({
         fontSize: fontSizes.FONT20,
         color: appColors.content,
         textAlign:'left',
-        marginLeft: windowWidth(4),
         marginBottom: windowHeight(16),
         marginTop: windowHeight(10)
     },

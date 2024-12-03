@@ -25,9 +25,9 @@ export function ContinueView({txt,signTxt,onPress,guest,onPress1,style}) {
                 <Text style={[styles.signIn]}>{signTxt}</Text>
             </View>
             <View style={{ alignItems: 'center' }}>
-                <ContinueButton  text={'Continue with Phone'} />
+                <ContinueButton  text={'Continue with Phone'} image={images.phone} />
                 <View style={styles.btnContainer}>
-                <ContinueButton  text={'Continue with Google'} />
+                <ContinueButton  text={'Continue with Google'} image={images.google}/>
                 </View>
             </View>
             <TouchableOpacity onPress={onPress1} >

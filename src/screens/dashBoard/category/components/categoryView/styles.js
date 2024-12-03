@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         width: windowWidth(90),
         height: windowHeight(80),
         alignItems: 'center',
-        marginLeft: windowWidth(6),
+        marginHorizontal:windowWidth(3),
         marginTop: windowHeight(10),
     },
     itemImg: {

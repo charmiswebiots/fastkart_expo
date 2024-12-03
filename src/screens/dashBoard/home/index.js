@@ -11,23 +11,22 @@ export function Home({ navigation }) {
 
     const productDetails = () => {
         navigation.navigate('ProductsDetails')
+       
     }
-
     const shopPage = () => {
         navigation.navigate('ShopPage')
     }
 
-    const toggleDrawer = () => {
-        console.log('TOOGLE',toggleDrawer)
-        navigation.toggleDrawer();
-    };
 
+      const toogle = () => {
+        navigation.openDrawer(); 
+      };
 
     return (
         <SafeAreaView style={styles.mainView}>
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
-                <HomeHeader navigation={navigation} toggleDrawer={toggleDrawer} />
-                <Input placeholder={'Search Products here..'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
+            <HomeHeader navigation={navigation} toogle={toogle} />
+            <Input placeholder={'Search Products here..'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
                 <Slider />
                 <RecentlyBought onPress={productDetails} />
                 <ShopByCategory onPress={shopPage} />
@@ -43,3 +42,4 @@ export function Home({ navigation }) {
         </SafeAreaView>
     )
 }
+

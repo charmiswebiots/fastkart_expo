@@ -11,10 +11,9 @@ const styles = StyleSheet.create({
         marginTop: windowHeight(15)
     },
     listView: {
-        marginLeft: windowWidth(20),
+        marginHorizontal:windowWidth(18),
         alignItems: 'center',
         marginTop: windowHeight(20),
-        
         flexDirection: 'row'
     },
     quantityTxt: {
@@ -27,11 +26,10 @@ const styles = StyleSheet.create({
         textAlignVertical: 'center',
         textAlign: 'center',
         marginHorizontal:windowHeight(2.5),
-        fontFamily: 'mulishSemiBold',
-     
+        fontFamily: 'mulishSemiBold', 
     },
     nameView: { 
-        marginLeft: windowWidth(4) 
+        marginHorizontal:windowWidth(3)
     },
     nameTxt: {
         fontSize: fontSizes.FONT20,

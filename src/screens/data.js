@@ -494,3 +494,30 @@ export const DrawerItems = [
     { name: 'Settings', icons: <Icons.settings />, showSwitch: false },
     { name: 'Currency Converter', icons: <Icons.currencyConverter />, showSwitch: false },
 ];
+
+
+export const pagesList = [
+    { name: '404' },
+    { name: 'About Us' },
+    { name: 'Account' },
+    { name: 'Address Type 1' },
+    { name: 'Address Type 2' },
+    { name: 'Cart' },
+    { name: 'Category Wide' },
+    { name: 'Home Page' },
+    { name: 'Login' },
+    { name: 'Notification' },
+    { name: 'Offers' },
+    { name: 'On Boarding' },
+    { name: 'Order Detail' },
+    { name: 'Order History' },
+    { name: 'Order Success' },
+    { name: 'Order Tracking' },
+    { name: 'Payment' },
+    { name: 'Product' },
+    { name: 'Register' },
+    { name: 'Search' },
+    { name: 'Setting' },
+    { name: 'Shop' },
+    { name: 'Wishlist' },
+];

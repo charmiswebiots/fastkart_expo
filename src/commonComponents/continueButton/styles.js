@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         fontSize: fontSizes.FONT20,
-        marginLeft: windowWidth(10),
+        marginHorizontal:windowWidth(10),
         fontFamily: 'mulishSemiBold',
     },
 })

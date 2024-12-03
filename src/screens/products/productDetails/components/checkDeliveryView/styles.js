@@ -4,11 +4,9 @@ import appColors from "../../../../../theme/appColors";
 
 const styles = StyleSheet.create({
     reviewNameView: {
-        marginLeft: windowWidth(6)
+        marginHorizontal:windowWidth(8)
     },
-    reviewNameViewRight: {
-        marginRight: windowWidth(6)
-    },
+ 
     checkDelivery: {
         fontSize: fontSizes.FONT21,
         fontFamily:'mulishBold',

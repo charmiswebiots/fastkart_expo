@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
         height: windowHeight(32),
         width:windowWidth(120),
         borderRadius:windowHeight(5),
-        paddingHorizontal:windowHeight(10)
     },
     sideArrow: {
         flexDirection: 'row',

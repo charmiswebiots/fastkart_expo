@@ -24,10 +24,7 @@ const styles = StyleSheet.create({
         height: windowHeight(50)
     },
     logoImg: {
-        marginLeft: windowWidth(10)
-    },
-    logoRightImg: {
-        marginRight: windowWidth(10)
+        marginHorizontal:windowHeight(10)
     },
 })
 export default styles;

@@ -4,7 +4,6 @@ import { RecentlySearchView,TrendingCategoryView,TrendingProducts } from './comp
 import React from 'react'
 import styles from './styles'
 import { Icons } from '../../../utils/icons'
-import { Offers } from '../home/components'
 
 
 export function Search({navigation}) {
