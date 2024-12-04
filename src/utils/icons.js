@@ -1,4 +1,4 @@
-import { hidePassword, showPassword, category, fullName, atSign, location, search, voiceSearch, decrease, increase, wishlist, home, pageList, order, language, profile, notification, currencyConverter, settings, headerArrow, markRead, discount, offer, passChange, topUp, editProfileImage, call, calender, password, BottomHome, BottomSearch, BottomCategory, BottomCart, facebook, linkedIn, twitter, orderId, chat, sideArrow, unSelected, Selected, cart, selectedTab, Mywishlist, Delete, dropDown, truck, map, mapPin, currentLocation, work, OrderDetails, into, select, share, star, LightStar, deliveryTruck, payment, refund, drawerArrow, dark, rtl,darkIcon,signOut } from "../assets/icons";
+import { hidePassword, showPassword, category, fullName, atSign, location, search, voiceSearch, decrease, increase, wishlist, home, pageList, order, language, profile, notification, currencyConverter, settings, headerArrow, markRead, discount, offer, passChange, topUp, editProfileImage, call, calender, password, BottomHome, BottomSearch, BottomCategory, BottomCart, facebook, linkedIn, twitter, orderId, chat, sideArrow, unSelected, Selected, cart, selectedTab, Mywishlist, Delete, dropDown, truck, map, mapPin, currentLocation, work, OrderDetails, into, select, share, star, LightStar, deliveryTruck, payment, refund, drawerArrow, dark, rtl, darkIcon, signOut, hindi,arabic,korea,australianDollar,dollar,euro,rupees,koreanWon } from "../assets/icons";
 
 
 export const Icons = {
@@ -65,6 +65,14 @@ export const Icons = {
     drawerArrow: drawerArrow,
     dark: dark,
     rtl: rtl,
-    darkIcon:darkIcon,
-    signOut:signOut,
+    darkIcon: darkIcon,
+    signOut: signOut,
+    hindi:hindi,
+    arabic:arabic,
+    korea:korea,
+    koreanWon:koreanWon,
+    rupees:rupees,
+    euro:euro,
+    dollar:dollar,
+    australianDollar:australianDollar,
 }

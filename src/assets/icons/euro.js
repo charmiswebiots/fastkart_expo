@@ -5,7 +5,7 @@ import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
-export default euro = () => {
+export function euro() {
 	const { colors } = useTheme();
 	return (
 		<Svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"

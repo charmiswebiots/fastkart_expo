@@ -5,7 +5,7 @@ import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
-export default australianDollar = () => {
+export function australianDollar() {
 	const { colors } = useTheme();
 	return (
 		<Svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490" width={windowWidth(29)} height={windowHeight(29)}>

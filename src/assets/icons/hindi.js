@@ -8,7 +8,7 @@ import Svg, {
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 
-export default hindi = () => {
+export function hindi ()  {
   return (
     <Svg viewBox="0 0 225 150" width={windowWidth(34)} height={windowHeight(38)}>
       <Rect width="225" fill="#f93" height="170" />

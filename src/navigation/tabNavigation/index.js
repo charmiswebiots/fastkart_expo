@@ -8,6 +8,7 @@ import styles from "./styles";
 import images from "../../utils/images";
 import appColors from "../../theme/appColors";
 import { DrawerNavigation } from "../drawer/drawerNavigator";
+import { TabComponents } from "../../otherComponents";
 
 const Tab = createBottomTabNavigator();
 
@@ -15,6 +16,7 @@ export function TabNavigation() {
     return (
         <Tab.Navigator
             initialRouteName="Drawer"
+            tabBar={(props) => <TabComponents {...props} />}
             screenOptions={{
                 headerShown: false,
                 tabBarStyle: styles.tabBar,
@@ -67,17 +69,8 @@ export function TabNavigation() {
                     tabBarLabel: 'Offers',
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}>
-
-                            <Image
-                                source={images.offer}
-                                style={[
-                                    styles.img,
-                                    { tintColor: focused ? appColors.white : appColors.white },
-                                ]}
-                            />
-                        </View>
-
-                    ),
+                            <Image source={images.offer} style={[styles.img, { tintColor: focused ? appColors.white : appColors.white },]} />
+                        </View>),
                 }}
             />
 

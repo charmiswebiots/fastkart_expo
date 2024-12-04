@@ -1,6 +1,7 @@
 import images from "../utils/images"
 import { Icons } from "../utils/icons";
 import appColors from "../theme/appColors";
+import { windowHeight, windowWidth } from "../theme/appConstant";
 
 export const swiperData = [
     {
@@ -520,4 +521,21 @@ export const pagesList = [
     { name: 'Setting' },
     { name: 'Shop' },
     { name: 'Wishlist' },
+];
+
+
+export const langauges = [
+    { key: 'hi', name: 'Hindi', icons: <Icons.hindi /> },
+    { key: 'en', name: 'English', icons: <Icons.language width={windowWidth(34)} height={windowHeight(34)} /> },
+    { key: 'kr', name: 'Korean', icons: <Icons.korea /> },
+    { key: 'ar', name: 'Arabic', icons: <Icons.arabic /> },
+];
+
+
+export const currencys = [
+    { key: '₹', name: 'Indian rupees', icons: <Icons.rupees />, value: 1 },
+    { key: '$', name: 'United State dollar', icons: <Icons.dollar />, value: 0.013 },
+    { key: '€', name: 'Euro', icons: <Icons.euro />, value: 0.012 },
+    { key: 'A$', name: 'Australian Dollar', icons: <Icons.australianDollar />, value: 0.018 },
+    { key: '₩', name: 'Korean Won', icons: <Icons.koreanWon />, value: 16.44 },
 ];

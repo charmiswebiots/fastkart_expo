@@ -7,47 +7,64 @@ import { MenuItem } from "../../otherComponents/drawerComponents/components";
 import { ProfileView } from "./components";
 import { DrawerItems } from "../data";
 import { Icons } from "../../utils/icons";
+import { CommonModal } from "../../otherComponents";
+import { MultiLangaugeModal, CurrencyConverterModal } from "../../otherComponents";
 
 export function Account({ navigation }) {
-    const [showModal, setShowModal] = useState(false);
     const [rtl, setRtl] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [showCurrencyModal, setShowCurrencyModal] = useState(false);
+
+
 
     const goToScreen = (screen) => {
         const screenMap = {
-            // 1:"Home",
             0: 'Home',
             1: 'Category',
             2: 'OrderHistory',
             3: 'whishList',
-            4: '',
+            4: 'Language',
             5: 'Notification',
-            // 2: 'Category',
-            // 3: 'OrderHistory',
-            // 4: 'WhishList',
-            // 4: 'Notification',
-            // 5: "Notification",
-            // 2: "Category",
-            // 3: "OrderHistory",
-            // 4: "WhishList",
-            // 6: "Account",
-            // 7: "Notification",
-            // 8: "EditProfile",
+            6: "EditProfile",
+            7: 'Currency',
         };
 
-        if (screen === 5) {
+        if (screen === 4) {
             setShowModal(!showModal);
+        } else if (screen === 7) {
+            setShowCurrencyModal(true);
         } else if (screen in screenMap) {
             navigation.navigate(screenMap[screen]);
         }
     };
 
+
     const login = () => {
         navigation.navigate('Login')
     }
 
+    const visibleModal = () => {
+        setShowModal(!showModal)
+    }
+    const visibleCurrencyModal = () => {
+        setShowCurrencyModal(!showCurrencyModal)
+    }
+
+
     return (
-        <SafeAreaView style={{ backgroundColor: appColors.white, flex: 1 }}>
+        <SafeAreaView style={{ backgroundColor: appColors.white }}>
+            <CommonModal
+                modal={<MultiLangaugeModal onPress={visibleModal} navigation={navigation} />}
+                showModal={showModal}
+                visibleModal={visibleModal}
+            />
+
+            <CommonModal
+                modal={<CurrencyConverterModal onPress={visibleCurrencyModal} navigation={navigation} />}
+                showModal={showCurrencyModal}
+                visibleModal={visibleCurrencyModal}
+            />
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Header
                     onPress={() => navigation.goBack()}
@@ -66,17 +83,21 @@ export function Account({ navigation }) {
                             onPress={() => goToScreen(key)}
                         />
                     ))}
+
                     <Switch
                         text="RTL"
                         icon={<Icons.rtl />}
                         isOn={rtl}
                         onToggle={() => setRtl(!rtl)}
+                        style={styles.switch}
                     />
                     <Switch
                         text="Dark"
                         icon={<Icons.dark />}
                         isOn={darkMode}
                         onToggle={() => setDarkMode(!darkMode)}
+                        style={styles.switch}
+
                     />
                     <TouchableOpacity onPress={login} activeOpacity={0.7} style={[styles.signOutView, { backgroundColor: appColors.gray }]}>
                         <Icons.signOut />

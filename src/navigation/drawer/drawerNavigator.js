@@ -63,13 +63,15 @@
 
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { Account, Home, Notification, EditProfile, WhishList, OrderHistory, Category } from "../../screens";
+import { Account, Home, Notification, EditProfile, WhishList, OrderHistory, Category ,PageList} from "../../screens";
 import { windowWidth } from "../../theme/appConstant";
 import { DrawerComponent } from '../../otherComponents/index'
+import { HomeStackScreen } from "../homeStackNavigator/homeStackNavigator";
+import pagesList from '../../screens'
 
 const Drawer = createDrawerNavigator();
 
-export function DrawerNavigation() {
+export function DrawerNavigation() {    
     return (
         <Drawer.Navigator
             initialRouteName="Home"
@@ -83,12 +85,12 @@ export function DrawerNavigation() {
                 drawerType: 'front',
                 swipeEnabled: true,
             }}
+           screenOptions={{headerShown:false}}
             drawerContent={() => <DrawerComponent />}
         >
             <Drawer.Screen
                 name="Home"
                 component={Home}
-                options={{ headerShown: false }}
             />
             <Drawer.Screen name="Category" component={Category} />
             <Drawer.Screen name="OrderHistory" component={OrderHistory} />
@@ -96,6 +98,8 @@ export function DrawerNavigation() {
             <Drawer.Screen name="Account" component={Account} />
             <Drawer.Screen name="Notification" component={Notification} />
             <Drawer.Screen name="EditProfile" component={EditProfile} />
+            <Drawer.Screen name="PageList" component={PageList} />
+
 
         </Drawer.Navigator>
     );

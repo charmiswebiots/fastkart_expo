@@ -5,14 +5,12 @@ import { Header, Total, Button } from "../../../commonComponents";
 import appColors from "../../../theme/appColors";
 import { OrderDetailView, ItemsView, AddressView, PaymentsMethodView } from './components'
 
-export function 
-
-
-OrderDetail({ navigation }) {
+export function OrderDetail({ navigation }) {
 
     const shopPage = () => {
         navigation.navigate('ShopPage')
     }
+    
     return (
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
             <ScrollView showsVerticalScrollIndicator={false}>

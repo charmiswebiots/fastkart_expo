@@ -45,11 +45,10 @@ const styles = StyleSheet.create({
         fontFamily:'mulishBold',
         color: appColors.white
     },
-    onStyle: {
-        backgroundColor: appColors.primary
-    },
+
     switch: {
-        backgroundColor: appColors.switch
+        backgroundColor: appColors.switch,
+        bottom:windowHeight(6)
     },
     signOutView: {
         flexDirection: 'row',

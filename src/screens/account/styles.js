@@ -52,5 +52,9 @@ const styles=StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         color:appColors.black,
     },
+    switch:{
+        marginHorizontal:windowWidth(115),
+        bottom:windowHeight(3)
+    }
 })
 export default styles;

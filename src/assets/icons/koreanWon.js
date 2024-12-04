@@ -5,7 +5,7 @@ import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 import { useTheme } from "@react-navigation/native";
 
-export default koreanWon = () => {
+export function koreanWon ()  {
 	const { colors } = useTheme();
 	return (
 		<Svg xmlns="http://www.w3.org/2000/svg" width={windowWidth(29)} height={windowHeight(29)} enable-background="new 0 0 460 460" viewBox="0 0 460 460">

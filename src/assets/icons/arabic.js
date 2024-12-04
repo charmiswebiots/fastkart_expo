@@ -7,7 +7,7 @@ import Svg, {
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 
-export default arabic = () => {
+export function arabic() {
   return (
     <Svg width={windowWidth(34)} height={windowHeight(34)} xmlns="http://www.w3.org/2000/svg" id="flag-icons-sa" viewBox="0 0 640 480">
       <Defs>
