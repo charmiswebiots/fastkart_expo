@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         marginBottom: windowHeight(16),
         marginTop: windowHeight(10),
         flexDirection:'row',
-        paddingHorizontal:windowHeight(5),
+        paddingHorizontal:windowHeight(7),
     },
     title: {
         fontSize: fontSizes.FONT20,

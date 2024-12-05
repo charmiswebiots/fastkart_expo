@@ -44,7 +44,7 @@ const payments = [
     {
         type: "Cash on Delivery",
         isCard: true,
-        values: [{ value: "Cash on Delivery" }],
+        values: [{ value: "Cash on Delivery", icons: images.cashOnDelivery }],
     },
 ];
 
@@ -74,6 +74,7 @@ export function SelectValueView(props) {
                 <View>
                     {item.isCard ? (
                         item.values.map((data, key) => (
+
                             <TouchableOpacity
                                 key={key}
                                 onPress={() => selectMethod(key)}
@@ -87,10 +88,18 @@ export function SelectValueView(props) {
                                     },
                                 ]}
                             >
-                                <Image source={data.icons} style={styles.icon} />
+
+                                <Image
+                                    source={data.icons}
+                                    style={[
+                                        styles.icon,
+                                        data.value === "Cash on Delivery" && styles.cashOnDeliveryIcon,
+                                    ]}
+                                />
                                 <Text style={[styles.value]}>{data.value}</Text>
                                 {selectedMethod === key && <Selected />}
                             </TouchableOpacity>
+
                         ))
                     ) : (
                         <FlatList
@@ -111,6 +120,7 @@ export function SelectValueView(props) {
                                     ]}
                                 >
                                     <TouchableOpacity
+                                        style={{ flexDirection: 'row' }}
                                         activeOpacity={0.7}
                                         onPress={() => selectMethod(index)}
                                     >
@@ -119,16 +129,17 @@ export function SelectValueView(props) {
                                         ) : (
                                             <Icons.unSelected />
                                         )}
+
+                                        <Text
+                                            style={[
+                                                styles.valueTxt,
+                                                styles.valueLeft,
+                                                { color: appColors.black },
+                                            ]}
+                                        >
+                                            {item.value}
+                                        </Text>
                                     </TouchableOpacity>
-                                    <Text
-                                        style={[
-                                            styles.valueTxt,
-                                            styles.valueLeft,
-                                            { color: appColors.black },
-                                        ]}
-                                    >
-                                        {item.value}
-                                    </Text>
                                 </View>
                             )}
                         />

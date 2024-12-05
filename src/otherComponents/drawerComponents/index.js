@@ -10,7 +10,6 @@ import { Switch } from "../../commonComponents";
 import { CommonModal } from "../commonModal";
 import { CurrencyConverterModal, MultiLangaugeModal } from "../../otherComponents/index";
 import { Icons } from "../../utils/icons";
-import ToggleSwitch from "toggle-switch-react-native";
 
 
 export function DrawerComponent() {
@@ -39,7 +38,7 @@ export function DrawerComponent() {
                 navigation.navigate("WhishList");
                 break;
             case 5:
-                setShowModal(true); 
+                setShowModal(true);
                 break;
             case 6:
                 navigation.navigate("Account");
@@ -51,7 +50,7 @@ export function DrawerComponent() {
                 navigation.navigate("EditProfile");
                 break;
             case 9:
-                setShowCurrencyModal(true); 
+                setShowCurrencyModal(true);
                 break;
             default:
                 break;

@@ -64,9 +64,8 @@
 
 
 import React from "react";
-import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import { MenuItem } from "../../otherComponents/drawerComponents/components";
-import appColors from "../../theme/appColors";
 import styles from "./styles";
 
 export function Switch({
@@ -100,36 +99,4 @@ export function Switch({
     );
 }
 
-// const styles = StyleSheet.create({
-    // switchView: {
-    //     alignItems: "center",
-    //     justifyContent: "space-between",
-    //     marginVertical: 10,
-    // },
-    // switchContainer: {
-    //     width: 50,
-    //     height: 25,
-    //     borderRadius: 15,
-    //     justifyContent: "center",
-    //     padding: 3,
-    // },
-    // switchOn: {
-    //     backgroundColor: appColors.switch,
-    // },
-    // switchOff: {
-    //     backgroundColor: appColors.switch,
-    // },
-    // circle: {
-    //     width: 20,
-    //     height: 20,
-    //     borderRadius: 10,
-    // },
-    // circleOn: {
-    //     backgroundColor: appColors.primary,
-    //     alignSelf: "flex-end",
-    // },
-    // circleOff: {
-    //     backgroundColor: appColors.white,
-    //     alignSelf: "flex-start",
-    // },
-// });
+

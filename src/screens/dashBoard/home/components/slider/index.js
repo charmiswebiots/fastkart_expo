@@ -9,8 +9,14 @@ export function Slider() {
         <View style={styles.sliderView}>
             <FlatList
                 data={swiperData}
-                horizontal
+                pagingEnabled={true}
+                horizontal={true}
                 showsHorizontalScrollIndicator={false}
+                decelerationRate={0}
+                snapToInterval={Dimensions.get("window").width - 60}
+                snapToAlignment={"center"}
+                centerContent={true}
+                contentInset={styles.content}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => (
                     <View style={[styles.sliderView,]}>
@@ -21,7 +27,7 @@ export function Slider() {
                                 styles.title,
                                 item.id === 2 && { color: appColors.white },
                             ]}>{item.title}</Text>
-                            <Text style={[
+                            <Text style={[   
                                 styles.subTitle,
                                 item.id === 2 && { color: appColors.white },
                             ]}>{item.subTitle}</Text>

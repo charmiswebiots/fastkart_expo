@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
         flexDirection:'row'
     },
     star: {
-        width: windowWidth(19),
+        width: windowWidth(21),
+        resizeMode:'contain',
         height: windowHeight(17),
         marginHorizontal:windowWidth(2)
     },
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
         fontSize: fontSizes.FONT16,
         fontFamily: 'mulishSemiBold',
         marginHorizontal:windowWidth(10),
-        color:appColors.black,
+        color: appColors.content,
     },
     view: {
         flexDirection:'row'

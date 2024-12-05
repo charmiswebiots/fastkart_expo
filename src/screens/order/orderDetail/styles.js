@@ -5,10 +5,11 @@ import appColors from "../../../theme/appColors";
 const styles = StyleSheet.create({
     view: {
         marginTop: windowHeight(0),
-        bottom:windowHeight(10)
+        bottom: windowHeight(10),
+        paddingHorizontal: windowHeight(0)
     },
     btn: {
-        width: '94%',
+        width: '92%',
         backgroundColor: appColors.primary,
         position: 'absolute',
         bottom: windowHeight(10),

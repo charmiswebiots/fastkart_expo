@@ -1,35 +1,39 @@
 import { View, Text } from "react-native";
 import styles from "./styles";
-import { windowHeight, windowWidth } from "../../theme/appConstant";
+import { windowHeight } from "../../theme/appConstant";
 
-export function Total(props,style) {
+export function Total(props, style, style1) {
     return (
-        <View style={props.style ? [styles.mainView, {
-            marginBottom: props.bottom,
-        }] : { padding: windowWidth(0) }}>
-            <View style={{paddingHorizontal:windowHeight(13)}}>
-            <Text style={[styles.title,props.style]}>{(props.title)}</Text>
-            <View style={[styles.dataView]}>
-                <Text style={styles.data}>Bag total</Text>
+        <View
+            style={[
+                styles.mainView,
+                { marginBottom: props.bottom },
+                props.style1,
+            ]}
+        >
+            <View style={{ paddingHorizontal: windowHeight(13) }}>
+                <Text style={[styles.title, props.style]}>{(props.title)}</Text>
+                <View style={[styles.dataView]}>
+                    <Text style={styles.data}>Bag total</Text>
                     <Text style={styles.data}>$220.00</Text>
-            </View>
-            <View style={[styles.dataView]}>
-                <Text style={styles.data}>Bag savings</Text>
+                </View>
+                <View style={[styles.dataView]}>
+                    <Text style={styles.data}>Bag savings</Text>
                     <Text style={styles.price}>-$20.00</Text>
-            </View>
-            <View style={[styles.dataView]}>
-                <Text style={styles.data}>Coupon Discount</Text>
+                </View>
+                <View style={[styles.dataView]}>
+                    <Text style={styles.data}>Coupon Discount</Text>
                     <Text style={styles.coupon}>Apply Coupon</Text>
-            </View>
-            <View style={[styles.dataView, styles.deliveryView]}>
-                <Text style={styles.data}>Delivery</Text>
+                </View>
+                <View style={[styles.dataView, styles.deliveryView]}>
+                    <Text style={styles.data}>Delivery</Text>
                     <Text style={styles.data}>$50.00</Text>
-            </View>
-            <View style={[styles.amountView]}>
-                <Text style={[styles.amount]}>Total Amount</Text>
-        
+                </View>
+                <View style={[styles.amountView]}>
+                    <Text style={[styles.amount]}>Total Amount</Text>
+
                     <Text style={[styles.amount]}>$270.00</Text>
-            </View>
+                </View>
             </View>
             {props.btn}
         </View>

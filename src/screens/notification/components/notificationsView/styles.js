@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         width: windowWidth(65),
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: windowHeight(8),
+        borderRadius: windowHeight(6.5),
         marginHorizontal:windowHeight(2.5),
     },
     titleView: {

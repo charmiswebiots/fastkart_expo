@@ -1,7 +1,5 @@
-import appColors from "../../../theme/appColors";
 import { Header, Coupon } from "../../../commonComponents";
 import { WhishListProduct } from "../../whishList/components";
-import { useNavigation } from "@react-navigation/native";
 import { DeleteProductModal, CommonModal, CouponModal } from "../../../otherComponents";
 import React from "react";
 import { useState } from "react";
@@ -16,21 +14,31 @@ export function Cart({ navigation }) {
     const productDetails = () => {
         navigation.navigate('ProductsDetails')
     }
+
     const visibleModal = () => {
         setShowModal(!showModal)
     }
+
     const visibleDeleteModal = () => {
         setShowDeleteModal(!showDeleteModal)
     }
-    const address=()=>{
+
+    const address = () => {
         navigation.navigate('Address')
     }
+
+    const home = () => {
+        navigation.navigate('Home')
+    }
+
     return (
         <SafeAreaView style={styles.mainView}>
             <Header
                 onPress={() => navigation.goBack()}
                 isText
-                titleText={'My Cart'} />
+                titleText={'My Cart'}
+                imageOnPress={home}
+            />
             <ScrollView showsVerticalScrollIndicator={false}>
                 <WhishListProduct onPress={productDetails} />
                 <CommonModal modal={<DeleteProductModal onPress={visibleDeleteModal} />} showModal={showDeleteModal} visibleModal={visibleDeleteModal} />

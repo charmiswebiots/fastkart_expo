@@ -47,6 +47,11 @@ const styles = StyleSheet.create({
         width: windowWidth(50),
         resizeMode: 'contain'
     },
+    cashOnDeliveryIcon:{
+        width: windowWidth(35),
+        height: windowHeight(50),
+        resizeMode: 'contain'
+    },
     value: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',

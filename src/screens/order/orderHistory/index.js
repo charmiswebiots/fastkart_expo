@@ -15,10 +15,15 @@ export function OrderHistory({navigation}) {
         setFilterModal(!filterModal)
     }
 
+    const home=()=>{
+        navigation.navigate('Home')
+    }
+
 
     return (
         <SafeAreaView style={styles.view}>
             <Header
+            imageOnPress={home}
                 onPress={() => navigation.goBack()}
                 isText
                 titleText={'Order History'} />

@@ -9,7 +9,7 @@ const styles=StyleSheet.create({
         flex: 1
     },
     subView: {
-        marginTop: windowHeight(70),
+        top: windowHeight(70),
         borderTopStartRadius: windowWidth(20),
         borderTopEndRadius: windowWidth(20),
         height: '100%',
@@ -31,6 +31,18 @@ const styles=StyleSheet.create({
     continue:{
         bottom:windowHeight(18),
 
+    },
+    guest: {
+        textAlign: 'center',
+        fontFamily:'mulishSemiBold',
+        fontSize: fontSizes.FONT18,
+        paddingHorizontal: windowWidth(20),
+        textDecorationLine: 'underline',
+        position: 'absolute',
+        bottom: 0,
+        width: '100%',
+        backgroundColor:appColors.white,
+        paddingVertical: windowHeight(10)
     },
 
 })

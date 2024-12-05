@@ -42,7 +42,7 @@ export function PageList({navigation}) {
         } else if (key === 15) {
             navigation.navigate('OrderTracking');
         } else if (key === 16) {
-            navigation.navigate('SelectPayment');
+            navigation.navigate('Payment');
         } else if (key === 17) {
             navigation.navigate('ProductsDetails');
         } else if (key === 18) {

@@ -4,13 +4,14 @@ import { GlobalStyle } from "../../../styles/style";
 import { Header, Total, Button } from "../../../commonComponents";
 import appColors from "../../../theme/appColors";
 import { OrderDetailView, ItemsView, AddressView, PaymentsMethodView } from './components'
+import { windowHeight } from "../../../theme/appConstant";
 
 export function OrderDetail({ navigation }) {
 
     const shopPage = () => {
         navigation.navigate('ShopPage')
     }
-    
+
     return (
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -22,15 +23,13 @@ export function OrderDetail({ navigation }) {
                 <OrderDetailView />
                 <ItemsView />
                 <View style={styles.view}>
-                    <Total title={'Payment Details'} style={{ color: appColors.primary }} />
+                    <Total title={'Payment Details'} style={{ color: appColors.primary }} style1={{ backgroundColor: appColors.white, marginHorizontal: windowHeight(0) }} />
                 </View>
                 <AddressView />
                 <PaymentsMethodView />
                 <Button text={'Reorder'} style={styles.btn}
                     color={appColors.white} onPress={shopPage} />
             </ScrollView>
-
-
         </SafeAreaView>
     )
 }

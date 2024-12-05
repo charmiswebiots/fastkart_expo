@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
         flex: 1
     },
     subView: {
-        marginTop: windowHeight(70),
+        // marginTop: windowHeight(20),
+        top:windowHeight(70),
         borderTopStartRadius: windowWidth(20),
         borderTopEndRadius: windowWidth(20),
         height: '100%',
@@ -29,7 +30,16 @@ const styles = StyleSheet.create({
         backgroundColor: appColors.primary,
     },
     guest: {
-        paddingVertical: windowHeight(0)
+        textAlign: 'center',
+        fontFamily:'mulishSemiBold',
+        fontSize: fontSizes.FONT18,
+        paddingHorizontal: windowWidth(20),
+        textDecorationLine: 'underline',
+        position: 'absolute',
+        bottom: 0,
+        backgroundColor:appColors.white,
+        width: '100%',
+        paddingVertical: windowHeight(10)
     },
 })
 export default styles;

@@ -1,14 +1,14 @@
-import { windowHeight,fontSizes,windowWidth } from "../../theme/appConstant";
+import { windowHeight, fontSizes, windowWidth } from "../../theme/appConstant";
 import appColors from "../../theme/appColors";
 import { StyleSheet } from "react-native";
 
-const styles=StyleSheet.create({
+const styles = StyleSheet.create({
     mainView: {
         marginHorizontal: windowWidth(22),
         marginTop: windowHeight(38),
-        paddingTop:windowHeight(11),
+        paddingTop: windowHeight(11),
         borderRadius: windowWidth(18),
-        backgroundColor:appColors.gray,
+        backgroundColor: appColors.gray,
     },
     title: {
         fontFamily: 'mulishSemiBold',
@@ -22,19 +22,19 @@ const styles=StyleSheet.create({
     dataView: {
         marginTop: windowHeight(10),
         justifyContent: 'space-between',
-        flexDirection:"row"
+        flexDirection: "row"
     },
     deliveryView: {
         borderBottomWidth: 1,
         paddingBottom: windowHeight(11),
-        flexDirection:"row",
+        flexDirection: "row",
         borderBottomColor: appColors.line
     },
     amountView: {
         marginTop: windowHeight(8),
         justifyContent: 'space-between',
         marginBottom: windowHeight(14),
-        flexDirection:"row",
+        flexDirection: "row",
     },
     amount: {
         fontSize: fontSizes.FONT21,

@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         marginHorizontal:windowHeight(7),
     },
     image: {
-        width: windowWidth(412),
+        width: windowWidth(358),
         height: windowHeight(190),
         marginTop: windowHeight(18),
         resizeMode:'cover',
@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
     contentView: {
         position: 'absolute',
         alignSelf: 'center',
-        right:windowHeight(45)
     },
     title: {
         fontSize: fontSizes.FONT23,

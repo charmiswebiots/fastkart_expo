@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     },
     recentlyBought: {
         fontSize: fontSizes.FONT22,
-        fontFamily: 'mulishSemiBold',
+        fontFamily: 'mulishBold',
         paddingHorizontal:windowHeight(20),
     },
     imageView: {

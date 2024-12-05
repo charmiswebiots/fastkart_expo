@@ -4,7 +4,10 @@ import appColors from "../../../../theme/appColors";
 
 const styles = StyleSheet.create({
     container: {
-        padding: windowHeight(13),
+        padding: windowHeight(0),
+        marginHorizontal:windowHeight(15),
+        marginVertical:windowHeight(5),
+        top:windowHeight(4)
     },
     rangeText: {
         right: windowHeight(15),
@@ -45,6 +48,8 @@ const styles = StyleSheet.create({
     },
     highlight: {
         height: windowHeight(3),
+        // alignSelf:'center',
+        // marginHorizontal:windowHeight(10),
         backgroundColor: appColors.primary,
     },
     thumb: {

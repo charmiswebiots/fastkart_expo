@@ -1,20 +1,42 @@
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer ,DarkTheme,DefaultTheme} from "@react-navigation/native";
 import { Splash, Login, Register, Home, Notification, Offers, EditProfile, Search, ProductsDetails, NotFound, AboutUs, OrderHistory, OrderSuccess, OrderTracking, Payment, Category, WhishList, Cart, ShopPage, Address, SelectAddress, OnBoarding, OrderDetail, Account, PageList } from "../../screens";
 import { TabNavigation } from "../tabNavigation";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { DrawerNavigation } from "../drawer/drawerNavigator";
+import { useValues } from "../../utils/context";
+import appColors from "../../theme/appColors";
 
 const Stack = createNativeStackNavigator();
 
 export function StackNavigation() {
+    const { isDark } = useValues();
+    const theme = isDark
+      ? {
+        ...DarkTheme,
+        // colors: {
+        //   background: appColors.darkBackground,
+        //   card: appColors.darkBlack,
+        //   text: appColors.darkText,
+        //   border: appColors.darkBorder,
+        // },
+      }
+      : {
+        ...DefaultTheme,
+        // colors: {
+        //   background: appColors.white,
+        //   card: appColors.white,
+        //   text: appColors.fonts,
+        //   border: appColors.border,
+        // },
+      };
     return (
-        <NavigationContainer>
+        <NavigationContainer theme={theme}>
             <Stack.Navigator screenOptions={{ headerShown: false }}>
-                <Stack.Screen name="Drawer" component={TabNavigation} />
                 <Stack.Screen name="Splash" component={Splash} />
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="Register" component={Register} />
+                <Stack.Screen name="Drawer" component={TabNavigation} />
+
                 <Stack.Screen name="Home" component={TabNavigation} />
                 <Stack.Screen name="Notification" component={Notification} />
                 <Stack.Screen name="Offers" component={Offers} />
@@ -35,7 +57,7 @@ export function StackNavigation() {
                 <Stack.Screen name="OnBoarding" component={OnBoarding} />
                 <Stack.Screen name="OrderDetail" component={OrderDetail} />
                 <Stack.Screen name="ProductsDetails" component={ProductsDetails} />
-                {/* <Stack.Screen name="Account" component={Account} /> */}
+                <Stack.Screen name="Account" component={Account} />
                 <Stack.Screen name="PageList" component={PageList} />
                 <Stack.Screen name="EditProfile" component={EditProfile} />
             </Stack.Navigator>

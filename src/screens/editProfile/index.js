@@ -147,13 +147,13 @@ export function EditProfile({navigation}) {
                     showDatePicker={showDatePicker}
                 />
                 <ChangePasswordView />
-
-            </ScrollView>
-            <Button
+                <Button
                 text={'Update Settings'}
                 style={styles.btn}
                 color={appColors.white}
             />
+            </ScrollView>
+           
         </SafeAreaView>
     );
 }

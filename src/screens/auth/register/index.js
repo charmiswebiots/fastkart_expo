@@ -16,7 +16,7 @@ export function Register() {
         navigation.navigate('Login')
     }
 
-    const home=()=>{
+    const home = () => {
         navigation.navigate('Home')
     }
     return (
@@ -31,12 +31,14 @@ export function Register() {
                     <Button text={'Sign Up'} style={styles.btn}
                         color={appColors.white} onPress={login} />
                     <View style={styles.continue}>
-                        <ContinueView txt={'Already have an Account? Sign In'} signTxt={'Or sign in with'} onPress={login} guest={'Continue as guest'} />
+                        <ContinueView txt={'Already have an Account? Sign In'} signTxt={'Or sign in with'} onPress={login} />
                     </View>
                 </ScrollView>
             </View>
-       
 
+            <TouchableOpacity onPress={home}>
+                <Text style={[styles.guest]}>Continue as guest</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     )
 }

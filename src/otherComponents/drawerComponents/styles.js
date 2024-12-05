@@ -5,7 +5,7 @@ import appColors from "../../theme/appColors";
 const styles = StyleSheet.create({
     mainView: {
         paddingHorizontal: windowWidth(24),
-        marginTop:windowHeight(18)
+        marginTop: windowHeight(18)
     },
     switchView: {
         flexDirection: 'row',
@@ -21,12 +21,12 @@ const styles = StyleSheet.create({
     },
     supportTxt: {
         fontSize: fontSizes.FONT20,
-        fontFamily:'mulishSemiBold',
+        fontFamily: 'mulishSemiBold',
         color: appColors.text
     },
     reactOut: {
         fontSize: fontSizes.FONT17,
-        fontFamily:'mulishSemiBold',
+        fontFamily: 'mulishSemiBold',
         color: appColors.content,
         width: windowWidth(300),
         marginTop: windowHeight(6)
@@ -42,13 +42,11 @@ const styles = StyleSheet.create({
     },
     contactUsTxt: {
         fontSize: fontSizes.FONT16,
-        fontFamily:'mulishBold',
+        fontFamily: 'mulishBold',
         color: appColors.white
     },
-
     switch: {
-        backgroundColor: appColors.switch,
-        bottom:windowHeight(6)
+        bottom: windowHeight(6),
     },
     signOutView: {
         flexDirection: 'row',
@@ -61,9 +59,9 @@ const styles = StyleSheet.create({
         marginTop: windowHeight(20)
     },
     signOut: {
-        marginLeft: windowWidth(10),
+        marginHorizontal: windowWidth(10),
         fontSize: fontSizes.FONT20,
-        fontFamily:'mulishSemiBold',
+        fontFamily: 'mulishSemiBold',
     },
 })
 export default styles;

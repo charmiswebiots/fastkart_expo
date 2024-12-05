@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT18,
         color: appColors.primary,
+        backgroundColor:appColors.white,
         position: 'absolute',
         paddingHorizontal: windowWidth(20)
     },

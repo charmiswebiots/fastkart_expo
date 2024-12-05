@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import { View, Text, PanResponder, Dimensions } from 'react-native';
 import styles from './styles';
 
-
 export function RangeSlider () {
   const [range, setRange] = useState({ min: 0, max: 100 });
   const [lowValue, setLowValue] = useState(0);

@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         marginTop: windowHeight(10)
     },
     answerView: {
-        backgroundColor:appColors.drawer,
+        backgroundColor:appColors.gray,
         marginTop: windowHeight(10),
         left:windowWidth(10),
         marginHorizontal:windowHeight(15),

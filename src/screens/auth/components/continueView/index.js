@@ -30,9 +30,7 @@ export function ContinueView({txt,signTxt,onPress,guest,onPress1,style}) {
                 <ContinueButton  text={'Continue with Google'} image={images.google}/>
                 </View>
             </View>
-            <TouchableOpacity onPress={onPress1} >
-                <Text style={[styles.guest,style]}>{guest}</Text>
-            </TouchableOpacity>
+    
 
             <View style={styles.view} />
            

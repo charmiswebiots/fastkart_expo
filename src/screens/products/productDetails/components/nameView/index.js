@@ -11,7 +11,7 @@ export function NameView() {
             <View style={[styles.ratingsView]}>
                 <View style={{ flexDirection: "row" }}>
                 {reviewStar.map((item, key) =>
-                        <Image source={key === 4 ? images.star: images.star1 } style={styles.star} key={item.id} />
+                        <Image source={key === 4 ? images.star1: images.star } style={styles.star} key={item.id} />
                     )}
                 </View>
                 <Text style={[styles.ratings]}>(150 Ratings)</Text>

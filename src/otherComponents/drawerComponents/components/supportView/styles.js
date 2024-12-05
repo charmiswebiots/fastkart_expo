@@ -4,17 +4,18 @@ import appColors from "../../../../theme/appColors";
 
 const styles = StyleSheet.create({
     supportView: {
-        height: windowHeight(140),
+        height: windowHeight(135),
         width: windowWidth(320),
         marginTop: windowHeight(30),
         marginBottom: windowHeight(14),
         borderRadius: windowHeight(14),
-        padding: windowHeight(16)
+        padding: windowHeight(14),
+        alignSelf: 'center'
     },
     supportTxt: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        color:appColors.black,
+        color: appColors.black,
     },
     reactOut: {
         fontSize: fontSizes.FONT17,

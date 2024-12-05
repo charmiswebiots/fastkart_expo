@@ -80,4 +80,5 @@ export default Images = {
     orderHistoryMap: require("../../src/assets/images/orderHistoryMap.png"),
     star1: require('../../src/assets/images/star1.png'),
     star: require('../../src/assets/images/star.png'),
+    cashOnDelivery:require('../../src/assets/images/cashOnDelivery.png'),
 };
