@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { View, TouchableOpacity, TextInput, Text } from "react-native";
 import styles from "./styles";
 import appColors from "../../theme/appColors";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function Input({
     placeholder,
@@ -12,7 +14,7 @@ export function Input({
     secureTextEntry,
     onPress,
     onPress1,
-    isText = false, 
+    isText = false,
     maxLength,
     leftIcon,
     rightIcon,
@@ -25,14 +27,18 @@ export function Input({
         setIsFocus(value);
     };
 
+    const { isDark } = useValues()
+    const { colors } = useTheme()
+
     return (
         <View>
             <View
                 style={[
                     styles.inputView,
+                    { backgroundColor: isDark ? colors.primary : appColors.gray },
+                    { borderColor: isDark ? colors.primary : appColors.drawer },
                     style,
-                    isFocus && { backgroundColor: appColors.border },
-                    isFocus && { borderColor: appColors.primary },
+                    isFocus && { backgroundColor: isDark ? colors.primary : appColors.drawer, borderColor: isDark ? appColors.primary : appColors.primary },
                 ]}
             >
                 <TextInput
@@ -43,8 +49,8 @@ export function Input({
                     onFocus={() => handleFocus(true)}
                     onBlur={() => handleFocus(false)}
                     secureTextEntry={secureTextEntry}
-                    placeholderTextColor={appColors.content}
-                    style={[styles.input, style]}
+                    placeholderTextColor={isDark ? appColors.white : appColors.content}
+                    style={[styles.input, style, { color: colors.text }]}
                     keyboardType={keyboardType}
                     maxLength={maxLength}
                 />

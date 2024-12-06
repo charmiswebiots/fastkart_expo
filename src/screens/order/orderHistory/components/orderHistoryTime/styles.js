@@ -7,13 +7,12 @@ const styles=StyleSheet.create({
         width: '100%',
         height: windowHeight(55),
         justifyContent: 'center',
-        backgroundColor:appColors.gray,
     },
     time: {
         marginHorizontal:windowWidth(10),
         fontSize: fontSizes.FONT19,
         fontFamily: 'mulishSemiBold',
-        marginTop: windowHeight(12)
+        marginTop: windowHeight(12),
     },
     primaryText:{
         color:appColors.primary,

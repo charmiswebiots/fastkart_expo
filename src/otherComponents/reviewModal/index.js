@@ -8,12 +8,16 @@ import images from "../../utils/images";
 import { reviewList } from "../../screens/data";
 import { Icons } from "../../utils/icons";
 import { reviewStar } from "../../screens/data";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function ReviewModal(props) {
+    const {colors}=useTheme()
+    const {isDark}=useValues()
     return (
-        <View style={[GlobalStyle.modal, { backgroundColor: appColors.white, flex: 1 }]}>
+        <View style={[GlobalStyle.modal, { backgroundColor: colors.background, flex: 1 }]}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Text style={{ color: appColors.black, fontFamily: 'mulishSemiBold', fontSize: fontSizes.FONT20 }}>All Review</Text>
+                <Text style={{ color: colors.text, fontFamily: 'mulishSemiBold', fontSize: fontSizes.FONT20 }}>All Review</Text>
                 <TouchableOpacity onPress={props.onPress}>
                     <Icons.into width={windowWidth(44)} height={windowHeight(44)} />
                 </TouchableOpacity>

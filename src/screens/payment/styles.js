@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         width: '90.5%',
         backgroundColor: appColors.primary,
         position: 'absolute',
-        bottom: windowHeight(10),
+        bottom: windowHeight(15),
         alignSelf: 'center'
     },
 })

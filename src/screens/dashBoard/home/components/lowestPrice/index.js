@@ -6,8 +6,10 @@ import { SeeAllHeader } from "../seeAllHeader";
 import { windowHeight,windowWidth } from "../../../../../theme/appConstant";
 import appColors from "../../../../../theme/appColors";
 import React from "react";
+import { useTheme } from "@react-navigation/native";
 
 export function LowestPrice({props,headerData,onPress,style}) {
+    const { colors}=useTheme()
     return (
         <View style={styles.mainView}>
             <SeeAllHeader  {...headerData} />
@@ -16,10 +18,10 @@ export function LowestPrice({props,headerData,onPress,style}) {
                     lowestPrice.map((item, key) =>
                         <TouchableOpacity key={key} style={[styles.lowestPriceView,style]} activeOpacity={0.8} onPress={onPress} >
                             <Image resizeMode='contain' source={item.image} style={styles.image} />
-                            <Text style={[styles.name]} numberOfLines={2}>{item.name}</Text>
+                            <Text style={[styles.name,{color:colors.text}]} numberOfLines={2}>{item.name}</Text>
                             <Text style={[styles.gram]}>{item.weight}</Text>
                             <View style={[styles.priceView]}>
-                                <Text style={[styles.price]}>{item.price}</Text>
+                                <Text style={[styles.price,{color:colors.text}]}>{item.price}</Text>
                                 <View style={styles.increase}>
                                     <Icons.increase height={windowHeight(18)} width={windowWidth(18)} color={appColors.white} />
                                 </View>

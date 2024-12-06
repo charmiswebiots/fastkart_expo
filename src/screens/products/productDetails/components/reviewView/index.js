@@ -4,12 +4,14 @@ import styles from "./styles";
 import images from "../../../../../utils/images";
 import appColors from "../../../../../theme/appColors";
 import { reviewList,reviewStar } from "../../../../data";
+import { useTheme } from "@react-navigation/native";
 
 export function ReviewView(props) {
+    const {colors}=useTheme()
     return (
         <View>
             <TouchableOpacity activeOpacity={0.8} style={[styles.reviewView]} onPress={props.visibleReviewModal}>
-                <Text style={[styles.txt]}>Product Review(15)</Text>
+                <Text style={[styles.txt,{color:colors.text}]}>Product Review(15)</Text>
                 <Text style={styles.seeAll}>See all</Text>
             </TouchableOpacity>
             <View style={styles.list}>

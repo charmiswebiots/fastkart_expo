@@ -5,25 +5,26 @@ import { OrderHistoryTime, ItemsView } from "./components";
 import { SearchFilter } from "../../../commonComponents";
 import { CommonModal, OrderHistoryFilterModal } from '../../../otherComponents/index';
 import { useState } from "react";
+import { useTheme } from "@react-navigation/native";
 
 
-export function OrderHistory({navigation}) {
+export function OrderHistory({ navigation }) {
+    const { colors } = useTheme()
     const [filterModal, setFilterModal] = useState(false);
-
 
     const visibleFilterModal = () => {
         setFilterModal(!filterModal)
     }
 
-    const home=()=>{
+    const home = () => {
         navigation.navigate('Home')
     }
 
 
     return (
-        <SafeAreaView style={styles.view}>
+        <SafeAreaView style={[styles.view, { backgroundColor: colors.background }]}>
             <Header
-            imageOnPress={home}
+                imageOnPress={home}
                 onPress={() => navigation.goBack()}
                 isText
                 titleText={'Order History'} />

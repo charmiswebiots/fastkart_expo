@@ -4,22 +4,24 @@ import { RecentlySearchView,TrendingCategoryView,TrendingProducts } from './comp
 import React from 'react'
 import styles from './styles'
 import { Icons } from '../../../utils/icons'
+import { useTheme } from '@react-navigation/native'
 
 
 export function Search({navigation}) {
+  const {colors}=useTheme()
 
   const productDetails=()=>{
     navigation.navigate('ProductsDetails')
   }
 
   return (
-    <SafeAreaView style={styles.mainView}>
+    <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
       <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
         <HomeHeader />
          <Input placeholder={'Search Products here..'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input}/>
          <RecentlySearchView/>
          <TrendingCategoryView/>
-         <Text style={[styles.txt]}>Trending Products</Text>
+         <Text style={[styles.txt,{color:colors.text}]}>Trending Products</Text>
          <TrendingProducts onPress={productDetails}/>
       </ScrollView>
     </SafeAreaView>

@@ -23,7 +23,7 @@ export default productDetailsStyles = StyleSheet.create({
     },
     color:{
         backgroundColor:appColors.white,
-        borderColor:appColors.white,
+        borderColor:appColors.drawer,
     },
     txt: {
         fontSize: fontSizes.FONT20,

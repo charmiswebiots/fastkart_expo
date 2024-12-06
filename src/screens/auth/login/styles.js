@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
         flex: 1
     },
     subView: {
-        // marginTop: windowHeight(20),
         top:windowHeight(70),
         borderTopStartRadius: windowWidth(20),
         borderTopEndRadius: windowWidth(20),

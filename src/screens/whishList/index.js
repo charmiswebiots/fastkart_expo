@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SafeAreaView, ScrollView, Text } from "react-native";
+import { SafeAreaView, ScrollView } from "react-native";
 import { Header } from "../../commonComponents";
 import appColors from "../../theme/appColors";
 import { Icons } from "../../utils/icons";
@@ -7,8 +7,10 @@ import { GlobalStyle } from "../../styles/style";
 import { WhishListProduct } from "./components";
 import { useNavigation } from "@react-navigation/native";
 import { CommonModal,DeleteProductModal} from '../../otherComponents'
+import {useTheme} from "@react-navigation/native";
 
 export function WhishList() {
+    const {colors}=useTheme()
 
     const navigation=useNavigation()
     const [showModal, setShowModal] = useState(false);
@@ -17,7 +19,7 @@ export function WhishList() {
     }
   
     return (
-        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
+        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <Header
                 onPress={() => navigation.goBack()}
                 isText

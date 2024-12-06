@@ -5,9 +5,11 @@ import styles from "./styles";
 import { Input } from "../../../commonComponents";
 import { Icons } from "../../../utils/icons";
 import { Slider, RecentlyBought, ShopByCategory, Offers, LowestPrice, BestPrice, Coupons, NotFound } from "./components";
+import { useTheme } from "@react-navigation/native";
 
 
 export function Home({ navigation }) {
+    const {colors}=useTheme()
 
     const productDetails = () => {
         navigation.navigate('ProductsDetails')
@@ -23,7 +25,7 @@ export function Home({ navigation }) {
     };
 
     return (
-        <SafeAreaView style={styles.mainView}>
+        <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
                 <HomeHeader navigation={navigation} toogle={toogle} />
                 <Input placeholder={'Search Products here..'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />

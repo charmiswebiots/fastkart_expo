@@ -7,8 +7,10 @@ import { Header, AddNew, Total, Button } from "../../commonComponents";
 import { AddNewCardModal, CommonModal } from "../../otherComponents";
 import { SelectValueView } from "./components";
 import { windowHeight } from "../../theme/appConstant";
+import { useTheme } from "@react-navigation/native";
 
 export function Payment({navigation}) {
+    const {colors}=useTheme()
     const [showModal, setShowModal] = useState(false);
 
     const visibleModal = () => {
@@ -20,7 +22,7 @@ export function Payment({navigation}) {
     }
 
     return (
-        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
+        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor:colors.background }]}>
             <CommonModal
                 modal={<AddNewCardModal showModal={visibleModal} showModal1={visibleModal} />}
                 showModal={showModal}

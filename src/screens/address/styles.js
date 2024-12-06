@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         height: windowHeight(320),
     },
     map: {
-        height: windowHeight(40),
+        height: windowHeight(39),
         width: windowHeight(40),
         borderRadius: windowHeight(20),
         backgroundColor: appColors.white,

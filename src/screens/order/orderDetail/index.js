@@ -5,15 +5,20 @@ import { Header, Total, Button } from "../../../commonComponents";
 import appColors from "../../../theme/appColors";
 import { OrderDetailView, ItemsView, AddressView, PaymentsMethodView } from './components'
 import { windowHeight } from "../../../theme/appConstant";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
 export function OrderDetail({ navigation }) {
+
+    const {colors}=useTheme()
+    const {isDark}=useValues()
 
     const shopPage = () => {
         navigation.navigate('ShopPage')
     }
 
     return (
-        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
+        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Header
                     onPress={() => navigation.replace('Drawer')}
@@ -23,7 +28,7 @@ export function OrderDetail({ navigation }) {
                 <OrderDetailView />
                 <ItemsView />
                 <View style={styles.view}>
-                    <Total title={'Payment Details'} style={{ color: appColors.primary }} style1={{ backgroundColor: appColors.white, marginHorizontal: windowHeight(0) }} />
+                    <Total title={'Payment Details'} style={{ color: isDark?appColors.primary:appColors.primary }} style1={{ backgroundColor: colors.background, marginHorizontal: windowHeight(0) }} />
                 </View>
                 <AddressView />
                 <PaymentsMethodView />

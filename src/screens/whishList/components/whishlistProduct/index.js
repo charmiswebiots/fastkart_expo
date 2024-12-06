@@ -80,16 +80,18 @@ import { Counter } from "../../../../commonComponents";
 import styles from "./styles";
 import { cart } from "../../../data";
 import { Icons } from "../../../../utils/icons";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../../utils/context";
+import appColors from "../../../../theme/appColors";
 
 export function WhishListProduct() {
+    const {colors}=useTheme()
+    const {isDark }=useValues()
     const [cartItems, setCartItems] = useState(cart);
-
-    // Handle delete action
     const handleDelete = (id) => {
         setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
     };
 
-    // Render right swipe action (delete button)
     const renderRightActions = (progress, dragX, id) => {
         const scale = dragX.interpolate({
             inputRange: [-100, 0],
@@ -121,17 +123,17 @@ export function WhishListProduct() {
                     leftThreshold={80}
                     rightThreshold={100}
                 >
-                    <View style={styles.mainView}>
+                    <View style={[styles.mainView,{backgroundColor:isDark?colors.primary:appColors.gray}]}>
                         <Image source={item.image} style={styles.image} resizeMode="contain" />
                         <View style={styles.lineView} />
                         <View style={styles.counterView}>
                             <TouchableOpacity activeOpacity={0.7}>
-                                <Text style={styles.name}>{item.name}</Text>
+                                <Text style={[styles.name,{color:colors.text}]}>{item.name}</Text>
                                 <Text style={styles.weight}>{item.weight}</Text>
                             </TouchableOpacity>
                             <View style={styles.priceView}>
                                 <View style={styles.discountPriceView}>
-                                    <Text style={styles.price}>{item.price}</Text>
+                                    <Text style={[styles.price,{color:colors.text}]}>{item.price}</Text>
                                     <View style={styles.discountView}>
                                         <Text style={styles.discount}>{item.discount}% </Text>
                                         <Text style={styles.discount}>off</Text>

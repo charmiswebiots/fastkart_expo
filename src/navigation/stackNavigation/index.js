@@ -1,6 +1,6 @@
 import React from "react";
 import { NavigationContainer ,DarkTheme,DefaultTheme} from "@react-navigation/native";
-import { Splash, Login, Register, Home, Notification, Offers, EditProfile, Search, ProductsDetails, NotFound, AboutUs, OrderHistory, OrderSuccess, OrderTracking, Payment, Category, WhishList, Cart, ShopPage, Address, SelectAddress, OnBoarding, OrderDetail, Account, PageList } from "../../screens";
+import { Splash, Login, Register, Notification, Offers, EditProfile, Search, ProductsDetails, NotFound, AboutUs, OrderHistory, OrderSuccess, OrderTracking, Payment, Category, WhishList, Cart, ShopPage, Address, SelectAddress, OnBoarding, OrderDetail, Account, PageList } from "../../screens";
 import { TabNavigation } from "../tabNavigation";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useValues } from "../../utils/context";
@@ -13,30 +13,29 @@ export function StackNavigation() {
     const theme = isDark
       ? {
         ...DarkTheme,
-        // colors: {
-        //   background: appColors.darkBackground,
-        //   card: appColors.darkBlack,
-        //   text: appColors.darkText,
-        //   border: appColors.darkBorder,
-        // },
+        colors: {
+          background: appColors.dark,
+          text: appColors.white,
+          primary: appColors.darkDrawer,
+          card: appColors.dark,
+      },
       }
       : {
         ...DefaultTheme,
-        // colors: {
-        //   background: appColors.white,
-        //   card: appColors.white,
-        //   text: appColors.fonts,
-        //   border: appColors.border,
-        // },
+        colors: {
+          background: appColors.white,
+          text: appColors.title,
+          primary: appColors.drawer,
+          card: appColors.white,
+      }
       };
     return (
         <NavigationContainer theme={theme}>
             <Stack.Navigator screenOptions={{ headerShown: false }}>
-                <Stack.Screen name="Splash" component={Splash} />
+                {/* <Stack.Screen name="Splash" component={Splash} />
                 <Stack.Screen name="Login" component={Login} />
-                <Stack.Screen name="Register" component={Register} />
+                <Stack.Screen name="Register" component={Register} /> */}
                 <Stack.Screen name="Drawer" component={TabNavigation} />
-
                 <Stack.Screen name="Home" component={TabNavigation} />
                 <Stack.Screen name="Notification" component={Notification} />
                 <Stack.Screen name="Offers" component={Offers} />
@@ -58,7 +57,7 @@ export function StackNavigation() {
                 <Stack.Screen name="OrderDetail" component={OrderDetail} />
                 <Stack.Screen name="ProductsDetails" component={ProductsDetails} />
                 <Stack.Screen name="Account" component={Account} />
-                <Stack.Screen name="PageList" component={PageList} />
+                {/* <Stack.Screen name="PageList" component={PageList} /> */}
                 <Stack.Screen name="EditProfile" component={EditProfile} />
             </Stack.Navigator>
         </NavigationContainer>

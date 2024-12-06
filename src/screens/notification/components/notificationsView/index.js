@@ -2,9 +2,11 @@ import React from 'react';
 import { View, FlatList, Text } from 'react-native';
 import styles from './styles';
 import { notification } from '../../../data';
+import { useTheme } from '@react-navigation/native';
 
 
 export function NotificationsView() {
+    const {colors}=useTheme()
     return (
         <FlatList
             data={notification}
@@ -26,7 +28,7 @@ export function NotificationsView() {
                             </View>
                             <View style={styles.titleView}>
                                 <View style={styles.offerLeft}>
-                                    <Text style={styles.title}>{data.title}</Text>
+                                    <Text style={[styles.title,{color:colors.text}]}>{data.title}</Text>
                                     <Text style={styles.subTxt}>{data.subtxt}</Text>
                                 </View>
                                 <Text style={styles.tag}>{data.tag}</Text>

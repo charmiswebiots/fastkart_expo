@@ -1,20 +1,26 @@
-import { View, FlatList, Text,TouchableOpacity } from "react-native";
+import { View, FlatList, Text, TouchableOpacity } from "react-native";
 import styles from "./styles";
 import appColors from "../../theme/appColors";
 import { windowWidth } from "../../theme/appConstant";
 import { OptionButton } from "../../commonComponents";
 import { orderHistoryFilter } from "../../screens/data";
 import { useState } from "react";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 
-export function OrderHistoryFilterModal({showModal}) {
+export function OrderHistoryFilterModal({ showModal }) {
+
+    const { isDark } = useValues()
+    const { colors } = useTheme()
     const [selectedOffer, setSelectedOffer] = useState(null);
 
     const selectOffer = (val) => {
         setSelectedOffer(val)
     }
+
     return (
-        <View style={{ backgroundColor: appColors.white, borderTopStartRadius: windowWidth(20), borderTopEndRadius: windowWidth(20), position: 'absolute', bottom: 0, width: '100%' }}>
+        <View style={{ backgroundColor: colors.background, borderTopStartRadius: windowWidth(20), borderTopEndRadius: windowWidth(20), position: 'absolute', bottom: 0, width: '100%' }}>
             <FlatList
                 data={orderHistoryFilter}
                 renderItem={({ item }) =>
@@ -26,7 +32,13 @@ export function OrderHistoryFilterModal({showModal}) {
                             columnWrapperStyle={[styles.columnWrapperStyle]}
                             ItemSeparatorComponent={() => <View style={styles.separator} />}
                             renderItem={({ item, index }) =>
-                                <TouchableOpacity activeOpacity={0.7} onPress={() => selectOffer(item.id)} style={[styles.dataView, { backgroundColor: item.id === selectedOffer ? appColors.primary  : appColors.gray }]}>
+                                <TouchableOpacity activeOpacity={0.7} onPress={() => selectOffer(item.id)} style={[styles.dataView, {
+                                    backgroundColor: item.id === selectedOffer ? appColors.primary
+                                        : isDark
+                                            ? colors.primary
+                                            : appColors.white,
+                                    borderColor: appColors.primary,
+                                }]}>
                                     <Text style={[styles.txt, { color: item.id === selectedOffer ? appColors.white : appColors.content }]}>{item.txt}</Text>
                                 </TouchableOpacity>
                             }

@@ -4,10 +4,15 @@ import styles from "./styles";
 import { SeeAllHeader } from "../seeAllHeader";
 import { coupons } from "../../../../data";
 import images from "../../../../../utils/images";
+import { useValues } from "../../../../../utils/context";
+import appColors from "../../../../../theme/appColors";
+import { useTheme } from "@react-navigation/native";
 
-export function Coupons({ isDark }) {
+export function Coupons() {
+    const {isDark}=useValues()
+    const {colors}=useTheme()
     return (
-        <View style={[styles.mainView]}>
+        <View style={[styles.mainView,{backgroundColor:isDark?colors.primary:appColors.drawer}]}>
             <SeeAllHeader title={'Coupons For You'} subtitle={'Popular Offers of the Day'} />
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 {

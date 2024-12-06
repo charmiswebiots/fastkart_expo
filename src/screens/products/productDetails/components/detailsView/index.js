@@ -4,8 +4,10 @@ import styles from "./styles";
 import appColors from "../../../../../theme/appColors";
 import { Icons } from "../../../../../utils/icons";
 import { windowHeight } from "../../../../../theme/appConstant";
+import { useTheme } from "@react-navigation/native";
 
 export function DetailsView(props) {
+    const {colors}=useTheme()
     const [showManufacturer, setShowManufacturer] = useState(true);
     const [showProductDesc, setShowProductDesc] = useState(false);
     const [showFeature, setShowFeature] = useState(false);
@@ -32,7 +34,7 @@ export function DetailsView(props) {
 
     return (
         <View>
-            <Text style={[styles.detail]}>Product Details</Text>
+            <Text style={[styles.detail,{color:colors.text}]}>Product Details</Text>
             <Text style={[styles.title]}>
                 Refillable, Reusable, High Quality Glass Roll on Bottles with Silver cap For Essential Oil Blends DIY Perfume Cosmetics Beauty Products Ideal
             </Text>
@@ -47,7 +49,7 @@ export function DetailsView(props) {
                 activeOpacity={0.7}
                 style={[styles.optionView]}
             >
-                <Text style={[styles.txt]}>Manufacturer Details</Text>
+                <Text style={[styles.txt,{color:colors.text}]}>Manufacturer Details</Text>
                 <View style={{ transform: [{ scaleX: 1 }] }}>
                     <Icons.sideArrow />
                 </View>
@@ -69,7 +71,7 @@ export function DetailsView(props) {
                     activeOpacity={0.7}
                     style={[styles.optionView]}
                 >
-                    <Text style={[styles.txt]}>Product Disclaimer</Text>
+                    <Text style={[styles.txt,{color:colors.text}]}>Product Disclaimer</Text>
                     <View style={{ transform: [{ scaleX: 1 }] }}>
                         <Icons.sideArrow />
                     </View>
@@ -89,7 +91,7 @@ export function DetailsView(props) {
                     activeOpacity={0.7}
                     style={[styles.optionView]}
                 >
-                    <Text style={[styles.txt]}>Features & details</Text>
+                    <Text style={[styles.txt,{color:colors.text}]}>Features & details</Text>
                     <View style={{ transform: [{ scaleX: 1 }] }}>
                         <Icons.sideArrow />
                     </View>

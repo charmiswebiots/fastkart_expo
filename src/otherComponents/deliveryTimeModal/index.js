@@ -6,8 +6,12 @@ import appColors from "../../theme/appColors";
 import { useState } from "react";
 import { delivery } from "../../screens/data";
 import { GlobalStyle } from "../../styles/style";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function DeliveryTimeModal(props) {
+    const {colors}=useTheme()
+    const { isDark}=useValues()
 
     const [selectDeli, setSelectDeli] = useState(0);
 
@@ -15,16 +19,16 @@ export function DeliveryTimeModal(props) {
         setSelectDeli(key)
     }
     return (
-        <View style={[GlobalStyle.modal, { backgroundColor: appColors.white }]}>
+        <View style={[GlobalStyle.modal, { backgroundColor: colors.background}]}>
             <FlatList
                 numColumns={2}
                 data={delivery}
                 columnWrapperStyle={[styles.column, { flexDirection: 'row' }]}
                 renderItem={({ item, index }) =>
-                    <TouchableOpacity activeOpacity={0.8} onPress={() => selectDelivery(index)} style={[{ backgroundColor: appColors.gray, borderColor: selectDeli === index ? appColors.primary : appColors.gray }, styles.view]}>
+                    <TouchableOpacity activeOpacity={0.8} onPress={() => selectDelivery(index)} style={[{ backgroundColor:isDark?colors.primary: appColors.gray, borderColor: selectDeli === index ? appColors.primary : appColors.gray }, styles.view]}>
                         {selectDeli === index &&
                             <Selected />}
-                        <Text style={[styles.text]}>{item.delivery}</Text>
+                        <Text style={[styles.text,{color:colors.text}]}>{item.delivery}</Text>
                     </TouchableOpacity>
                 }
             />

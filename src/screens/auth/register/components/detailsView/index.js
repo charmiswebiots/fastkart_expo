@@ -4,9 +4,11 @@ import styles from "./styles";
 import { useState } from "react";
 import { Input } from "../../../../../commonComponents";
 import { Icons } from "../../../../../utils/icons";
+import { useTheme } from "@react-navigation/native";
 
 
 export function DetailsView() {
+    const {colors}=useTheme()
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
@@ -16,7 +18,7 @@ export function DetailsView() {
 
     return (
         <View>
-            <Text style={[styles.online]}>Register Account</Text>
+            <Text style={[styles.online,{color:colors.text}]}>Register Account</Text>
             <View style={styles.container1}>
                 <Input
                     placeholder={'Full Name'}

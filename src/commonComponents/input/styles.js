@@ -5,10 +5,8 @@ import appColors from "../../theme/appColors";
 const styles = StyleSheet.create({
     inputView: {
         height: windowHeight(45),
-        borderColor:appColors.border,
-        backgroundColor:appColors.gray,
         borderRadius: windowHeight(6),
-        borderWidth:windowHeight(1.5),
+        borderWidth:windowHeight(1),
         alignSelf: 'center',
         fontSize: fontSizes.FONT19,
         fontFamily: 'mulishSemiBold',
@@ -20,7 +18,6 @@ const styles = StyleSheet.create({
         width:windowWidth(440),
         height: windowHeight(45),
         fontSize: fontSizes.FONT19,
-    
         fontFamily: 'mulishSemiBold',
     },
     leftIcon: {

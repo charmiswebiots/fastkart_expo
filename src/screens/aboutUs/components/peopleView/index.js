@@ -2,11 +2,13 @@ import { View ,FlatList,Text,Image} from "react-native";
 import styles from "./styles";
 import images from "../../../../utils/images";
 import { Icons } from "../../../../utils/icons";
+import { useTheme } from "@react-navigation/native";
 
 export function PeopleView(){
+    const {colors}=useTheme()
     return(
         <View>
-        <Text style={[styles.peopleWhoBuild]}>People who Build Fastkart</Text>
+        <Text style={[styles.peopleWhoBuild,{color:colors.text}]}>People who Build Fastkart</Text>
         <FlatList
             data={[{}, {}, {}, {}]}
             numColumns={2}
@@ -18,7 +20,7 @@ export function PeopleView(){
                     <View style={[styles.buildView]}>
                         <Image source={images.fastKartbuild} style={styles.buildImg} resizeMode='contain' />
                     </View>
-                    <Text style={[styles.buildTxt]}>Patty O'Furniture</Text>
+                    <Text style={[styles.buildTxt,{color:colors.text}]}>Patty O'Furniture</Text>
                     <View style={styles.social}>
                         <Icons.Facebook />
                         <Icons.LinkedIn />

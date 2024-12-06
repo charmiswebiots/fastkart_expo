@@ -4,8 +4,10 @@ import styles from "./styles";
 import { Input } from "../../../../../commonComponents/index";
 import { Icons } from "../../../../../utils/icons";
 import { windowWidth } from "../../../../../theme/appConstant";
+import { useTheme } from "@react-navigation/native";
 
 export function DetailsView() {
+    const {colors}=useTheme()
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
@@ -15,7 +17,7 @@ export function DetailsView() {
 
     return (
         <View>
-            <Text style={[styles.online]}>Login Account</Text>
+            <Text style={[styles.online,{color:colors.text}]}>Login Account</Text>
             <View style={styles.container}>
                 <Input
                     placeholder={'Email address'}

@@ -8,14 +8,16 @@ import images from "../../utils/images";
 import { Header, Button, Input } from "../../commonComponents";
 import { location } from "../data";
 import { windowHeight } from "../../theme/appConstant";
+import { useTheme } from "@react-navigation/native";
 
 export function Address({ navigation }) {
+    const { colors } = useTheme()
 
     const payment = () => {
         navigation.navigate('Payment')
     }
     return (
-        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
+        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <View>
                 <Header
                     onPress={() => navigation.goBack()}
@@ -27,15 +29,15 @@ export function Address({ navigation }) {
                 </View>
             </View>
 
-            <View style={[styles.truckView, { backgroundColor: appColors.white, flexDirection: 'row' }]}>
+            <View style={[styles.truckView, { backgroundColor: colors.background, flexDirection: 'row' }]}>
                 <Icons.truck />
-                <Text style={[styles.deliveryTime, { color: appColors.black }]}>Delivery on 7th Aug, Slot: 7am to 9am</Text>
+                <Text style={[styles.deliveryTime, { color: colors.text }]}>Delivery on 7th Aug, Slot: 7am to 9am</Text>
             </View>
             <View style={styles.mapView}>
                 <View style={[styles.map, { alignSelf: 'flex-start' }]}>
                     <Icons.map />
                 </View>
-                <View style={[styles.paymentView, { backgroundColor: appColors.white }]}>
+                <View style={[styles.paymentView, { backgroundColor: colors.background }]}>
                     <ScrollView showsVerticalScrollIndicator={false}>
                         <View style={{ alignItems: 'center', alignSelf: 'center', alignContent: 'center', justifyContent: 'center', right: windowHeight(38) }}>
                             <Input placeholder={'Search Location'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
@@ -45,24 +47,27 @@ export function Address({ navigation }) {
                             <View style={styles.location}>
                                 <Icons.currentLocation />
                             </View>
-                            <Text style={[styles.locationTxt, { color: appColors.black }]}>Use current location</Text>
+                            <Text style={[styles.locationTxt, { color: colors.text }]}>Use current location</Text>
                         </View>
                         {location.slice(0, 2).map((item, index) => (
-                            <View key={index} style={[styles.addView, index === 0 && { borderBottomWidth: 0.5, borderBottomColor: appColors.placeholder, paddingBottom: windowHeight(0) }]}>
+                            <View
+                                key={index}
+                                style={[
+                                    styles.addView,
+                                    (index === 0 || index === 1) && {
+                                        borderBottomWidth: 0.5,
+                                        borderBottomColor: appColors.placeholder,
+                                        paddingBottom: windowHeight(15),
+                                    },
+                                ]}
+                            >
                                 <View style={[styles.nameView, { flexDirection: "row" }]}>
                                     <Icons.location />
-                                    <Text style={[styles.name, { color: appColors.black }]}>
+                                    <Text style={[styles.name, { color: colors.text }]}>
                                         {item.name}
                                     </Text>
                                 </View>
-                                <Text style={[styles.add, { textAlign: 'left' }]}>
-                                    {item.address}
-                                </Text>
-                                {item.isWork && (
-                                    <Text style={[styles.workTag, { color: appColors.gray }]}>
-                                        Work Address
-                                    </Text>
-                                )}
+                                <Text style={[styles.add, { textAlign: "left" }]}>{item.address}</Text>
                             </View>
                         ))}
                         <Button text={'Confirm location & proceed'} style={styles.btn}

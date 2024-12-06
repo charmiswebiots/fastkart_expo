@@ -15,10 +15,12 @@ import { DetailsView, NameView, OptionsView, ReviewView, CheckDeliveryView, Coun
 import { LowestPrice } from '../../dashBoard/home/components';
 import appColors from '../../../theme/appColors';
 import { windowHeight } from '../../../theme/appConstant';
+import { useTheme } from '@react-navigation/native';
+import { useValues } from '../../../utils/context';
 
-
-export function ProductsDetails() {
-
+export function ProductsDetails({ navigation }) {
+    const { isDark } = useValues()
+    const { colors } = useTheme()
     const [quantityModal, setQuantityModal] = useState(false);
     const [deliveryModal, setDeliveryModal] = useState(false);
     const [reviewModal, setReviewModal] = useState(false);
@@ -44,8 +46,8 @@ export function ProductsDetails() {
         }
     }
     return (
-        <SafeAreaView style={{ backgroundColor: appColors.white }}>
-            <Header onPress={() => navigation.goBack()} image={<Icons.share />} imageOnPress={openShare}/>
+        <SafeAreaView style={{ backgroundColor: colors.background }}>
+            <Header onPress={() => navigation.goBack()} image={<Icons.share />} imageOnPress={openShare} />
             <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
                 <Image style={styles.productImg} source={images.product1} />
                 <View style={[styles.subView, { backgroundColor: appColors.background }]}>
@@ -55,10 +57,10 @@ export function ProductsDetails() {
                     <ReviewView visibleReviewModal={visibleReviewModal} />
                     <CheckDeliveryView />
                 </View>
-                <View style={{ backgroundColor: appColors.lowestPrice, paddingVertical: windowHeight(13) }}>
-                    <LowestPrice headerData={{ title: 'Recently viewed', subtitle: 'Pay less, Get More' }} style={styles.color} />
+                <View style={{ backgroundColor: isDark ? colors.primary : appColors.lowestPrice, paddingVertical: windowHeight(13) }}>
+                    <LowestPrice headerData={{ title: 'Recently viewed', subtitle: 'Pay less, Get More' }} style={[styles.color, { backgroundColor: isDark ? colors.primary : appColors.white }]} />
                 </View>
-                <View style={[styles.line, { backgroundColor: appColors.white }]} />
+                <View style={[styles.line, { backgroundColor: colors.background }]} />
                 <CounterView />
             </ScrollView>
             <CommonModal modal={<QuanitityModal onPress={visibleQuantityModal} />} showModal={quantityModal} visibleModal={visibleQuantityModal} />

@@ -3,11 +3,13 @@ import { View,Image, Text } from "react-native";
 import styles from "./styles";
 import { reviewStar } from "../../../../data";
 import images from "../../../../../utils/images";
+import { useTheme } from "@react-navigation/native";
 
 export function NameView() {
+    const {colors}=useTheme()
     return (
         <View>
-            <Text style={[styles.txt]}>Assorted Capsicum Combo- (Red, Yellow, Green)</Text>
+            <Text style={[styles.txt,{color:colors.text}]}>Assorted Capsicum Combo- (Red, Yellow, Green)</Text>
             <View style={[styles.ratingsView]}>
                 <View style={{ flexDirection: "row" }}>
                 {reviewStar.map((item, key) =>
@@ -17,7 +19,7 @@ export function NameView() {
                 <Text style={[styles.ratings]}>(150 Ratings)</Text>
             </View>
             <View style={[styles.view]}>
-                <Text style={[styles.txt]}>$25.00</Text>
+                <Text style={[styles.txt,{color:colors.text}]}>$25.00</Text>
                 <Text style={styles.originalPrice}>$45.00</Text>
                 <Text style={styles.discount}>25% off</Text>
             </View>

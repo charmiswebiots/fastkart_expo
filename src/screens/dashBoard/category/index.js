@@ -3,18 +3,23 @@ import { Header, Input } from '../../../commonComponents'
 import images from '../../../utils/images'
 import styles from "./styles";
 import { Icons } from "../../../utils/icons";
-import { CategoryView, BannerView, SubCategoryView } from "./components";
+import { CategoryView, BannerView } from "./components";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
 export function Category({ navigation }) {
+    
+    const {colors}=useTheme()
+    const {isDark}=useValues()
 
     const shopPage = () => {
         navigation.navigate('ShopPage')
     }
     return (
-        <SafeAreaView style={styles.mainView}>
+        <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
             <Header
                 onPress={() => navigation.goBack()}
-                lightImage={images.fastkart}
+                lightImage={isDark?images.fastKartDark:images.fastkart}
                 showImage
                 image={images.offer} />
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>

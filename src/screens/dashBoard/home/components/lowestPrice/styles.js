@@ -8,10 +8,10 @@ const styles = StyleSheet.create({
     },
     lowestPriceView: {
         marginBottom: windowHeight(10),
-        borderWidth: windowHeight(1.5),
+        borderWidth: windowHeight(0.8),
         width: windowWidth(170),
         borderRadius: windowHeight(6),
-        borderColor: appColors.line,
+        borderColor: appColors.border,
         marginHorizontal: windowWidth(10)
     },
     image: {

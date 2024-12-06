@@ -10,7 +10,7 @@ const styles=StyleSheet.create({
         marginTop: windowHeight(30)
     },
     btn: {
-        width: '94%',
+        width: '92%',
         backgroundColor: appColors.primary,
         alignSelf: 'center'
     },

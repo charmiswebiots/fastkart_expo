@@ -7,9 +7,11 @@ import { ContinueView } from "../components";
 import { DetailsView } from "./components/detailsView";
 import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
+import {useTheme} from "@react-navigation/native";
 
 
 export function Register() {
+    const {colors}=useTheme()
     const navigation = useNavigation()
 
     const login = () => {
@@ -22,7 +24,7 @@ export function Register() {
     return (
         <SafeAreaView style={styles.mainView}>
             <Image source={images.login} resizeMode='stretch' style={styles.loginView} />
-            <View style={[styles.subView]}>
+            <View style={[styles.subView,{backgroundColor:colors.background}]}>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <TitleView props={'Online Supermarket for all your daily needs. you are just One Click away from your all needs at your door step.'} />
                     <View style={styles.container}>
@@ -37,7 +39,7 @@ export function Register() {
             </View>
 
             <TouchableOpacity onPress={home}>
-                <Text style={[styles.guest]}>Continue as guest</Text>
+                <Text style={[styles.guest,{backgroundColor:colors.background,color:colors.text}]}>Continue as guest</Text>
             </TouchableOpacity>
         </SafeAreaView>
     )

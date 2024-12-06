@@ -2,6 +2,8 @@ import React from "react";
 import { View, TouchableOpacity, Text, Image } from "react-native";
 import styles from "./styles";
 import { Icons } from "../../utils/icons";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function Header({
     text,
@@ -16,6 +18,8 @@ export function Header({
     imageOnPress,
     lightStyle,
 }) {
+    const {colors}=useTheme()
+    const {isDark}=useValues()
     return (
         <View style={styles.mainView}>
             <TouchableOpacity style={styles.arrowView} onPress={onPress}>
@@ -28,7 +32,7 @@ export function Header({
                 )}
 
                 {isText ? (
-                    <Text style={[styles.text, styles.headerImg]}>{titleText}<Text style={styles.text1}>{titleText1}</Text></Text>
+                    <Text style={[styles.text, styles.headerImg,{color:colors.text}]}>{titleText}<Text style={styles.text1}>{titleText1}</Text></Text>
                     
                 ) : (
                     <Image

@@ -9,8 +9,12 @@ import { windowHeight } from "../../../theme/appConstant";
 import { CommonModal } from '../../../otherComponents'
 import { useState } from "react";
 import { ProductFilter } from "../../../otherComponents";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
 export function ShopPage() {
+    const {colors}=useTheme()
+    const {isDark}=useValues()
 
     const [showModal, setShowModal] = useState(false);
 
@@ -18,10 +22,10 @@ export function ShopPage() {
         setShowModal(!showModal)
     }
     return (
-        <SafeAreaView style={{ backgroundColor: appColors.white, flex: 1 }}>
+        <SafeAreaView style={{ backgroundColor: colors.background, flex: 1 }}>
             <Header
                 onPress={() => navigation.replace('Drawer')}
-                lightImage={images.smallLogo}
+                lightImage={isDark?images.darkSmallLogo:images.smallLogo}
                 lightStyle={styles.header}
                 darkStyle={styles.header}
                 showImage

@@ -6,6 +6,8 @@ import images from "../../../../utils/images";
 import { Selected } from "../../../../commonComponents";
 import appColors from "../../../../theme/appColors";
 import { windowHeight, windowWidth } from "../../../../theme/appConstant";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../../utils/context";
 
 const payments = [
     {
@@ -49,6 +51,8 @@ const payments = [
 ];
 
 export function SelectValueView(props) {
+    const {isDark}=useValues()
+    const {colors}=useTheme()
     const [selectedType, setSelectedType] = useState(0);
     const [selectedMethod, setSelectedMethod] = useState(0);
 
@@ -64,8 +68,8 @@ export function SelectValueView(props) {
                 }
                 style={[styles.arrowView, { flexDirection: "row" }]}
             >
-                <Text style={styles.type}>{item.type}</Text>
-                <View style={styles.arrow}>
+                <Text style={[styles.type,{color:colors.text}]}>{item.type}</Text>
+                <View style={[styles.arrow,{backgroundColor:isDark?colors.primary:appColors.drawer}]}>
                     <Icons.sideArrow />
                 </View>
             </TouchableOpacity>
@@ -96,7 +100,7 @@ export function SelectValueView(props) {
                                         data.value === "Cash on Delivery" && styles.cashOnDeliveryIcon,
                                     ]}
                                 />
-                                <Text style={[styles.value]}>{data.value}</Text>
+                                <Text style={[styles.value,{color:colors.text}]}>{data.value}</Text>
                                 {selectedMethod === key && <Selected />}
                             </TouchableOpacity>
 
@@ -134,7 +138,7 @@ export function SelectValueView(props) {
                                             style={[
                                                 styles.valueTxt,
                                                 styles.valueLeft,
-                                                { color: appColors.black },
+                                                { color: colors.text },
                                             ]}
                                         >
                                             {item.value}

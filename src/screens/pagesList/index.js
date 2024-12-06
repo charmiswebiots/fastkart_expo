@@ -6,8 +6,12 @@ import { pagesList } from "../data";
 import { GlobalStyle } from "../../styles/style";
 import appColors from "../../theme/appColors";
 import { MenuItem } from "../../otherComponents/drawerComponents/components";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function PageList({navigation}) {
+    const {colors}=useTheme()
+    const {isDark}=useValues()
     const goToScreen = (key) => {
         if (key === 0) {
             navigation.navigate('NotFound');
@@ -46,25 +50,25 @@ export function PageList({navigation}) {
         } else if (key === 17) {
             navigation.navigate('ProductsDetails');
         } else if (key === 18) {
-            navigation.navigate('Registration');
+            navigation.navigate('Register');
         } else if (key === 19) {
             navigation.navigate('Search');
         } else if (key === 20) {
             navigation.navigate('EditProfile');
         } else if (key === 21) {
-            navigation.navigate('ProductsList');
+            navigation.navigate('ShopPage');
         } else if (key === 22) {
             navigation.navigate('WhishList');
         }
     }
     return (
-        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
+        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Header
                     onPress={() => navigation.goBack()}
                     isText
                     titleText={'Pages List'} />
-                <View style={[styles.checkOut, { backgroundColor:  appColors.gray }]}>
+                <View style={[styles.checkOut, { backgroundColor: isDark?colors.primary: appColors.gray }]}>
                     <Text style={styles.checkOutTxt}>Checkout all pages and their varations over here. following are the list of all the pages.</Text>
                 </View>
                 {pagesList.map((item, key) =>

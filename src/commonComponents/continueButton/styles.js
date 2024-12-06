@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
         height: windowHeight(46),
         borderRadius: windowHeight(6),
         marginTop: windowHeight(28),
-        backgroundColor:appColors.gray,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center'

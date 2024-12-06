@@ -9,12 +9,16 @@ import { DrawerItems } from "../data";
 import { Icons } from "../../utils/icons";
 import { CommonModal } from "../../otherComponents";
 import { MultiLangaugeModal, CurrencyConverterModal } from "../../otherComponents";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function Account({ navigation }) {
     const [rtl, setRtl] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [showCurrencyModal, setShowCurrencyModal] = useState(false);
+    const { colors } = useTheme()
+    const { isDark } = useValues()
 
 
 
@@ -53,7 +57,7 @@ export function Account({ navigation }) {
 
 
     return (
-        <SafeAreaView style={{ backgroundColor: appColors.white }}>
+        <SafeAreaView style={{ backgroundColor: colors.background }}>
             <CommonModal
                 modal={<MultiLangaugeModal onPress={visibleModal} navigation={navigation} />}
                 showModal={showModal}
@@ -99,9 +103,9 @@ export function Account({ navigation }) {
                         style={styles.switch}
 
                     />
-                    <TouchableOpacity onPress={login} activeOpacity={0.7} style={[styles.signOutView, { backgroundColor: appColors.gray }]}>
+                    <TouchableOpacity onPress={login} activeOpacity={0.7} style={[styles.signOutView, { backgroundColor: isDark ? colors.primary : appColors.gray }]}>
                         <Icons.signOut />
-                        <Text style={[styles.signOut]}>Sign Out</Text>
+                        <Text style={[styles.signOut,{color:colors.text}]}>Sign Out</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>

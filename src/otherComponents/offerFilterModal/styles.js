@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     txt: {
         fontSize: fontSizes.FONT18,
         fontFamily: 'mulishSemiBold',
+        color:appColors.gray,
     }
 })
 export default styles;

@@ -30,7 +30,7 @@ export function TabNavigation() {
                     tabBarLabel: 'Home',
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}>
-                            <Icons.home color={focused ? appColors.white : appColors.white} />
+                            <Icons.home  />
                         </View>
                     ),
                 }}

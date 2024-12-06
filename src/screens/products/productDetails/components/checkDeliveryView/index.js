@@ -4,11 +4,13 @@ import styles from "./styles";
 import { windowHeight } from "../../../../../theme/appConstant";
 import { Icons } from '../../../../../utils/icons'
 import { Input } from "../../../../../commonComponents";
+import { useTheme } from "@react-navigation/native";
 
 export function CheckDeliveryView(props) {
+    const {colors}=useTheme()
     return (
         <View>
-            <Text style={[styles.checkDelivery]}>Check Delivery</Text>
+            <Text style={[styles.checkDelivery,{color:colors.text}]}>Check Delivery</Text>
             <Text style={[styles.content, { marginTop: windowHeight(6) }]}>Enter Pincode to check delivery date / pickup option</Text>
             <View style={{ right: windowHeight(13), marginTop: windowHeight(16) }}>
                 <Input placeholder='Pin code' isText text={'Check'} style={styles.input} />

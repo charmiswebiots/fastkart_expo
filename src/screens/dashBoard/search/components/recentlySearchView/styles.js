@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 import { windowHeight,fontSizes,windowWidth } from "../../../../../theme/appConstant";
-import appColors from "../../../../../theme/appColors";
 
 const styles=StyleSheet.create({
     txt: {
@@ -13,10 +12,8 @@ const styles=StyleSheet.create({
     scrollView: {
         marginTop: windowHeight(1.5),
         marginHorizontal:windowWidth(14),
-
     },
     name: {
-        backgroundColor:appColors.drawer,
         fontSize: fontSizes.FONT20,
         paddingHorizontal: windowWidth(20),
         marginHorizontal:windowWidth(8.5),

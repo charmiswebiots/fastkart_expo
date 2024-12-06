@@ -5,13 +5,17 @@ import appColors from "../../theme/appColors";
 import { offersFilter } from "../../screens/data";
 import { GlobalStyle } from "../../styles/style";
 import { OptionButton } from "../../commonComponents";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function OfferFilterModal({ showModal }) {
+    const { colors } = useTheme();
+    const { isDark } = useValues();
     const [selectedOffer, setSelectedOffer] = useState(0);
 
     return (
-        <View style={[GlobalStyle.modal, { backgroundColor: appColors.white }]}>
-            <Text style={[styles.filter]}>Filter</Text>
+        <View style={[GlobalStyle.modal, { backgroundColor: colors.background }]}>
+            <Text style={[styles.filter, { color: colors.text }]}>Filter</Text>
             <FlatList
                 data={offersFilter}
                 numColumns={2}
@@ -23,7 +27,11 @@ export function OfferFilterModal({ showModal }) {
                         style={[
                             styles.listView,
                             {
-                                backgroundColor: selectedOffer === index ? appColors.primary : appColors.white,
+                                backgroundColor: selectedOffer === index
+                                    ? appColors.primary
+                                    : isDark
+                                    ? colors.primary 
+                                    : appColors.white,
                                 borderColor: appColors.primary,
                             },
                         ]}
@@ -31,7 +39,15 @@ export function OfferFilterModal({ showModal }) {
                         <Text
                             style={[
                                 styles.txt,
-                                { color: selectedOffer === index ? appColors.white : appColors.black },
+                                {
+                                    color: selectedOffer === index
+                                        ? isDark
+                                            ? appColors.white 
+                                            : appColors.white 
+                                        : isDark
+                                        ? appColors.gray 
+                                        : appColors.content, 
+                                },
                             ]}
                         >
                             {item.offer}

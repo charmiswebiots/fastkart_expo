@@ -3,14 +3,16 @@ import { View, Text, FlatList, TouchableOpacity, Image } from "react-native";
 import styles from "./styles";
 import { category } from "../../../../data";
 import { windowWidth } from "../../../../../theme/appConstant";
+import { useTheme } from "@react-navigation/native";
 
 
 export function ShopByCategory({onPress}) {
+    const {colors}=useTheme()
     return (
         <View>
             <View style={styles.category}>
                 <View style={styles.line} />
-                <Text style={[styles.shopByCategory]}>Shop by Category</Text>
+                <Text style={[styles.shopByCategory,{color:colors.text}]}>Shop by Category</Text>
             </View>
             <FlatList
                 data={category}
@@ -24,7 +26,7 @@ export function ShopByCategory({onPress}) {
                             <Image source={item.image} style={styles.image} resizeMode='contain' />
                         </View>
                         <View style={{width:windowWidth(99)}}>
-                        <Text style={[styles.name]} numberOfLines={2}>{item.name}</Text>
+                        <Text style={[styles.name,{color:colors.text}]} numberOfLines={2}>{item.name}</Text>
                         </View>
                     </TouchableOpacity>
                 }

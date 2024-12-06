@@ -5,14 +5,16 @@ import { GlobalStyle } from "../../../styles/style";
 import appColors from "../../../theme/appColors";
 import { Header, Button } from "../../../commonComponents";
 import { MapImageView, EstimatedDeliveryView, UserDetailView, AddressView } from "./components";
+import { useTheme } from "@react-navigation/native";
 
 
 export function OrderTracking({navigation}) {
+    const {colors}=useTheme()
     const order=()=>{
         navigation.navigate('OrderDetail')
     }
     return (
-        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
+        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Header
                     onPress={() => navigation.goBack()}
@@ -23,7 +25,7 @@ export function OrderTracking({navigation}) {
             </ScrollView>
 
             <View style={styles.subView}>
-                <View style={[styles.view]}>
+                <View style={[styles.view,{backgroundColor:colors.background}]}>
                     <ScrollView showsVerticalScrollIndicator={false}>
                         <EstimatedDeliveryView />
                         <UserDetailView />

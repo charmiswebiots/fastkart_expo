@@ -2,20 +2,23 @@ import React from "react";
 import { View, SafeAreaView, ScrollView, Image, Text } from "react-native";
 import styles from "./styles";
 import images from "../../../utils/images";
-import appColors from "../../../theme/appColors";
 import { ContinueButton } from "../../../commonComponents";
 import { windowHeight } from "../../../theme/appConstant";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
 export function OnBoarding() {
+    const {colors}=useTheme()
+    const {isDark}=useValues()
     return (
-        <SafeAreaView style={[styles.mainView, { backgroundColor: appColors.white }]}>
+        <SafeAreaView style={[styles.mainView, { backgroundColor: colors.background }]}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.imageView}>
                     <Image source={images.onBoarding} style={styles.image} />
                 </View>
                 <View style={styles.contentView}>
-                    <Image source={images.fastkart} />
-                    <Text style={[styles.safeDelivery, { color: appColors.black }]}>Get Safe Delivery At Your Door Step</Text>
+                    <Image source={isDark?images.fastKartDark:images.fastkart} />
+                    <Text style={[styles.safeDelivery, { color: colors.text }]}>Get Safe Delivery At Your Door Step</Text>
                     <Text style={styles.onlineSupermarket}>Online Supermarket for all your daily needs. you are just One Click away from your all needs at your door step. </Text>
 
                     <ContinueButton image={images.phone} text={'Continue with Phone'} />

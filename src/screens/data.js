@@ -484,7 +484,7 @@ export const categoryData = [
 ];
 
 export const DrawerItems = [
-    { name: 'Home', icons: <Icons.home />, showSwitch: false },
+    { name: 'Home', icons: <Icons.DrawerHome />, showSwitch: false },
     { name: 'FastKart Pages List', icons: <Icons.pageList />, showSwitch: false },
     { name: 'Shop by Category', icons: <Icons.category />, showSwitch: false },
     { name: 'Orders', icons: <Icons.order />, showSwitch: false },

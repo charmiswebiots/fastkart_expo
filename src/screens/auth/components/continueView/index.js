@@ -3,18 +3,11 @@ import { View, TouchableOpacity, Text, Image } from "react-native";
 import styles from "./styles";
 import images from "../../../../utils/images";
 import { ContinueButton } from "../../../../commonComponents";
-import { useNavigation } from "@react-navigation/native";
+import {useTheme} from "@react-navigation/native";
 
 
-export function ContinueView({txt,signTxt,onPress,guest,onPress1,style}) {
-
-    const navigation=useNavigation()
-
-    const home=()=>{
-        navigation.navigate('Home')
-    }
-
-    
+export function ContinueView({txt,signTxt,onPress}) {
+    const {colors}=useTheme()
     return (
         <View>
             <TouchableOpacity activeOpacity={0.8} onPress={onPress}>
@@ -22,7 +15,7 @@ export function ContinueView({txt,signTxt,onPress,guest,onPress1,style}) {
             </TouchableOpacity>
             <View style={styles.signInView}>
                 <Image source={images.divider} style={styles.img} />
-                <Text style={[styles.signIn]}>{signTxt}</Text>
+                <Text style={[styles.signIn,{backgroundColor:colors.background}]}>{signTxt}</Text>
             </View>
             <View style={{ alignItems: 'center' }}>
                 <ContinueButton  text={'Continue with Phone'} image={images.phone} />
@@ -30,11 +23,7 @@ export function ContinueView({txt,signTxt,onPress,guest,onPress1,style}) {
                 <ContinueButton  text={'Continue with Google'} image={images.google}/>
                 </View>
             </View>
-    
-
             <View style={styles.view} />
-           
-            
         </View>
     )
 }
