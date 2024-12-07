@@ -11,9 +11,6 @@ const styles = StyleSheet.create({
         paddingHorizontal: windowHeight(41),
         width: windowWidth(437),
     },
-    scrollView: {
-        // paddingTop: windowHeight(10)
-    },
     priceView: {
         marginTop: windowHeight(8),
     },

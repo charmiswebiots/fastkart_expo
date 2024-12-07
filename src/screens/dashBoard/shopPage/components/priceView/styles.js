@@ -14,17 +14,13 @@ const styles = StyleSheet.create({
         paddingHorizontal: windowWidth(17),
         alignItems: 'center',
         paddingVertical: windowHeight(7),
-        flexDirection: 'row',
     },
     listItem: {
         fontSize: fontSizes.FONT18,
         fontFamily: 'mulishBold',
         color: appColors.white,
-        textAlign: 'left',
     },
-    arrow: {
-        flexDirection: 'row',
-    },
+
     viewCart: {
         fontSize: fontSizes.FONT18,
         fontFamily: 'mulishBold',

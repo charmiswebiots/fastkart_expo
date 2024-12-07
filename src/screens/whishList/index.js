@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { SafeAreaView, ScrollView } from "react-native";
 import { Header } from "../../commonComponents";
-import appColors from "../../theme/appColors";
 import { Icons } from "../../utils/icons";
 import { GlobalStyle } from "../../styles/style";
 import { WhishListProduct } from "./components";

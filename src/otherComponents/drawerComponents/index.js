@@ -1,23 +1,21 @@
 import React, { useState } from "react";
 import { TouchableOpacity, Text, ScrollView, View } from "react-native";
-import { DrawerActions, useNavigation ,useTheme} from "@react-navigation/native";
+import { DrawerActions, useNavigation, useTheme } from "@react-navigation/native";
 import styles from "./styles";
 import { ProfileView } from "../../screens/account/components";
 import { MenuItem, SupportView } from "./components";
 import { DrawerItems } from "../../screens/data";
 import appColors from "../../theme/appColors";
-import { Switch } from "../../commonComponents";
 import { CommonModal } from "../commonModal";
-import { CurrencyConverterModal, MultiLangaugeModal } from "../../otherComponents/index";
+import { CurrencyConverterModal, MultiLangaugeModal, SwitchComponents } from "../../otherComponents/index";
 import { Icons } from "../../utils/icons";
 import { useValues } from "../../utils/context";
+import { windowHeight } from "../../theme/appConstant";
 
 export function DrawerComponent() {
-    const {colors}=useTheme()
-    const { isDark, setIsDark } = useValues();
+    const { colors } = useTheme();
+    const { isDark, rtl } = useValues();
     const navigation = useNavigation();
-    const [rtl, setRtl] = useState(false);
-    const [darkMode, setDarkMode] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [showCurrencyModal, setShowCurrencyModal] = useState(false);
 
@@ -72,15 +70,17 @@ export function DrawerComponent() {
     };
 
     return (
-        <View style={{ backgroundColor:isDark? colors.card:appColors.white }}>
+        <View style={{ backgroundColor: isDark ? colors.card : appColors.white }}>
             <CommonModal
                 modal={<MultiLangaugeModal onPress={visibleModal} navigation={navigation} />}
                 showModal={showModal}
-                visibleModal={visibleModal}/>
+                visibleModal={visibleModal}
+            />
             <CommonModal
                 modal={<CurrencyConverterModal onPress={visibleCurrencyModal} navigation={navigation} />}
                 showModal={showCurrencyModal}
-                visibleModal={visibleCurrencyModal}/>
+                visibleModal={visibleCurrencyModal}
+            />
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.mainView}>
                     <ProfileView />
@@ -91,25 +91,17 @@ export function DrawerComponent() {
                             icon={item.icons}
                             text={item.name}
                             showSwitch={item.showSwitch}
-                            onPress={() => goToScreen(key)} />))}
-                    <Switch
-                        text="RTL"
-                        icon={<Icons.rtl />}
-                        isOn={rtl}
-                        onToggle={() => setRtl(!rtl)}
-                        style={styles.switch} />
-                    <Switch
-                        text="Dark"
-                        icon={<Icons.dark />}
-                        isOn={isDark}
-                        onToggle={() => setIsDark(!isDark)}
-                        style={styles.switch} />
+                            onPress={() => goToScreen(key)}
+                        />
+                    ))}
+                    <SwitchComponents style={{ [rtl ? 'top' : 'bottom']: rtl ? windowHeight(22) : windowHeight(3) }} />
                     <TouchableOpacity
                         onPress={login}
                         activeOpacity={0.7}
-                        style={[styles.signOutView, { backgroundColor: colors.primary }]}>
+                        style={[styles.signOutView, { backgroundColor:isDark? colors.primary:appColors.drawer }]}
+                    >
                         <Icons.signOut />
-                        <Text style={[styles.signOut,{color:colors.text}]}>Sign Out</Text>
+                        <Text style={[styles.signOut, { color: colors.text }]}>Sign Out</Text>
                     </TouchableOpacity>
                     <SupportView />
                 </View>

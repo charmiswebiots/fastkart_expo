@@ -10,7 +10,7 @@ import { useValues } from "../../../utils/context";
 export function Category({ navigation }) {
     
     const {colors}=useTheme()
-    const {isDark}=useValues()
+    const {isDark,viewRtlStyle}=useValues()
 
     const shopPage = () => {
         navigation.navigate('ShopPage')
@@ -24,7 +24,7 @@ export function Category({ navigation }) {
                 image={images.offer} />
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
                 <Input placeholder={'Search Products here..'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
-                <View style={[styles.dataView]}>
+                <View style={[styles.dataView,{flexDirection:viewRtlStyle}]}>
                     <CategoryView onPress={shopPage} />
                     <View style={[styles.vegiesRight]}>
                         <BannerView />

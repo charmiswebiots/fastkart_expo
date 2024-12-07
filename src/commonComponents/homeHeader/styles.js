@@ -5,13 +5,11 @@ const styles = StyleSheet.create({
     mainView: {
         width: '100%',
         justifyContent: 'space-between',
-        flexDirection: 'row',
         paddingHorizontal: windowWidth(20),
         height:windowHeight(60),
         textAlign:'left',
     },
     view: {
-        flexDirection: 'row',
         alignItems: 'center'
     },
     locationText: {

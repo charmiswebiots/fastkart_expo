@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
         position: 'absolute',
         bottom: 0,
         height:"61%",
-        // backgroundColor:appColors.primary,
         width: '100%'
     },
     offView: {

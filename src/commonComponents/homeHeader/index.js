@@ -9,25 +9,25 @@ import { useTheme } from "@react-navigation/native";
 
 interface HomeHeaderProps {
   navigation: any;
-  toogle: () => void; 
+  toogle: () => void;
 }
 
 export function HomeHeader({ navigation, toogle }: HomeHeaderProps) {
 
-  const {isDark}=useValues()
-  const {colors}=useTheme()
+  const { isDark, viewRtlStyle } = useValues()
+  const { colors } = useTheme()
 
   return (
-    <View style={[styles.mainView]}>
-      <View style={[styles.view]}>
+    <View style={[styles.mainView, { flexDirection: viewRtlStyle }]}>
+      <View style={[styles.view, { flexDirection: viewRtlStyle }]}>
         <TouchableOpacity onPress={toogle}>
           <Icons.category />
         </TouchableOpacity>
-        <Image source={isDark?images.fastKartDark:images.fastkart} style={[styles.logoImg]} />
+        <Image source={isDark ? images.fastKartDark : images.fastkart} style={[styles.logoImg]} />
       </View>
-      <View style={[styles.view]}>
+      <View style={[styles.view, { flexDirection: viewRtlStyle }]}>
         <Icons.location />
-        <Text style={[styles.locationText,{color:colors.text}]}>Los Angeles</Text>
+        <Text style={[styles.locationText, { color: colors.text }]}>Los Angeles</Text>
         <Image source={images.demoProfile} style={[styles.profile]} resizeMode="contain" />
       </View>
     </View>

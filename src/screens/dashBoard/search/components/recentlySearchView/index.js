@@ -7,10 +7,10 @@ import appColors from "../../../../../theme/appColors";
 
 export function RecentlySearchView() {
     const {colors}=useTheme()
-    const {isDark}=useValues()
+    const {isDark,textRtlStyle,viewRtlStyle}=useValues()
     return (
         <View>
-            <Text style={[styles.txt,{color:colors.text}]}>Recently Search</Text>
+            <Text style={[styles.txt,{color:colors.text},{textAlign:textRtlStyle}]}>Recently Search</Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={[styles.scrollView]}>
                 {
                     recentlySearch.map((item) =>

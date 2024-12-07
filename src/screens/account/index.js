@@ -7,19 +7,17 @@ import { MenuItem } from "../../otherComponents/drawerComponents/components";
 import { ProfileView } from "./components";
 import { DrawerItems } from "../data";
 import { Icons } from "../../utils/icons";
-import { CommonModal } from "../../otherComponents";
+import { CommonModal, SwitchComponents } from "../../otherComponents";
 import { MultiLangaugeModal, CurrencyConverterModal } from "../../otherComponents";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../utils/context";
+import { windowHeight } from "../../theme/appConstant";
 
 export function Account({ navigation }) {
-    const [rtl, setRtl] = useState(false);
-    const [darkMode, setDarkMode] = useState(false);
+    const {colors}=useTheme()
+    const { isDark,rtl } = useValues();
     const [showModal, setShowModal] = useState(false);
     const [showCurrencyModal, setShowCurrencyModal] = useState(false);
-    const { colors } = useTheme()
-    const { isDark } = useValues()
-
 
 
     const goToScreen = (screen) => {
@@ -87,22 +85,7 @@ export function Account({ navigation }) {
                             onPress={() => goToScreen(key)}
                         />
                     ))}
-
-                    <Switch
-                        text="RTL"
-                        icon={<Icons.rtl />}
-                        isOn={rtl}
-                        onToggle={() => setRtl(!rtl)}
-                        style={styles.switch}
-                    />
-                    <Switch
-                        text="Dark"
-                        icon={<Icons.dark />}
-                        isOn={darkMode}
-                        onToggle={() => setDarkMode(!darkMode)}
-                        style={styles.switch}
-
-                    />
+                    <SwitchComponents style={[styles.switch,{ [rtl ? 'top' : 'bottom']: rtl ? windowHeight(22) : windowHeight(3) }]}/>
                     <TouchableOpacity onPress={login} activeOpacity={0.7} style={[styles.signOutView, { backgroundColor: isDark ? colors.primary : appColors.gray }]}>
                         <Icons.signOut />
                         <Text style={[styles.signOut,{color:colors.text}]}>Sign Out</Text>

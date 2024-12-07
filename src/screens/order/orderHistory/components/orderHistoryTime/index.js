@@ -8,7 +8,7 @@ import appColors from "../../../../../theme/appColors";
 
 export function OrderHistoryTime() {
 
-    const {isDark}=useValues()
+    const {isDark,viewRtlStyle}=useValues()
     const {colors}=useTheme()
     const [selected, setSelected] = useState(0);
 
@@ -17,7 +17,7 @@ export function OrderHistoryTime() {
     };
 
     return (
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={[styles.scrollView,{backgroundColor:isDark?colors.primary:appColors.gray}]}>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={[styles.scrollView,{backgroundColor:isDark?colors.primary:appColors.gray},{flexDirection:viewRtlStyle}]}>
             {orderHistoryTime.map((item, key) => (
                 <TouchableOpacity key={key} activeOpacity={0.8} onPress={() => changeSelected(key)}>
                     <Text style={[styles.time,{color:colors.text}, key === selected && styles.primaryText]}>

@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: windowWidth(22),
         paddingVertical: windowHeight(12),
-        flexDirection: 'row',
     },
     idView: {
         marginHorizontal: windowWidth(10),

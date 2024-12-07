@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
     category: {
         paddingHorizontal: windowWidth(22),
         gap: 20,
-        flexDirection: 'row'
     },
 })
 export default styles;

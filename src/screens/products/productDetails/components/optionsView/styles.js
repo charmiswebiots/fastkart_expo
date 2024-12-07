@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         height: windowHeight(40),
         borderRadius: windowHeight(7),
-        flexDirection:'row',
         backgroundColor:appColors.gray,
     },
     optionTxt: {
@@ -21,7 +20,6 @@ const styles = StyleSheet.create({
     optionMainView: {
         marginTop: windowHeight(10),
         justifyContent: 'space-between',
-        flexDirection:'row'
     },
 })
 export default styles;

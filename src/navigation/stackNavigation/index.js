@@ -32,9 +32,9 @@ export function StackNavigation() {
     return (
         <NavigationContainer theme={theme}>
             <Stack.Navigator screenOptions={{ headerShown: false }}>
-                {/* <Stack.Screen name="Splash" component={Splash} />
+                <Stack.Screen name="Splash" component={Splash} />
                 <Stack.Screen name="Login" component={Login} />
-                <Stack.Screen name="Register" component={Register} /> */}
+                <Stack.Screen name="Register" component={Register} />
                 <Stack.Screen name="Drawer" component={TabNavigation} />
                 <Stack.Screen name="Home" component={TabNavigation} />
                 <Stack.Screen name="Notification" component={Notification} />

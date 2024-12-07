@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
         paddingVertical: windowHeight(5),
         borderRadius: windowHeight(10),
         alignItems: 'center',
-        flexDirection: 'row',
         alignSelf: 'center',
     },
     img: {
@@ -47,12 +46,9 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         width: windowWidth(290),
         marginTop: windowHeight(6),
-        flexDirection: 'row',
     },
     discountPriceView: {
         alignItems: 'center',
-        flexDirection: 'row',
-
     },
     price: {
         fontSize: fontSizes.FONT18,
@@ -67,7 +63,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingHorizontal: windowWidth(15),
         alignItems: 'center',
-        flexDirection: 'row',
     },
     discount: {
         textAlign: 'center',

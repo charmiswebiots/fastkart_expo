@@ -21,10 +21,6 @@ const styles = StyleSheet.create({
         width:windowWidth(120),
         borderRadius:windowHeight(5),
     },
-    sideArrow: {
-        flexDirection: 'row',
-        paddingHorizontal:windowHeight(15)
-    },
     addToCart: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishBold',

@@ -22,19 +22,16 @@ const styles = StyleSheet.create({
     dataView: {
         marginTop: windowHeight(10),
         justifyContent: 'space-between',
-        flexDirection: "row"
     },
     deliveryView: {
         borderBottomWidth: 1,
         paddingBottom: windowHeight(11),
-        flexDirection: "row",
         borderBottomColor: appColors.line
     },
     amountView: {
         marginTop: windowHeight(8),
         justifyContent: 'space-between',
         marginBottom: windowHeight(14),
-        flexDirection: "row",
     },
     amount: {
         fontSize: fontSizes.FONT21,

@@ -19,16 +19,16 @@ export function Header({
     lightStyle,
 }) {
     const {colors}=useTheme()
-    const {isDark}=useValues()
+    const {rtl,viewRtlStyle}=useValues()
     return (
-        <View style={styles.mainView}>
-            <TouchableOpacity style={styles.arrowView} onPress={onPress}>
+        <View style={[styles.mainView,{flexDirection:viewRtlStyle}]}>
+            <TouchableOpacity style={[styles.arrowView,{flexDirection:viewRtlStyle}]} onPress={onPress}>
                 {firstIcon ? (
                     firstIcon
                 ) : (
-                    <View>
-                        <Icons.headerArrow />
-                    </View>
+                    <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }] }}>
+                    <Icons.headerArrow />
+                </View>
                 )}
 
                 {isText ? (

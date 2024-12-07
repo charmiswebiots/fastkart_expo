@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { windowHeight, fontSizes, windowWidth } from "../../../theme/appConstant";
+import { windowHeight, windowWidth } from "../../../theme/appConstant";
 import appColors from "../../../theme/appColors";
 
 const styles = StyleSheet.create({
@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
     dataView: {
         marginTop: windowHeight(20),
         justifyContent: 'space-between',
-        flexDirection:"row",
     },
     vegiesRight: {
         marginHorizontal:windowHeight(10)

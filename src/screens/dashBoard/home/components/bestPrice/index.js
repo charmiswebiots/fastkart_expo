@@ -7,9 +7,11 @@ import { Icons } from "../../../../../utils/icons";
 import { windowHeight,windowWidth } from "../../../../../theme/appConstant";
 import appColors from "../../../../../theme/appColors";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../../../utils/context";
 
-export function BestPrice({props,headerData,onPress}) {
+export function BestPrice({headerData,onPress}) {
     const {colors}=useTheme()
+    const {textRtlStyle,viewRtlStyle}=useValues()
     return (
         <View style={styles.mainView}>
             <SeeAllHeader  {...headerData} />
@@ -18,9 +20,9 @@ export function BestPrice({props,headerData,onPress}) {
                     bestPrice.map((item, key) =>
                         <TouchableOpacity key={key} style={styles.lowestPriceView} activeOpacity={0.8} onPress={onPress}>
                             <Image resizeMode='contain' source={item.image} style={styles.image} />
-                            <Text style={[styles.name,{color:colors.text}]} numberOfLines={2}>{item.name}</Text>
-                            <Text style={[styles.gram]}>{item.weight}</Text>
-                            <View style={[styles.priceView]}>
+                            <Text style={[styles.name,{color:colors.text},{textAlign:textRtlStyle}]} numberOfLines={2}>{item.name}</Text>
+                            <Text style={[styles.gram,{textAlign:textRtlStyle}]}>{item.weight}</Text>
+                            <View style={[styles.priceView,{flexDirection:viewRtlStyle}]}>
                                 <Text style={[styles.price,{color:colors.text}]}>{item.price}</Text>
                                 <View style={styles.increase}>
                                     <Icons.increase height={windowHeight(18)} width={windowWidth(18)} color={appColors.white} />

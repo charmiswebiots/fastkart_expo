@@ -15,12 +15,10 @@ const styles = StyleSheet.create({
     },
     listView: {
         paddingVertical: windowHeight(20),
-        flexDirection: "row"
     },
     arrowView: {
         justifyContent: 'space-between',
         width: '100%',
-        flexDirection: "row"
     },
     type: {
         fontSize: fontSizes.FONT22,
@@ -35,7 +33,6 @@ const styles = StyleSheet.create({
         backgroundColor: appColors.drawer,
     },
     select: {
-        flexDirection: 'row',
         alignItems: 'center',
         borderRadius: windowHeight(6),
         paddingHorizontal: windowWidth(20),
@@ -78,7 +75,6 @@ const styles = StyleSheet.create({
         marginTop: windowHeight(10),
         borderColor: appColors.primary,
         width: windowWidth(190),
-        flexDirection: "row",
     },
     valueTxt: {
         fontSize: fontSizes.FONT20,

@@ -348,8 +348,6 @@ export const location = [
     { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: false },
     { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: true },
     { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: false },
-    // { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: false },
-    // { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: true },
 ];
 
 export const cityArr = [

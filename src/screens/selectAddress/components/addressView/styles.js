@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     optionTxt: {
         fontSize: fontSizes.FONT23,
         fontFamily: 'mulishBold',
-        left:windowWidth(10)
+        left: windowWidth(10)
     },
     default: {
         color: appColors.white,
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         borderRadius: windowHeight(14),
         paddingVertical: windowHeight(2),
         fontFamily: 'mulishSemiBold',
-        left:windowHeight(10)
+        left: windowHeight(10)
     },
     name: {
         fontSize: fontSizes.FONT20,

@@ -9,21 +9,21 @@ const styles = StyleSheet.create({
         marginBottom: windowHeight(10),
         borderRadius: windowHeight(10),
         paddingHorizontal: windowWidth(14),
-        
+
     },
     sliderView: {
         justifyContent: 'center',
-        alignItems:'center',
-        alignContent:'center',
-        marginHorizontal:windowHeight(7),
+        alignItems: 'center',
+        alignContent: 'center',
+        marginHorizontal: windowHeight(7),
     },
     image: {
         width: windowWidth(358),
         height: windowHeight(190),
         marginTop: windowHeight(18),
-        resizeMode:'cover',
+        resizeMode: 'cover',
         borderRadius: windowHeight(10),
-        
+
     },
     contentView: {
         position: 'absolute',
@@ -41,7 +41,6 @@ const styles = StyleSheet.create({
         width: windowWidth(320),
         fontFamily: 'quickSandMedium',
         alignSelf: 'center',
-        textAlign:'left',
         color: appColors.content,
         top: windowHeight(8)
     },
@@ -58,11 +57,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: windowHeight(4),
         marginTop: windowHeight(18),
-        backgroundColor:appColors.primary,
+        backgroundColor: appColors.primary,
     },
     shopNow: {
         fontFamily: 'mulishBold',
-        color:appColors.white,
+        color: appColors.white,
         fontSize: fontSizes.FONT17,
     },
 })

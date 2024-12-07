@@ -7,10 +7,8 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT24,
         color: appColors.black,
-        textAlign: "left",
     },
     inputView: {
-        flexDirection: 'row',
         width: '100%',
         justifyContent: 'space-between'
     },
@@ -21,8 +19,6 @@ const styles = StyleSheet.create({
     input1:{
         paddingHorizontal: windowHeight(15),
         width: windowWidth(210),
-
-
     },
 })
 export default styles;

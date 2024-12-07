@@ -1,72 +1,8 @@
-// // import React from "react";
-// // import { View } from "react-native";
-// // import styless from "./styles";
-// // import SwitchToggle from "toggle-switch-react-native";
-// // import { MenuItem } from "../../otherComponents/drawerComponents/components";
-// // import appColors from "../../theme/appColors";
-
-// // export function Switch({
-// //     isOn,
-// //     onToggle,
-// //     width = "100%",
-// //     text = "",
-// //     icon = null,
-// //     style,
-// // }) {
-// //     return (
-// //         <View style={[styless.switchView, { flexDirection: "row", width }]}>
-// //             <MenuItem text={text} icon={icon} showSwitch />
-// //             <View style={style}>
-// //             <SwitchToggle
-// //                 isOn={isOn}
-// //                 onToggle={onToggle}
-// //                 thumbOnStyle={styless.thumbOnStyle}
-// //                 trackOnStyle={styless.trackOnStyle}
-// //                 circleColor={appColors.secondBlack}
-// //             />
-// //             </View>
-// //         </View>
-// //     );
-// // }
-
-
-// import React from "react";
-// import { View } from "react-native";
-// import styless from "./styles";
-// import SwitchToggle from "toggle-switch-react-native";
-// import { MenuItem } from "../../otherComponents/drawerComponents/components";
-// import appColors from "../../theme/appColors";
-
-// export function Switch({
-//     isOn,
-//     onToggle,
-//     width = "100%",
-//     text = "",
-//     icon = null,
-//     style,
-// }) {
-//     return (
-//         <View style={[styless.switchView, { flexDirection: "row", width }]}>
-//             <MenuItem text={text} icon={icon} showSwitch />
-//             <View style={style}>
-//                 <SwitchToggle
-//                     isOn={isOn}
-//                     onToggle={onToggle}
-//                     thumbOnStyle={styless.thumbOnStyle}
-//                     trackOnStyle={styless.trackOnStyle}
-//                     circleColorOn={appColors.offer} 
-//                     circleColorOff={appColors.gray} 
-//                 />
-//             </View>
-//         </View>
-//     );
-// }
-
-
 import React from "react";
 import { View, TouchableOpacity } from "react-native";
 import { MenuItem } from "../../otherComponents/drawerComponents/components";
 import styles from "./styles";
+import { useValues } from "../../utils/context";
 
 export function Switch({
     isOn,
@@ -76,8 +12,10 @@ export function Switch({
     icon = null,
     style,
 }) {
+
+    const {viewRtlStyle,viewSelfRtlStyle}=useValues()
     return (
-        <View style={[styles.switchView, { flexDirection: "row", width }]}>
+        <View style={[styles.switchView, { flexDirection: viewRtlStyle, width },{alignItems:viewSelfRtlStyle}]}>
             <MenuItem text={text} icon={icon} showSwitch />
             <TouchableOpacity
                 style={[

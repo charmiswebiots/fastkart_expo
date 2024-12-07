@@ -7,27 +7,52 @@ import { useValues } from "../../../../../utils/context";
 import { useTheme } from "@react-navigation/native";
 
 export function RecentlyBought({ onPress }) {
-    const { isDark } = useValues()
-    const { colors } = useTheme()
-
+    const { isDark, rtl } = useValues();
+    const { colors } = useTheme();
 
     return (
         <View style={styles.mainView}>
-            <Image source={isDark ? images.recentlyBoughtDark : images.recentlyBought} style={[styles.mainView, {
-                position: 'absolute',
-            }]} resizeMode='stretch' />
-            <Text style={[styles.recentlyBought, {color:colors.text}]}>Buy from Recently Bought</Text>
-            <View style={[styles.imageView, {
-            }]}>
-                <ScrollView showsHorizontalScrollIndicator={false} contentContainerStyle={styles.container} horizontal>
+            <Image
+                source={isDark ? images.recentlyBoughtDark : images.recentlyBought}
+                style={[
+                    styles.mainView,
                     {
-                        recentlyBrought.map((item, key) =>
-                            <TouchableOpacity activeOpacity={0.8} style={[styles.recentlyImage,{backgroundColor:colors.card}]} onPress={onPress}>
-                                <Image source={item.image} style={styles.image} resizeMode='contain' />
-                            </TouchableOpacity>
-                        )}
+                        position: 'absolute',
+                        transform: [{ scaleX: rtl ? -1 : 1 }],
+                    },
+                ]}
+                resizeMode="stretch"
+            />
+            <Text
+                style={[
+                    styles.recentlyBought,
+                    { color: colors.text, textAlign: rtl ? 'right' : 'left' },
+                ]}
+            >
+                Buy from Recently Bought
+            </Text>
+            <View style={[styles.imageView]}>
+                <ScrollView
+                    showsHorizontalScrollIndicator={false}
+                    contentContainerStyle={styles.container}
+                    horizontal
+                >
+                    {recentlyBrought.map((item, key) => (
+                        <TouchableOpacity
+                            key={key}
+                            activeOpacity={0.8}
+                            style={[styles.recentlyImage, { backgroundColor: colors.card }]}
+                            onPress={onPress}
+                        >
+                            <Image
+                                source={item.image}
+                                style={styles.image}
+                                resizeMode="contain"
+                            />
+                        </TouchableOpacity>
+                    ))}
                 </ScrollView>
             </View>
-        </View >
-    )
+        </View>
+    );
 }

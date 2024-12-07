@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         alignItems: 'center',
         justifyContent: 'center',
-        flexDirection:'row',
     },
     input: {
         width:windowWidth(440),

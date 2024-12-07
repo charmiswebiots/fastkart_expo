@@ -5,10 +5,12 @@ import { useState } from "react";
 import { Input } from "../../../../../commonComponents";
 import { Icons } from "../../../../../utils/icons";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../../../utils/context";
 
 
 export function DetailsView() {
-    const {colors}=useTheme()
+    const { colors } = useTheme()
+    const { textRtlStyle } = useValues()
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
@@ -18,7 +20,7 @@ export function DetailsView() {
 
     return (
         <View>
-            <Text style={[styles.online,{color:colors.text}]}>Register Account</Text>
+            <Text style={[styles.online, { color: colors.text }, { textAlign: textRtlStyle }]}>Register Account</Text>
             <View style={styles.container1}>
                 <Input
                     placeholder={'Full Name'}

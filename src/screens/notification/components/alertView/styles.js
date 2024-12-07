@@ -10,14 +10,12 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingHorizontal: windowWidth(10),
         marginTop: windowHeight(0),
-        flexDirection: 'row',
         backgroundColor: appColors.gray,
     },
     alertView: {
         height: windowHeight(50),
         alignItems: 'center',
         justifyContent: 'center',
-        flexDirection: 'row'
     },
     line: {
         position: 'absolute',

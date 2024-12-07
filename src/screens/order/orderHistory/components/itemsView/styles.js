@@ -14,13 +14,9 @@ const styles=StyleSheet.create({
     subView: {
         marginTop: windowHeight(10),
         justifyContent: 'space-between',
-        flexDirection:"row",
         borderBottomWidth: windowHeight(1.5),
         borderBottomColor:appColors.line,
         paddingBottom: windowHeight(10)
-    },
-    idView: {
-        flexDirection: 'row'
     },
     data: {
         fontFamily: 'mulishSemiBold',
@@ -37,8 +33,6 @@ const styles=StyleSheet.create({
         flexDirection:"row",
     },
     orderAgain: {
-        flexDirection:"row",
-        flexDirection: 'row',
         justifyContent: 'space-between',
         marginTop: windowHeight(10)
     },

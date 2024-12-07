@@ -4,6 +4,7 @@ import styles from "./styles";
 import appColors from "../../theme/appColors";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../utils/context";
+import { windowHeight } from "../../theme/appConstant";
 
 export function Input({
     placeholder,
@@ -27,7 +28,7 @@ export function Input({
         setIsFocus(value);
     };
 
-    const { isDark } = useValues()
+    const { isDark,viewRtlStyle,rtl } = useValues()
     const { colors } = useTheme()
 
     return (
@@ -50,17 +51,17 @@ export function Input({
                     onBlur={() => handleFocus(false)}
                     secureTextEntry={secureTextEntry}
                     placeholderTextColor={isDark ? appColors.white : appColors.content}
-                    style={[styles.input, style, { color: colors.text }]}
+                    style={[styles.input, style, { color: colors.text },{flexDirection:viewRtlStyle}]}
                     keyboardType={keyboardType}
                     maxLength={maxLength}
                 />
                 {leftIcon && (
-                    <TouchableOpacity style={styles.leftIcon} onPress={onPress} activeOpacity={0.7}>
+                    <TouchableOpacity style={[styles.leftIcon,{left:rtl?windowHeight(10):windowHeight(20)}]} onPress={onPress} activeOpacity={0.7}>
                         {leftIcon}
                     </TouchableOpacity>
                 )}
                 {rightIcon || isText ? (
-                    <TouchableOpacity style={styles.rightIcon} onPress={onPress1} activeOpacity={0.7}>
+                    <TouchableOpacity style={[styles.rightIcon,{right:rtl?windowHeight(10):windowHeight(20)}]} onPress={onPress1} activeOpacity={0.7}>
                         {isText ? (
                             <Text style={styles.text}>{text}</Text>
                         ) : (

@@ -6,14 +6,16 @@ import { useValues } from "../../utils/context";
 import { useTheme } from "@react-navigation/native";
 
 export function Coupon(props) {
-    const {isDark}=useValues()
+
+    const {isDark,viewRtlStyle,textRtlStyle}=useValues()
     const {colors}=useTheme()
+
     return (
         <View style={styles.containerView}>
         <ImageBackground source={isDark? images.cartListDark:images.cartList} resizeMode='contain' style={styles.mainView}>
-            <TouchableOpacity onPress={props.onPress} activeOpacity={0.8} style={[styles.subView]}>
-                <View style={[styles.view]}>
-                    <View style={[styles.view]}>
+            <TouchableOpacity onPress={props.onPress} activeOpacity={0.8} style={[styles.subView,{flexDirection:viewRtlStyle}]}>
+                <View style={[styles.view,{flexDirection:viewRtlStyle}]}>
+                    <View style={[styles.view,{flexDirection:viewRtlStyle}]}>
                         <Text style={styles.priceTxt}>{props.price}</Text>
                         <View style={styles.offView}>
                             <Text style={styles.percent}>%</Text>
@@ -21,8 +23,8 @@ export function Coupon(props) {
                         </View>
                     </View>
                     <View style={[ styles.titleView]}>
-                        <Text style={[styles.titleTxt,{color:isDark?appColors.white:appColors.secondBlack}]}>{props.onOrder}</Text>
-                        <Text style={[styles.titleTxt,{color:appColors.content}]}>{props.onOrderAbove}</Text>
+                        <Text style={[styles.titleTxt,{color:isDark?appColors.white:appColors.secondBlack},{textAlign:textRtlStyle}]}>{props.onOrder}</Text>
+                        <Text style={[styles.titleTxt,{color:appColors.content},{textAlign:textRtlStyle}]}>{props.onOrderAbove}</Text>
                     </View>
                 </View>
                 <View>

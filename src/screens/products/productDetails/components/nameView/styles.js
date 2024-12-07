@@ -6,31 +6,24 @@ const styles = StyleSheet.create({
     txt: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishBold',
-        textAlign:'left',
-        color:appColors.black,
-    },
-    sideArrow: {
-        flexDirection: 'row'
+        color: appColors.black,
     },
     ratingsView: {
         marginVertical: windowHeight(10),
-        flexDirection:'row'
     },
     star: {
         width: windowWidth(21),
-        resizeMode:'contain',
+        resizeMode: 'contain',
         height: windowHeight(17),
-        marginHorizontal:windowWidth(2)
+        marginHorizontal: windowWidth(2)
     },
     ratings: {
         fontSize: fontSizes.FONT16,
         fontFamily: 'mulishSemiBold',
-        marginHorizontal:windowWidth(10),
+        marginHorizontal: windowWidth(10),
         color: appColors.content,
     },
-    view: {
-        flexDirection:'row'
-    },
+
     originalPrice: {
         fontSize: fontSizes.FONT19,
         fontFamily: 'mulishSemiBold',

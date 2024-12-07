@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     reviewView: {
         justifyContent: 'space-between',
         marginTop: windowHeight(20),
-        flexDirection: "row"
     },
     txt: {
         fontSize: fontSizes.FONT20,
@@ -25,7 +24,6 @@ const styles = StyleSheet.create({
     },
     reviewDetail: {
         alignItems: 'center',
-        flexDirection: 'row',
         height: windowHeight(43),
         marginHorizontal: windowHeight(13),
     },
@@ -52,10 +50,8 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         color: appColors.content,
         width: '100%',
-        textAlign: 'left',
         marginTop: windowHeight(6),
         marginHorizontal: windowHeight(13),
-
     },
 })
 export default styles;

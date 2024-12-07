@@ -11,7 +11,7 @@ import { useValues } from "../../utils/context";
 
 export function OrderHistoryFilterModal({ showModal }) {
 
-    const { isDark } = useValues()
+    const { isDark ,textRtlStyle,viewRtlStyle} = useValues()
     const { colors } = useTheme()
     const [selectedOffer, setSelectedOffer] = useState(null);
 
@@ -25,11 +25,11 @@ export function OrderHistoryFilterModal({ showModal }) {
                 data={orderHistoryFilter}
                 renderItem={({ item }) =>
                     <View style={styles.listView}>
-                        <Text style={[styles.dayTxt]}>{item.day}</Text>
+                        <Text style={[styles.dayTxt,{textAlign:textRtlStyle}]}>{item.day}</Text>
                         <FlatList
                             data={item.value}
                             numColumns={2}
-                            columnWrapperStyle={[styles.columnWrapperStyle]}
+                            columnWrapperStyle={[styles.columnWrapperStyle,{flexDirection:viewRtlStyle}]}
                             ItemSeparatorComponent={() => <View style={styles.separator} />}
                             renderItem={({ item, index }) =>
                                 <TouchableOpacity activeOpacity={0.7} onPress={() => selectOffer(item.id)} style={[styles.dataView, {

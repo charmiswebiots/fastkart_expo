@@ -50,9 +50,9 @@ const payments = [
     },
 ];
 
-export function SelectValueView(props) {
-    const {isDark}=useValues()
-    const {colors}=useTheme()
+export function SelectValueView() {
+    const { isDark, viewRtlStyle, rtl } = useValues()
+    const { colors } = useTheme()
     const [selectedType, setSelectedType] = useState(0);
     const [selectedMethod, setSelectedMethod] = useState(0);
 
@@ -66,10 +66,18 @@ export function SelectValueView(props) {
                 onPress={() =>
                     setSelectedType(selectedType === item.type ? null : item.type)
                 }
-                style={[styles.arrowView, { flexDirection: "row" }]}
+                style={[styles.arrowView, { flexDirection: viewRtlStyle }]}
             >
-                <Text style={[styles.type,{color:colors.text}]}>{item.type}</Text>
-                <View style={[styles.arrow,{backgroundColor:isDark?colors.primary:appColors.drawer}]}>
+                <Text style={[styles.type, { color: colors.text }]}>{item.type}</Text>
+                <View
+                    style={[
+                        styles.arrow,
+                        {
+                            backgroundColor: isDark ? colors.primary : appColors.drawer,
+                            transform: [{ scaleX: rtl ? -1 : 1 }],
+                        },
+                    ]}
+                >
                     <Icons.sideArrow />
                 </View>
             </TouchableOpacity>
@@ -87,7 +95,7 @@ export function SelectValueView(props) {
                                     styles.select,
                                     {
                                         borderWidth: selectedMethod === key ? 1 : 0,
-                                        flexDirection: "row",
+                                        flexDirection: viewRtlStyle,
                                         borderColor: appColors.primary,
                                     },
                                 ]}
@@ -100,7 +108,7 @@ export function SelectValueView(props) {
                                         data.value === "Cash on Delivery" && styles.cashOnDeliveryIcon,
                                     ]}
                                 />
-                                <Text style={[styles.value,{color:colors.text}]}>{data.value}</Text>
+                                <Text style={[styles.value, { color: colors.text }]}>{data.value}</Text>
                                 {selectedMethod === key && <Selected />}
                             </TouchableOpacity>
 
@@ -120,11 +128,12 @@ export function SelectValueView(props) {
                                             paddingHorizontal: windowHeight(0),
                                             right: windowHeight(1.6),
                                             width: windowWidth(202),
+                                            flexDirection:viewRtlStyle
                                         },
                                     ]}
                                 >
                                     <TouchableOpacity
-                                        style={{ flexDirection: 'row' }}
+                                        style={{ flexDirection: viewRtlStyle }}
                                         activeOpacity={0.7}
                                         onPress={() => selectMethod(index)}
                                     >
@@ -154,7 +163,7 @@ export function SelectValueView(props) {
     );
 
     return (
-        <View style={styles.listView}>
+        <View style={[styles.listView, { flexDirection: viewRtlStyle }]}>
             <FlatList
                 data={payments}
                 keyExtractor={(item, index) => index.toString()}

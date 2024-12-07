@@ -11,7 +11,6 @@ const styles=StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         color: appColors.primary,
         fontSize: fontSizes.FONT24,
-        textAlign:'left',
     },
     name: {
         marginHorizontal: windowWidth(20),
@@ -20,15 +19,12 @@ const styles=StyleSheet.create({
         marginTop: windowHeight(10),
         textAlign:'left',
         color:appColors.black,
-
     },
     locationTxt: {
         marginHorizontal: windowWidth(20),
         fontFamily: 'mulishSemiBold',
         color: appColors.content,
         fontSize: fontSizes.FONT21,
-        textAlign:'left',
-
     },
 })
 export default styles;

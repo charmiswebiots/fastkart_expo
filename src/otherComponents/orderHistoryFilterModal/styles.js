@@ -11,7 +11,6 @@ const styles=StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT20,
         color: appColors.content,
-        textAlign:'left',
         marginBottom: windowHeight(16),
         marginTop: windowHeight(10)
     },

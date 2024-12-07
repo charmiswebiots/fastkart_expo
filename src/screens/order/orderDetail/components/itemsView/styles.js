@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
         marginHorizontal:windowWidth(18),
         alignItems: 'center',
         marginTop: windowHeight(20),
-        flexDirection: 'row'
     },
     quantityTxt: {
         fontSize: fontSizes.FONT17,
@@ -39,14 +38,11 @@ const styles = StyleSheet.create({
     gramTxt: {
         fontSize: fontSizes.FONT20,
         color: appColors.content,
-        fontFamily: 'mulishSemiBold',
-        textAlign:'left',
-     
+        fontFamily: 'mulishSemiBold',     
     },
     price: {
         fontSize: fontSizes.FONT24,
         fontFamily: 'mulishSemiBold',
-        textAlign:'right',
         marginHorizontal:windowHeight(22)
     },
 })

@@ -6,9 +6,9 @@ import appColors from "../../../../theme/appColors";
 import { useValues } from "../../../../utils/context";
 import { useTheme } from "@react-navigation/native";
 
-export function AlertView(props) {
+export function AlertView() {
     const [tab, setTab] = useState(0);
-    const {isDark}=useValues()
+    const {isDark,viewRtlStyle}=useValues()
     const {colors}=useTheme()
 
     const changeTab = (value) => {
@@ -16,8 +16,8 @@ export function AlertView(props) {
     };
 
     return (
-        <View style={[styles.offersView,{backgroundColor:isDark?colors.primary:appColors.gray}]}>
-            <View style={[styles.alertView]}>
+        <View style={[styles.offersView,{backgroundColor:isDark?colors.primary:appColors.gray},{flexDirection:viewRtlStyle}]}>
+            <View style={[styles.alertView,{flexDirection:viewRtlStyle}]}>
                 <View>
                     {tab === 0 && <View style={styles.line} />}
                     <Text 
@@ -43,7 +43,7 @@ export function AlertView(props) {
                     {tab === 1 && <View style={styles.line} />}
                 </View>
             </View>
-            <View style={styles.readView}>
+            <View style={[styles.readView,{flexDirection:viewRtlStyle}]}>
                 <Icons.markRead />
                 <Text style={styles.readTxt}>Mark all as read</Text>
             </View>

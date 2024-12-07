@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
     value: {
         marginTop: windowHeight(14),
         alignItems: 'center',
-        flexDirection:'row'
     },
     icon: {
         height: windowHeight(42),

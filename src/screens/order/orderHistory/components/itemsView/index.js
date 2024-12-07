@@ -9,7 +9,7 @@ import appColors from "../../../../../theme/appColors";
 
 export function ItemsView() {
     const {colors}=useTheme()
-    const { isDark } = useValues()
+    const { isDark,viewRtlStyle } = useValues()
 
     return (
         <FlatList
@@ -17,22 +17,22 @@ export function ItemsView() {
             contentContainerStyle={styles.containerStyle}
             data={orderHistory}
             renderItem={({ item }) =>
-                <TouchableOpacity activeOpacity={0.8} style={[styles.listView, { backgroundColor: isDark ? colors.primary : appColors.passChange }]} key={item.id}>
-                    <View style={[styles.subView]}>
+                <TouchableOpacity activeOpacity={0.8} style={[styles.listView, { backgroundColor: isDark ? colors.primary : appColors.gray }]} key={item.id}>
+                    <View style={[styles.subView,{flexDirection:viewRtlStyle}]}>
                         <View>
-                            <View style={styles.idView}>
+                            <View style={[{flexDirection:'row'}]}>
                                 <Text style={[styles.data,{color:colors.text}]}>ID: {item.id} , </Text>
                                 <Text style={[styles.data,{color:colors.text}]}>Dt: {item.date}</Text>
                             </View>
                             <Text style={styles.add}>{item.add}</Text>
-                            <View style={[styles.paidView]}>
+                            <View style={[styles.paidView,{flexDirection:viewRtlStyle}]}>
                                 <Text style={[styles.data,{color:colors.text}]}>Paid: <Text style={styles.paid}>{item.paid}, </Text></Text>
                                 <Text style={[styles.data,{color:colors.text}]}>Items: <Text style={styles.paid}>{item.item}</Text></Text>
                             </View>
                         </View>
                         <Image source={images.orderHistoryMap} />
                     </View>
-                    <View style={[styles.orderAgain]}>
+                    <View style={[styles.orderAgain,{flexDirection:viewRtlStyle}]}>
                         <Text style={[styles.data,{color:colors.text}]}>Order Again</Text>
                         <Text style={styles.reteNReview}> Rate & Review Product</Text>
                     </View>

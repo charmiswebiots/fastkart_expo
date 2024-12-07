@@ -8,7 +8,7 @@ import { useValues } from "../../../../../utils/context";
 import { useTheme } from "@react-navigation/native";
 
 export function CategoryView({ onPress }) {
-    const { isDark } = useValues();
+    const { isDark,viewRtlStyle } = useValues();
     const { colors } = useTheme();
     const [categoryId, setCategoryId] = useState(categoryData[1]?.id);
     const [subCategories, setSubCategories] = useState(categoryData[1]?.subCategory || []);
@@ -26,7 +26,7 @@ export function CategoryView({ onPress }) {
     };
 
     return (
-        <View style={{ flexDirection: "row" }}>
+        <View style={{ flexDirection: viewRtlStyle }}>
             <View>
                 {categoryData.map((item) => (
                     <View key={item.id}>
@@ -60,7 +60,7 @@ export function CategoryView({ onPress }) {
                     data={subCategories}
                     keyExtractor={(item) => item.id.toString()}
                     ItemSeparatorComponent={() => <View style={styles.separator} />}
-                    contentContainerStyle={styles.containerStyle}
+                    contentContainerStyle={[styles.containerStyle,{flexDirection:viewRtlStyle}]}
                     renderItem={({ item }) => (
                         <TouchableOpacity activeOpacity={0.8} onPress={onPress} style={styles.imgView}>
                             <View

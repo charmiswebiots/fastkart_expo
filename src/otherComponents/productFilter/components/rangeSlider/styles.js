@@ -48,8 +48,6 @@ const styles = StyleSheet.create({
     },
     highlight: {
         height: windowHeight(3),
-        // alignSelf:'center',
-        // marginHorizontal:windowHeight(10),
         backgroundColor: appColors.primary,
     },
     thumb: {

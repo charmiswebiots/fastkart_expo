@@ -19,10 +19,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         width: '86%',
         alignSelf: 'center',
-        flexDirection:'row',
     },
     view: {
-        flexDirection: 'row',
         alignItems: 'center',
         right:windowHeight(1.5),
     },
@@ -49,7 +47,6 @@ const styles = StyleSheet.create({
     titleTxt: {
         fontFamily: 'quickSandMedium',
         fontSize: fontSizes.FONT18,
-        textAlign:'left',
     },
     useCode: {
         fontSize: fontSizes.FONT16,

@@ -38,9 +38,7 @@ const styles = StyleSheet.create({
         marginHorizontal:windowHeight(14),
         resizeMode:"contain",
     },
-    headerImgRight: {
-        // marginRight: windowWidth(14)
-    },
+
     propText: {
         fontSize: fontSizes.FONT18,
         color: appColors.content,

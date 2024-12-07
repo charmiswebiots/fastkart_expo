@@ -9,9 +9,11 @@ import { Header, Button, Input } from "../../commonComponents";
 import { location } from "../data";
 import { windowHeight } from "../../theme/appConstant";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function Address({ navigation }) {
     const { colors } = useTheme()
+    const {viewRtlStyle,rtl,textRtlStyle}=useValues()
 
     const payment = () => {
         navigation.navigate('Payment')
@@ -29,12 +31,12 @@ export function Address({ navigation }) {
                 </View>
             </View>
 
-            <View style={[styles.truckView, { backgroundColor: colors.background, flexDirection: 'row' }]}>
+            <View style={[styles.truckView, { backgroundColor: colors.background, flexDirection: viewRtlStyle}]}>
                 <Icons.truck />
                 <Text style={[styles.deliveryTime, { color: colors.text }]}>Delivery on 7th Aug, Slot: 7am to 9am</Text>
             </View>
             <View style={styles.mapView}>
-                <View style={[styles.map, { alignSelf: 'flex-start' }]}>
+                <View style={[styles.map, { alignSelf:rtl?'flex-end': 'flex-start' }]}>
                     <Icons.map />
                 </View>
                 <View style={[styles.paymentView, { backgroundColor: colors.background }]}>
@@ -43,7 +45,7 @@ export function Address({ navigation }) {
                             <Input placeholder={'Search Location'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
                         </View>
 
-                        <View style={[styles.locationView, { flexDirection: 'row' }]}>
+                        <View style={[styles.locationView, { flexDirection: viewRtlStyle }]}>
                             <View style={styles.location}>
                                 <Icons.currentLocation />
                             </View>
@@ -61,13 +63,13 @@ export function Address({ navigation }) {
                                     },
                                 ]}
                             >
-                                <View style={[styles.nameView, { flexDirection: "row" }]}>
+                                <View style={[styles.nameView, { flexDirection:viewRtlStyle}]}>
                                     <Icons.location />
                                     <Text style={[styles.name, { color: colors.text }]}>
                                         {item.name}
                                     </Text>
                                 </View>
-                                <Text style={[styles.add, { textAlign: "left" }]}>{item.address}</Text>
+                                <Text style={[styles.add, { textAlign: textRtlStyle }]}>{item.address}</Text>
                             </View>
                         ))}
                         <Button text={'Confirm location & proceed'} style={styles.btn}

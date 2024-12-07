@@ -3,12 +3,14 @@ import styles from "./styles";
 import { category1 } from "../../../../data";
 import { windowHeight } from "../../../../../theme/appConstant";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../../../utils/context";
 
 export function TrendingCategoryView() {
     const {colors}=useTheme()
+    const {textRtlStyle}=useValues()
     return (
         <View>
-            <Text style={[styles.txt,{color:colors.text}]}>Trending category</Text>
+            <Text style={[styles.txt,{color:colors.text},{textAlign:textRtlStyle}]}>Trending category</Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.scrollView}>
                 {
                     category1.map((item, key) =>

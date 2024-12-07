@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
     mainView: {
         justifyContent: 'space-between',
         width: '100%',
-        flexDirection:'row'
     },
     closeBtn: {
         width: '48%',

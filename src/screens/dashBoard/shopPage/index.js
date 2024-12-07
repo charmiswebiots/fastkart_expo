@@ -1,7 +1,6 @@
 import React from "react";
 import { SafeAreaView, ScrollView, View } from "react-native";
 import styles from "./styles";
-import appColors from "../../../theme/appColors";
 import images from "../../../utils/images";
 import { Header, SearchFilter } from "../../../commonComponents";
 import { CategoryView, DataView, PriceView } from "./components";
@@ -14,7 +13,7 @@ import { useValues } from "../../../utils/context";
 
 export function ShopPage() {
     const {colors}=useTheme()
-    const {isDark}=useValues()
+    const {isDark,viewRtlStyle}=useValues()
 
     const [showModal, setShowModal] = useState(false);
 
@@ -35,7 +34,7 @@ export function ShopPage() {
             <View style={{ flex: 0.99 }}>
                 <ScrollView
                     showsVerticalScrollIndicator={false}
-                    contentContainerStyle={styles.containerStyle}>
+                    contentContainerStyle={[styles.containerStyle]}>
                     <CategoryView />
                     <View style={{ marginTop: windowHeight(14) }}>
                         <SearchFilter onPress={modalVisible} />

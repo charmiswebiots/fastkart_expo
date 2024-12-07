@@ -8,14 +8,12 @@ const styles=StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         color: appColors.primary,
         fontSize: fontSizes.FONT24,
-        textAlign:'left'
     },
     paymentView: {
         marginTop: windowHeight(20),
         marginBottom: windowHeight(80)
     },
     number: {
-        flexDirection: 'row',
         marginHorizontal:windowWidth(20),
         alignItems: 'center'
     },

@@ -6,8 +6,10 @@ import { windowHeight } from "../../theme/appConstant";
 import { GlobalStyle } from "../../styles/style";
 import { Input, OptionButton } from "../../commonComponents";
 import { useState } from "react";
+import { useValues } from "../../utils/context";
 
 export function AddNewCardModal({ showModal, showModal1 }) {
+    const {viewRtlStyle,textRtlStyle}=useValues()
     const [inputValue, setInputValue] = useState('');
 
     const [expiryDate, setExpiryDate] = useState('');
@@ -58,7 +60,7 @@ export function AddNewCardModal({ showModal, showModal1 }) {
 
     return (
         <View style={[GlobalStyle.modal, { backgroundColor: appColors.white }]}>
-            <Text style={[styles.addCard]}>Add Card</Text>
+            <Text style={[styles.addCard,{textAlign:textRtlStyle}]}>Add Card</Text>
             <View style={{ paddingVertical: windowHeight(1), gap: 20, marginTop: windowHeight(15) }}>
                 <Input
                     placeholder={'Card Holder Name'}
@@ -70,7 +72,7 @@ export function AddNewCardModal({ showModal, showModal1 }) {
                     maxLength={19}
                     value={inputValue}
                     onChangeText={handleChange1} />
-                <View style={styles.inputView}>
+                <View style={[styles.inputView,{flexDirection:viewRtlStyle}]}>
                     <Input
                         placeholder={'Expiry Date'}
                         style={styles.input1}

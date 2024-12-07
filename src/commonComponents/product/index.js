@@ -6,25 +6,30 @@ import { useValues } from "../../utils/context";
 import appColors from "../../theme/appColors";
 
 export function Product(props) {
-    const {isDark}=useValues()
-    const {colors}=useTheme()
+
+    const { isDark, viewRtlStyle, textRtlStyle } = useValues()
+    const { colors } = useTheme()
+
     return (
-        <View style={[styles.mainView, {backgroundColor:isDark?colors.card:appColors.gray
-        }]}>
+        <View style={[styles.mainView, {
+            backgroundColor: isDark ? colors.card : appColors.gray
+        }, { flexDirection: viewRtlStyle }]}>
             <Image source={props.image} style={styles.image} resizeMode='contain' />
             <View style={styles.lineView} />
             <View style={styles.counterView}>
                 <TouchableOpacity onPress={props.onPress} activeOpacity={0.7}>
-                    <Text style={[styles.name, {color:colors.text
-                    }]}>{props.name}</Text>
-                    <Text style={[styles.weight, {
+                    <Text style={[styles.name, {
+                        color: colors.text
+                    }, { textAlign: textRtlStyle }]}>{props.name}</Text>
+                    <Text style={[styles.weight, {textAlign: textRtlStyle
                     }]}>{props.weight}</Text>
                 </TouchableOpacity>
                 <View style={[styles.priceView, {
+                    flexDirection: viewRtlStyle
                 }]}>
                     <View style={[styles.discountPriceView, {
                     }]}>
-                        <Text style={[styles.price,{color:colors.text}]}>{props.price}</Text>
+                        <Text style={[styles.price, { color: colors.text }]}>{props.price}</Text>
 
                         <View style={[styles.discountView, {
                         }]}>
@@ -34,7 +39,7 @@ export function Product(props) {
                     </View>
                     <Counter />
                 </View>
-               
+
             </View>
         </View>
     )

@@ -3,10 +3,13 @@ import React from "react";
 import styles from "./styles";
 import images from "../../../utils/images";
 import { useEffect } from "react";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
+export function Splash({ navigation }) {
 
-
-export function Splash({navigation}) {
+    const {colors}=useTheme()
+    const {isDark}=useValues()
 
     useEffect(() => {
         setTimeout(() => {
@@ -15,22 +18,12 @@ export function Splash({navigation}) {
     }, []);
 
     return (
-        <SafeAreaView style={[styles.mainView]}>
+        <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
             <Image source={images.splash} style={{ width: '100%' }} />
             <View style={styles.logo}>
-                <Image source={images.logo} style={styles.img} />
+                <Image source={isDark?images.fastKartDark:images.logo} style={styles.img} />
             </View>
         </SafeAreaView>
     )
 }
 
-// import { View, Text } from "react-native";
-// import React from "react";
-
-// export function Splash() {
-//     return (
-//         <View style={{ backgroundColor: 'red', flex: 1 }}>
-//             <Text style={{ color: 'blue' }}>dvf</Text>
-//         </View>
-//     )
-// }

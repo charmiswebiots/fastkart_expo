@@ -7,7 +7,6 @@ const styles=StyleSheet.create({
         justifyContent: 'space-between',
         width: '90%',
         alignSelf: 'center',
-        flexDirection:"row",
         marginTop: windowHeight(15)
     },
     optionView: {

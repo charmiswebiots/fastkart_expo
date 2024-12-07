@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     containerStyle: {
         width: '100%',
         marginTop: windowHeight(20),
-        flexDirection: 'row'
     },
     imgView: {
         paddingHorizontal: windowHeight(3),

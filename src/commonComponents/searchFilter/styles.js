@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         width: '93%',
         justifyContent: 'space-between',
-        flexDirection:'row',
         marginTop:windowHeight(1.5),
     },
     input:{

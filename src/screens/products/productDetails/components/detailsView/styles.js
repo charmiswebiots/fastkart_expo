@@ -14,15 +14,12 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishBold',
         marginTop: windowHeight(14),
         color:appColors.black,
-        textAlign:'left'
     },
     title: {
         fontSize: fontSizes.FONT18,
         fontFamily: 'mulishSemiBold',
         color: appColors.content,
         marginTop: windowHeight(4),
-        textAlign:'left'
-
     },
     manufacturer: {
         borderTopWidth: 0.7,
@@ -33,7 +30,6 @@ const styles = StyleSheet.create({
         paddingVertical: windowHeight(10)
     },
     optionView: {
-        flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center'
     },

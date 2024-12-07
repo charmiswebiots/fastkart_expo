@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import appColors from "../../../../theme/appColors";
-import { windowHeight, fontSizes } from "../../../../theme/appConstant";
+import { windowHeight, fontSizes,windowWidth } from "../../../../theme/appConstant";
 
 const styles = StyleSheet.create({
     mainView: {
@@ -18,6 +18,8 @@ const styles = StyleSheet.create({
         marginHorizontal:windowHeight(12)
     },
     txtRight: {
+        marginHorizontal: windowWidth(20),
+
     },
     arrow: {
         borderWidth: 0.5,
@@ -29,9 +31,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderColor: appColors.drawer, 
         backgroundColor: appColors.drawer 
-    },
-    text: {
-        flexDirection: 'row'
     },
 })
 export default styles;

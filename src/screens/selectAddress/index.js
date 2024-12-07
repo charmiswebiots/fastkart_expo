@@ -8,8 +8,10 @@ import { Header, AddNew, Button } from "../../commonComponents";
 import { CommonModal, AddAddressModal } from '../../otherComponents'
 import { AddressView } from "./components";
 import { useState } from "react";
+import { useTheme } from "@react-navigation/native";
 
 export function SelectAddress({ navigation }) {
+    const { colors } = useTheme()
     const [showModal, setShowModal] = useState(false);
 
     const visibleModal = () => [
@@ -17,7 +19,7 @@ export function SelectAddress({ navigation }) {
     ]
 
     return (
-        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: appColors.white }]}>
+        <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <Header
                 onPress={() => navigation.goBack()}
                 image={<Icons.search />}
