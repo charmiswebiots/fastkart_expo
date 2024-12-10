@@ -7,8 +7,10 @@ import { GlobalStyle } from "../../styles/style";
 import { Input, OptionButton } from "../../commonComponents";
 import { useState } from "react";
 import { useValues } from "../../utils/context";
+import { useTheme } from "@react-navigation/native";
 
 export function AddNewCardModal({ showModal, showModal1 }) {
+    const {colors}=useTheme()
     const {viewRtlStyle,textRtlStyle}=useValues()
     const [inputValue, setInputValue] = useState('');
 
@@ -59,9 +61,9 @@ export function AddNewCardModal({ showModal, showModal1 }) {
     };
 
     return (
-        <View style={[GlobalStyle.modal, { backgroundColor: appColors.white }]}>
-            <Text style={[styles.addCard,{textAlign:textRtlStyle}]}>Add Card</Text>
-            <View style={{ paddingVertical: windowHeight(1), gap: 20, marginTop: windowHeight(15) }}>
+        <View style={[GlobalStyle.modal, { backgroundColor: colors.background }]}>
+            <Text style={[styles.addCard,{textAlign:textRtlStyle},{color:colors.text}]}>Add Card</Text>
+            <View style={styles.mainView}>
                 <Input
                     placeholder={'Card Holder Name'}
                     style={styles.input} />
@@ -80,7 +82,7 @@ export function AddNewCardModal({ showModal, showModal1 }) {
                         onChangeText={handleChange}
                         keyboardType={'numeric'}
                         maxLength={5}
-                        rightIcon={<Icons.calender color={appColors.black} />} />
+                        rightIcon={<Icons.calender />} />
                     <Input
                         placeholder={'CVV'}
                         style={styles.input1}

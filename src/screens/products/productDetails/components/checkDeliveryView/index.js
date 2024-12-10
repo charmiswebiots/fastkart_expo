@@ -14,7 +14,7 @@ export function CheckDeliveryView() {
         <View>
             <Text style={[styles.checkDelivery,{color:colors.text},{textAlign:textRtlStyle}]}>Check Delivery</Text>
             <Text style={[styles.content, { marginTop: windowHeight(6) },{textAlign:textRtlStyle}]}>Enter Pincode to check delivery date / pickup option</Text>
-            <View style={{ right: windowHeight(13), marginTop: windowHeight(16) }}>
+            <View style={{  marginTop: windowHeight(16) }}>
                 <Input placeholder='Pin code' isText text={'Check'} style={styles.input} />
             </View>
             <View style={[styles.deliveryView,{flexDirection:viewRtlStyle}]}>

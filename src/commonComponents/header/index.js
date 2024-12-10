@@ -48,7 +48,7 @@ export function Header({
                 <Image source={image} style={styles.image} />
             ) : (
                 <TouchableOpacity activeOpacity={0.7} onPress={imageOnPress}>
-                    {image ? image : <Icons.home />}
+                    {image ? image : <Icons.home color={colors.text} />}
                 </TouchableOpacity>
             )}
         </View>

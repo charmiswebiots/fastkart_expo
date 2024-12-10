@@ -14,5 +14,8 @@ const styles = StyleSheet.create({
         color: appColors.content,
         fontFamily: 'mulishSemiBold'
     },
+    menu:{
+        marginHorizontal:windowWidth(18)
+    }
 })
 export default styles;

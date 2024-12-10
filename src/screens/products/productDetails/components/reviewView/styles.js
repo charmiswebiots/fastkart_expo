@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     reviewName: {
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT20,
-        color: appColors.black,
     },
     star: {
         width: windowWidth(19),

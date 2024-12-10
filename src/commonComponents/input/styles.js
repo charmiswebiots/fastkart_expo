@@ -12,20 +12,19 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         alignItems: 'center',
         justifyContent: 'center',
+        marginHorizontal:windowWidth(8)
     },
     input: {
-        width:windowWidth(440),
         height: windowHeight(45),
         fontSize: fontSizes.FONT19,
         fontFamily: 'mulishSemiBold',
+        // paddingHorizontal:windowWidth(15),
     },
     leftIcon: {
         position: 'absolute',
-        left: windowWidth(20)
     },
     rightIcon: {
         position: 'absolute',
-        right: windowWidth(20)
     },
  
     text: {

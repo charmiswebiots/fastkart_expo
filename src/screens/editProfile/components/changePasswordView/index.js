@@ -8,7 +8,7 @@ import { useValues } from "../../../../utils/context";
 
 export function ChangePasswordView(props) {
     const { colors } = useTheme()
-    const { isDark } = useValues()
+    const { isDark,textRtlStyle,viewSelfRtlStyle } = useValues()
     const [isFocus, setIsFocus] = useState(false);
 
 
@@ -25,15 +25,15 @@ export function ChangePasswordView(props) {
                     { borderColor: isDark ? colors.primary : appColors.drawer },
                     isFocus && { backgroundColor: appColors.border },
                     isFocus && { backgroundColor: isDark ? colors.primary : appColors.drawer, borderColor: isDark ? appColors.primary : appColors.primary },]}>
-                <Text style={[styles.changePasswordTxt, { color: colors.text }]}>Change Password</Text>
+                <Text style={[styles.changePasswordTxt, { color: colors.text },{textAlign:textRtlStyle}]}>Change Password</Text>
                 <TextInput
                     placeholder={'Password'}
                     onFocus={() => focus(true)}
                     secureTextEntry={false}
                     onBlur={() => focus(false)}
                     placeholderTextColor={appColors.content}
-                    style={[styles.input]}/>
-                <TouchableOpacity style={styles.leftIcon} activeOpacity={0.7}>
+                    style={[styles.input,{textAlign:textRtlStyle}]}/>
+                <TouchableOpacity style={[styles.leftIcon,{alignSelf:viewSelfRtlStyle}]} activeOpacity={0.7}>
                     <Icons.password />
                 </TouchableOpacity>
             </View>

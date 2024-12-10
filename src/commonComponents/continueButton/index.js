@@ -7,9 +7,9 @@ import appColors from "../../theme/appColors";
 
 export function ContinueButton({onPress, image, text}) {
     const {colors}=useTheme()
-    const {isDark}=useValues()
+    const {isDark,viewRtlStyle}=useValues()
     return (
-        <TouchableOpacity onPress={onPress} activeOpacity={0.7} style={[styles.button,{backgroundColor:isDark?colors.primary:appColors.gray}]}>
+        <TouchableOpacity onPress={onPress} activeOpacity={0.7} style={[styles.button,{backgroundColor:isDark?colors.primary:appColors.gray},{flexDirection:viewRtlStyle}]}>
             <Image source={image} style={styles.buttonImage} />
             <Text style={[styles.buttonText,{color:colors.text}]}>
                 {text}

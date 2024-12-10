@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
         borderRadius: windowHeight(6),
         borderColor: appColors.countBorder,
         justifyContent: 'space-between',
-        flexDirection:'row',
         height:windowHeight(25),
         marginHorizontal:windowHeight(5),
     },

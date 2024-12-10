@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 import { windowHeight, fontSizes, windowWidth } from "../../../../theme/appConstant";
-import appColors from "../../../../theme/appColors";
 
 const styles = StyleSheet.create({
     changePassword: {
@@ -11,16 +10,14 @@ const styles = StyleSheet.create({
     changePasswordTxt: {
         fontSize: fontSizes.FONT18,
         fontFamily: 'mulishSemiBold',
-        top:windowHeight(8),
-        textAlign:"left",
-        marginHorizontal:windowHeight(9.4),
+        top: windowHeight(8),
+        marginHorizontal: windowHeight(12),
     },
     inputView: {
-        marginHorizontal:windowHeight(11),
         height: windowHeight(70),
-        width:windowWidth(440),
+        width: windowWidth(440),
         borderRadius: windowHeight(6),
-        borderWidth:windowHeight(1.2),
+        borderWidth: windowHeight(1.2),
         alignSelf: 'center',
         fontSize: fontSizes.FONT19,
         fontFamily: 'mulishSemiBold',
@@ -28,15 +25,15 @@ const styles = StyleSheet.create({
     input: {
         height: windowHeight(45),
         fontSize: fontSizes.FONT19,
-        top:windowHeight(2),
+        top: windowHeight(2),
         fontFamily: 'mulishSemiBold',
-        marginHorizontal:windowHeight(9),
+        marginHorizontal: windowHeight(12),
     },
     leftIcon: {
         position: 'absolute',
-        alignSelf:"flex-end",
-        marginTop:windowHeight(25),
-        paddingHorizontal:windowHeight(13),
+        marginTop: windowHeight(25),
+        paddingHorizontal: windowWidth(13)
+
     },
 })
 export default styles;

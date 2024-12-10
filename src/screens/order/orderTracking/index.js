@@ -8,11 +8,17 @@ import { MapImageView, EstimatedDeliveryView, UserDetailView, AddressView } from
 import { useTheme } from "@react-navigation/native";
 
 
-export function OrderTracking({navigation}) {
-    const {colors}=useTheme()
-    const order=()=>{
+export function OrderTracking({ navigation }) {
+    const { colors } = useTheme()
+
+    const order = () => {
         navigation.navigate('OrderDetail')
     }
+
+    const home = () => {
+        navigation.navigate('Home')
+    }
+
     return (
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -20,18 +26,18 @@ export function OrderTracking({navigation}) {
                     onPress={() => navigation.goBack()}
                     isText={false}
                     showImage={false}
-                    lightImage={images.fastkart} />
+                    lightImage={images.fastkart} imageOnPress={home} />
                 <MapImageView />
             </ScrollView>
 
             <View style={styles.subView}>
-                <View style={[styles.view,{backgroundColor:colors.background}]}>
+                <View style={[styles.view, { backgroundColor: colors.background }]}>
                     <ScrollView showsVerticalScrollIndicator={false}>
                         <EstimatedDeliveryView />
                         <UserDetailView />
                         <AddressView />
                         <Button text={'Order Details'} style={styles.btn}
-                            color={appColors.white} onPress={order}/>
+                            color={appColors.white} onPress={order} />
                     </ScrollView>
                 </View>
             </View>

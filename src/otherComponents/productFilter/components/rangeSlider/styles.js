@@ -13,26 +13,25 @@ const styles = StyleSheet.create({
         right: windowHeight(15),
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        color: appColors.black,
         backgroundColor: appColors.gray,
         paddingVertical: windowHeight(2),
         borderRadius: windowHeight(4),
         paddingHorizontal: windowHeight(10),
         marginBottom: windowHeight(10),
-        top: windowHeight(18)
+        top: windowHeight(18),
+        height:windowHeight(25)        
     },
     rangeText1: {
         fontSize: fontSizes.FONT20,
         width: windowWidth(108),
         fontFamily: 'mulishSemiBold',
-        color: appColors.black,
         backgroundColor: appColors.gray,
         paddingVertical: windowHeight(2),
-        justifyContent: 'flex-end',
         marginHorizontal: windowWidth(220),
         borderRadius: windowHeight(4),
         paddingHorizontal: windowHeight(10),
-        top: windowHeight(18)
+        top: windowHeight(18),
+        height:windowHeight(25)
     },
     sliderContainer: {
         width: '100%',

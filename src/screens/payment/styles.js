@@ -10,5 +10,6 @@ const styles = StyleSheet.create({
         bottom: windowHeight(15),
         alignSelf: 'center'
     },
+ 
 })
 export default styles;

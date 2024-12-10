@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
         height: '80%',
         marginTop: windowHeight(0.1)
     },
+    inputView: { alignItems: 'center', alignSelf: 'center', alignContent: 'center', justifyContent: 'center' },
     truckView: {
         position: 'absolute',
         top: windowHeight(90),
@@ -46,10 +47,9 @@ const styles = StyleSheet.create({
         paddingHorizontal: windowWidth(20),
         paddingTop: windowHeight(20)
     },
-
-    input:{
-        marginHorizontal:windowHeight(0),
-        left:windowHeight(38),
+    input: {
+        paddingHorizontal: windowHeight(41),
+        width: windowWidth(437),
     },
     locationView: {
         marginTop: windowHeight(15),
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         borderRadius: windowHeight(5)
     },
     locationTxt: {
-        marginHorizontal:windowHeight(10),
+        marginHorizontal: windowHeight(10),
         fontSize: fontSizes.FONT24,
         fontFamily: 'mulishSemiBold'
     },
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     name: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        marginHorizontal:windowHeight(10)
+        marginHorizontal: windowHeight(10)
     },
     add: {
         fontSize: fontSizes.FONT20,

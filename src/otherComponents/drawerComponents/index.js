@@ -98,7 +98,7 @@ export function DrawerComponent() {
                     <TouchableOpacity
                         onPress={login}
                         activeOpacity={0.7}
-                        style={[styles.signOutView, { backgroundColor:isDark? colors.primary:appColors.drawer }]}
+                        style={[styles.signOutView, { backgroundColor: isDark ? colors.primary : appColors.drawer }]}
                     >
                         <Icons.signOut />
                         <Text style={[styles.signOut, { color: colors.text }]}>Sign Out</Text>

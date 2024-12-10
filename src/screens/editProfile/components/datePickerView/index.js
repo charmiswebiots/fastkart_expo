@@ -1,6 +1,7 @@
 import { View, Text, ScrollView, TouchableOpacity, Modal } from 'react-native';
 import React, { useState } from 'react';
 import styles from './styles';
+import { useValues } from '../../../../utils/context';
 
 export function DatePickerView({ showDatePicker, onCancel, onConfirm }) {
     const [date, setDate] = useState({
@@ -8,7 +9,7 @@ export function DatePickerView({ showDatePicker, onCancel, onConfirm }) {
         month: new Date().getMonth() + 1,
         year: new Date().getFullYear(),
     });
-
+const {viewRtlStyle}=useValues()
     const days = Array.from({ length: 31 }, (_, i) => i + 1);
     const months = Array.from({ length: 12 }, (_, i) => i + 1);
     const years = Array.from({ length: 101 }, (_, i) => new Date().getFullYear() - i);
@@ -49,7 +50,7 @@ export function DatePickerView({ showDatePicker, onCancel, onConfirm }) {
             <View style={styles.modalOverlay}>
                 <View style={styles.modalContainer}>
                     <Text style={styles.headerText}>Select Date</Text>
-                    <View style={styles.pickerContainer}>
+                    <View style={[styles.pickerContainer,{flexDirection:viewRtlStyle}]}>
                         <View style={styles.picker}>
                             <Text style={styles.pickerLabel}>Day</Text>
                             {renderOptions(days, (value) =>
@@ -69,7 +70,7 @@ export function DatePickerView({ showDatePicker, onCancel, onConfirm }) {
                         </View>
                     </View>
 
-                    <View style={styles.buttonContainer}>
+                    <View style={[styles.buttonContainer,{flexDirection:viewRtlStyle}]}>
                         <TouchableOpacity
                             style={[styles.button, styles.cancelButton]}
                             onPress={onCancel}

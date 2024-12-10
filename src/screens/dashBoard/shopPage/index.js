@@ -13,7 +13,7 @@ import { useValues } from "../../../utils/context";
 
 export function ShopPage() {
     const {colors}=useTheme()
-    const {isDark,viewRtlStyle}=useValues()
+    const {isDark}=useValues()
 
     const [showModal, setShowModal] = useState(false);
 

@@ -12,12 +12,14 @@ import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../utils/context";
 
 export function ReviewModal(props) {
-    const {colors}=useTheme()
-    const {isDark}=useValues()
+
+    const { colors } = useTheme()
+    const { isDark, viewRtlStyle } = useValues()
+
     return (
         <View style={[GlobalStyle.modal, { backgroundColor: colors.background, flex: 1 }]}>
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Text style={{ color: colors.text, fontFamily: 'mulishSemiBold', fontSize: fontSizes.FONT20 }}>All Review</Text>
+            <View style={[styles.allReviewView, { flexDirection: viewRtlStyle}]}>
+                <Text style={[styles.allReviewText, { color: colors.text }]}>All Review</Text>
                 <TouchableOpacity onPress={props.onPress}>
                     <Icons.into width={windowWidth(44)} height={windowHeight(44)} />
                 </TouchableOpacity>
@@ -27,11 +29,11 @@ export function ReviewModal(props) {
                     <View style={[styles.review, {
                         backgroundColor: appColors.gray,
                     }]}>
-                        <View style={[styles.reviewDetail]}>
+                        <View style={[styles.reviewDetail, { flexDirection: viewRtlStyle }]}>
                             <Image source={images.demoProfile} style={styles.demoProfile} />
                             <View style={[styles.reviewName]}>
                                 <Text style={[styles.reviewName]}>{item.reviewName}</Text>
-                                <View style={{ flexDirection: 'row' }}>
+                                <View style={{ flexDirection: viewRtlStyle }}>
                                     {reviewStar.map((item, key) =>
                                         <Image source={key === 4 ? images.star1 : images.star} style={styles.star} />
                                     )}

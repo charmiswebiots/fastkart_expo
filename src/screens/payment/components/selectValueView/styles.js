@@ -82,8 +82,11 @@ const styles = StyleSheet.create({
         width: windowWidth(190),
     },
     valueLeft: {
-        marginHorizontal: windowHeight(5),
+        right: windowWidth(12),
     },
+    valueRight: {
+        marginHorizontal:windowWidth(8)
+    }
 
 })
 export default styles;

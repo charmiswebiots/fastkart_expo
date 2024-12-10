@@ -9,12 +9,12 @@ import appColors from "../../../../../theme/appColors";
 import { useTheme } from "@react-navigation/native";
 
 export function Coupons() {
-    const {isDark}=useValues()
+    const {isDark,viewRtlStyle}=useValues()
     const {colors}=useTheme()
     return (
         <View style={[styles.mainView,{backgroundColor:isDark?colors.primary:appColors.drawer}]}>
             <SeeAllHeader title={'Coupons For You'} subtitle={'Popular Offers of the Day'} />
-            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{flexDirection:viewRtlStyle}}>
                 {
                     coupons.map((item, key) =>
                         <ImageBackground

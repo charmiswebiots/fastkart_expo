@@ -8,7 +8,7 @@ import { useValues } from "../../utils/context";
 const Drawer = createDrawerNavigator();
 
 export function DrawerNavigation() {
-    const {rtl}=useValues()
+    const { rtl } = useValues()
 
     return (
         <Drawer.Navigator
@@ -20,8 +20,8 @@ export function DrawerNavigation() {
                     width: windowWidth(365),
                 },
                 drawerPosition: rtl ? 'right' : 'left',
-                drawerType: 'front',
-                swipeEnabled: true,
+                drawerType: 'back',
+                swipeEnabled: false,
                 headerShown: false,
             }}
             drawerContent={() => <DrawerComponent />}>

@@ -11,7 +11,7 @@ import { useValues } from "../../utils/context";
 
 export function DeliveryTimeModal(props) {
     const {colors}=useTheme()
-    const { isDark}=useValues()
+    const { isDark,viewRtlStyle}=useValues()
 
     const [selectDeli, setSelectDeli] = useState(0);
 
@@ -23,7 +23,7 @@ export function DeliveryTimeModal(props) {
             <FlatList
                 numColumns={2}
                 data={delivery}
-                columnWrapperStyle={[styles.column, { flexDirection: 'row' }]}
+                columnWrapperStyle={[styles.column, { flexDirection: viewRtlStyle}]}
                 renderItem={({ item, index }) =>
                     <TouchableOpacity activeOpacity={0.8} onPress={() => selectDelivery(index)} style={[{ backgroundColor:isDark?colors.primary: appColors.gray, borderColor: selectDeli === index ? appColors.primary : appColors.gray }, styles.view]}>
                         {selectDeli === index &&

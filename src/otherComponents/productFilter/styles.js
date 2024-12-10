@@ -5,12 +5,10 @@ import appColors from "../../theme/appColors";
 const styles = StyleSheet.create({
     category: {
         justifyContent: 'space-between',
-        flexDirection: 'row'
     },
     categoryTxt: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        color: appColors.black,
     },
     reset: {
         fontSize: fontSizes.FONT20,
@@ -22,11 +20,10 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         marginTop: windowHeight(70),
         marginBottom: windowHeight(10),
-        color: appColors.black,
     },
     list: {
         marginTop: windowHeight(20),
-        flexDirection: 'row',
+        
     },
     seprator: {
         width: windowWidth(10),
@@ -49,13 +46,6 @@ const styles = StyleSheet.create({
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
         marginTop: windowHeight(20),
-        textAlign: 'left',
-    },
-    rangeView: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        paddingHorizontal: windowWidth(20),
-        marginTop: windowHeight(10)
     },
     list: {
         justifyContent: 'space-between'

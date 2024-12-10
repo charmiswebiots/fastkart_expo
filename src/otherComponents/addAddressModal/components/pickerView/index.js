@@ -3,8 +3,12 @@ import { View, TouchableOpacity, FlatList, Text } from "react-native";
 import styles from "./styles";
 import { windowWidth } from "../../../../theme/appConstant";
 import appColors from "../../../../theme/appColors";
+import { useValues } from "../../../../utils/context";
+import { useTheme } from "@react-navigation/native";
 
 export function PickerView(props) {
+    const { colors } = useTheme()
+    const { textRtlStyle, isDark } = useValues()
     const setValue = (item) => {
         props.setInputValue(item.title);
     }
@@ -20,11 +24,11 @@ export function PickerView(props) {
                         width: props.width ? props.width : windowWidth(440),
                         borderColor: appColors.primary,
                         justifyContent: 'center',
-                        backgroundColor: appColors.white,
+                        backgroundColor: isDark ? colors.primary : appColors.gray,
                     }
                 ]}
             >
-                <Text style={[styles.txt, { textAlign: 'left', color: appColors.text }]}>
+                <Text style={[styles.txt, { textAlign: textRtlStyle, color: colors.text }]}>
                     {props.value}
                 </Text>
             </TouchableOpacity>
@@ -34,8 +38,7 @@ export function PickerView(props) {
                         styles.list,
                         {
                             width: props.width ? props.width : windowWidth(440),
-                            backgroundColor: appColors.white
-                        }
+                            backgroundColor: isDark ? colors.primary : appColors.gray,                        }
                     ]}
                 >
                     <FlatList
@@ -48,7 +51,7 @@ export function PickerView(props) {
                                 onPress={() => setValue(item)}
                                 activeOpacity={0.7}
                             >
-                                <Text style={[styles.listTxt, { textAlign: 'left', color: appColors.black }]}>
+                                <Text style={[styles.listTxt, { textAlign: textRtlStyle, color: colors.text }]}>
                                     {item.title}
                                 </Text>
                             </TouchableOpacity>

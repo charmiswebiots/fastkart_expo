@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
         width: windowWidth(80),
         height: windowHeight(50),
         marginTop: windowHeight(2),
+        gap:10,
     },
     discount: {
         fontSize: fontSizes.FONT20,

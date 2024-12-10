@@ -3,15 +3,17 @@ import { View, Text } from "react-native";
 import styles from "./styles";
 import { GlobalStyle } from "../../styles/style";
 import { OptionButton, Input } from "../../commonComponents";
-import appColors from "../../theme/appColors";
 import { PickerView } from "./components";
 import { useState } from "react";
 import { cityArr } from "../../screens/data";
 import { stateArr } from "../../screens/data";
 import { windowHeight } from "../../theme/appConstant";
+import { useValues } from "../../utils/context";
+import { useTheme } from "@react-navigation/native";
 
 export function AddAddressModal(props) {
-    const [street, setStreet] = useState('');
+    const { colors } = useTheme()
+    const { textRtlStyle } = useValues()
     const [city, setCity] = useState('City');
     const [state, setState] = useState('State')
     const [showState, setShowState] = useState(false);
@@ -31,13 +33,13 @@ export function AddAddressModal(props) {
 
 
     return (
-       
-            <View style={[GlobalStyle.modal, { backgroundColor: appColors.white }]}>
-                 <View style={styles.container}>
-                <Text style={[styles.address, { color: appColors.black, textAlign: 'left' }]}>Add Address</Text>
-                <View style={{ gap: 22 ,right:windowHeight(11)}}>
+
+        <View style={[GlobalStyle.modal, { backgroundColor: colors.background }]}>
+            <View style={styles.container}>
+                <Text style={[styles.address, { color: colors.text, textAlign: textRtlStyle }]}>Add Address</Text>
+                <View style={{ gap: 22 }}>
                     <Input placeholder={'1234 Main St'} style={styles.input} />
-                    <Input placeholder={'Apartment,studio, or floor'} style={styles.input}/>
+                    <Input placeholder={'Apartment,studio, or floor'} style={styles.input} />
                 </View>
                 <PickerView
                     value={city}
@@ -62,11 +64,11 @@ export function AddAddressModal(props) {
                     setInputValue={getStateValue}
                     textAlign={props.textAlign}
                 />
-                <View style={{ top: windowHeight(20) ,right:windowHeight(11)}}>
+                <View style={styles.inputView}>
                     <Input placeholder={'Zip'} style={styles.input} />
                 </View>
-                <View style={{top:windowHeight(15)}}>
-                <OptionButton txt1={'Close'} txt2={'Add'} onPress1={props.showModal} onPress2={props.showModal} />
+                <View style={styles.btnView}>
+                    <OptionButton txt1={'Close'} txt2={'Add'} onPress1={props.showModal} onPress2={props.showModal} />
                 </View>
             </View>
         </View>

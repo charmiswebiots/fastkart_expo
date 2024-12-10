@@ -10,10 +10,14 @@ import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../utils/context";
 
 
-export function PageList({navigation}) {
+export function PageList({ navigation }) {
 
-    const {colors}=useTheme()
-    const {isDark,textRtlStyle}=useValues()
+    const home = () => {
+        navigation.navigate('Home')
+    }
+
+    const { colors } = useTheme()
+    const { isDark, textRtlStyle } = useValues()
 
     const goToScreen = (key) => {
         if (key === 0) {
@@ -31,7 +35,7 @@ export function PageList({navigation}) {
         } else if (key === 6) {
             navigation.navigate('Category');
         } else if (key === 7) {
-            navigation.replace('TabNavigation');
+            navigation.replace('Home');
         } else if (key === 8) {
             navigation.navigate('Login');
         } else if (key === 9) {
@@ -70,15 +74,16 @@ export function PageList({navigation}) {
                 <Header
                     onPress={() => navigation.goBack()}
                     isText
-                    titleText={'Pages List'} />
-                <View style={[styles.checkOut, { backgroundColor: isDark?colors.primary: appColors.gray }]}>
-                    <Text style={[styles.checkOutTxt,{textAlign:textRtlStyle}]}>Checkout all pages and their varations over here. following are the list of all the pages.</Text>
+                    titleText={'Pages List'} imageOnPress={home} />
+                <View style={[styles.checkOut, { backgroundColor: isDark ? colors.primary : appColors.gray }]}>
+                    <Text style={[styles.checkOutTxt, { textAlign: textRtlStyle }]}>Checkout all pages and their varations over here. following are the list of all the pages.</Text>
                 </View>
                 {pagesList.map((item, key) =>
                     <MenuItem
                         text={item.name}
                         showSwitch={false}
-                        width={'99%'}
+                        style={styles.menu}
+                        width={'100%'}
                         fill={appColors.primary}
                         onPress={() => goToScreen(key)}
                     />

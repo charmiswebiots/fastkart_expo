@@ -7,13 +7,17 @@ import { useTheme } from "@react-navigation/native";
 
 export function AboutUs({navigation}){
     const {colors}=useTheme()
+
+    const home = () => {
+        navigation.navigate('Home')
+    }
     return(
         <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
         <ScrollView showsVerticalScrollIndicator={false}>
             <Header
                 onPress={() => navigation.goBack()}
                 isText
-                titleText={'About us'} />
+                titleText={'About us'} imageOnPress={home}/>
             <Image source={images.aboutUs} style={styles.img} resizeMode='contain' />
             <QuestionsView  />
             <PeopleView/>

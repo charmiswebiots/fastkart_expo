@@ -106,10 +106,19 @@ export function SelectValueView() {
                                     style={[
                                         styles.icon,
                                         data.value === "Cash on Delivery" && styles.cashOnDeliveryIcon,
-                                    ]}
+
+                                        {
+                                            flexDirection: viewRtlStyle,
+                                        }]}
                                 />
                                 <Text style={[styles.value, { color: colors.text }]}>{data.value}</Text>
-                                {selectedMethod === key && <Selected />}
+                                {selectedMethod === key && (
+
+                                    <Selected />
+                                )}
+
+
+
                             </TouchableOpacity>
 
                         ))
@@ -126,9 +135,8 @@ export function SelectValueView() {
                                         {
                                             justifyContent: "space-between",
                                             paddingHorizontal: windowHeight(0),
-                                            right: windowHeight(1.6),
                                             width: windowWidth(202),
-                                            flexDirection:viewRtlStyle
+                                            flexDirection: viewRtlStyle
                                         },
                                     ]}
                                 >
@@ -146,12 +154,13 @@ export function SelectValueView() {
                                         <Text
                                             style={[
                                                 styles.valueTxt,
-                                                styles.valueLeft,
                                                 { color: colors.text },
+                                                rtl ? styles.valueLeft : styles.valueRight,
                                             ]}
                                         >
                                             {item.value}
                                         </Text>
+
                                     </TouchableOpacity>
                                 </View>
                             )}

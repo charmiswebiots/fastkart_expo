@@ -1,8 +1,11 @@
 import { StyleSheet } from "react-native";
-import { windowHeight,fontSizes,windowWidth } from "../../theme/appConstant";
+import { windowHeight, fontSizes, windowWidth } from "../../theme/appConstant";
 import appColors from "../../theme/appColors";
 
-const styles=StyleSheet.create({
+const styles = StyleSheet.create({
+    mainView: {
+        borderTopStartRadius: windowWidth(20), borderTopEndRadius: windowWidth(20), position: 'absolute', bottom: 0, width: '100%'
+    },
     listView: {
         paddingHorizontal: windowWidth(20),
         marginTop: windowHeight(20)
@@ -16,7 +19,7 @@ const styles=StyleSheet.create({
     },
     columnWrapperStyle: {
         justifyContent: 'space-between',
-        flexDirection:"row",
+        flexDirection: "row",
     },
     separator: {
         height: windowHeight(10)

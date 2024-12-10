@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
         fontSize: fontSizes.FONT18,
         fontFamily: 'mulishSemiBold',
         color:appColors.black,
-        textAlign:'left'
     }
 })
 export default styles;

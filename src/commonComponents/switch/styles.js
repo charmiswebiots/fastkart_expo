@@ -23,6 +23,8 @@ const styles = StyleSheet.create({
         width: windowWidth(23),
         height: windowWidth(23),
         borderRadius: windowHeight(8),
+        backgroundColor: appColors.white,
+
     },
     circleOn: {
         backgroundColor: appColors.primary,

@@ -9,10 +9,12 @@ import images from "../../utils/images";
 import appColors from "../../theme/appColors";
 import { DrawerNavigation } from "../drawer/drawerNavigator";
 import { TabComponents } from "../../otherComponents";
+import { useTheme } from "@react-navigation/native";
 
 const Tab = createBottomTabNavigator();
 
 export function TabNavigation() {
+    const { colors } = useTheme()
     return (
         <Tab.Navigator
             initialRouteName="Drawer"
@@ -29,8 +31,8 @@ export function TabNavigation() {
                 options={{
                     tabBarLabel: 'Home',
                     tabBarIcon: ({ focused }) => (
-                        <View style={styles.icon}>
-                            <Icons.home  />
+                        <View style={styles.icon}> 
+                            <Icons.home />
                         </View>
                     ),
                 }}

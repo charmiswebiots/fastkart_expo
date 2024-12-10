@@ -1,7 +1,4 @@
-import Svg, {
-	Path,
-	G
-} from 'react-native-svg';
+import Svg, {Path} from 'react-native-svg';
 import React from 'react';
 import { windowWidth, windowHeight } from '../../theme/appConstant';
 

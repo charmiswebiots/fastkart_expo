@@ -18,7 +18,7 @@ export function CurrencyConverterModal() {
             {currencys.map((item) =>
                 <TouchableOpacity activeOpacity={0.8}  style={[styles.icon, { flexDirection: viewRtlStyle }]}>
                     {item.icons}
-                    <Text style={[styles.text, { color: colors.text, marginLeft: windowWidth(20) }]}>{item.name}  </Text>
+                    <Text style={[styles.text, { color: colors.text, marginHorizontal: windowWidth(12) }]}>{item.name}  </Text>
                 </TouchableOpacity>
             )}
         </View>

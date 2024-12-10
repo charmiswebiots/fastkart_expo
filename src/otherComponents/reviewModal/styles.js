@@ -13,14 +13,19 @@ const styles = StyleSheet.create({
     },
     review: {
         marginTop: windowHeight(13),
-        paddingVertical:windowHeight(9),
+        paddingVertical: windowHeight(9),
         borderRadius: windowHeight(10),
+    },
+    allReviewText: {
+        fontFamily: 'mulishSemiBold', fontSize: fontSizes.FONT20
+    },
+    allReviewView: {
+        justifyContent: 'space-between', alignItems: 'center'
     },
     reviewDetail: {
         alignItems: 'center',
-        flexDirection:'row',
-        height:windowHeight(43),
-        marginHorizontal:windowHeight(13),
+        height: windowHeight(43),
+        marginHorizontal: windowHeight(13),
     },
     demoProfile: {
         width: windowWidth(60),
@@ -31,25 +36,25 @@ const styles = StyleSheet.create({
         marginHorizontal: windowWidth(14)
     },
     reviewName: {
-        fontFamily:'mulishSemiBold',
+        fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT20,
-        color:appColors.black,
-        marginHorizontal:windowHeight(5)
+        color: appColors.black,
+        marginHorizontal: windowHeight(5)
     },
     star: {
         width: windowWidth(19),
         height: windowHeight(17),
-        marginHorizontal:windowWidth(3),
-        left:windowHeight(2)
+        marginHorizontal: windowWidth(3),
+        left: windowHeight(2)
     },
     reviewTxt: {
         fontSize: fontSizes.FONT20,
-        fontFamily:'mulishSemiBold',
+        fontFamily: 'mulishSemiBold',
         color: appColors.content,
         width: '100%',
-        textAlign:'left',
-        marginTop:windowHeight(6),
-        marginHorizontal:windowHeight(13),
+        textAlign: 'left',
+        marginTop: windowHeight(6),
+        marginHorizontal: windowHeight(13),
 
     },
 })

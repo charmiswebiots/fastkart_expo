@@ -5,10 +5,15 @@ import { AlertView, NotificationsView } from "./components";
 import { useTheme } from "@react-navigation/native";
 
 export function Notification({ navigation }) {
-    const {colors}=useTheme()
+
+    const home = () => {
+        navigation.navigate('Home')
+    }
+    const { colors } = useTheme()
+    
     return (
-        <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
-            <Header titleText={'Notification'} isText onPress={() => navigation.goBack()} />
+        <SafeAreaView style={[styles.mainView, { backgroundColor: colors.background }]}>
+            <Header titleText={'Notification'} isText onPress={() => navigation.goBack()} imageOnPress={home} />
             <AlertView />
             <NotificationsView />
         </SafeAreaView>

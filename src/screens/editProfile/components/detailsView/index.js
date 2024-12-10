@@ -2,10 +2,11 @@ import { View, TouchableOpacity } from "react-native";
 import styles from "./styles";
 import { Input } from "../../../../commonComponents";
 import { Icons } from "../../../../utils/icons";
-import appColors from "../../../../theme/appColors";
 import { windowWidth } from "../../../../theme/appConstant";
+import { useTheme } from "@react-navigation/native";
 
 export function DetailsView(props) {
+    const {colors}=useTheme()
     return (
         <View style={styles.container}>
             <Input
@@ -24,7 +25,7 @@ export function DetailsView(props) {
                 style={styles.input}
                 placeholder={'9876543210'}
                 keyboardType={'numeric'}
-                rightIcon={<Icons.call color={appColors.black} />}
+                rightIcon={<Icons.call color={colors.text} />}
             />
             <Input
                 style={styles.input}
@@ -32,7 +33,7 @@ export function DetailsView(props) {
                 editable={false}
                 rightIcon={
                     <TouchableOpacity onPress={props.onPress}>
-                        <Icons.calender color={appColors.black} />
+                        <Icons.calender color={colors.text} />
                     </TouchableOpacity>
                 }
             />

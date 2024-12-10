@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
         color: appColors.black,
         marginTop: windowHeight(8),
     },
+    view:{ alignItems: 'center', alignSelf: 'center', alignContent: 'center', justifyContent: 'center'},
     line: {
         width: windowWidth(158),
         height: windowHeight(0.5),

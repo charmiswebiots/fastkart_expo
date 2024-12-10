@@ -55,7 +55,7 @@ export function CategoryView({ onPress }) {
                 ))}
             </View>
 
-            <View style={{ marginTop: windowHeight(125), left: windowHeight(8) }}>
+            <View style={styles.view}>
                 <FlatList
                     data={subCategories}
                     keyExtractor={(item) => item.id.toString()}

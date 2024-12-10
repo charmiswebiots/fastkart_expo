@@ -9,6 +9,7 @@ import { useTheme } from "@react-navigation/native";
 
 
 export function OrderHistory({ navigation }) {
+    
     const { colors } = useTheme()
     const [filterModal, setFilterModal] = useState(false);
 
@@ -27,7 +28,7 @@ export function OrderHistory({ navigation }) {
                 imageOnPress={home}
                 onPress={() => navigation.goBack()}
                 isText
-                titleText={'Order History'} />
+                titleText={'Order History'}  />
             <OrderHistoryTime />
             <View style={styles.container}>
                 <SearchFilter onPress={visibleFilterModal} />

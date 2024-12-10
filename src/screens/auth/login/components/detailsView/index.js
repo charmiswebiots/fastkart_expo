@@ -3,7 +3,6 @@ import { View, Text } from "react-native";
 import styles from "./styles";
 import { Input } from "../../../../../commonComponents/index";
 import { Icons } from "../../../../../utils/icons";
-import { windowWidth } from "../../../../../theme/appConstant";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../../../utils/context";
 
@@ -25,7 +24,6 @@ export function DetailsView() {
                     placeholder={'Email address'}
                     rightIcon={<Icons.atSign />}
                     style={styles.input}
-                    width={windowWidth(30)}
                 />
             </View>
             <View style={styles.container1}>

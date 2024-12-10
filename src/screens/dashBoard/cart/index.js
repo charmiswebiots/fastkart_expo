@@ -11,7 +11,7 @@ import { useTheme } from "@react-navigation/native";
 export function Cart({ navigation }) {
     const [showModal, setShowModal] = useState(false);
     const [showDeleteModal, setShowDeleteModal] = useState(false);
-    const {colors}=useTheme()
+    const { colors } = useTheme()
 
     const productDetails = () => {
         navigation.navigate('ProductsDetails')
@@ -34,7 +34,7 @@ export function Cart({ navigation }) {
     }
 
     return (
-        <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
+        <SafeAreaView style={[styles.mainView, { backgroundColor: colors.background }]}>
             <Header
                 onPress={() => navigation.goBack()}
                 isText

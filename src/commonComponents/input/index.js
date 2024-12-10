@@ -4,7 +4,7 @@ import styles from "./styles";
 import appColors from "../../theme/appColors";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../utils/context";
-import { windowHeight } from "../../theme/appConstant";
+import { windowHeight, windowWidth } from "../../theme/appConstant";
 
 export function Input({
     placeholder,
@@ -28,8 +28,8 @@ export function Input({
         setIsFocus(value);
     };
 
-    const { isDark,viewRtlStyle,rtl } = useValues()
-    const { colors } = useTheme()
+    const { isDark, viewRtlStyle, rtl } = useValues();
+    const { colors } = useTheme();
 
     return (
         <View>
@@ -38,8 +38,12 @@ export function Input({
                     styles.inputView,
                     { backgroundColor: isDark ? colors.primary : appColors.gray },
                     { borderColor: isDark ? colors.primary : appColors.drawer },
+                    { paddingLeft: leftIcon ? windowWidth(56) : windowWidth(16) },
                     style,
-                    isFocus && { backgroundColor: isDark ? colors.primary : appColors.drawer, borderColor: isDark ? appColors.primary : appColors.primary },
+                    isFocus && {
+                        backgroundColor: isDark ? colors.primary : appColors.drawer,
+                        borderColor: isDark ? appColors.primary : appColors.primary,
+                    },
                 ]}
             >
                 <TextInput
@@ -51,17 +55,39 @@ export function Input({
                     onBlur={() => handleFocus(false)}
                     secureTextEntry={secureTextEntry}
                     placeholderTextColor={isDark ? appColors.white : appColors.content}
-                    style={[styles.input, style, { color: colors.text },{flexDirection:viewRtlStyle}]}
+                    style={[
+                        styles.input,
+                        style,
+                        { color: colors.text },
+                        { flexDirection: viewRtlStyle },
+                        { textAlign: rtl ? "right" : "left" },
+
+
+                    ]}
                     keyboardType={keyboardType}
                     maxLength={maxLength}
                 />
                 {leftIcon && (
-                    <TouchableOpacity style={[styles.leftIcon,{left:rtl?windowHeight(10):windowHeight(20)}]} onPress={onPress} activeOpacity={0.7}>
+                    <TouchableOpacity
+                        style={[
+                            styles.leftIcon,
+                            { left: rtl ? undefined : windowHeight(12), right: rtl ? windowHeight(12) : undefined },
+                        ]}
+                        onPress={onPress}
+                        activeOpacity={0.7}
+                    >
                         {leftIcon}
                     </TouchableOpacity>
                 )}
                 {rightIcon || isText ? (
-                    <TouchableOpacity style={[styles.rightIcon,{right:rtl?windowHeight(10):windowHeight(20)}]} onPress={onPress1} activeOpacity={0.7}>
+                    <TouchableOpacity
+                        style={[
+                            styles.rightIcon,
+                            { right: rtl ? undefined : windowHeight(10), left: rtl ? windowHeight(12) : undefined },
+                        ]}
+                        onPress={onPress1}
+                        activeOpacity={0.7}
+                    >
                         {isText ? (
                             <Text style={styles.text}>{text}</Text>
                         ) : (

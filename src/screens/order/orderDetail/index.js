@@ -10,11 +10,15 @@ import { useValues } from "../../../utils/context";
 
 export function OrderDetail({ navigation }) {
 
-    const {colors}=useTheme()
-    const {isDark}=useValues()
+    const { colors } = useTheme()
+    const { isDark } = useValues()
 
     const shopPage = () => {
         navigation.navigate('ShopPage')
+    }
+
+    const home = () => {
+        navigation.navigate('Home')
     }
 
     return (
@@ -24,11 +28,11 @@ export function OrderDetail({ navigation }) {
                     onPress={() => navigation.replace('Drawer')}
                     showImage={false}
                     isText
-                    titleText={'Order Summary'} />
+                    titleText={'Order Summary'} imageOnPress={home} />
                 <OrderDetailView />
                 <ItemsView />
                 <View style={styles.view}>
-                    <Total title={'Payment Details'} style={{ color: isDark?appColors.primary:appColors.primary }} style1={{ backgroundColor: colors.background, marginHorizontal: windowHeight(0) }} />
+                    <Total title={'Payment Details'} style={{ color: isDark ? appColors.primary : appColors.primary }} style1={{ backgroundColor: colors.background, marginHorizontal: windowHeight(0) }} />
                 </View>
                 <AddressView />
                 <PaymentsMethodView />

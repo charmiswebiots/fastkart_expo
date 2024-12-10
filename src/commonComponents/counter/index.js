@@ -2,8 +2,10 @@ import { View, TouchableOpacity, Text } from "react-native";
 import styles from "./styles";
 import { Icons } from "../../utils/icons";
 import { useState } from "react";
+import { useValues } from "../../utils/context";
 
-export function Counter({props,color,style}) {
+export function Counter({color,style}) {
+    const {viewRtlStyle}=useValues()
 
     const [count, setCount] = useState(1)
 
@@ -18,7 +20,7 @@ export function Counter({props,color,style}) {
         }
     }
     return (
-        <View style={[styles.mainView,style]}>
+        <View style={[styles.mainView,style,{flexDirection:viewRtlStyle}]}>
             <TouchableOpacity style={[styles.decrease]} onPress={decreaseCount}>
                 <Icons.decrease color={color} />
             </TouchableOpacity>

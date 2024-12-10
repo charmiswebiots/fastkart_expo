@@ -14,11 +14,11 @@ interface HomeHeaderProps {
 
 export function HomeHeader({ navigation, toogle }: HomeHeaderProps) {
 
-  const { isDark, viewRtlStyle } = useValues()
+  const { isDark, viewRtlStyle ,textRtlStyle} = useValues()
   const { colors } = useTheme()
 
   return (
-    <View style={[styles.mainView, { flexDirection: viewRtlStyle }]}>
+    <View style={[styles.mainView, { flexDirection: viewRtlStyle },{textAlign:textRtlStyle}]}>
       <View style={[styles.view, { flexDirection: viewRtlStyle }]}>
         <TouchableOpacity onPress={toogle}>
           <Icons.category />

@@ -8,8 +8,10 @@ import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../../../utils/context";
 
 export function ReviewView(props) {
+
     const {colors}=useTheme()
-    const {viewRtlStyle,textRtlStyle}=useValues()
+    const {viewRtlStyle,isDark}=useValues()
+
     return (
         <View>
             <TouchableOpacity activeOpacity={0.8} style={[styles.reviewView,{flexDirection:viewRtlStyle}]} onPress={props.visibleReviewModal}>
@@ -19,12 +21,12 @@ export function ReviewView(props) {
             <View style={styles.list}>
                 {reviewList.splice(0, 2).map((item) =>
                     <View style={[styles.review, {
-                        backgroundColor: appColors.gray,
+                        backgroundColor: isDark?colors.primary:appColors.gray,
                     }]}>
                         <View style={[styles.reviewDetail,{flexDirection:viewRtlStyle}]}>
                             <Image source={images.demoProfile} style={styles.demoProfile} />
                             <View style={styles.reviewNameViewRight}>
-                                <Text style={[styles.reviewName]}>{item.reviewName}</Text>
+                                <Text style={[styles.reviewName,{color:colors.text}]}>{item.reviewName}</Text>
                                 <View style={{ flexDirection: viewRtlStyle }}>
                                     {reviewStar.map((item, key) =>
                                         <Image source={key === 4 ? images.star1 : images.star} style={styles.star} />
@@ -32,7 +34,7 @@ export function ReviewView(props) {
                                 </View>
                             </View>
                         </View>
-                        <Text style={[styles.reviewTxt,{textAlign:textRtlStyle}]}>{item.review}</Text>
+                        <Text style={[styles.reviewTxt]}>{item.review}</Text>
                     </View>
                 )}
             </View>

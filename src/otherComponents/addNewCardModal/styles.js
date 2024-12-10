@@ -1,12 +1,13 @@
 import { StyleSheet } from "react-native";
 import { windowHeight, fontSizes, windowWidth } from "../../theme/appConstant";
-import appColors from "../../theme/appColors";
 
 const styles = StyleSheet.create({
     addCard: {
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT24,
-        color: appColors.black,
+    },
+    mainView: {
+        paddingVertical: windowHeight(1), gap: 20, marginTop: windowHeight(15)
     },
     inputView: {
         width: '100%',
@@ -16,7 +17,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: windowHeight(15),
         width: windowWidth(440),
     },
-    input1:{
+    input1: {
         paddingHorizontal: windowHeight(15),
         width: windowWidth(210),
     },

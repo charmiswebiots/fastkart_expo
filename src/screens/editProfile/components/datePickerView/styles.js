@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
         marginBottom: windowHeight(15),
     },
     pickerContainer: {
-        flexDirection: 'row',
         justifyContent: 'space-between',
         marginBottom: windowHeight(15),
     },
@@ -59,7 +58,6 @@ const styles = StyleSheet.create({
         color: appColors.white,
     },
     buttonContainer: {
-        flexDirection: 'row',
         justifyContent: 'space-between',
     },
     button: {

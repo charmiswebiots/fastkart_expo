@@ -12,26 +12,16 @@ const styles = StyleSheet.create({
     },
     input:{
         width:windowWidth(440),
-        left:windowWidth(15),
-
+        paddingHorizontal:windowWidth(18)
     },
     container:{
         marginTop:windowHeight(3),
         height:windowHeight(60),
-        alignSelf:'center',
-        alignItems:'center',
         justifyContent:"center",
-        right:windowHeight(10),
-
     },
     container1:{
-        bottom:windowHeight(0.5),
         height:windowHeight(60),
-        alignSelf:'center',
-        alignItems:'center',
         justifyContent:"center",
-        right:windowHeight(10),
-
     },
     forgotPassword: {
         textAlign: 'right',

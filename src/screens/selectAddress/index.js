@@ -18,6 +18,10 @@ export function SelectAddress({ navigation }) {
         setShowModal(!showModal)
     ]
 
+    const payment=()=>{
+        navigation.navigate('Payment')
+    }
+
     return (
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <Header
@@ -29,7 +33,7 @@ export function SelectAddress({ navigation }) {
             <AddressView />
 
             <Button text={'Proceed to Payment'} style={styles.btn}
-                color={appColors.white} />
+                color={appColors.white}  onPress={payment}/>
             <CommonModal
                 modal={
                     <AddAddressModal showModal={visibleModal} />}

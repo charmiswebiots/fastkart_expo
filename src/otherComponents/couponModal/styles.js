@@ -22,17 +22,13 @@ const styles = StyleSheet.create({
         color: appColors.white,
         fontSize: fontSizes.FONT28,
         fontFamily: 'quickSandMedium',
-        textAlign:'left',
         marginTop:windowHeight(4),
     },
     offTxt: {
         color: appColors.white,
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        textAlign:'left',
         marginTop:windowHeight(2),
-
-
     },
     codeView: {
         width: '100%',
@@ -41,7 +37,6 @@ const styles = StyleSheet.create({
         paddingVertical: windowHeight(13),
         justifyContent: 'space-between',
         alignItems: 'center',
-        flexDirection:'row',
         paddingHorizontal: windowWidth(26),
         marginTop: windowHeight(10)
     },
@@ -63,11 +58,9 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         color: appColors.content,
         fontSize: fontSizes.FONT20,
-        textAlign:'left',
     },
     keyView: {
         width: '96.5%',
-        flexDirection:'row',
         marginTop: windowHeight(8)
     },
     termsView: {

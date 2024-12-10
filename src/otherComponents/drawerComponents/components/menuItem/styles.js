@@ -19,14 +19,12 @@ const styles = StyleSheet.create({
     },
     txtRight: {
         marginHorizontal: windowWidth(20),
-
     },
     arrow: {
         borderWidth: 0.5,
         width: windowHeight(24),
         height: windowHeight(24),
         borderRadius: windowHeight(12),
-        alignSelf: 'flex-end',
         alignItems: 'center',
         justifyContent: 'center',
         borderColor: appColors.drawer, 

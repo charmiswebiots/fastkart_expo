@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
         marginHorizontal: windowWidth(10),
     },
     input:{
-        left:windowHeight(12),
-        width:windowWidth(437),
+        paddingHorizontal:windowHeight(12),
+        width:windowWidth(440),
     },
 })
 export default styles;

@@ -1,8 +1,13 @@
 import React, { useState, useRef } from 'react';
 import { View, Text, PanResponder, Dimensions } from 'react-native';
 import styles from './styles';
+import { useValues } from '../../../../utils/context';
+import { useTheme } from '@react-navigation/native';
+import appColors from '../../../../theme/appColors';
 
 export function RangeSlider () {
+  const {viewRtlStyle,isDark}=useValues()
+  const {colors}=useTheme()
   const [range, setRange] = useState({ min: 0, max: 100 });
   const [lowValue, setLowValue] = useState(0);
   const [highValue, setHighValue] = useState(100);
@@ -72,8 +77,8 @@ export function RangeSlider () {
         />
       </View>
       <View style={{flexDirection:'row'}}>
-      <Text style={styles.rangeText}>${lowValue}.00</Text>
-      <Text style={styles.rangeText1}>${highValue}.00</Text>
+      <Text style={[styles.rangeText,{color:colors.text},{backgroundColor:isDark?colors.primary:appColors.gray}]}>${lowValue}.00</Text>
+      <Text style={[styles.rangeText1,{color:colors.text},{backgroundColor:isDark?colors.primary:appColors.gray}]}>${highValue}.00</Text>
       </View>
     </View>
   );

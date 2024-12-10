@@ -1,0 +1,543 @@
+{
+    "translation": {
+        "onBoarding": {
+            "safeDelivery": "Get Safe Delivery At Your Door Step"
+        },
+        "login": {
+            "signIn": "Sign in",
+            "loginAccount": "Login Account",
+            "forgotPassword": "Forgot password?",
+            "createAccount": "If you are new, Create Now",
+            "signInWith": "Or sign in with"
+        },
+        "register": {
+            "signUp": "Sign Up",
+            "registerAccount": "Register Account",
+            "accountSignIn": "Already have an Account? Sign In",
+            "signUpWith": "Or sign up with",
+            "fullName": "Full Name",
+            "fullNameError": "FullName is Required"
+        },
+        "loginNRegister": {
+            "onlineSupermarket": "Online Supermarket for all your daily needs. you are just One Click away from your all needs at your door step.",
+            "continueWithPhone": "Continue with Phone",
+            "continueWithGoogle": "Continue with Google",
+            "continueAsGuest": "Continue as guest",
+            "emailAddress": "Email address",
+            "password": "Password",
+            "emailError": "Email is Required",
+            "passwordError": "Password is Required",
+            "validEmailError": "Enter valid email address",
+            "validPasswordError": "Password should be 8 characters"
+        },
+        "tabBar": {
+            "home": "Home",
+            "category": "Category",
+            "search": "Search",
+            "offers": "Offers",
+            "cart": "Cart"
+        },
+        "drawer": {
+            "fastKartPagesList": "Fastkart Pages list",
+            "orders": "Orders",
+            "yourWishlist": "Your Wishlist",
+            "langauge": "Langauge",
+            "yourAccount": "Your Account",
+            "notification": "Notification",
+            "settings": "Settings",
+            "currencyConverter": "Currency Change",
+            "dark": "Dark",
+            "rtl": "RTL",
+            "contactSupport": "Contact Support",
+            "reactOut": "If you have any problem,queries or questions feel free to reach out",
+            "contactUs": "Contact Us"
+        },
+        "homepage": {
+            "farmFreshVegies": "Farm Fresh Vegies",
+            "getInstantDelivery": "Get instant delivery",
+            "recentlyBrought": "Buy from Recently Bought",
+            "seeAll": "See all",
+            "shopNow": "Shop Now",
+            "sayHelloOffers": "Say hello to Offers!",
+            "shopByCategory": "Shop by Category",
+            "bestPrice": "Best price ever of all the time",
+            "lowestPrice": "Lowest Price",
+            "payless": "Pay less, Get More",
+            "everydayEssentials": "Everyday Essentials",
+            "couponsForYou": "Coupons For You",
+            "popularOffer": "Popular Offers of the Day",
+            "didntFind": "Didn’t find what you were looking for?",
+            "browseCategory": "Browse Category"
+        },
+        "searchPage": {
+            "recentlySearch": "Recently Search",
+            "trendingCategory": "Trending Category",
+            "trendingProducts": "Trending Products"
+        },
+        "offerPage": {
+            "myOffers": "My Offers"
+        },
+        "cartPage": {
+            "myCart": "My Cart",
+            "orderDetails": "Order Details"
+        },
+        "commonTotal": {
+            "bagTotal": "Bag total",
+            "bagSavings": "Bag savings",
+            "couponDiscount": "Coupon Discount",
+            "delivery": "Delivery",
+            "totalAmount": "Total Amount",
+            "proceedtoCheckout": "Proceed to Checkout"
+        },
+        "commonText": {
+            "filter": "Filter",
+            "cancle": "Cancel",
+            "close": "Close",
+            "searchProducts": "Search here.."
+        },
+        "totalModule": {
+            "applyCoupon": "Apply Coupon"
+        },
+        "couponModal": {
+            "termsConditions": "Terms & conditions",
+            "terms1": "Information on how to participate forms part of these Terms & Conditions. By participating, claimants agree to be bound by these Terms & Conditions. Claimants must comply with these Terms & Conditions for a coupon to be valid.",
+            "terms2": "Each claimant is entitled to one coupon per accommodation establishment. Coupons are not transferable and are not redeemable for cash and cannot be combined with any other coupons or any other offer or discounts or promotions offered by Quovai.",
+            "copyCode": "Copy Code"
+        },
+        "addAddressPage": {
+            "addAddress": "Add Address",
+            "searchLocation": "Search Location",
+            "useCurrentLocation": "Use current location",
+            "confirmLocation": "Confirm location & proceed",
+            "deliverTime": "Delivery on 7th Aug, Slot: 7am to 9am",
+            "streetError": "Street is Required",
+            "apartmentError": "Apartment is Required",
+            "zipError": "Zip is Required"
+        },
+        "selectDeliveryAddressPage": {
+            "selectDeliveryAddress": "Select delivery address",
+            "addNewAddress": "Add New Address",
+            "work": "Work",
+            "proceedToPayment": "Proceed to Payment",
+            "default": "Default"
+        },
+        "addPaymentPage": {
+            "addPaymentMethod": "Add Payment Method",
+            "addNewCard": "Add New Card",
+            "confirmPayment": "Confirm Payment"
+        },
+        "addCard": {
+            "addCard": "Add Card",
+            "cardHolderName": "Card Holder Name",
+            "cardNum": "Card Number",
+            "expiryDate": "Expiry Date",
+            "cvv": "CVV",
+            "holderNameError": "Card Holder Name is Required",
+            "numberError": "Card Number is Required",
+            "expriryError": "Expriy Date is Required",
+            "cvvError": "CVV is Required",
+            "validCvvError": "CVV must be of 3 numbers"
+        },
+        "orderSuccessPage": {
+            "thankYouforOrder": "Thank you for your order!",
+            "orderDate": "Order Date",
+            "orderID": "Order ID",
+            "trackOnMap": "Track Package on Map",
+            "orderSuccessfull": "your order has been placed successfully. your order ID is #548475151",
+            "date": "Sun, 14 Apr, 19:12",
+            "id": "#548475151"
+        },
+        "orderTrackingPage": {
+            "estimatedDeliveryTime": "Estimated Delivery Time",
+            "trackingTime": "9.00am - 12.00pm",
+            "name": "Andrea Joanne",
+            "location": "8857 Morris Rd. ,Charlottesville, VA 22901",
+            "courier": "Courier",
+            "orderDetails": "Order Details",
+            "storeLocation": "Store Location",
+            "deliveryLocation": "Delivery Location"
+        },
+        "orderDetailPage": {
+            "orderSummary": "Order Summary",
+            "orderDelivered": "Order Delivered",
+            "items": "Items:",
+            "paymentDetails": "Payment Details",
+            "address": "Address",
+            "paymentMethod": "Payment Method",
+            "reorder": "Reorder"
+        },
+        "orderHistoryPage": {
+            "last30days": "Last 30 days",
+            "processing": "Processing",
+            "orderHistoryTxt": "Order History",
+            "orderAgain": "Order Again",
+            "paid": "Paid",
+            "rateNReviewProduct": "Rate & Review Product",
+            "idTxt": "ID",
+            "dt": "DT"
+        },
+        "addAddressModal": {
+            "zip": "Zip",
+            "city": "City",
+            "state": "State",
+            "apart": "Apartment,studio, or floor",
+            "street": "1234 Main St"
+        },
+        "reviewArr": {
+            "review": "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly"
+        },
+        "coupon": {
+            "useCode": "Use Code: "
+        },
+        "multiLangaugeModal": {
+            "selectLanguage": "Select Language"
+        },
+        "multicurrencyModal": {
+            "selectCurrency": "Select Currency"
+        },
+        "account": {
+            "signOut": "Sign Out "
+        },
+        "wishlistPage": {
+            "myWishlist": "My Wishlist"
+        },
+        "product": {
+            "assortedCapsicumCombo": "Assorted Capsicum Combo"
+        },
+        "aboutUsPage": {
+            "aboutUsTxt": "About Us",
+            "whoWeAre": "Who We Are?",
+            "whoArewe": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+            "howIOrder": "How do I order?",
+            "peopleWhoBuild": "People who Build Fastkart",
+            "builtFastkart": "Maureen Biologist"
+        },
+        "productCategory": {
+            "herbsSeasonings": "Herbs & Seasonings"
+        },
+        "recentlySearch": {
+            "beauty": "Beauty"
+        },
+        "productFilter": {
+            "reset": "Reset",
+            "packSize": "Pack Size",
+            "priceRange": "Price Range",
+            "minValue": "0",
+            "maxValue": "500",
+            "apply": "Apply"
+        },
+        "deleteProductModal": {
+            "areYouSure": "Are You Sure?",
+            "remove": "Remove",
+            "txt": "The permission for the use/group, preview is inherited from the object, Modifiying it for this object will create a new permission for this object"
+        },
+        "homeHeader": {
+            "losAngeles": "Los Angeles"
+        },
+        "404": {
+            "backToHome": "Back to Home",
+            "pageNotFound": "PAGE NOT FOUND",
+            "pageNotExist": "We Are Sorry But The Page You Are Looking For Doesn't Exist Or Has Been Removed. Please Check Back Later Or Search Again."
+        },
+        "pageListPage": {
+            "pagesList": "Pages List",
+            "checkoutPages": "Checkout all pages and their varations over here. following are the list of all the pages."
+        },
+        "editProfilePage": {
+            "changePassword": "Change Password",
+            "updateSettings": "Update Settings",
+            "editProfile": "Edit Profile",
+            "nameError": "Name is Required",
+            "phoneNumberError": "Phone Number is Required",
+            "validPhoneNumberError": "Phone Number should contain 10 digits"
+        },
+        "notificationPage": {
+            "markAsRead": "Mark all as read",
+            "alerts": "Alerts",
+            "offer": "Offers",
+            "upto": "UPTO"
+        },
+        "orderHistoryFilterArr": {
+            "timeFilter": "Time Filter",
+            "allOrder": "All order",
+            "openOrder": "Open Order",
+            "returnOrders": "Return Orders",
+            "cancelledOrder": "Cancelled Order",
+            "last30days": "Last 30 days",
+            "last6Month": "Last 6 Months",
+            "year1": "2021",
+            "year2": "2022"
+        },
+        "productDetailsPage": {
+            "productName": "Assorted Capsicum Combo-  (Red, Yellow, Green)",
+            "productRatings": "(150 Ratings)",
+            "productPrice": "25.00",
+            "originalPrice": " 45.00",
+            "productDiscount": "25% off",
+            "detailTitle": "Product Details",
+            "detailDesc": "Refillable, Reusable, High Quality Glass Roll on Bottles with Silver cap For Essential Oil Blends DIY Perfume Cosmetics Beauty Products Ideal",
+            "manufacturerDetails": "Manufacturer Details",
+            "manufacturerDetailsDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam iste aliquam, commodi voluptates doloremque. Autem exercitationem vel eaque in odit expedita non blanditiis, perspiciatis maiores cum tempora quo distinctio?",
+            "productDisclaimer": "Product Disclaimer",
+            "productDisclaimerDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam iste aliquam, commodi voluptates doloremque. Autem exercitationem vel eaque in odit expedita non blanditiis, perspiciatis maiores cum tempora quo distinctio?",
+            "featureDetails": "Features & details",
+            "featureDetailsDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam iste aliquam, commodi voluptates doloremque. Autem exercitationem vel eaque in odit expedita non blanditiis, perspiciatis maiores cum tempora quo distinctio?",
+            "productReview": "Product Review(15)",
+            "add": "Add",
+            "addToCart": "Add to Cart",
+            "deliveryTime": "Delivery Time",
+            "checkDelivery": "Check Delivery",
+            "enterPincode": "Enter Pincode to check delivery date / pickup option",
+            "freeDelivery": "Free Delivery on order above $200.00",
+            "cod": "Cash On delivery Available",
+            "easyReturn": "Easy 21 days returns and exchanges",
+            "allReview": "All Review"
+        },
+        "cartlist": {
+            "flat": "Flat",
+            "off": "OFF",
+            "orderabove": "on order above ",
+            "code": "Code:"
+        },
+        "orderDetail": {
+            "cardNumber": "**** **** **** 6502"
+        },
+        "aboutUsArr": {
+            "question1": "Browse products using the search feature",
+            "answer1": "Once the order is placed we will check that everything is correct",
+            "question2": "Enter your name, address, telephone, etc.",
+            "answer2": "We want to make sure that we are exceeding expectations, not creating potential issues",
+            "question3": "Select a delivery method.",
+            "answer3": "We will check lead times, verify packaging of items, identify any delivery challenge.",
+            "question4": "Choose your payment method.",
+            "answer4": "check for potential cost savings in shipping, etc. If there are any issues or savings available."
+        },
+        "editprofilePage": {
+            "demoemail": "andreajoanne@gmail.com"
+        },
+        "notificationArr": {
+            "title1": "Yesterday",
+            "title2": "Last 7 Days",
+            "value1": "UPTO 40% OFF, Sales Ends",
+            "time1": "3.00pm, 10 July, 2021",
+            "value2": "FLAT 30% OFF, Sales Ends",
+            "time2": "5.00pm, 10 July, 2021",
+            "value3": "Password Successfully Changed",
+            "time3": "8.00am, 15 Jan, 2021",
+            "value4": " top up successfully",
+            "time4": "9.00am, 10 Jan, 2021",
+            "type1": "Signin",
+            "type2": "Topup",
+            "type3": "Offer"
+        },
+        "orderHistory": {
+            "historyTime": "November",
+            "historyTime1": "October",
+            "orderHistoryId": "#5151515",
+            "orderHistoryDate": "20 Dec, 2020",
+            "orderHistoryAdd": "8857 Morris Rd. ,Charlottesville..",
+            "totalItem": "15"
+        },
+        "productList": {
+            "listItems": "2 Items",
+            "listPrice": 250,
+            "viewCart": "View Cart",
+            "freshVegetables": "Fresh Vegetables"
+        },
+        "categoryArr": {
+            "oilsRefinedGhee": "Oils,Refined & Ghee",
+            "riceFlourGrains": "Rice, Flour & Grains",
+            "foodCupboard": "Food Cupboard",
+            "freshFruitsVegetables": "Fresh Fruits & Vegetables",
+            "drinksBeverages": "Drinks & Beverages",
+            "instantMixes": "Instant Mixes",
+            "readytoEat": "Ready to Eat",
+            "dalsPulses": "Dals & Pulses"
+        },
+        "subCategoryArr": {
+            "vegetables": "Vegetables",
+            "fruits": "Fruits",
+            "sprouts": "Sprouts",
+            "flowers": "Flowers",
+            "exoticFruit": "Exotic Fruit",
+            "organic": "Organic",
+            "bouquets": "Bouquets",
+            "herbs": "Herbs",
+            "cutsFruit": "Cuts Fruit"
+        },
+        "paymentsArr": {
+            "selectCard": "Select Card",
+            "card1": "9800 XXXX XXXX 0545",
+            "card2": "6580 XXXX XXXX 2562",
+            "card3": "5125 XXXX XXXX 6262",
+            "netBanking": "Net Banking",
+            "netBankingType1": "Industrial & Commercial Bank",
+            "netBankingType2": "Agricultural Bank",
+            "netBankingType3": "Bank of America",
+            "netBankingType4": "Construction Bank Corp.",
+            "netBankingType5": "HSBC Holdings",
+            "netBankingType6": "JPMorgan Chase & Co.",
+            "walletUPI": "Wallet/UPI",
+            "waleetUPIType1": "Adyen",
+            "waleetUPIType2": "AlliedWallet",
+            "waleetUPIType3": "Brinks",
+            "waleetUPIType4": "Airtel Money",
+            "waleetUPIType5": "Apple Pay",
+            "waleetUPIType6": "CardFree",
+            "cashOnDelivery": "Cash on Delivery"
+        },
+        "offersFilterArr": {
+            "allOffer": "All Offer",
+            "morethan50": "More than 50%",
+            "morethan40": "More than 40%",
+            "morethan30": "More than 30%",
+            "morethan20": "More than 20%",
+            "morethan10": "More than 10%"
+        },
+        "pagesListArr": {
+            "404": "404",
+            "account": "Account",
+            "addressType1": "Address Type 1",
+            "addressType2": "Address Type 2",
+            "categoryWide": "Category Wide",
+            "homePage": "Home Page",
+            "login": "Login",
+            "onBoarding": "OnBoarding",
+            "orderDetail": "Order Detail",
+            "orderSuccess": "Order Success",
+            "orderTracking": "Order Tracking",
+            "payment": "Payment",
+            "product": "Product",
+            "register": "Register",
+            "setting": "Setting",
+            "shop": "Shop",
+            "wishlist": "Wishlist"
+        },
+        "offersArr": {
+            "weight1": "200g",
+            "weight2": "900g",
+            "weight3": "700g",
+            "weight4": "600g",
+            "discount1": "50",
+            "discount2": "69"
+        },
+        "productArr": {
+            "weight1": " 200g",
+            "weight2": " 900g",
+            "weight3": " 700g",
+            "weight4": " 600g",
+            "weight5": " 400g",
+            "weight6": " 200g",
+            "weight7": " 800g",
+            "weight8": " 100g",
+            "weight9": " 800g",
+            "weight10": " 500g",
+            "weight11": " 300g",
+            "weight12": " 600g",
+            "discount1": "50",
+            "discount2": "69",
+            "discount3": "20",
+            "discount4": "20",
+            "discount5": "40",
+            "discount6": "20",
+            "discount7": "60",
+            "discount8": "70",
+            "discount9": "30",
+            "discount10": "80",
+            "discount11": "10",
+            "discount12": "20"
+        },
+        "packsizeArr": {
+            "size1": "100g-500g",
+            "size2": "500g-1kg",
+            "size3": "1kg-1.5kg",
+            "size4": "1.5kg-2kg"
+        },
+        "langaugesArr": {
+            "hindi": "Hindi",
+            "english": "English",
+            "korean": "Korean",
+            "arabic": "Arabic"
+        },
+        "locationArr": {
+            "locationName": "Noah Hamilton",
+            "locationAddress": "8857 Morris Rd.,Charlottesville, VA 22901"
+        },
+        "myOffersArr": {
+            "off1": "50",
+            "off2": "30",
+            "off3": "14",
+            "off4": "25",
+            "off5": "15",
+            "off6": "10",
+            "onOrder": "on your first order",
+            "offerCode": "SCD450"
+        },
+        "orderDetailArr": {
+            "gram1": "500g",
+            "gram2": "700g",
+            "gram3": "600g",
+            "gram4": "400g",
+            "quantity1": "2",
+            "quantity2": "6",
+            "quantity3": "3",
+            "quantity4": "1",
+            "orderPrice": "25.00"
+        },
+        "coupensArr": {
+            "couponDiscount1": "30",
+            "couponDiscount2": "20",
+            "couponDiscount3": "37",
+            "couponOff1": "20",
+            "couponOff2": "90",
+            "couponOff3": "70"
+        },
+        "currencyConverterArr": {
+            "indianRupees": "Indian rupees",
+            "usDollar": "United State dollar",
+            "euro": "Euro",
+            "australianDollar": "Ausralian dollar",
+            "koreanWon": "Korean Won"
+        },
+        "quantityArr": {
+            "gram1": "500 g",
+            "gram2": "700 g",
+            "gram3": "100 g",
+            "gram4": "1.5 Kg",
+            "gram5": "2 Kg",
+            "gram6": "5 Kg"
+        },
+        "deliveryTimeArr": {
+            "deliveryTime1": "7 Am",
+            "deliveryTime2": "9 Am",
+            "deliveryTime3": "11 Am",
+            "deliveryTime4": "5 Pm",
+            "deliveryTime5": "7 Pm",
+            "deliveryTime6": "9 Pm"
+        },
+        "cityArr": {
+            "city1": "Paris",
+            "city2": "New York",
+            "city3": "Mumbai",
+            "city4": "Delhi",
+            "city5": "Chicago",
+            "city6": "Vancouver",
+            "city7": "Las Vegas",
+            "city8": "Seoul",
+            "city9": "Franklin",
+            "city10": "Madison"
+        },
+        "stateArr": {
+            "state1": "Assam",
+            "state2": "Argentina",
+            "state3": "Gujarat",
+            "state4": "Andhra Pradesh",
+            "state5": "Finland",
+            "state6": "France",
+            "state7": "Germany",
+            "state8": "South Korea",
+            "state9": "Himachal Pradesh",
+            "state10": "Kerala"
+        }
+    }
+}

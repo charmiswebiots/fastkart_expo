@@ -14,6 +14,11 @@ import { useValues } from "../../utils/context";
 import { windowHeight } from "../../theme/appConstant";
 
 export function Account({ navigation }) {
+
+    const home=()=>{
+        navigation.navigate('Home')
+    }
+    
     const {colors}=useTheme()
     const { isDark,rtl } = useValues();
     const [showModal, setShowModal] = useState(false);
@@ -72,6 +77,7 @@ export function Account({ navigation }) {
                     onPress={() => navigation.goBack()}
                     isText
                     titleText="Account"
+                    imageOnPress={home}
                 />
                 <View style={styles.mainView}>
                     <ProfileView />

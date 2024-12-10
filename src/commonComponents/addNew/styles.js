@@ -11,7 +11,6 @@ const styles=StyleSheet.create({
         borderColor: appColors.placeholder,
         alignItems: 'center',
         justifyContent: 'center',
-        flexDirection:'row',
         alignSelf: 'center',
         marginTop: windowHeight(3)
     },

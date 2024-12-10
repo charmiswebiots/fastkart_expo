@@ -9,13 +9,18 @@ import { Icons } from "../../../utils/icons";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../utils/context";
 
-export function OrderSuccess({navigation}) {
-    const {colors}=useTheme()
-    const {isDark}=useValues()
+export function OrderSuccess({ navigation }) {
+    const { colors } = useTheme()
+    const { isDark } = useValues()
 
-    const orderTracking=()=>{
+    const orderTracking = () => {
         navigation.navigate('OrderTracking')
     }
+
+    const home = () => {
+        navigation.navigate('Home')
+    }
+
     return (
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <View style={{ flex: 0.9 }}>
@@ -23,23 +28,20 @@ export function OrderSuccess({navigation}) {
                     <Header
                         onPress={() => navigation.toggleDrawer()}
                         isText={false}
+                        imageOnPress={home}
                         showImage={false}
                         firstIcon={<Icons.category />}
-                        lightImage={isDark?images.fastKartDark:images.fastkart}
+                        lightImage={isDark ? images.fastKartDark : images.fastkart}
                     />
                     <Image source={images.orderSuccess} style={styles.orderSuccess} />
                     <ThankyouView />
                     <OrderDataView />
                     <Total style title={'Order Details'} />
-
                 </ScrollView>
             </View>
             <View style={{ flex: 0.13 }}>
                 <Button text={'Track Package on Map'} style={styles.btn} color={appColors.white} onPress={orderTracking} />
             </View>
-
-
-
         </SafeAreaView>
     )
 }

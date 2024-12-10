@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingHorizontal: windowWidth(20),
         height:windowHeight(60),
-        textAlign:'left',
     },
     view: {
         alignItems: 'center'

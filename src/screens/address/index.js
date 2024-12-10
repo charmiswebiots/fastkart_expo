@@ -41,7 +41,7 @@ export function Address({ navigation }) {
                 </View>
                 <View style={[styles.paymentView, { backgroundColor: colors.background }]}>
                     <ScrollView showsVerticalScrollIndicator={false}>
-                        <View style={{ alignItems: 'center', alignSelf: 'center', alignContent: 'center', justifyContent: 'center', right: windowHeight(38) }}>
+                        <View style={styles.inputView}>
                             <Input placeholder={'Search Location'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
                         </View>
 

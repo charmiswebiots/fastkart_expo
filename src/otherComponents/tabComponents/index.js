@@ -3,11 +3,13 @@ import { View, TouchableOpacity, Text } from "react-native";
 import styles from "./styles";
 import { windowHeight } from "../../theme/appConstant";
 import { Icons } from "../../utils/icons";
+import { useValues } from "../../utils/context";
 
 export function TabComponents({state, descriptors, navigation}) {
+    const {viewRtlStyle}=useValues()
     return (
         <View
-            style={[styles.mainView, { flexDirection: 'row' }]}>
+            style={[styles.mainView, { flexDirection:viewRtlStyle }]}>
             {state.routes.map((route, index) => {
                 const { options } = descriptors[route.key];
                 const label = options.tabBarLabel

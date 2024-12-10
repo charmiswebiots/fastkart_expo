@@ -1,11 +1,12 @@
 import { TouchableOpacity, Text } from "react-native";
 import styles from "./styles";
-import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function AddNew(props) {
-    const {colors}=useTheme()
+    const {viewRtlStyle}=useValues()
+
     return (
-        <TouchableOpacity activeOpacity={0.8} onPress={props.onPress} style={[styles.newAddView]}>
+        <TouchableOpacity activeOpacity={0.8} onPress={props.onPress} style={[styles.newAddView,{flexDirection:viewRtlStyle}]}>
             <Text style={styles.addAdd}>+</Text>
             <Text style={styles.addAdd}> {props.text} </Text>
         </TouchableOpacity>

@@ -27,11 +27,11 @@ export function Product(props) {
                 <View style={[styles.priceView, {
                     flexDirection: viewRtlStyle
                 }]}>
-                    <View style={[styles.discountPriceView, {
+                    <View style={[styles.discountPriceView, {  flexDirection: viewRtlStyle
                     }]}>
                         <Text style={[styles.price, { color: colors.text }]}>{props.price}</Text>
 
-                        <View style={[styles.discountView, {
+                        <View style={[styles.discountView, {  flexDirection: viewRtlStyle
                         }]}>
                             <Text style={styles.discount}>{props.discount}% </Text>
                             <Text style={styles.discount}>off</Text>

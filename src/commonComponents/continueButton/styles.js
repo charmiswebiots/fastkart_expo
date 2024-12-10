@@ -1,4 +1,3 @@
-import appColors from "../../theme/appColors";
 import { windowHeight, windowWidth, fontSizes } from "../../theme/appConstant";
 import { StyleSheet } from "react-native";
 
@@ -9,7 +8,6 @@ const styles = StyleSheet.create({
         height: windowHeight(46),
         borderRadius: windowHeight(6),
         marginTop: windowHeight(28),
-        flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center'
     },
