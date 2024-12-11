@@ -8,7 +8,7 @@ import { useValues } from "../../../../../utils/context";
 
 export function DetailsView() {
     const { colors } = useTheme()
-    const { textRtlStyle, rtl } = useValues()
+    const { textRtlStyle, rtl, t } = useValues()
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
@@ -18,17 +18,17 @@ export function DetailsView() {
 
     return (
         <View>
-            <Text style={[styles.online, { color: colors.text }, { textAlign: textRtlStyle }]}>Login Account</Text>
+            <Text style={[styles.online, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('login.loginAccount')}</Text>
             <View style={styles.container}>
                 <Input
-                    placeholder={'Email address'}
+                    placeholder={t('loginNRegister.emailAddress')}
                     rightIcon={<Icons.atSign />}
                     style={styles.input}
                 />
             </View>
             <View style={styles.container1}>
                 <Input
-                    placeholder={'Password'}
+                    placeholder={t('loginNRegister.password')}
                     rightIcon={
                         showPassword ? <Icons.showPassword /> : <Icons.hidePassword />
                     }
@@ -41,7 +41,7 @@ export function DetailsView() {
                 />
             </View>
 
-            <Text style={[styles.forgotPassword, { textAlign: rtl ? 'left' : 'right' }]}>Forgot password?</Text>
+            <Text style={[styles.forgotPassword, { textAlign: rtl ? 'left' : 'right' }]}>{t('login.forgotPassword')}</Text>
         </View>
     );
 }

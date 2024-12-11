@@ -10,11 +10,15 @@ import appColors from "../../theme/appColors";
 import { DrawerNavigation } from "../drawer/drawerNavigator";
 import { TabComponents } from "../../otherComponents";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 const Tab = createBottomTabNavigator();
 
 export function TabNavigation() {
+
     const { colors } = useTheme()
+    const {t}=useValues()
+
     return (
         <Tab.Navigator
             initialRouteName="Drawer"
@@ -29,7 +33,7 @@ export function TabNavigation() {
                 name="DrawerNavigation"
                 component={DrawerNavigation}
                 options={{
-                    tabBarLabel: 'Home',
+                    tabBarLabel: {t('tabBar.home')},
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}> 
                             <Icons.home />

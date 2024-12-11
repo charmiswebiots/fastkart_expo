@@ -7,12 +7,14 @@ import { Button } from "../../../commonComponents";
 import appColors from "../../../theme/appColors";
 import { ContinueView } from "../components";
 import { useNavigation } from "@react-navigation/native";
-import {useTheme} from "@react-navigation/native";
+import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
 
 export function Login() {
     const navigation = useNavigation()
-    const {colors}=useTheme()
+    const { colors } = useTheme()
+    const { t } = useValues()
 
     const Home = () => {
         navigation.navigate('Home')
@@ -24,19 +26,19 @@ export function Login() {
     return (
         <SafeAreaView style={styles.mainView}>
             <Image source={images.login} resizeMode='stretch' style={styles.loginView} />
-            <View style={[styles.subView,{backgroundColor:colors.background}]}>
+            <View style={[styles.subView, { backgroundColor: colors.background }]}>
                 <ScrollView showsVerticalScrollIndicator={false}>
-                    <TitleView props={'Online Supermarket for all your daily needs. you are just One Click away from your all needs at your door step.'} />
+                    <TitleView props={t('loginNRegister.onlineSupermarket')} />
                     <View style={styles.container}>
                         <DetailsView />
                     </View>
-                    <Button text={'Sign in'} style={styles.btn}
+                    <Button text={t('login.signIn')} style={styles.btn}
                         color={appColors.white} onPress={Home} />
-                    <ContinueView txt={'If you are new, Create Now'} signTxt={'Or sign in with'} onPress={register}  onPress1={Home} style={styles.guest} />
+                    <ContinueView txt={t('login.createAccount')} signTxt={t('login.signInWith')} onPress={register} onPress1={Home} style={styles.guest} />
                 </ScrollView>
             </View>
             <TouchableOpacity onPress={Home}>
-                <Text style={[styles.guest,{color:colors.text,backgroundColor:colors.background}]}>Continue as guest</Text>
+                <Text style={[styles.guest, { color: colors.text, backgroundColor: colors.background }]}>{t('loginNRegister.continueAsGuest')}</Text>
             </TouchableOpacity>
         </SafeAreaView>
     )
