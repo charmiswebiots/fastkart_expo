@@ -72,7 +72,7 @@ export function Address({ navigation }) {
                                 <Text style={[styles.add, { textAlign: textRtlStyle }]}>{t(item.address)}</Text>
                             </View>
                         ))}
-                        <Button text={'addAddressPage.confirmLocation'} style={styles.btn}
+                        <Button text={t('addAddressPage.confirmLocation')} style={styles.btn}
                             color={appColors.white} onPress={payment} />
                     </ScrollView>
                 </View>

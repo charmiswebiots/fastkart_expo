@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         color: appColors.black,
         marginTop: windowHeight(8),
     },
-    view:{ alignItems: 'center', alignSelf: 'center', alignContent: 'center', justifyContent: 'center'},
+    view:{ alignItems: 'center', alignSelf: 'center', alignContent: 'center', justifyContent: 'center', marginTop: windowHeight(125), left: windowHeight(8) },
     line: {
         width: windowWidth(158),
         height: windowHeight(0.5),
@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     img: {
         width: windowWidth(50),
         height: windowHeight(50),
+    
     },
     nameTxt: {
         color: appColors.content,

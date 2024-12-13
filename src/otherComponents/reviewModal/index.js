@@ -19,7 +19,7 @@ export function ReviewModal(props) {
     return (
         <View style={[GlobalStyle.modal, { backgroundColor: colors.background, flex: 1 }]}>
             <View style={[styles.allReviewView, { flexDirection: viewRtlStyle}]}>
-                <Text style={[styles.allReviewText, { color: colors.text }]}>{('productDetailsPage.allReview')}</Text>
+                <Text style={[styles.allReviewText, { color: colors.text }]}>{t('productDetailsPage.allReview')}</Text>
                 <TouchableOpacity onPress={props.onPress}>
                     <Icons.into width={windowWidth(44)} height={windowHeight(44)} />
                 </TouchableOpacity>
@@ -32,7 +32,7 @@ export function ReviewModal(props) {
                         <View style={[styles.reviewDetail, { flexDirection: viewRtlStyle }]}>
                             <Image source={images.demoProfile} style={styles.demoProfile} />
                             <View style={[styles.reviewName]}>
-                                <Text style={[styles.reviewName]}>{t(item.reviewName)}</Text>
+
                                 <View style={{ flexDirection: viewRtlStyle }}>
                                     {reviewStar.map((item, key) =>
                                         <Image source={key === 4 ? images.star1 : images.star} style={styles.star} />

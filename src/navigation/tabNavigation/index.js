@@ -21,7 +21,7 @@ export function TabNavigation() {
 
     return (
         <Tab.Navigator
-            initialRouteName="Drawer"
+            initialRouteName="Home"
             tabBar={(props) => <TabComponents {...props} />}
             screenOptions={{
                 headerShown: false,
@@ -30,10 +30,10 @@ export function TabNavigation() {
             }}
         >
             <Tab.Screen
-                name="DrawerNavigation"
-                component={DrawerNavigation}
+                name="Home"
+                component={Home}
                 options={{
-                    tabBarLabel: 'tabBar.home',
+                    tabBarLabel: t('tabBar.home'),
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}> 
                             <Icons.home />
@@ -46,7 +46,7 @@ export function TabNavigation() {
                 name="Category"
                 component={Category}
                 options={{
-                    tabBarLabel: 'tabBar.category',
+                    tabBarLabel: t('tabBar.category'),
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}>
                             <Icons.category color={focused ? appColors.white : appColors.white} />
@@ -59,7 +59,7 @@ export function TabNavigation() {
                 name="Search"
                 component={Search}
                 options={{
-                    tabBarLabel: 'tabBar.search',
+                    tabBarLabel: t('tabBar.search'),
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}>
                             <Icons.search color={focused ? appColors.white : appColors.white} />
@@ -72,7 +72,7 @@ export function TabNavigation() {
                 name="Offers"
                 component={Offers}
                 options={{
-                    tabBarLabel: 'tabBar.offers',
+                    tabBarLabel: t('tabBar.offers'),
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}>
                             <Image source={images.offer} style={[styles.img, { tintColor: focused ? appColors.white : appColors.white },]} />
@@ -84,7 +84,7 @@ export function TabNavigation() {
                 name="Cart"
                 component={Cart}
                 options={{
-                    tabBarLabel: 'tabBar.cart',
+                    tabBarLabel: t('tabBar.cart'),
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}>
                             <Icons.cart color={focused ? appColors.white : appColors.white} />

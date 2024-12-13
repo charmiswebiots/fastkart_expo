@@ -50,7 +50,7 @@ export function EditProfile({ navigation }) {
                 />
                 <ChangePasswordView />
                 <Button
-                    text={'editProfilePage.updateSettings'}
+                    text={t('editProfilePage.updateSettings')}
                     style={styles.btn}
                     color={appColors.white}
                 />

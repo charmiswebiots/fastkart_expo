@@ -36,7 +36,7 @@ export function OrderDetail({ navigation }) {
                 </View>
                 <AddressView />
                 <PaymentsMethodView />
-                <Button text={'orderDetailPage.reorder'} style={styles.btn}
+                <Button text={t('orderDetailPage.reorder')} style={styles.btn}
                     color={appColors.white} onPress={shopPage} />
             </ScrollView>
         </SafeAreaView>

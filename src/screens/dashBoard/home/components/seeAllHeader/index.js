@@ -7,7 +7,7 @@ import { useValues } from "../../../../../utils/context";
 export function SeeAllHeader({ title, subtitle, onPress }) {
 
     const { colors}=useTheme()
-    const {viewRtlStyle,rtl}=useValues()
+    const {viewRtlStyle,rtl,t}=useValues()
     
     return (
         <View style={[styles.mainView,{flexDirection:viewRtlStyle}]}>
@@ -16,7 +16,7 @@ export function SeeAllHeader({ title, subtitle, onPress }) {
                 <Text style={styles.subTitle}>{subtitle}</Text>
             </View>
             <TouchableOpacity activeOpacity={0.8} onPress={onPress}>
-                <Text style={styles.seeAll}>See all</Text>
+                <Text style={styles.seeAll}>{t('homepage.seeAll')}</Text>
             </TouchableOpacity>
         </View>
     )

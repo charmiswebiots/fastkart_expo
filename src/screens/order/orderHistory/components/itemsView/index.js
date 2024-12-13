@@ -9,7 +9,7 @@ import appColors from "../../../../../theme/appColors";
 
 export function ItemsView() {
     const {colors}=useTheme()
-    const { isDark,viewRtlStyle ,t} = useValues()
+    const { isDark,viewRtlStyle ,t,currSymbol,currValue} = useValues()
 
     return (
         <FlatList
@@ -26,7 +26,7 @@ export function ItemsView() {
                             </View>
                             <Text style={styles.add}>{t(item.add)}</Text>
                             <View style={[styles.paidView,{flexDirection:viewRtlStyle}]}>
-                                <Text style={[styles.data,{color:colors.text}]}>{t('orderHistoryPage.paid')}: <Text style={styles.paid}>{item.paid}, </Text></Text>
+                                <Text style={[styles.data,{color:colors.text}]}>{t('orderHistoryPage.paid')}: <Text style={styles.paid}>{currSymbol}{(item.paid * currValue).toFixed(2)}, </Text></Text>
                                 <Text style={[styles.data,{color:colors.text}]}>{t('orderDetailPage.items')} <Text style={styles.paid}>{t(item.item)}</Text></Text>
                             </View>
                         </View>

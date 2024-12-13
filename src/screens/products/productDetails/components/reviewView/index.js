@@ -28,13 +28,14 @@ export function ReviewView(props) {
                             <View style={styles.reviewNameViewRight}>
                                 <Text style={[styles.reviewName,{color:colors.text}]}>{t(item.reviewName)}</Text>
                                 <View style={{ flexDirection: viewRtlStyle }}>
-                                    {reviewStar.map((item, key) =>
+                                    {/* {reviewStar.map((item, key) =>
                                         <Image source={key === 4 ? images.star1 : images.star} style={styles.star} />
-                                    )}
+                                    )} */}
                                 </View>
                             </View>
                         </View>
-                        <Text style={[styles.reviewTxt]}>{t(item.review)}</Text>
+                        <Text style={[styles.reviewTxt]}>{t(item.review).substring(0, 70) + "..."}
+                        </Text>
                     </View>
                 )}
             </View>

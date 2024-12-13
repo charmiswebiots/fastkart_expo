@@ -23,7 +23,7 @@ export function OrderDataView() {
                     <Icons.orderId />
                 </View>
                 <View style={styles.option}>
-                    <Text style={[styles.orderDate,{color:colors.text},{textAlign:textRtlStyle}]}>{t('orderSuccessPage.orderID')}</Text>
+                    <Text style={[styles.orderDate,{color:colors.text},{textAlign:textRtlStyle}]}>{t('orderSuccessPage.idOrder')}</Text>
                     <Text style={styles.date}>{t('orderSuccessPage.id')}</Text>
                 </View>
             </View>

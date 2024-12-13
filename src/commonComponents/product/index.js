@@ -7,7 +7,7 @@ import appColors from "../../theme/appColors";
 
 export function Product(props) {
 
-    const { isDark, viewRtlStyle, textRtlStyle ,t} = useValues()
+    const { isDark, viewRtlStyle, textRtlStyle, t, currSymbol, currValue } = useValues()
     const { colors } = useTheme()
 
     return (
@@ -21,19 +21,24 @@ export function Product(props) {
                     <Text style={[styles.name, {
                         color: colors.text
                     }, { textAlign: textRtlStyle }]}>{t(props.name)}</Text>
-                    <Text style={[styles.weight, {textAlign: textRtlStyle
+                    <Text style={[styles.weight, {
+                        textAlign: textRtlStyle
                     }]}>{t(props.weight)}</Text>
                 </TouchableOpacity>
                 <View style={[styles.priceView, {
                     flexDirection: viewRtlStyle
                 }]}>
-                    <View style={[styles.discountPriceView, {  flexDirection: viewRtlStyle
+                    <View style={[styles.discountPriceView, {
+                        flexDirection: viewRtlStyle
                     }]}>
-                        <Text style={[styles.price, { color: colors.text }]}>{props.price}</Text>
+                        <Text style={[styles.price, { color: colors.text }]}>
+                            {currSymbol}{(props.price * currValue).toFixed(2)}
+                        </Text>
 
-                        <View style={[styles.discountView, {  flexDirection: viewRtlStyle
+                        <View style={[styles.discountView, {
+                            flexDirection: viewRtlStyle
                         }]}>
-                            <Text style={styles.discount}>{props.discount}% </Text>
+                            <Text style={styles.discount}>{props.discount}%</Text>
                             <Text style={styles.discount}>{t('cartlist.OFF')}</Text>
                         </View>
                     </View>

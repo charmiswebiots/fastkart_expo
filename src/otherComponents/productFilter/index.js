@@ -12,7 +12,7 @@ import { useTheme } from "@react-navigation/native";
 
 export function ProductFilter(props) {
 
-    const { viewRtlStyle,textRtlStyle,t } = useValues()
+    const { viewRtlStyle, textRtlStyle, t } = useValues()
     const { colors } = useTheme()
 
     const [select, setSelect] = useState()
@@ -29,7 +29,7 @@ export function ProductFilter(props) {
                 <Text style={[styles.categoryTxt, { color: colors.text }]}>{t('tabBar.category')}</Text>
                 <Text style={styles.reset}>{t('productFilter.reset')}</Text>
             </View>
-            <Text style={[styles.packSize, { color: colors.text },{textAlign:textRtlStyle}]}>{t('productFilter.packSize')}</Text>
+            <Text style={[styles.packSize, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productFilter.packSize')}</Text>
             <FlatList
                 columnWrapperStyle={[styles.list, { flexDirection: viewRtlStyle }]}
                 contentContainerStyle={[styles.list]}
@@ -37,16 +37,18 @@ export function ProductFilter(props) {
                 ItemSeparatorComponent={() => <View style={styles.seprator} />}
                 numColumns={2}
                 renderItem={({ item, index }) =>
-                    <TouchableOpacity activeOpacity={0.8} onPress={() => setSelect(index)} style={[styles.sizeView]}>
+                    <TouchableOpacity activeOpacity={0.8} onPress={() => setSelect(index)} style={[styles.sizeView, { backgroundColor: select === index ? appColors.primary : appColors.defaultBackground }
+                    ]}>
                         <Text style={[styles.size, {
-                            color: select === index ? appColors.white : appColors.content
+                            color: select === index ? appColors.white : appColors.content,
+
                         }]}>{t(item.size)}</Text>
                     </TouchableOpacity>
                 }
             />
-            <Text style={[styles.priceRange,{ color: colors.text },{textAlign:textRtlStyle}]}>{t('productFilter.priceRange')}</Text>
+            <Text style={[styles.priceRange, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productFilter.priceRange')}</Text>
             <RangeSlider />
-            <OptionButton txt1={'commonText.close'} txt2={t('productFilter.apply')} onPress1={props.showModal} onPress2={props.showModal} />
+            <OptionButton txt1={t('commonText.close')} txt2={t('productFilter.apply')} onPress1={props.showModal} onPress2={props.showModal} />
             <Picker />
         </View>
     )

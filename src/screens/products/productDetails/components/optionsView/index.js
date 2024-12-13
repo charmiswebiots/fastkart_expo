@@ -9,7 +9,7 @@ import appColors from "../../../../../theme/appColors";
 export function OptionsView(props) {
 
     const {colors}=useTheme()
-    const {isDark,viewRtlStyle}=useValues()
+    const {isDark,viewRtlStyle,t}=useValues()
 
     return (
         <View style={[styles.optionMainView,{flexDirection:viewRtlStyle}]}>

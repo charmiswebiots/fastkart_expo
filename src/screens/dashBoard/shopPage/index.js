@@ -11,7 +11,7 @@ import { ProductFilter } from "../../../otherComponents";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../utils/context";
 
-export function ShopPage() {
+export function ShopPage({navigation}) {
     const {colors}=useTheme()
     const {isDark,t}=useValues()
 
@@ -23,7 +23,7 @@ export function ShopPage() {
     return (
         <SafeAreaView style={{ backgroundColor: colors.background, flex: 1 }}>
             <Header
-                onPress={() => navigation.replace('Drawer')}
+                onPress={() => navigation.navigate('PageList')}
                 lightImage={isDark?images.darkSmallLogo:images.smallLogo}
                 lightStyle={styles.header}
                 darkStyle={styles.header}

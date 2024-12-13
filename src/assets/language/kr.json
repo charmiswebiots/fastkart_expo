@@ -1,0 +1,557 @@
+{
+    "translation": {
+        "onBoarding": {
+            "safeDelivery": "집까지 안전하게 배달 받으세요"
+        },
+        "login": {
+            "signIn": "로그인",
+            "loginAccount": "계정 로그인",
+            "forgotPassword": "비밀번호를 잊으셨나요?",
+            "createAccount": "신규 사용자인 경우 지금 생성",
+            "signInWith": "또는 다음을 사용하여 로그인"
+        },
+        "register": {
+            "signUp": "가입",
+            "registerAccount": "계정 등록",
+            "accountSignIn": "이미 계정이 있으신가요? 로그인",
+            "signUpWith": "또는 다음을 사용하여 가입",
+            "fullName": "성함",
+            "fullNameError": "성함이 필요합니다"
+        },
+        "loginNRegister": {
+            "onlineSupermarket": "일상적인 모든 필요를 충족하는 온라인 슈퍼마켓입니다.당신은 당신의 문 앞에서 당신의 모든 필요를 한 번의 클릭으로 얻을 수 있습니다.",
+            "continueWithPhone": "전화로 계속하기",
+            "continueWithGoogle": "Google로 계속하기",
+            "continueAsGuest": "게스트로 계속하기",
+            "emailAddress": "이메일 주소",
+            "password": "비밀번호",
+            "emailError": "이메일이 필요합니다",
+            "passwordError": "비밀번호가 필요합니다",
+            "validEmailError": "유효한 이메일 주소를 입력하세요",
+            "validPasswordError": "비밀번호는 8자여야 합니다"
+        },
+        "tabBar": {
+            "home": "홈",
+            "category": "카테고리",
+            "search": "검색",
+            "offers": "제안",
+            "cart": "장바구니"
+        },
+        "drawer": {
+            "fastKartPagesList": "Fastkart 페이지 목록",
+            "orders": "주문",
+            "yourWishlist": "귀하의 위시리스트",
+            "langauge": "언어",
+            "yourAccount": "귀하의 계정",
+            "notification": "알림",
+            "settings": "설정",
+            "currencyConverter": "통화 변경",
+            "dark": "다크",
+            "rtl": "RTL",
+            "contactSupport": "지원팀에 문의",
+            "reactOut": "문제, 질문 또는 문의 사항이 있으면 언제든지 문의하세요",
+            "contactUs": "문의하기"
+        },
+        "homepage": {
+            "farmFreshVegies": "농장 신선한 야채",
+            "getInstantDelivery": "즉시 배송",
+            "recentlyBrought": "최근 구매한 상품에서 구매",
+            "seeAll": "모두 보기",
+            "shopNow": "지금 쇼핑",
+            "sayHelloOffers": "특가에 인사하세요!",
+            "shopByCategory": "카테고리별 쇼핑",
+            "bestPrice": "역대 최고의 가격",
+            "lowestPrice": "최저 가격",
+            "payless": "덜 지불하고 더 많이 받으세요",
+            "everydayEssentials": "일상 필수품",
+            "couponsForYou": "귀하를 위한 쿠폰",
+            "popularOffer": "오늘의 인기 특가",
+            "didntFind": "원하는 상품을 찾지 못하셨나요?",
+            "browseCategory": "카테고리 탐색"
+        },
+        "searchPage": {
+            "recentlySearch": "최근 검색",
+            "trendingCategory": "트렌딩 카테고리",
+            "trendingProducts": "트렌딩 상품"
+        },
+        "offerPage": {
+            "myOffers": "내 오퍼"
+        },
+        "cartPage": {
+            "myCart": "내 카트",
+            "orderDetails": "주문 세부 정보"
+        },
+        "commonTotal": {
+            "bagTotal": "가방 총액",
+            "bagSavings": "가방 할인",
+            "couponDiscount": "쿠폰 할인",
+            "delivery": "배송",
+            "totalAmount": "총 금액",
+            "proceedtoCheckout": "결제 진행"
+        },
+        "commonText": {
+            "filter": "필터",
+            "cancle": "취소",
+            "close": "닫기",
+            "confirm": "확인",
+            "year": "년",
+            "month": "월",
+            "day": "일",
+            "selectDate": "날짜 선택",
+            "searchProducts": "여기에서 검색.."
+        },
+        "totalModule": {
+            "applyCoupon": "쿠폰 적용"
+        },
+        "couponModal": {
+            "termsConditions": "이용 약관",
+            "terms1": "참여 방법에 대한 정보는 이 이용 약관의 일부입니다. 참여함으로써 청구인은 이 이용 약관에 따라야 함에 동의합니다. 청구인은 쿠폰이 유효하려면 이 이용 약관을 준수해야 합니다.",
+            "terms2": "각 청구인은 숙박 시설당 쿠폰 1개를 받을 자격이 있습니다. 쿠폰은 양도할 수 없으며 현금으로 교환할 수 없으며 Quovai에서 제공하는 다른 쿠폰이나 다른 혜택, 할인 또는 프로모션과 결합할 수 없습니다.",
+            "copyCode": "코드 복사"
+        },
+        "addAddressPage": {
+            "addAddress": "주소 추가",
+            "searchLocation": "위치 검색",
+            "useCurrentLocation": "현재 위치 사용",
+            "confirmLocation": "위치 확인 및 진행",
+            "deliverTime": "8월 7일 배송, 슬롯: 오전 7시~오전 9시",
+            "streetError": "도로명 필수",
+            "apartmentError": "아파트 필수",
+            "zipError": "우편번호 필수"
+        },
+        "selectDeliveryAddressPage": {
+            "selectDeliveryAddress": "배송 주소 선택",
+            "addNewAddress": "새 주소 추가",
+            "work": "직장",
+            "proceedToPayment": "결제 진행",
+            "default": "기본값"
+        },
+        "addPaymentPage": {
+            "addPaymentMethod": "결제 방법 추가",
+            "addNewCard": "새 카드 추가",
+            "confirmPayment": "결제 확인"
+        },
+        "addCard": {
+            "addCard": "카드 추가",
+            "cardHolderName": "카드 소유자 이름",
+            "cardNum": "카드 번호",
+            "expiryDate": "만료일",
+            "cvv": "CVV",
+            "holderNameError": "카드 소유자 이름 필수",
+            "numberError": "카드 번호 필수",
+            "expriryError": "만료일 필수",
+            "cvvError": "CVV 필수",
+            "validCvvError": "CVV는 3자리 숫자여야 함"
+        },
+        "orderSuccessPage": {
+            "thankYouforOrder": "주문해 주셔서 감사합니다!",
+            "orderDate": "주문 날짜",
+            "orderID": "주문 ID: #5151515",
+            "trackOnMap": "지도에서 패키지 추적",
+            "orderSuccessfull": "주문이 성공적으로 완료되었습니다. 주문 ID는 #548475151입니다",
+            "date": "일요일, 4월 14일, 19:12",
+            "id": "#548475151",
+            "idOrder": "주문 ID"
+        },
+        "orderTrackingPage": {
+            "estimatedDeliveryTime": "예상 배송 시간",
+            "trackingTime": "오전 9시 - 오후 12시",
+            "name": "안드레아 조앤",
+            "location": "8857 Morris Rd., 샬로츠빌, VA 22901",
+            "courier": "택배",
+            "orderDetails": "주문 세부 정보",
+            "storeLocation": "매장 위치",
+            "deliveryLocation": "배송 위치"
+        },
+        "orderDetailPage": {
+            "orderSummary": "주문 요약",
+            "orderDelivered": "주문 배송됨",
+            "items": "품목:",
+            "paymentDetails": "결제 세부 정보",
+            "address": "주소",
+            "paymentMethod": "결제 방법",
+            "reorder": "재주문"
+        },
+        "orderHistoryPage": {
+            "last30days": "지난 30일",
+            "processing": "처리 중",
+            "orderHistoryTxt": "주문 내역",
+            "orderAgain": "주문 다시",
+            "paid": "지불됨",
+            "rateNReviewProduct": "제품 평가 및 리뷰",
+            "idTxt": "ID",
+            "dt": "DT"
+        },
+        "addAddressModal": {
+            "zip": "우편번호",
+            "city": "도시",
+            "state": "주",
+            "apart": "아파트, 스튜디오 또는 층",
+            "street": "1234 메인 스트리트"
+        },
+        "reviewArr": {
+            "review": "정말 귀여운 스커트예요! 폴리에스터 소재로 이렇게 좋을 줄은 몰랐어요. 프린트가 약간"
+        },
+        "coupon": {
+            "useCode": "코드 사용: "
+        },
+        "multiLangaugeModal": {
+            "selectLanguage": "언어 선택"
+        },
+        "multicurrencyModal": {
+            "selectCurrency": "통화 선택"
+        },
+        "account": {
+            "signOut": "로그아웃"
+        },
+        "wishlistPage": {
+            "myWishlist": "내 위시리스트"
+        },
+        "product": {
+            "assortedCapsicumCombo": "다양한 고추 콤보"
+        },
+        "aboutUsPage": {
+            "aboutUsTxt": "회사 소개",
+            "whoWeAre": "회사 소개?",
+            "whoArewe": "Lorem Ipsum은 단순히 인쇄 및 조판 산업의 더미 텍스트입니다. Lorem Ipsum은 알려지지 않은 인쇄공이 글꼴 갤리를 가져와 섞어서 글꼴 견본책을 만든 1500년대부터 업계의 표준 더미 텍스트가 되었습니다. 5세기가 넘도록 살아남았습니다",
+            "howIOrder": "주문은 어떻게 하나요?",
+            "peopleWhoBuild": "Fastkart를 만드는 사람들",
+            "builtFastkart": "모린 생물학자"
+        },
+        "productCategory": {
+            "herbsSeasonings": "허브 & 조미료"
+        },
+        "recentlySearch": {
+            "beauty": "아름다움"
+        },
+        "productFilter": {
+            "reset": "다시 놓기",
+            "packSize": "패키지 크기",
+            "priceRange": "가격 범위",
+            "minValue": "0",
+            "maxValue": "500",
+            "apply": "적용하다"
+        },
+        "deleteProductModal": {
+            "areYouSure": "정말입니까?",
+            "remove": "제거",
+            "txt": "사용/그룹, 미리보기에 대한 권한은 개체에서 상속됩니다. 이 개체에 대해 수정하면 이 개체에 대한 새 권한이 생성됩니다."
+        },
+        "homeHeader": {
+            "losAngeles": "로스앤젤레스"
+        },
+        "404": {
+            "backToHome": "홈으로 돌아가기",
+            "pageNotFound": "페이지를 찾을 수 없음",
+            "pageNotExist": "죄송하지만 찾고 있는 페이지가 없거나 제거되었습니다. 나중에 다시 확인하거나 다시 검색하세요."
+        },
+        "pageListPage": {
+            "pagesList": "페이지 목록",
+            "checkoutPages": "여기에서 모든 페이지와 해당 변형을 확인하세요. 다음은 모든 페이지 목록입니다."
+        },
+        "editProfilePage": {
+            "changePassword": "비밀번호 변경",
+            "updateSettings": "설정 업데이트",
+            "editProfile": "프로필 편집",
+            "nameError": "이름이 필요합니다",
+            "phoneNumberError": "전화번호가 필요합니다",
+            "validPhoneNumberError": "전화번호는 10자리 숫자여야 합니다"
+        },
+        "notificationPage": {
+            "markAsRead": "모두 읽음으로 표시",
+            "alerts": "알림",
+            "offer": "제안",
+            "upto": "최대"
+        },
+        "orderHistoryFilterArr": {
+            "timeFilter": "시간 필터",
+            "allOrder": "모든 주문",
+            "openOrder": "진행 중인 주문",
+            "returnOrders": "반품 주문",
+            "cancelledOrder": "취소된 주문",
+            "last30days": "지난 30일",
+            "last6Month": "지난 6개월",
+            "year1": "2021",
+            "year2": "2022"
+        },
+        "productDetailsPage": {
+            "productName": "모듬 고추 콤보-(빨간색, 노란색, 녹색)",
+            "productRatings": "(평가 150개)",
+            "productPrice": "25.00",
+            "originalPrice": " 45.00",
+            "productDiscount": "25% 할인",
+            "detailTitle": "제품 세부정보",
+            "detailDesc": "에센셜 오일 블렌드용 실버 캡이 있는 병에 리필 가능, 재사용 가능, 고품질 유리 롤 DIY 향수 화장품 미용 제품 이상적",
+            "manufacturerDetails": "제조업체 세부정보",
+            "manufacturerDetailsDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam iste aliquam, commodi voluptates doloremque. Autem exercitationem vel eaque in odit expedita non blanditiis, perspiciatis maiores cum tempora quo recognition?",
+            "productDisclaimer": "제품 면책 조항",
+            "productDisclaimerDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam iste aliquam, commodi voluptates doloremque. Autem exercitationem vel eaque in odit expedita non blanditiis, perspiciatis maiores cum tempora quo recognition?",
+            "featureDetails": "특징 및 세부정보",
+            "disclaimerDetails": "면책 조항: 에센셜 오일 블렌드용 실버 캡이 있는 병에 리필 가능, 재사용 가능, 고품질 유리 롤 DIY 향수 화장품 미용 제품 이상적",
+            "featureDetailsDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam iste aliquam, commodi voluptates doloremque. Autem exercitationem vel eaque in odit expedita non blanditiis, perspiciatis maiores cum tempora quo recognition?",
+            "productReview": "제품 리뷰(15)",
+            "add": "추가",
+            "addToCart": "장바구니에 담기",
+            "deliveryTime": "배송 시간",
+            "checkDelivery": "배송 확인",
+            "enterPincode": "배송 날짜/픽업 옵션을 확인하려면 우편번호를 입력하세요",
+            "freeDelivery": "200.00달러 이상 주문 시 무료 배송",
+            "cod": "착불 가능",
+            "easyReturn": "간편 21일 반품 및 교환",
+            "allReview": "모든 리뷰",
+            "pinCode": "핀 코드",
+            "check": "확인",
+            "recentlyView": "최근에 본 상품"
+        },
+        "cartlist": {
+            "flat": "일정 금액",
+            "off": "끄다",
+            "orderabove": "위에서 주문 시",
+            "code": "코드:",
+            "OFF": "끄다"
+        },
+        "orderDetail": {
+            "cardNumber": "**** **** **** 6502"
+        },
+        "aboutUsArr": {
+            "question1": "검색 기능을 사용하여 제품을 탐색하세요",
+            "answer1": "주문이 접수되면 모든 것이 올바른지 확인합니다",
+            "question2": "이름, 주소, 전화번호 등을 입력하세요.",
+            "answer2": "기대치를 초과하고 잠재적인 문제를 일으키지 않도록 하려고 합니다",
+            "question3": "배송 방법을 선택하세요.",
+            "answer3": "리드 타임을 확인하고, 품목의 포장을 확인하고, 배송에 문제가 있는지 확인합니다.",
+            "question4": "결제 방법을 선택하세요.",
+            "answer4": "배송비 절감 가능성을 확인하세요. 문제나 절감이 가능한 경우.",
+        },
+        "editprofilePage": {
+            "demoemail": "andreajoanne@gmail.com"
+        },
+        "notificationArr": {
+            "title1": "어제",
+            "title2": "지난 7일",
+            "value1": "최대 40% 할인, 세일 ​​종료",
+            "time1": "오후 3시, 2021년 7월 10일",
+            "value2": "일률 30% 할인, 세일 ​​종료",
+            "time2": "오후 5시, 2021년 7월 10일",
+            "value3": "비밀번호가 성공적으로 변경되었습니다",
+            "time3": "오전 8시, 2021년 1월 15일",
+            "value4": "성공적으로 충전되었습니다",
+            "time4": "오전 9시, 2021년 1월 10일",
+            "type1": "로그인",
+            "type2": "충전",
+            "type3": "혜택"
+        },
+        "orderHistory": {
+            "historyTime": "11월",
+            "historyTime1": "10월",
+            "orderHistoryId": "#5151515",
+            "orderHistoryDate": "2020년 12월 20일",
+            "orderHistoryAdd": "8857 Morris Rd. ,Charlottesville..",
+            "totalItem": "15"
+        },
+        "productList": {
+            "listItems": "2개 품목",
+            "listPrice": 250,
+            "viewCart": "장바구니 보기",
+            "freshVegetables": "신선한 야채"
+        },
+        "categoryArr": {
+            "oilsRefinedGhee": "정제 오일 및 기",
+            "riceFlourGrains": "쌀, 밀가루 및 곡물",
+            "foodCupboard": "식품 보관장",
+            "freshFruitsVegetables": "신선한 과일 및 채소",
+            "drinksBeverages": "음료 및 음료",
+            "instantMixes": "인스턴트 믹스",
+            "readytoEat": "바로 먹을 수 있는",
+            "dalsPulses": "달 및 콩"
+        },
+        "subCategoryArr": {
+            "vegetables": "야채",
+            "fruits": "과일",
+            "sprouts": "콩나물",
+            "flowers": "꽃",
+            "exoticFruit": "이국적인 과일",
+            "organic": "유기농",
+            "bouquets": "꽃다발",
+            "herbs": "허브",
+            "cutsFruit": "잘린 과일"
+        },
+        "paymentsArr": {
+            "selectCard": "카드 선택",
+            "card1": "9800 XXXX XXXX 0545",
+            "card2": "6580 XXXX XXXX 2562",
+            "card3": "5125 XXXX XXXX 6262",
+            "netBanking": "인터넷 뱅킹",
+            "netBankingType1": "산업 및 상업 은행",
+            "netBankingType2": "농업 은행",
+            "netBankingType3": "뱅크 오브 아메리카",
+            "netBankingType4": "건설 은행 주식회사.",
+            "netBankingType5": "HSBC 홀딩스",
+            "netBankingType6": "JPMorgan Chase & Co.",
+            "walletUPI": "지갑/UPI",
+            "waleetUPIType1": "아디엔",
+            "waleetUPIType2": "얼라이드월렛",
+            "waleetUPIType3": "브링크스",
+            "waleetUPIType4": "에어텔 머니",
+            "waleetUPIType5": "애플 페이",
+            "waleetUPIType6": "카드프리",
+            "cashOnDelivery": "대금 상환"
+        },
+        "offersFilterArr": {
+            "allOffer": "모든 혜택",
+            "morethan50": "50% 이상",
+            "morethan40": "40% 이상",
+            "morethan30": "30% 이상",
+            "morethan20": "20% 이상",
+            "morethan10": "10% 이상"
+        },
+        "pagesListArr": {
+            "404": "404",
+            "account": "계정",
+            "addressType1": "주소 유형 1",
+            "addressType2": "주소 유형 2",
+            "categoryWide": "범주 전체",
+            "homePage": "홈페이지",
+            "login": "로그인",
+            "onBoarding": "온보딩",
+            "orderDetail": "주문 세부 정보",
+            "orderSuccess": "주문 성공",
+            "orderTracking": "주문 추적",
+            "payment": "결제",
+            "product": "제품",
+            "register": "등록",
+            "setting": "설정",
+            "shop": "쇼핑",
+            "wishlist": "위시리스트"
+        },
+        "offersArr": {
+            "weight1": "200g",
+            "weight2": "900g",
+            "weight3": "700g",
+            "weight4": "600g",
+            "discount1": "50",
+            "discount2": "69"
+        },
+        "productArr": {
+            "weight1": "200g",
+            "weight2": "900g",
+            "weight3": "700g",
+            "weight4": "600g",
+            "weight5": "400g",
+            "weight6": "200g",
+            "weight7": "800g",
+            "weight8": "100g",
+            "weight9": "800g",
+            "weight10": "500g",
+            "weight11": "300g",
+            "weight12": "600g",
+            "discount1": "50",
+            "discount2": "69",
+            "discount3": "20",
+            "discount4": "20",
+            "discount5": "40",
+            "discount6": "20",
+            "discount7": "60",
+            "discount8": "70",
+            "discount9": "30",
+            "discount10": "80",
+            "discount11": "10",
+            "discount12": "20"
+        },
+        "packsizeArr": {
+            "size1": "100g-500g",
+            "size2": "500g-1kg",
+            "size3": "1kg-1.5kg",
+            "size4": "1.5kg-2kg"
+        },
+        "langaugesArr": {
+            "hindi": "힌디어",
+            "english": "영어",
+            "korean": "한국어",
+            "arabic": "아랍어"
+        },
+        "locationArr": {
+            "locationName": "노아 해밀턴",
+            "locationAddress": "8857 Morris Rd., 샬로츠빌, VA 22901"
+        },
+        "myOffersArr": {
+            "off1": "50",
+            "off2": "30",
+            "off3": "14",
+            "off4": "25",
+            "off5": "15",
+            "off6": "10",
+            "onOrder": "첫 번째 주문 시",
+            "offerCode": "SCD450",
+            "aboveOn": "250.00달러 이상 주문 시",
+            "onAbove":"위의 주문에 따라",
+            "hdfc": "hdfc 신용 카드"
+        },
+        "orderDetailArr": {
+            "gram1": "500g",
+            "gram2": "700g",
+            "gram3": "600g",
+            "gram4": "400g",
+            "quantity1": "2",
+            "quantity2": "6",
+            "quantity3": "3",
+            "quantity4": "1",
+            "orderPrice": "25.00"
+        },
+        "coupensArr": {
+            "couponDiscount1": "30",
+            "couponDiscount2": "20",
+            "couponDiscount3": "37",
+            "couponOff1": "20",
+            "couponOff2": "90",
+            "couponOff3": "70"
+        },
+        "currencyConverterArr": {
+            "indianRupees": "인도 루피",
+            "usDollar": "미국 달러",
+            "euro": "유로",
+            "australianDollar": "호주 달러",
+            "koreanWon": "한국 원"
+        },
+        "quantityArr": {
+            "gram1": "500g",
+            "gram2": "700g",
+            "gram3": "100g",
+            "gram4": "1.5kg",
+            "gram5": "2kg",
+            "gram6": "5kg"
+        },
+        "deliveryTimeArr": {
+            "deliveryTime1": "오전 7시",
+            "deliveryTime2": "오전 9시",
+            "deliveryTime3": "오전 11시",
+            "deliveryTime4": "5 오후",
+            "deliveryTime5": "오후 7시",
+            "deliveryTime6": "오후 9시"
+        },
+        "cityArr": {
+            "city1": "파리",
+            "city2": "뉴욕",
+            "city3": "뭄바이",
+            "city4": "델리",
+            "city5": "시카고",
+            "city6": "밴쿠버",
+            "city7": "라스베이거스",
+            "city8": "서울",
+            "city9": "프랭클린",
+            "city10": "매디슨"
+        },
+        "stateArr": {
+            "state1": "아삼",
+            "state2": "아르헨티나",
+            "state3": "구자라트",
+            "state4": "안드라프라데시",
+            "state5": "핀란드",
+            "state6": "프랑스",
+            "state7": "독일",
+            "state8": "한국",
+            "state9": "히마찰프라데시",
+            "state10": "케랄라"
+        }
+    }
+}

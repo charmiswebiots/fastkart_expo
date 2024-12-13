@@ -9,7 +9,7 @@ import appColors from "../../../../../theme/appColors";
 import { useTheme } from "@react-navigation/native";
 
 export function Coupons() {
-    const {isDark,viewRtlStyle,t}=useValues()
+    const {isDark,viewRtlStyle,t,currSymbol,currValue}=useValues()
     const {colors}=useTheme()
     return (
         <View style={[styles.mainView,{backgroundColor:isDark?colors.primary:appColors.drawer}]}>
@@ -37,7 +37,7 @@ export function Coupons() {
                         >
                             <Image source={item.icon} resizeMode='contain' style={styles.image} />
                             <Text style={styles.discount}>{item.discount}% {t('cartlist.off')}</Text>
-                            <Text style={styles.upto}>{t('notificationPage.upto')} $20.00</Text>
+                            <Text style={styles.upto}>{t('notificationPage.upto')} {currSymbol}{(currValue * 20).toFixed(2)}</Text>
                         </ImageBackground>
                     )
                 }

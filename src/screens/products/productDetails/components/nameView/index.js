@@ -8,7 +8,7 @@ import { useValues } from "../../../../../utils/context";
 
 export function NameView() {
     const { colors } = useTheme()
-    const { viewRtlStyle, textRtlStyle ,t} = useValues()
+    const { viewRtlStyle, textRtlStyle ,t,currSymbol,currValue} = useValues()
     return (
         <View>
             <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.productName')}</Text>
@@ -21,8 +21,8 @@ export function NameView() {
                 <Text style={[styles.ratings]}>{t('productDetailsPage.productRatings')}</Text>
             </View>
             <View style={[{ flexDirection: viewRtlStyle }]}>
-                <Text style={[styles.txt, { color: colors.text }]}>$25.00</Text>
-                <Text style={styles.originalPrice}>$45.00</Text>
+                <Text style={[styles.txt, { color: colors.text }]}>{currSymbol}{(25 * currValue).toFixed(2)}</Text>
+                <Text style={styles.originalPrice}>{currSymbol}{(45 * currValue).toFixed(2)}</Text>
                 <Text style={styles.discount}>{t('productDetailsPage.productDiscount')}</Text>
             </View>
         </View>

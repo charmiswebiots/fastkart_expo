@@ -46,8 +46,8 @@ export function OrderHistoryFilterModal({ showModal }) {
                 }
             />
             <OptionButton
-                txt1={'commonText.close'}
-                txt2={'productFilter.apply'}
+                txt1={t('commonText.close')}
+                txt2={t('productFilter.apply')}
                 onPress1={showModal}
                 onPress2={showModal}
                 style={styles.btn}

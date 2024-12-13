@@ -57,7 +57,7 @@ export function ProductsDetails({ navigation }) {
                     <ReviewView visibleReviewModal={visibleReviewModal} />
                     <CheckDeliveryView />
                 </View>
-                <View style={{ backgroundColor: isDark ? colors.primary : appColors.lowestPrice, paddingVertical: windowHeight(13) }}>
+                <View style={{ backgroundColor: isDark ? colors.primary : appColors.grey, paddingVertical: windowHeight(13) }}>
                     <LowestPrice headerData={{ title: t('productDetailsPage.recentlyView'), subtitle: t('homepage.payless') }} style={[styles.color, { backgroundColor: isDark ? colors.primary : appColors.white }]} />
                 </View>
                 <View style={[styles.line, { backgroundColor: colors.background }]} />

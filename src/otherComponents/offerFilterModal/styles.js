@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     filter: {
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT24,
-        textAlign:'left',
         color:appColors.black,
     },
     columnWrapperStyle: {

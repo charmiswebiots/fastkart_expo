@@ -48,9 +48,10 @@ const styles = StyleSheet.create({
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
         color: appColors.content,
-        width: '100%',
+        width: '90%',
         marginTop: windowHeight(6),
-        marginHorizontal: windowHeight(13),
+        marginHorizontal: windowWidth(20),
+        textAlign:'left'
     },
 })
 export default styles;

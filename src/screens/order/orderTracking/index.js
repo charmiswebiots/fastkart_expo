@@ -6,10 +6,12 @@ import appColors from "../../../theme/appColors";
 import { Header, Button } from "../../../commonComponents";
 import { MapImageView, EstimatedDeliveryView, UserDetailView, AddressView } from "./components";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
 
 export function OrderTracking({ navigation }) {
     const { colors } = useTheme()
+    const {t}=useValues()
 
     const order = () => {
         navigation.navigate('OrderDetail')
@@ -36,7 +38,7 @@ export function OrderTracking({ navigation }) {
                         <EstimatedDeliveryView />
                         <UserDetailView />
                         <AddressView />
-                        <Button text={'orderTrackingPage.orderDetails'} style={styles.btn}
+                        <Button text={t('orderTrackingPage.orderDetails')} style={styles.btn}
                             color={appColors.white} onPress={order} />
                     </ScrollView>
                 </View>

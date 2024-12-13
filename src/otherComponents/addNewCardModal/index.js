@@ -89,8 +89,8 @@ export function AddNewCardModal({ showModal, showModal1 }) {
                 </View>
             </View>
             <OptionButton
-                txt1={'commonText.close'}
-                txt2={'productDetailsPage.add'}
+                txt1={t('commonText.close')}
+                txt2={t('productDetailsPage.add')}
                 onPress1={showModal}
                 onPress2={showModal1}
 

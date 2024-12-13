@@ -25,7 +25,7 @@ export function AddressView() {
                 <TouchableOpacity onPress={() => setDefault(key)} activeOpacity={0.8} style={[styles.list, { borderWidth: key === isDefault ? windowHeight(2) : 0, backgroundColor: isDark ? colors.primary : appColors.gray, flexDirection: viewRtlStyle}]}>
                     <View>
                         <View style={[styles.optionView, { flexDirection: viewRtlStyle }]}>
-                            {item.isWork ? <Icons.work /> : <Icons.home />}
+                            {item.isWork ? <Icons.work /> : <Icons.home color={'black'} />}
                             <Text style={[styles.optionTxt, { color: colors.text }]}>{item.isWork ? t('selectDeliveryAddressPage.work') : t('tabBar.home')}  </Text>
                             {key === 0 &&
                                 <Text style={styles.default}>{t('selectDeliveryAddressPage.default')}</Text>}

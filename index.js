@@ -8,3 +8,4 @@ import { LogBox } from 'react-native';
 // the environment is set up appropriately
 LogBox.ignoreAllLogs();
 registerRootComponent(App);
+

@@ -11,7 +11,7 @@ import { useValues } from "../../../utils/context";
 
 export function OrderSuccess({ navigation }) {
     const { colors } = useTheme()
-    const { isDark } = useValues()
+    const { isDark ,t} = useValues()
 
     const orderTracking = () => {
         navigation.navigate('OrderTracking')
@@ -36,11 +36,11 @@ export function OrderSuccess({ navigation }) {
                     <Image source={images.orderSuccess} style={styles.orderSuccess} />
                     <ThankyouView />
                     <OrderDataView />
-                    <Total style title={'orderTrackingPage.orderDetails'}  />
+                    <Total style title={t('orderTrackingPage.orderDetails')} style1={{ backgroundColor: isDark ? colors.primary : appColors.gray }} />
                 </ScrollView>
             </View>
             <View style={{ flex: 0.13 }}>
-                <Button text={'orderSuccessPage.trackOnMap'} style={styles.btn} color={appColors.white} onPress={orderTracking} />
+                <Button text={t('orderSuccessPage.trackOnMap')} style={styles.btn} color={appColors.white} onPress={orderTracking} />
             </View>
         </SafeAreaView>
     )

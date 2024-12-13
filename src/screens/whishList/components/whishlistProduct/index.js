@@ -11,8 +11,8 @@ import { useValues } from "../../../../utils/context";
 import appColors from "../../../../theme/appColors";
 
 export function WhishListProduct() {
-    const {colors}=useTheme()
-    const {isDark,viewRtlStyle ,textRtlStyle,t}=useValues()
+    const { colors } = useTheme()
+    const { isDark, viewRtlStyle, textRtlStyle, t, currSymbol, currValue } = useValues()
     const [cartItems, setCartItems] = useState(cart);
     const handleDelete = (id) => {
         setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
@@ -49,20 +49,22 @@ export function WhishListProduct() {
                     leftThreshold={80}
                     rightThreshold={100}
                 >
-                    <View style={[styles.mainView,{backgroundColor:isDark?colors.primary:appColors.gray},{flexDirection:viewRtlStyle}]}>
+                    <View style={[styles.mainView, { backgroundColor: isDark ? colors.primary : appColors.gray }, { flexDirection: viewRtlStyle }]}>
                         <Image source={item.image} style={styles.image} resizeMode="contain" />
                         <View style={styles.lineView} />
                         <View style={styles.counterView}>
                             <TouchableOpacity activeOpacity={0.7}>
-                                <Text style={[styles.name,{color:colors.text},{textAlign:textRtlStyle}]}>{t(item.name)}</Text>
-                                <Text style={[styles.weight,{textAlign:textRtlStyle}]}>{t(item.weight)}</Text>
+                                <Text style={[styles.name, { color: colors.text }, { textAlign: textRtlStyle }]}>{t(item.name)}</Text>
+                                <Text style={[styles.weight, { textAlign: textRtlStyle }]}>{t(item.weight)}</Text>
                             </TouchableOpacity>
-                            <View style={[styles.priceView,{flexDirection:viewRtlStyle}]}>
-                                <View style={[styles.discountPriceView,{flexDirection:viewRtlStyle}]}>
-                                    <Text style={[styles.price,{color:colors.text}]}>{item.price}</Text>
-                                    <View style={[styles.discountView,{flexDirection:viewRtlStyle}]}>
+                            <View style={[styles.priceView, { flexDirection: viewRtlStyle }]}>
+                                <View style={[styles.discountPriceView, { flexDirection: viewRtlStyle }]}>
+                                    <Text style={[styles.price, { color: colors.text }]}>
+                                        {currSymbol}{(item.price * currValue).toFixed(2)}
+                                    </Text>                                    
+                                    <View style={[styles.discountView, { flexDirection: viewRtlStyle }]}>
                                         <Text style={styles.discount}>{item.discount}% </Text>
-                                        <Text style={styles.discount}>{('cartlist.OFF')}</Text>
+                                        <Text style={styles.discount}>{t('cartlist.OFF')}</Text>
                                     </View>
                                     <View style={{ paddingHorizontal: windowHeight(6.8) }}>
                                         <Counter />

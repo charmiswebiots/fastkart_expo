@@ -32,23 +32,23 @@ export const category = [
 
 
 export const offers = [
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: 25, weight: 'productArr.weight10', discount: '50' },
 ];
 
 export const lowestPrice = [
-    { name: 'product.assortedCapsicumCombo', image: images.product3, price: '$25.00', weight: 'productArr.weight10' },
-    { name: 'product.assortedCapsicumCombo', image: images.product2, price: '$25.00', weight: 'productArr.weight10' },
-    { name: 'product.assortedCapsicumCombo', image: images.product1, price: '$25.00', weight: 'productArr.weight10' },
-    { name: 'product.assortedCapsicumCombo', image: images.product4, price: '$25.00', weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product3, price: 25, weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product2, price: 25, weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product1, price: 25, weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product4, price: 25, weight: 'productArr.weight10' },
 ];
 
 export const bestPrice = [
-    { name: 'product.assortedCapsicumCombo', image: images.product6, price: '$25.00', weight: 'productArr.weight10' },
-    { name: 'product.assortedCapsicumCombo', image: images.product5, price: '$25.00', weight: 'productArr.weight10' },
-    { name: 'product.assortedCapsicumCombo', image: images.product4, price: '$25.00', weight: 'productArr.weight10' },
-    { name: 'product.assortedCapsicumCombo', image: images.product2, price: '$25.00', weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product6, price: 25, weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product5, price: 25, weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product4, price: 25, weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product2, price: 25, weight: 'productArr.weight10' },
 ];
 
 export const coupons = [
@@ -96,28 +96,26 @@ export const notification = [
 
 
 export const myOffers = [
-    { off: '50', onOrderAbove: 'myOffersArr.aboveOn', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '50', onOrderAbove: 'myOffersArr.onAbove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
     { off: '25', onOrderAbove: 'myOffersArr.hdfc', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
-    { off: '40', onOrderAbove: 'myOffersArr.aboveOn', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
-    { off: '30', onOrderAbove: 'myOffersArr.aboveOn', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
-    { off: '15', onOrderAbove: 'myOffersArr.aboveOn', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode' },
-    { off: '10', onOrderAbove: 'myOffersArr.aboveOn', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '40', onOrderAbove: 'myOffersArr.onAbove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '30', onOrderAbove: 'myOffersArr.onAbove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '15', onOrderAbove: 'myOffersArr.onAbove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode' },
+    { off: '10', onOrderAbove: 'myOffersArr.onAbove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
 ];
 
 export const termsCondition = [
-    {
-        terms: '1. couponModal.terms1'
-    },
-    { terms: "2.couponModal.terms2" }
+    { terms: 'couponModal.terms1' },
+    { terms: 'couponModal.terms2' }
 ];
 
 export const offersFilter = [
     { offer: 'offersFilterArr.allOffer' },
-    { offer: '10-30% off' },
-    { offer: '30-50% off' },
-    { offer: '50-70% off' },
-    { offer: '70-90% off' },
-    { offer: '90-100% off' },
+    { offer: 'offersFilterArr.morethan50' },
+    { offer: 'offersFilterArr.morethan50' },
+    { offer: 'offersFilterArr.morethan50' },
+    { offer: 'offersFilterArr.morethan50' },
+    { offer: 'offersFilterArr.morethan50' },
 ];
 
 export const recentlySearch = [
@@ -141,8 +139,8 @@ export const category1 = [
 
 
 export const trendingProducts = [
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought5, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought5, price: 25, weight: 'productArr.weight10', discount: '50' },
 ];
 
 
@@ -165,7 +163,7 @@ export const orderHistory = [
         id: 'orderHistory.orderHistoryId',
         date: 'orderHistory.orderHistoryDate',
         add: 'orderHistory.orderHistoryAdd',
-        paid: '$250.00',
+        paid: 250,
         item: 15,
         review: 0
     },
@@ -173,7 +171,7 @@ export const orderHistory = [
         id: 'orderHistory.orderHistoryId',
         date: 'orderHistory.orderHistoryDate',
         add: 'orderHistory.orderHistoryAdd',
-        paid: '$250.00',
+        paid: 250,
         item: 15,
         review: 2
     },
@@ -181,7 +179,7 @@ export const orderHistory = [
         id: 'orderHistory.orderHistoryId',
         date: 'orderHistory.orderHistoryDate',
         add: 'orderHistory.orderHistoryAdd',
-        paid: '$250.00',
+        paid: 250,
         item: 15,
         review: 2
     },
@@ -189,7 +187,7 @@ export const orderHistory = [
         id: 'orderHistory.orderHistoryId',
         date: 'orderHistory.orderHistoryDate',
         add: 'orderHistory.orderHistoryAdd',
-        paid: '$250.00',
+        paid: 250,
         item: 15,
         review: 5
     },
@@ -197,7 +195,7 @@ export const orderHistory = [
         id: 'orderHistory.orderHistoryId',
         date: 'orderHistory.orderHistoryDate',
         add: 'orderHistory.orderHistoryAdd',
-        paid: '$250.00',
+        paid: 250,
         item: 15,
         review: 2
     },
@@ -205,7 +203,7 @@ export const orderHistory = [
         id: 'orderHistory.orderHistoryId',
         date: 'orderHistory.orderHistoryDate',
         add: 'orderHistory.orderHistoryAdd',
-        paid: '$250.00',
+        paid: 250,
         item: 15,
         review: 3
     },
@@ -213,7 +211,7 @@ export const orderHistory = [
         id: 'orderHistory.orderHistoryId',
         date: 'orderHistory.orderHistoryDate',
         add: 'orderHistory.orderHistoryAdd',
-        paid: '$250.00',
+        paid: 250,
         item: 15,
         review: 2
     },
@@ -221,7 +219,7 @@ export const orderHistory = [
         id: 'orderHistory.orderHistoryId',
         date: '20 Dec, 2020',
         add: 'orderHistory.orderHistoryAdd',
-        paid: '$250.00',
+        paid: 250,
         item: 15,
         review: 1
     },
@@ -295,10 +293,10 @@ export const payments = [
 
 
 export const cart = [
-    { id: 1, name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { id: 2, name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { id: 3, name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { id: 4, name: 'product.assortedCapsicumCombo', image: images.recentBought4, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { id: 1, name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { id: 2, name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { id: 3, name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { id: 4, name: 'product.assortedCapsicumCombo', image: images.recentBought4, price: 25, weight: 'productArr.weight10', discount: '50' },
 ];
 
 export const shopCategory = [
@@ -310,18 +308,18 @@ export const shopCategory = [
 
 
 export const data = [
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought4, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought5, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought4, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
-    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought4, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought5, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought4, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: 25, weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: 25, weight: 'productArr.weight10', discount: '50' },
 ];
 
 export const packSize = [
@@ -365,9 +363,9 @@ export const stateArr = [
 ];
 
 export const orderDetails = [
-    { name: 'product.assortedCapsicumCombo', gram: 'productArr.weight10', quantity: '2', price: '$25.00' },
-    { name: 'product.assortedCapsicumCombo', gram: 'productArr.weight10', quantity: '1', price: '$25.00' },
-    { name: 'product.assortedCapsicumCombo', gram: 'productArr.weight10', quantity: '1', price: '$25.00' },
+    { name: 'product.assortedCapsicumCombo', gram: 'productArr.weight10', quantity: '2', price: 25 },
+    { name: 'product.assortedCapsicumCombo', gram: 'productArr.weight10', quantity: '1', price: 25 },
+    { name: 'product.assortedCapsicumCombo', gram: 'productArr.weight10', quantity: '1', price: 25 },
 ];
 
 export const reviewStar = [

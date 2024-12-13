@@ -30,7 +30,7 @@ export function Home({ navigation }) {
         <SafeAreaView style={[styles.mainView, { backgroundColor: colors.background }]}>
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
                 <HomeHeader navigation={navigation} toogle={toogle} />
-                <Input placeholder={'commonText.searchProducts'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
+                <Input placeholder={t('commonText.searchProducts')} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
                 <Slider />
                 <RecentlyBought onPress={productDetails} />
                 <ShopByCategory onPress={shopPage} />

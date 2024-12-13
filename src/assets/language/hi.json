@@ -1,0 +1,557 @@
+{
+    "translation": {
+        "onBoarding": {
+            "safeDelivery": "अपने दरवाजे पर सुरक्षित डिलीवरी पाएं"
+        },
+        "login": {
+            "signIn": "साइन इन करें",
+            "loginAccount": "लॉगिन खाता",
+            "forgotPassword": "पासवर्ड भूल गए?",
+            "createAccount": "अगर आप नए हैं तो अभी बनाएं",
+            "signInWith": "या इसके साथ साइन इन करें"
+        },
+        "register": {
+            "signUp": "साइन अप करें",
+            "registerAccount": "रजिस्टर खाता",
+            "accountSignIn": "क्या आपके पास पहले से एक खाता मौजूद है? साइन इन करें",
+            "signUpWith": "या साइन अप करें",
+            "fullName": "पूरा नाम",
+            "fullNameError": "पूरा नाम आवश्यक है"
+        },
+        "loginNRegister": {
+            "onlineSupermarket": "आपकी सभी दैनिक जरूरतों के लिए ऑनलाइन सुपरमार्केट। आप अपने दरवाजे पर अपनी सभी जरूरतों से सिर्फ एक क्लिक दूर हैं।",
+            "continueWithPhone": "फ़ोन के साथ जारी रखें",
+            "continueWithGoogle": "गूगल के साथ जारी रखें",
+            "continueAsGuest": "अतिथि के रूप में जारी रखें",
+            "emailAddress": "ईमेल पता",
+            "password": "पासवर्ड",
+            "emailError": "ईमेल आवश्यक है",
+            "passwordError": "पासवर्ड आवश्यक है",
+            "validEmailError": "मान्य ईमेल पता दर्ज करें",
+            "validPasswordError": "पासवर्ड 8 अक्षर का होना चाहिए"
+        },
+        "tabBar": {
+            "home": "घर",
+            "category": "श्रेणी",
+            "search": "खोज",
+            "offers": "ऑफर",
+            "cart": "कार्ट"
+        },
+        "drawer": {
+            "fastKartPagesList": "फास्टकार्ट पृष्ठ सूची",
+            "orders": "आर्डर",
+            "yourWishlist": "आपकी इच्छा सूची",
+            "langauge": "भाषा",
+            "yourAccount": "आपका खाता",
+            "notification": "अधिसूचना",
+            "settings": "समायोजन",
+            "currencyConverter": "मुद्रा परिवर्तन",
+            "dark": "डार्क",
+            "rtl": "RTL",
+            "contactSupport": "सहयोग टीम से संपर्क करें",
+            "reactOut": "यदि आपको कोई समस्या है, तो प्रश्न या प्रश्न बेझिझक संपर्क करें",
+            "contactUs": "संपर्क करें"
+        },
+        "homepage": {
+            "farmFreshVegies": "फार्म ताजा सब्जियां",
+            "getInstantDelivery": "तुरंत डिलीवरी पाएं",
+            "recentlyBrought": "हाल ही में खरीदे गए से खरीदें",
+            "seeAll": "सभी देखें",
+            "shopNow": "अभी खरीदें",
+            "sayHelloOffers": "ऑफ़र को हेलो कहो!",
+            "shopByCategory": "वर्गों के अनुसार खरीदारी",
+            "bestPrice": "अब तक की सबसे अच्छी कीमत",
+            "lowestPrice": "सबसे कम दाम",
+            "payless": "कम भुगतान करें, अधिक प्राप्त करें",
+            "everydayEssentials": "रोजमर्रा की आवश्यक वस्तुएं",
+            "couponsForYou": "आपके लिए कूपन",
+            "popularOffer": "दिन के लोकप्रिय ऑफर",
+            "didntFind": "आप जो खोज रहे थे वह नहीं मिला?",
+            "browseCategory": "श्रेणी ब्राउज़ करें"
+        },
+        "searchPage": {
+            "recentlySearch": "हाल ही में खोजें",
+            "trendingCategory": "रुझान वाली श्रेणी",
+            "trendingProducts": "रुझान वाले उत्पाद"
+        },
+        "offerPage": {
+            "myOffers": "मेरे ऑफर"
+        },
+        "cartPage": {
+            "myCart": "मेरी कार्ट",
+            "orderDetails": "ऑर्डर का विवरण"
+        },
+        "commonTotal": {
+            "bagTotal": "बैग कुल",
+            "bagSavings": "बैग बचत",
+            "couponDiscount": "कूपन छूट",
+            "delivery": "डिलीवरी",
+            "totalAmount": "कुल राशि",
+            "proceedtoCheckout": "चेक आउट करने के लिए आगे बढ़ें"
+        },
+        "commonText": {
+            "filter": "फ़िल्टर",
+            "cancle": "रद्द करें",
+            "close": "बंद करे",
+            "confirm": "पुष्टि करना",
+            "year": "वर्ष",
+            "month": "महीना",
+            "day": "दिन",
+            "selectDate": "तारीख़ चुनें",
+            "searchProducts": "यहां तलाश करो..."
+        },
+        "totalModule": {
+            "applyCoupon": "कूपन लागू करें"
+        },
+        "couponModal": {
+            "termsConditions": "नियम एवं शर्तें",
+            "terms1": "भाग लेने के तरीके के बारे में जानकारी इन नियमों और शर्तों का हिस्सा है। भाग लेने से, दावेदार इन नियमों और शर्तों से बाध्य होने के लिए सहमत होते हैं। कूपन के वैध होने के लिए दावेदारों को इन नियमों और शर्तों का पालन करना होगा।",
+            "terms2": "प्रत्येक दावेदार प्रति आवास प्रतिष्ठान एक कूपन का हकदार है। कूपन हस्तांतरणीय नहीं हैं और नकद के लिए रिडीम करने योग्य नहीं हैं और किसी भी अन्य कूपन या किसी अन्य ऑफ़र या छूट या प्रचार के साथ जोड़ा नहीं जा सकता है जो क्वावई द्वारा प्रदान किया जाता है।",
+            "copyCode": "कॉपी कोड"
+        },
+        "addAddressPage": {
+            "addAddress": "पता जोड़ें",
+            "searchLocation": "स्थान खोजें",
+            "useCurrentLocation": "वर्तमान स्थान का उपयोग करें",
+            "confirmLocation": "स्थान की पुष्टि करें और आगे बढ़ें",
+            "deliverTime": "डिलीवरी 7 अगस्त, स्लॉट: सुबह 7 बजे से 9 बजे तक",
+            "streetError": "सड़क आवश्यक है",
+            "apartmentError": "अपार्टमेंट आवश्यक है",
+            "zipError": "ज़िप आवश्यक है"
+        },
+        "selectDeliveryAddressPage": {
+            "selectDeliveryAddress": "डिलीवरी पता चुनें",
+            "addNewAddress": "नया पता जोड़ें",
+            "work": "काम",
+            "proceedToPayment": "भुगतान करने के लिए आगे बढ़ें",
+            "default": "चूक"
+        },
+        "addPaymentPage": {
+            "addPaymentMethod": "भुगतान विधि जोड़ें",
+            "addNewCard": "नया कार्ड जोड़ें",
+            "confirmPayment": "भुगतान की पुष्टि करें"
+        },
+        "addCard": {
+            "addCard": "कार्ड जोड़ें",
+            "cardHolderName": "कार्डधारक का नाम",
+            "cardNum": "कार्ड नंबर",
+            "expiryDate": "समाप्ति तिथि",
+            "cvv": "CVV",
+            "holderNameError": "कार्ड धारक का नाम आवश्यक है",
+            "numberError": "कार्ड नंबर आवश्यक है",
+            "expriryError": "समाप्ति तिथि आवश्यक है",
+            "cvvError": "CVV आवश्यक है",
+            "validCvvError": "CVV 3 नंबर का होना चाहिए"
+        },
+        "orderSuccessPage": {
+            "thankYouforOrder": "आपके ओर्डर के लिए धन्यवाद!",
+            "orderDate": "आर्डर की तारीख",
+            "orderID": "आर्डर डि",
+            "trackOnMap": "नक्शे पर पैकेज ट्रैक करें",
+            "orderSuccessfull": "आपका ऑर्डर सफलतापूर्वक दिया गया है। आपकी ऑर्डर आईडी #548475151 है",
+            "date": "रविवार, 14 अप्रैल, 19:12",
+            "id": "#548475151",
+            "idOrder": "आदेश कामतत्व"
+        },
+        "orderTrackingPage": {
+            "estimatedDeliveryTime": "अनुमानित डिलीवरी समय",
+            "trackingTime": "सुबह 9 बजे - दोपहर 12.00 बजे",
+            "name": "एंड्रिया जोआन",
+            "location": "8857 मॉरिस रोड। , शार्लोट्सविले, वीए 22901",
+            "courier": "संदेशवाहक",
+            "orderDetails": "ऑर्डर का विवरण",
+            "storeLocation": "संग्रहण स्थान",
+            "deliveryLocation": "डिलीवरी लोकेशन"
+        },
+        "orderDetailPage": {
+            "orderSummary": "ओर्डर सारांश",
+            "orderDelivered": "ओर्डर पहुंचा दिया",
+            "items": "सामान:",
+            "paymentDetails": "भुगतान विवरण",
+            "address": "पता",
+            "paymentMethod": "भुगतान का तरीका",
+            "reorder": "पुनःओर्डर करें"
+        },
+        "orderHistoryPage": {
+            "last30days": "पिछले 30 दिन",
+            "processing": "प्रसंस्करण",
+            "orderHistoryTxt": "ऑर्डर इतिहास",
+            "orderAgain": "फिर से ऑर्डर करें",
+            "paid": "भुगतान किया गया",
+            "rateNReviewProduct": "दर और समीक्षा उत्पाद",
+            "idTxt": "ID",
+            "dt": "डीटी"
+        },
+        "addAddressModal": {
+            "zip": "ज़िप",
+            "city": "शहर",
+            "state": "राज्य",
+            "apart": "अपार्टमेंट, स्टूडियो, या फर्श",
+            "street": "1234 Main St"
+        },
+        "reviewArr": {
+            "review": "यह वास्तव में प्यारा स्कर्ट है! मुझे पॉलिएस्टर सामग्री में इतना अच्छा महसूस करने की उम्मीद नहीं थी। प्रिंट थोड़ा है"
+        },
+        "coupon": {
+            "useCode": "कोड का प्रयोग करें: "
+        },
+        "multiLangaugeModal": {
+            "selectLanguage": "भाषा चुने"
+        },
+        "multicurrencyModal": {
+            "selectCurrency": "मुद्रा चुनें"
+        },
+        "account": {
+            "signOut": "साइन आउट "
+        },
+        "wishlistPage": {
+            "myWishlist": "मेरी इच्छा सूची"
+        },
+        "product": {
+            "assortedCapsicumCombo": "मिश्रित शिमला मिर्च कॉम्बो"
+        },
+        "aboutUsPage": {
+            "aboutUsTxt": "हमारे बारे में",
+            "whoWeAre": "हम कौन हैं?",
+            "whoArewe": "लोरेम इप्सम प्रिंटिंग और टाइपसेटिंग उद्योग का केवल डमी टेक्स्ट है। लोरेम इप्सम 1500 के दशक के बाद से उद्योग का मानक डमी टेक्स्ट रहा है, जब एक अज्ञात प्रिंटर ने गैली का प्रकार लिया और एक प्रकार की नमूना पुस्तक बनाने के लिए इसे खंगाला। यह न केवल पांच शताब्दियों तक जिया",
+            "howIOrder": "मैं कैसे ऑर्डर करूं?",
+            "peopleWhoBuild": "Fastkart बनाने वाले लोग",
+            "builtFastkart": "मौरीन जीवविज्ञानी"
+        },
+        "productCategory": {
+            "herbsSeasonings": "जड़ी बूटी और मसाला"
+        },
+        "recentlySearch": {
+            "beauty": "सुंदरता"
+        },
+        "productFilter": {
+            "reset": "रीसेट",
+            "packSize": "पैक का आकार",
+            "priceRange": "मूल्य सीमा",
+            "minValue": "0",
+            "maxValue": "500",
+            "apply": "आवेदन करे"
+        },
+        "deleteProductModal": {
+            "areYouSure": "क्या आपको यकीन है?",
+            "remove": "हटाए",
+            "txt": "उपयोग/समूह के लिए अनुमति, पूर्वावलोकन वस्तु से विरासत में मिला है, इस वस्तु के लिए इसे संशोधित करने से इस वस्तु के लिए एक नई अनुमति बन जाएगी"
+        },
+        "homeHeader": {
+            "losAngeles": "लॉस एंजिल्स"
+        },
+        "404": {
+            "backToHome": "घर वापस",
+            "pageNotFound": "पृष्ठ नहीं मिला",
+            "pageNotExist": "हमें खेद है लेकिन आप जिस पेज की तलाश कर रहे हैं वह मौजूद नहीं है या हटा दिया गया है। कृपया बाद में वापस जांचें या फिर से खोजें।"
+        },
+        "pageListPage": {
+            "pagesList": "पृष्ठ सूची",
+            "checkoutPages": "यहां पर सभी पेज और उनकी विविधताएं चेकआउट करें। निम्नलिखित सभी पृष्ठों की सूची है।"
+        },
+        "editProfilePage": {
+            "changePassword": "पासवर्ड बदलें",
+            "updateSettings": "सेटिंग अपडेट करें",
+            "editProfile": "प्रोफ़ाइल एडिट करें",
+            "nameError": "नाम आवश्यक है",
+            "phoneNumberError": "फ़ोन नंबर आवश्यक है",
+            "validPhoneNumberError": "फ़ोन नंबर में 10 अंक होने चाहिए"
+        },
+        "notificationPage": {
+            "markAsRead": "सभी को पढ़ा हुआ मार्क करें",
+            "alerts": "अलर्ट",
+            "offer": "ऑफर",
+            "upto": "तक"
+        },
+        "orderHistoryFilterArr": {
+            "timeFilter": "टाइभ फ़िल्टर",
+            "allOrder": "सभी ऑर्डर",
+            "openOrder": "खुले ऑर्डर",
+            "returnOrders": "वापसी ऑर्डर",
+            "cancelledOrder": "रद्द ऑर्डर",
+            "last30days": "पिछले 30 दिन",
+            "last6Month": "पिछले 6 महीने",
+            "year1": "2021",
+            "year2": "2022"
+        },
+        "productDetailsPage": {
+            "productName": "मिश्रित शिमला मिर्च कॉम्बो- (लाल, पीला, हरा)",
+            "productRatings": "(150 रेटिंग)",
+            "productPrice": "25.00",
+            "originalPrice": "45.00",
+            "productDiscount": "25% off",
+            "detailTitle": "उत्पाद विवरण",
+            "detailDesc": "आवश्यक तेल मिश्रणों के लिए सिल्वर कैप वाली बोतलों पर फिर से भरने योग्य, पुन: प्रयोज्य, उच्च गुणवत्ता वाला ग्लास रोल DIY इत्र सौंदर्य प्रसाधन सौंदर्य उत्पाद आदर्श",
+            "manufacturerDetails": "निर्माता विवरण",
+            "manufacturerDetailsDesc": "लोरेम इप्सम डोलर सिट एमेट कंसेक्टेटूर एडिपिसिसिंग एलीट। नुल्ला उल्लम इस्ते अलिकम, कमोडी डोलोरेमक्यू को उलट देता है। ऑटम एक्सर्सिटेम वेल ईक इन ओडिट एक्सपेडिटा नॉन ब्लैंडिटिस, पर्सपिसियाटिस माईओरेस कम टेम्पोरा क्वो डिफरेंशियो?",
+            "productDisclaimer": "उत्पाद अस्वीकरण",
+            "productDisclaimerDesc": "लोरेम इप्सम डोलर सिट एमेट कंसेक्टेटूर एडिपिसिसिंग एलीट। नुल्ला उल्लम इस्ते अलिकम, कमोडी डोलोरेमक्यू को उलट देता है। ऑटम एक्सर्सिटेम वेल ईक इन ओडिट एक्सपेडिटा नॉन ब्लैंडिटिस, पर्सपिसियाटिस माईओरेस कम टेम्पोरा क्वो डिफरेंशियो?",
+            "featureDetails": "विशेषताएं और विवरण",
+            "disclaimerDetails": "अस्वीकरण: रिफिल करने योग्य, पुन: प्रयोज्य, उच्च गुणवत्ता वाले ग्लास रोल ऑन बोतलें सिल्वर कैप के साथ आवश्यक तेल मिश्रणों DIY इत्र प्रसाधन सामग्री सौंदर्य उत्पादों के लिए आदर्श",
+            "featureDetailsDesc": "लोरेम इप्सम डोलर सिट एमेट कंसेक्टेटूर एडिपिसिसिंग एलीट। नुल्ला उल्लम इस्ते अलिकम, कमोडी डोलोरेमक्यू को उलट देता है। ऑटम एक्सर्सिटेम वेल ईक इन ओडिट एक्सपेडिटा नॉन ब्लैंडिटिस, पर्सपिसियाटिस माईओरेस कम टेम्पोरा क्वो डिफरेंशियो?",
+            "productReview": "उत्पाद समीक्षा(15)",
+            "add": "जोड़ें",
+            "addToCart": "कार्ट में डालें",
+            "deliveryTime": "डिलीवरी का समय",
+            "checkDelivery": "डिलीवरी की जाँच करें",
+            "enterPincode": "डिलीवरी की तारीख / पिकअप विकल्प की जांच के लिए पिनकोड दर्ज करें",
+            "freeDelivery": "$200.00 से ऊपर के ऑर्डर पर निःशुल्क डिलीवरी",
+            "cod": "कैश ऑन डिलीवरी उपलब्ध",
+            "easyReturn": "आसान 21 दिनों का रिटर्न और एक्सचेंज",
+            "allReview": "सभी समीक्षा",
+            "pinCode": "पिन कोड",
+            "check": "जाँच करना",
+            "recentlyView": "हाल में देखा गया"
+        },
+        "cartlist": {
+            "flat": "समतल",
+            "off": "छुट",
+            "orderabove": "ऊपर के ऑर्डर पर ",
+            "code": "कोड:",
+            "OFF": "बंद"
+        },
+        "orderDetail": {
+            "cardNumber": "**** **** **** 6502"
+        },
+        "aboutUsArr": {
+            "question1": "खोज सुविधा का उपयोग करके उत्पादों को ब्राउज़ करें",
+            "answer1": "एक बार ऑर्डर देने के बाद हम जांच करेंगे कि सब कुछ सही है",
+            "question2": "अपना नाम, पता, टेलीफोन आदि दर्ज करें।",
+            "answer2": "हम यह सुनिश्चित करना चाहते हैं कि हम अपेक्षाओं को पार कर रहे हैं, संभावित मुद्दे नहीं पैदा कर रहे हैं",
+            "question3": "डिलीवरी विधि चुनें।",
+            "answer3": "हम लीड समय की जांच करेंगे, वस्तुओं की पैकेजिंग को सत्यापित करेंगे, किसी भी डिलीवरी चुनौती की पहचान करेंगे।",
+            "question4": "अपनी भुगतान विधि चुनें।",
+            "answer4": "शिपिंग आदि में संभावित लागत बचत के लिए जाँच करें। यदि कोई समस्या या बचत उपलब्ध है।"
+        },
+        "editprofilePage": {
+            "demoemail": "andreajoanne@gmail.com"
+        },
+        "notificationArr": {
+            "title1": "कल",
+            "title2": "पिछले 7 दिन",
+            "value1": "40% तक की छूट, बिक्री समाप्त",
+            "time1": "दोपहर 3.00 बजे, 10 जुलाई, 2021",
+            "value2": "फ्लैट 30% की छूट, बिक्री समाप्त",
+            "time2": "शाम 5.00 बजे, 10 जुलाई, 2021",
+            "value3": "पासवर्ड सफलतापूर्वक बदल दिया है",
+            "time3": "8:00 पूर्वाह्न, 15 जनवरी, 2021",
+            "value4": " टोपअप सफलतापूर्वक",
+            "time4": "सुबह 9 बजे, 10 जनवरी, 2021",
+            "type1": "टोपअप",
+            "type2": "तक",
+            "type3": "ऑफर"
+        },
+        "orderHistory": {
+            "historyTime": "नवंबर",
+            "historyTime1": "अक्टूबर",
+            "orderHistoryId": "#5151515",
+            "orderHistoryDate": "20 दिसंबर, 2020",
+            "orderHistoryAdd": "8857 मॉरिस रोड। , शार्लोट्सविले..",
+            "totalItem": "15"
+        },
+        "productList": {
+            "listItems": "2 आइटम",
+            "listPrice": "250.0",
+            "viewCart": "कार्ट देंखे",
+            "freshVegetables": "ताजा सब्जियाँ"
+        },
+        "categoryArr": {
+            "oilsRefinedGhee": "तेल, रिफाइंड और घी",
+            "riceFlourGrains": "चावल, आटा और अनाज",
+            "foodCupboard": "भोजन की अलमारी",
+            "freshFruitsVegetables": "ताजे फल और सब्जियां",
+            "drinksBeverages": "पेय पदार्थ",
+            "instantMixes": "झटपट मिक्स",
+            "readytoEat": "खाने के लिए तैयार",
+            "dalsPulses": "दाल और दालें"
+        },
+        "subCategoryArr": {
+            "vegetables": "सब्ज़ियाँ",
+            "fruits": "फल",
+            "sprouts": "अंकुरित",
+            "flowers": "पुष्प",
+            "exoticFruit": "विदेशी फल",
+            "organic": "कार्बनिक",
+            "bouquets": "गुलदस्ते",
+            "herbs": "जड़ी बूटी",
+            "cutsFruit": "कटे हुए फल"
+        },
+        "paymentsArr": {
+            "selectCard": "कार्ड चुनें",
+            "card1": "9800 XXXX XXXX 0545",
+            "card2": "6580 XXXX XXXX 2562",
+            "card3": "5125 XXXX XXXX 6262",
+            "netBanking": "नेट बैंकिंग",
+            "netBankingType1": "औद्योगिक और वाणिज्यिक बैंक",
+            "netBankingType2": "कृषि बैंक",
+            "netBankingType3": "बैंक ऑफ अमरीका",
+            "netBankingType4": "निर्माण बैंक कार्पोरेशन",
+            "netBankingType5": "एचएसबीसी होल्डिंग्स",
+            "netBankingType6": "जेपी मॉर्गन चेस एंड कंपनी",
+            "walletUPI": "वॉलेट/यूपीआई",
+            "waleetUPIType1": "अदयेन",
+            "waleetUPIType2": "सहयोगी वॉलेट",
+            "waleetUPIType3": "कगार",
+            "waleetUPIType4": "एयरटेल मनी",
+            "waleetUPIType5": "एपल पे",
+            "waleetUPIType6": "कार्डफ्री",
+            "cashOnDelivery": "डिलवरी पर नकदी"
+        },
+        "offersFilterArr": {
+            "allOffer": "सभी ऑफ़र",
+            "morethan50": "अधिक तो 50%",
+            "morethan40": "अधिक तो 40%",
+            "morethan30": "अधिक तो 30%",
+            "morethan20": "अधिक तो 20%",
+            "morethan10": "अधिक तो 10%"
+        },
+        "pagesListArr": {
+            "404": "404",
+            "account": "खाता",
+            "addressType1": "पता प्रकार 1",
+            "addressType2": "पता प्रकार 2",
+            "categoryWide": "श्रेणी वाइड",
+            "homePage": "होम पेज",
+            "login": "लॉग इन करें",
+            "onBoarding": "ऑनबोर्डिंग",
+            "orderDetail": "ऑर्डर विवरण",
+            "orderSuccess": "ऑर्डर सफलता",
+            "orderTracking": "ऑर्डर ट्रैकिंग",
+            "payment": "भुगतान",
+            "product": "उत्पाद",
+            "register": "रजिस्टर",
+            "setting": "स्थापना",
+            "shop": "दुकान",
+            "wishlist": "इच्छा-सूची"
+        },
+        "offersArr": {
+            "weight1": "200ग्राम",
+            "weight2": "900ग्राम",
+            "weight3": "700ग्राम",
+            "weight4": "600ग्राम",
+            "discount1": "50",
+            "discount2": "69"
+        },
+        "productArr": {
+            "weight1": "200ग्राम",
+            "weight2": "900ग्राम",
+            "weight3": "700ग्राम",
+            "weight4": "600ग्राम",
+            "weight5": "400ग्राम",
+            "weight6": "200ग्राम",
+            "weight7": "800ग्राम",
+            "weight8": "100ग्राम",
+            "weight9": "800ग्राम",
+            "weight10": "500ग्राम",
+            "weight11": "300ग्राम",
+            "weight12": "600ग्राम",
+            "discount1": "50",
+            "discount2": "69",
+            "discount3": "20",
+            "discount4": "20",
+            "discount5": "40",
+            "discount6": "20",
+            "discount7": "60",
+            "discount8": "70",
+            "discount9": "30",
+            "discount10": "80",
+            "discount11": "10",
+            "discount12": "20"
+        },
+        "packsizeArr": {
+            "size1": "100ग्राम - 500ग्राम",
+            "size2": "500ग्राम - 1किलोग्राम",
+            "size3": "1किलोग्राम - 1.5किलोग्राम",
+            "size4": "1.5किलोग्राम - 2किलोग्राम"
+        },
+        "langaugesArr": {
+            "hindi": "हिन्दी",
+            "english": "अंग्रेज़ी",
+            "korean": "कोरियाई",
+            "arabic": "अरबी"
+        },
+        "locationArr": {
+            "locationName": "नूह हैमिल्टन",
+            "locationAddress": "8857 मॉरिस रोड।, शार्लोट्सविले, वीए 22901"
+        },
+        "myOffersArr": {
+            "off1": "50",
+            "off2": "30",
+            "off3": "14",
+            "off4": "25",
+            "off5": "15",
+            "off6": "10",
+            "onOrder": "आपके पहले ऑर्डर पर",
+            "offerCode": "SCD450",
+            "aboveOn": "$250.00 से अधिक के ऑर्डर पर",
+            "onAbove":"उपरोक्त आदेश पर",
+            "hdfc": "एचडीएफसी क्रेडिट कार्ड"
+        },
+        "orderDetailArr": {
+            "gram1": "500ग्राम",
+            "gram2": "700ग्राम",
+            "gram3": "600ग्राम",
+            "gram4": "400ग्राम",
+            "quantity1": "2",
+            "quantity2": "6",
+            "quantity3": "3",
+            "quantity4": "1",
+            "orderPrice": "25.00"
+        },
+        "coupensArr": {
+            "couponDiscount1": "30",
+            "couponDiscount2": "20",
+            "couponDiscount3": "37",
+            "couponOff1": "20",
+            "couponOff2": "90",
+            "couponOff3": "70"
+        },
+        "currencyConverterArr": {
+            "indianRupees": "भारतीय रुपए",
+            "usDollar": "यूनाइटेड स्टेट डॉलर",
+            "euro": "यूरो",
+            "australianDollar": "ऑस्ट्रेलियाई डॉलर",
+            "koreanWon": "कोरियाई वोन"
+        },
+        "quantityArr": {
+            "gram1": "500 ग्राम",
+            "gram2": "700 ग्राम",
+            "gram3": "100 ग्राम",
+            "gram4": "1.5 किलो",
+            "gram5": "2 किलो",
+            "gram6": "5 किलो"
+        },
+        "deliveryTimeArr": {
+            "deliveryTime1": "सूबह 7 बजे",
+            "deliveryTime2": "सूबह 9 बजे",
+            "deliveryTime3": "सूबह 11 बजे",
+            "deliveryTime4": "शाम 5 बजे",
+            "deliveryTime5": "शाम 7 बजे",
+            "deliveryTime6": "शाम 9 बजे"
+        },
+        "cityArr": {
+            "city1": "पेरिस",
+            "city2": "न्यूयॉर्क",
+            "city3": "मुंबई",
+            "city4": "दिल्ली",
+            "city5": "शिकागो",
+            "city6": "वैंकूवर",
+            "city7": "Las Vegas",
+            "city8": "सोल",
+            "city9": "फ्रेंकलिन",
+            "city10": "मैडिसन"
+        },
+        "stateArr": {
+            "state1": "असम",
+            "state2": "अर्जेंटीना",
+            "state3": "गुजरात",
+            "state4": "आंध्र प्रदेश",
+            "state5": "फिनलैंड",
+            "state6": "फ्रांस",
+            "state7": "जर्मनी",
+            "state8": "दक्षिण कोरिया",
+            "state9": "हिमाचल प्रदेश",
+            "state10": "केरल"
+        }
+    }
+}

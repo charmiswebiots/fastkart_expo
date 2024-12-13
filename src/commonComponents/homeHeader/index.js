@@ -27,7 +27,7 @@ export function HomeHeader({ navigation, toogle }: HomeHeaderProps) {
       </View>
       <View style={[styles.view, { flexDirection: viewRtlStyle }]}>
         <Icons.location />
-        <Text style={[styles.locationText, { color: colors.text }]}>{('homeHeader.losAngeles')}</Text>
+        <Text style={[styles.locationText, { color: colors.text }]}>{t('homeHeader.losAngeles')}</Text>
         <Image source={images.demoProfile} style={[styles.profile]} resizeMode="contain" />
       </View>
     </View>

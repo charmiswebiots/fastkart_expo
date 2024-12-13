@@ -1,0 +1,558 @@
+{
+    "translation": {
+        "onBoarding": {
+            "safeDelivery": "احصل على توصيل آمن عند باب منزلك"
+        },
+        "login": {
+            "signIn": "تسجيل الدخول",
+            "loginAccount": "تسجيل الدخول إلى الحساب",
+            "forgotPassword": "نسيت كلمة المرور؟",
+            "createAccount": "إذا كنت جديدًا، قم بإنشاء حساب الآن",
+            "signInWith": "أو قم بتسجيل الدخول باستخدام"
+        },
+        "register": {
+            "signUp": "التسجيل",
+            "registerAccount": "تسجيل حساب",
+            "accountSignIn": "هل لديك حساب بالفعل؟ تسجيل الدخول",
+            "signUpWith": "أو قم بتسجيل الدخول باستخدام",
+            "fullName": "الاسم الكامل",
+            "fullNameError": "الاسم الكامل مطلوب"
+        },
+        "loginNRegister": {
+            "onlineSupermarket": "سوبر ماركت عبر الإنترنت لجميع احتياجاتك اليومية. أنت على بعد نقرة واحدة فقط من جميع احتياجاتك عند باب منزلك.",
+            "continueWithPhone": "متابعة باستخدام الهاتف",
+            "continueWithGoogle": "متابعة باستخدام Google",
+            "continueAsGuest": "متابعة كضيف",
+            "emailAddress": "عنوان البريد الإلكتروني",
+            "password": "كلمة المرور",
+            "emailError": "البريد الإلكتروني مطلوب",
+            "passwordError": "كلمة المرور مطلوبة",
+            "validEmailError": "أدخل عنوان بريد إلكتروني صالحًا",
+            "validPasswordError": "يجب أن تتكون كلمة المرور من 8 أحرف"
+        },
+        "tabBar": {
+            "home": "بيت",
+            "category": "الفئة",
+            "search": "البحث",
+            "offers": "العروض",
+            "cart": "عربة التسوق"
+        },
+        "drawer": {
+            "fastKartPagesList": "قائمة صفحات Fastkart",
+            "orders": "الطلبات",
+            "yourWishlist": "قائمة أمنياتك",
+            "langauge": "اللغة",
+            "yourAccount": "حسابك",
+            "notification": "الإشعارات",
+            "settings": "الإعدادات",
+            "currencyConverter": "تغيير العملة",
+            "dark": "داكن",
+            "rtl": "RTL",
+            "contactSupport": "الاتصال بالدعم",
+            "reactOut": "إذا كانت لديك أي مشكلة أو استفسارات أو أسئلة فلا تتردد في التواصل معنا",
+            "contactUs": "اتصل بنا"
+        },
+        "homepage": {
+            "farmFreshVegies": "خضراوات طازجة من المزرعة",
+            "getInstantDelivery": "احصل على توصيل فوري",
+            "recentlyBrought": "اشترِ من المنتجات التي تم شراؤها مؤخرًا",
+            "seeAll": "اطلع على الكل",
+            "shopNow": "تسوق الآن",
+            "sayHelloOffers": "قل مرحبًا بالعروض!",
+            "shopByCategory": "تسوق حسب الفئة",
+            "bestPrice": "أفضل سعر على الإطلاق",
+            "lowestPrice": "أقل سعر",
+            "payless": "ادفع أقل، واحصل على المزيد",
+            "everydayEssentials": "مستلزمات يومية",
+            "couponsForYou": "كوبونات لك",
+            "popularOffer": "العروض الشائعة لهذا اليوم",
+            "didntFind": "لم تجد ما كنت تبحث عنه؟",
+            "browseCategory": "تصفح الفئة"
+        },
+        "searchPage": {
+            "recentlySearch": "البحث مؤخرًا",
+            "trendingCategory": "الفئة الرائجة",
+            "trendingProducts": "المنتجات الرائجة"
+        },
+        "offerPage": {
+            "myOffers": "عروضي"
+        },
+        "cartPage": {
+            "myCart": "عربتي",
+            "orderDetails": "تفاصيل الطلب"
+        },
+        "commonTotal": {
+            "bagTotal": "إجمالي الحقيبة",
+            "bagSavings": "توفير الحقيبة",
+            "couponDiscount": "خصم الكوبون",
+            "delivery": "التسليم",
+            "totalAmount": "المبلغ الإجمالي",
+            "proceedtoCheckout": "الانتقال إلى الدفع"
+        },
+        "commonText": {
+            "filter": "تصفية",
+            "cancle": "إلغاء",
+            "close": "إغلاق",
+            "confirm": "تأكيد",
+            "year": "السنة",
+            "month": "الشهر",
+            "day": "اليوم",
+            "selectDate": "حدد التاريخ",
+            "searchProducts": "ابحث هنا.."
+        },
+        "totalModule": {
+            "applyCoupon": "تطبيق الكوبون"
+        },
+        "couponModal": {
+            "termsConditions": "الشروط والأحكام",
+            "terms1": "تشكل المعلومات المتعلقة بكيفية المشاركة جزءًا من هذه الشروط والأحكام. من خلال المشاركة، يوافق المطالبون على الالتزام بهذه الشروط والأحكام. يجب على المطالبين الامتثال لهذه الشروط والأحكام حتى تكون القسيمة صالحة.",
+            "terms2": "يحق لكل مطالب الحصول على قسيمة واحدة لكل منشأة إقامة. القسائم غير قابلة للتحويل ولا يمكن استبدالها نقدًا ولا يمكن دمجها مع أي قسائم أخرى أو أي عرض أو خصومات أو عروض ترويجية أخرى تقدمها Quovai.",
+            "copyCode": "نسخ الرمز"
+        },
+        "addAddressPage": {
+            "addAddress": "إضافة عنوان",
+            "searchLocation": "البحث عن الموقع",
+            "useCurrentLocation": "استخدام الموقع الحالي",
+            "confirmLocation": "تأكيد الموقع والمتابعة",
+            "deliverTime": "التسليم في 7 أغسطس، الفترة الزمنية: من 7 صباحًا إلى 9 صباحًا",
+            "streetError": "الشارع مطلوب",
+            "apartmentError": "الشقة مطلوبة",
+            "zipError": "الرمز البريدي مطلوب"
+        },
+        "selectDeliveryAddressPage": {
+            "selectDeliveryAddress": "حدد عنوان التسليم",
+            "addNewAddress": "إضافة عنوان جديد",
+            "work": "العمل",
+            "proceedToPayment": "المتابعة إلى الدفع",
+            "default": "افتراضي"
+        },
+        "addPaymentPage": {
+            "addPaymentMethod": "إضافة طريقة الدفع",
+            "addNewCard": "إضافة بطاقة جديدة",
+            "confirmPayment": "تأكيد الدفع"
+        },
+        "addCard": {
+            "addCard": "إضافة بطاقة",
+            "cardHolderName": "اسم حامل البطاقة",
+            "cardNum": "رقم البطاقة",
+            "expiryDate": "تاريخ انتهاء الصلاحية",
+            "cvv": "CVV",
+            "holderNameError": "اسم حامل البطاقة مطلوب",
+            "numberError": "رقم البطاقة مطلوب",
+            "expriryError": "تاريخ انتهاء الصلاحية مطلوب",
+            "cvvError": "CVV مطلوب",
+            "validCvvError": "يجب أن يكون CVV مكونًا من 3 أرقام"
+        },
+        "orderSuccessPage": {
+            "thankYouforOrder": "شكرًا لك على طلبك!",
+            "orderDate": "تاريخ الطلب",
+            "orderID": "معرف الطلب: #5151515",
+            "trackOnMap": "تتبع الطرد على الخريطة",
+            "orderSuccessfull": "تم تقديم طلبك بنجاح. معرف الطلب الخاص بك هو #548475151",
+            "date": "الأحد، 14 أبريل، 19:12",
+            "id": "#548475151",
+            "idOrder": "معرف الطلب"
+        },
+        "orderTrackingPage": {
+            "estimatedDeliveryTime": "وقت التسليم المقدر",
+            "trackingTime": "9.00 صباحًا - 12.00 ظهرًا",
+            "name": "أندريا جوان",
+            "location": "8857 Morris Rd.، شارلوتسفيل، فيرجينيا 22901",
+            "courier": "شركة الشحن",
+            "orderDetails": "تفاصيل الطلب",
+            "storeLocation": "موقع المتجر",
+            "deliveryLocation": "موقع التسليم"
+        },
+        "orderDetailPage": {
+            "orderSummary": "ملخص الطلب",
+            "orderDelivered": "تم تسليم الطلب",
+            "items": "العناصر:",
+            "paymentDetails": "تفاصيل الدفع",
+            "address": "العنوان",
+            "paymentMethod": "طريقة الدفع",
+            "reorder": "إعادة الطلب"
+        },
+        "orderHistoryPage": {
+            "last30days": "آخر 30 يومًا",
+            "processing": "معالجة",
+            "orderHistoryTxt": "سجل الطلبات",
+            "orderAgain": "طلب مرة أخرى",
+            "paid": "مدفوع",
+            "rateNReviewProduct": "تقييم المنتج ومراجعته",
+            "idTxt": "معرف المنتج",
+            "dt": "DT"
+        },
+        "addAddressModal": {
+            "zip": "الرمز البريدي",
+            "city": "المدينة",
+            "state": "الولاية",
+            "apart": "الشقة أو الاستوديو أو الطابق",
+            "street": "1234 Main St"
+        },
+        "reviewArr": {
+            "review": "إنها تنورة لطيفة حقًا! لم أتوقع أن أشعر بهذا الشعور الرائع في مادة البوليستر. الطباعة باهتة قليلاً"
+        },
+        "coupon": {
+            "useCode": "استخدم الرمز:"
+        },
+        "multiLangaugeModal": {
+            "selectLanguage": "اختر اللغة"
+        },
+        "multicurrencyModal": {
+            "selectCurrency": "اختر العملة"
+        },
+        "account": {
+            "signOut": "تسجيل الخروج"
+        },
+        "wishlistPage": {
+            "myWishlist": "قائمة أمنياتي"
+        },
+        "product": {
+            "assortedCapsicumCombo": "مجموعة متنوعة من الفلفل الحار"
+        },
+        "aboutUsPage": {
+            "aboutUsTxt": "عنّا",
+            "whoWeAre": "من نحن؟",
+            "whoArewe": "Lorem Ipsum هو ببساطة نص شكلي غير رسمي يستخدم في صناعة الطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي القياسي للصناعة منذ القرن السادس عشر، عندما قام طابع مجهول بأخذ معرض من الحروف وخلطها لصنع كتاب عينات الحروف. لقد نجا ليس فقط خمسة قرون",
+            "howIOrder": "كيف يمكنني الطلب؟",
+            "peopleWhoBuild": "الأشخاص الذين يصنعون Fastkart",
+            "builtFastkart": "مورين عالمة أحياء"
+        },
+        "productCategory": {
+            "herbsSeasonings": "الأعشاب والتوابل"
+        },
+        "recentlySearch": {
+            "beauty": "جمال"
+        },
+        "productFilter": {
+            "reset": "إعادة ضبط",
+            "packSize": "حجم العبوة",
+            "priceRange": "نطاق السعر",
+            "minValue": "0",
+            "maxValue": "500",
+            "apply": "يتقدم"
+        },
+        "deleteProductModal": {
+            "areYouSure": "هل أنت متأكد؟",
+            "remove": "إزالة",
+            "txt": "إن الإذن الخاص باستخدام/مجموعة المعاينة موروث من الكائن، وتعديله لهذا الكائن سيؤدي إلى إنشاء إذن جديد لهذا الكائن"
+        },
+        "homeHeader": {
+            "losAngeles": "لوس أنجلوس"
+        },
+        "404": {
+            "backToHome": "العودة إلى الصفحة الرئيسية",
+            "pageNotFound": "لم يتم العثور على الصفحة",
+            "pageNotExist": "نأسف ولكن الصفحة التي تبحث عنها غير موجودة أو تمت إزالتها. يرجى التحقق مرة أخرى لاحقًا أو البحث مرة أخرى."
+        },
+        "pageListPage": {
+            "pagesList": "قائمة الصفحات",
+            "checkoutPages": "قم بإلقاء نظرة على جميع الصفحات وإصداراتها هنا. فيما يلي قائمة بجميع الصفحات."
+        },
+        "editProfilePage": {
+            "changePassword": "تغيير كلمة المرور",
+            "updateSettings": "تحديث الإعدادات",
+            "editProfile": "تعديل الملف الشخصي",
+            "nameError": "الاسم مطلوب",
+            "phoneNumberError": "رقم الهاتف مطلوب",
+            "validPhoneNumberError": "يجب أن يحتوي رقم الهاتف على 10 أرقام"
+        },
+        "notificationPage": {
+            "markAsRead": "وضع علامة على الكل كمقروء",
+            "alerts": "التنبيهات",
+            "offer": "العروض",
+            "upto": "حتى"
+        },
+        "orderHistoryFilterArr": {
+            "timeFilter": "فلتر الوقت",
+            "allOrder": "جميع الطلبات",
+            "openOrder": "الطلب المفتوح",
+            "returnOrders": "إرجاع الطلبات",
+            "cancelledOrder": "الطلب الملغى",
+            "last30days": "آخر 30 يومًا",
+            "last6Month": "آخر 6 أشهر",
+            "year1": "2021",
+            "year2": "2022"
+        },
+        "productDetailsPage": {
+            "productName": "تشكيلة فلفل حلو - (أحمر، أصفر، أخضر)",
+            "productRatings": "(150 تقييمًا)",
+            "productPrice": "25.00",
+            "originalPrice": " 45.00",
+            "productDiscount": "خصم 25%",
+            "detailTitle": "تفاصيل المنتج",
+            "detailDesc": "لفة زجاجية عالية الجودة قابلة لإعادة الملء وقابلة لإعادة الاستخدام مع غطاء فضي لمزيج الزيوت العطرية ومستحضرات التجميل والعطور ومنتجات التجميل المثالية",
+            "manufacturerDetails": "تفاصيل الشركة المصنعة",
+            "manufacturerDetailsDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. لا شيء على ما يرام، السلع تتقلب الألم. هل ترغب في ممارسة أي تمرين سريع أو غير لطيف، مع تعمق أكبر في الوقت المحدد؟",
+            "productDisclaimer": "إخلاء المسؤولية عن المنتج",
+            "productDisclaimerDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. لا شيء على ما يرام، السلع تتقلب الألم. هل ترغب في ممارسة أي تمرين سريع أو غير لطيف، مع تعمق أكبر في الوقت المحدد؟",
+            "featureDetails": "الميزات والتفاصيل",
+            "disclaimerDetails": "إخلاء المسؤولية: لفة زجاجية عالية الجودة قابلة لإعادة التعبئة وإعادة الاستخدام على الزجاجات مع غطاء فضي لمزيج الزيوت العطرية ومستحضرات التجميل والعطور ومنتجات التجميل المثالية",
+            "featureDetailsDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. لا شيء على ما يرام، السلع تتقلب الألم. هل ترغب في ممارسة أي تمرين سريع أو غير لطيف، مع تعمق أكبر في الوقت المحدد؟",
+            "productReview": "مراجعة المنتج(15)",
+            "add": "إضافة",
+            "addToCart": "إضافة إلى عربة التسوق",
+            "deliveryTime": "وقت التسليم",
+            "checkDelivery": "التحقق من التسليم",
+            "enterPincode": "أدخل الرمز البريدي للتحقق من تاريخ التسليم / خيار الاستلام",
+            "freeDelivery": "التوصيل مجاني للطلبات التي تزيد قيمتها عن 200.00 دولارًا أمريكيًا",
+            "cod": "الدفع عند التسليم متاح",
+            "easyReturn": "إرجاع واستبدال سهل خلال 21 يومًا",
+            "allReview": "جميع المراجعات",
+            "pinCode": "الرمز البريدي",
+            "check": "التحقق",
+            "recentlyView": "تمت مشاهدته مؤخرًا"
+        },
+        "cartlist": {
+            "flat": "خصم",
+            "off": "مسطح",
+            "orderabove": "على الطلب أعلاه",
+            "code": "الرمز:",
+            "OFF": "عن"
+        },
+        "orderDetail": {
+            "cardNumber": "**** **** **** 6502"
+        },
+        "aboutUsArr": {
+            "question1": "تصفح المنتجات باستخدام ميزة البحث",
+            "answer1": "بمجرد تقديم الطلب، سنتحقق من صحة كل شيء",
+            "question2": "أدخل اسمك وعنوانك ورقم هاتفك وما إلى ذلك.",
+            "answer2": "نريد التأكد من أننا نتجاوز التوقعات، وليس خلق مشكلات محتملة",
+            "question3": "حدد طريقة التسليم.",
+            "answer3": "سنتحقق من أوقات التسليم، ونتحقق من تغليف العناصر، ونحدد أي تحديات في التسليم.",
+            "question4": "اختر طريقة الدفع الخاصة بك.",
+            "answer4": "تحقق من إمكانية توفير التكاليف في الشحن، وما إلى ذلك. إذا كانت هناك أي مشكلات أو توفير متاح."
+        },
+        "editprofilePage": {
+            "demoemail": "أندرياجوان@gmail.com"
+        },
+        "notificationArr": {
+            "title1": "أمس",
+            "title2": "آخر 7 أيام",
+            "value1": "خصم يصل إلى 40%، تنتهي المبيعات",
+            "time1": "3.00 مساءً، 10 يوليو 2021",
+            "value2": "خصم ثابت بنسبة 30%، تنتهي المبيعات",
+            "time2": "5.00 مساءً، 10 يوليو 2021",
+            "value3": "تم تغيير كلمة المرور بنجاح",
+            "time3": "8.00 صباحًا، 15 يناير 2021",
+            "value4": "تم إعادة الشحن بنجاح",
+            "time4": "9.00 صباحًا، 10 يناير 2021",
+            "type1": "تسجيل الدخول",
+            "type2": "إعادة الشحن",
+            "type3": "العرض"
+        },
+        "orderHistory": {
+            "historyTime": "نوفمبر",
+            "historyTime1": "أكتوبر",
+            "orderHistoryId": "#5151515",
+            "orderHistoryDate": "20 ديسمبر 2020",
+            "orderHistoryAdd": "8857 Morris Rd. شارلوتسفيل..",
+            "totalItem": "15"
+        },
+        "productList": {
+            "listItems": "2 عنصر",
+            "listPrice": "250",
+            "viewCart": "عرض عربة التسوق",
+            "freshVegetables": "خضروات طازجة"
+        },
+        "categoryArr": {
+            "oilsRefinedGhee": "زيوت، مكررة وسمن",
+            "riceFlourGrains": "أرز، دقيق وحبوب",
+            "foodCupboard": "خزانة طعام",
+            "freshFruitsVegetables": "فواكه وخضروات طازجة",
+            "drinksBeverages": "مشروبات ومرطبات",
+            "instantMixes": "مزيجات فورية",
+            "readytoEat": "جاهزة للأكل",
+            "dalsPulses": "دال وبقوليات"
+        },
+        "subCategoryArr": {
+            "vegetables": "خضروات",
+            "fruits": "فواكه",
+            "sprouts": "براعم",
+            "flowers": "زهور",
+            "exoticFruit": "فواكه غريبة",
+            "organic": "عضوية",
+            "bouquets": "باقات",
+            "herbs": "أعشاب",
+            "cutsFruit": "فواكه مقطعة"
+        },
+        "paymentsArr": {
+            "selectCard": "اختر البطاقة",
+            "card1": "9800 XXXX XXXX 0545",
+            "card2": "6580 XXXX XXXX 2562",
+            "card3": "5125 XXXX XXXX 6262",
+            "netBanking": "الخدمات المصرفية عبر الإنترنت",
+            "netBankingType1": "البنك الصناعي والتجاري",
+            "netBankingType2": "البنك الزراعي",
+            "netBankingType3": "بنك أوف أميركا",
+            "netBankingType4": "بنك كونستراكشن كورب.",
+            "netBankingType5": "مجموعة HSBC القابضة",
+            "netBankingType6": "جي بي مورجان تشيس وشركاه",
+            "walletUPI": "المحفظة/UPI",
+            "waleetUPIType1": "آدين",
+            "waleetUPIType2": "المتحالفة",
+            "waleetUPIType3": "حافة الهاوية",
+            "waleetUPIType4": "ايرتيل المال",
+            "waleetUPIType5": "آبل باي",
+            "waleetUPIType6": "بطاقة مجانية",
+            "cashOnDelivery": "الدفع عند الاستلام"
+        },
+        "offersFilterArr": {
+            "allOffer": "جميع العروض",
+            "morethan50": "أكثر من 50%",
+            "morethan40": "أكثر من 40%",
+            "morethan30": "أكثر من 30%",
+            "morethan20": "أكثر من 20%",
+            "morethan10": "أكثر من 10%"
+        },
+        "pagesListArr": {
+            "404": "404",
+            "account": "الحساب",
+            "addressType1": "نوع العنوان 1",
+            "addressType2": "نوع العنوان 2",
+            "categoryWide": "على مستوى الفئة",
+            "homePage": "الصفحة الرئيسية",
+            "login": "تسجيل الدخول",
+            "onBoarding": "التسجيل",
+            "orderDetail": "تفاصيل الطلب",
+            "orderSuccess": "نجاح الطلب",
+            "orderTracking": "الطلب التتبع",
+            "payment": "الدفع",
+            "product": "المنتج",
+            "register": "التسجيل",
+            "setting": "الإعداد",
+            "shop": "المتجر",
+            "wishlist": "قائمة الرغبات"
+        },
+        "offersArr": {
+            "weight1": "200 جرام",
+            "weight2": "900 جرام",
+            "weight3": "700 جرام",
+            "weight4": "600 جرام",
+            "discount1": "50",
+            "discount2": "69"
+        },
+        "productArr": {
+            "weight1": "200 جرام",
+            "weight2": "900 جرام",
+            "weight3": "700 جرام",
+            "weight4": "600 جرام",
+            "weight5": "400 جرام",
+            "weight6": "200 جرام",
+            "weight7": "800 جرام",
+            "weight8": "100 جرام",
+            "weight9": "800 جرام",
+            "weight10": "500 جرام",
+            "weight11": "300 جرام",
+            "weight12": "600 جرام",
+            "discount1": "50",
+            "discount2": "69",
+            "discount3": "20",
+            "discount4": "20",
+            "discount5": "40",
+            "discount6": "20",
+            "discount7": "60",
+            "discount8": "70",
+            "discount9": "30",
+            "discount10": "80",
+            "discount11": "10",
+            "discount12": "20"
+        },
+        "packsizeArr": {
+            "size1": "100 جرام - 500 جرام",
+            "size2": "500 جرام - 1 كجم",
+            "size3": "1 كجم - 1.5 كجم",
+            "size4": "1.5 كجم - 2 كجم"
+        },
+        "langaugesArr": {
+            "hindi": "الهندية",
+            "english": "الإنجليزية",
+            "korean": "الكورية",
+            "arabic": "العربية"
+        },
+        "locationArr": {
+            "locationName": "نوح هاميلتون",
+            "locationAddress": "8857 طريق موريس، شارلوتسفيل، فيرجينيا 22901"
+        },
+        "myOffersArr": {
+            "off1": "50",
+            "off2": "30",
+            "off3": "14",
+            "off4": "25",
+            "off5": "15",
+            "off6": "10",
+            "onOrder": "عند أول طلب لك اطلب",
+            "offerCode": "SCD450",
+            "aboveOn": "عند الطلب الذي يزيد عن 250.00 دولارًا",
+            "onAbove":"حسب الطلب اعلاه",
+            "hdfc": "بطاقة ائتمان hdfc"
+        },
+        "orderDetailArr": {
+            "gram1": "500 جرام",
+            "gram2": "700 جرام",
+            "gram3": "600 جرام",
+            "gram4": "400 جرام",
+            "quantity1": "2",
+            "quantity2": "6",
+            "quantity3": "3",
+            "quantity4": "1",
+            "orderPrice": "25.00"
+        },
+        "coupensArr": {
+            "couponDiscount1": "30",
+            "couponDiscount2": "20",
+            "couponDiscount3": "37",
+            "couponOff1": "20",
+            "couponOff2": "90",
+            "couponOff3": "70"
+        },
+        "currencyConverterArr": {
+            "indianRupees": "روبية هندية",
+            "usDollar": "دولار الولايات المتحدة",
+            "euro": "يورو",
+            "australianDollar": "دولار أسترالي",
+            "koreanWon": "وون كوري"
+        },
+        "quantityArr": {
+            "gram1": "500 جرام",
+            "gram2": "700 جرام",
+            "gram3": "100 جرام",
+            "gram4": "1.5 كجم",
+            "gram5": "2 كجم",
+            "gram6": "5 كجم"
+        },
+        "deliveryTimeArr": {
+            "deliveryTime1": "7 صباحًا",
+            "deliveryTime2": "9 صباحًا",
+            "deliveryTime3": "11 صباحًا",
+            "deliveryTime4": "5 مساءً",
+            "deliveryTime5": "7 مساءً",
+            "deliveryTime6": "9 مساءً"
+        },
+        "cityArr": {
+            "city1": "باريس",
+            "city2": "نيويورك",
+            "city3": "مومباي",
+            "city4": "دلهي",
+            "city5": "شيكاغو",
+            "city6": "فانكوفر",
+            "city7": "لاس فيجاس",
+            "city8": "سول",
+            "city9": "فرانكلين",
+            "city10": "ماديسون"
+        },
+        "stateArr": {
+            "state1": "آسام",
+            "state2": "الأرجنتين",
+            "state3": "غوجارات",
+            "state4": "أندرا براديش",
+            "state5": "فنلندا",
+            "state6": "فرنسا",
+            "state7": "ألمانيا",
+            "state8": "كوريا الجنوبية",
+            "state9": "هيماشال براديش",
+            "state10": "كيرالا"
+        }
+    
+    }
+}

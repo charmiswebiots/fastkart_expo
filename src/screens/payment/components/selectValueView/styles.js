@@ -79,10 +79,11 @@ const styles = StyleSheet.create({
     valueTxt: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        width: windowWidth(190),
+        width: windowWidth(180),
+        marginHorizontal:windowHeight(7)
     },
     valueLeft: {
-        right: windowWidth(12),
+        // right: windowWidth(12),
     },
     valueRight: {
         marginHorizontal:windowWidth(8)

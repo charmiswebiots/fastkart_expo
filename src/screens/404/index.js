@@ -20,7 +20,7 @@ export function NotFound({navigation}) {
                 <Text style={[styles.notFound,{color:colors.text}]}>{t('404.pageNotFound')}</Text>
                 <View style={styles.line} />
                 <Text style={styles.notExist}>{t('404.pageNotExist')}</Text>
-                <Button text={'404.backToHome'} style={styles.btn} color={appColors.white} onPress={home}
+                <Button text={t('404.backToHome')} style={styles.btn} color={appColors.white} onPress={home}
                 />
             </View>
         </SafeAreaView>

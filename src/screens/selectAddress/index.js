@@ -32,10 +32,10 @@ export function SelectAddress({ navigation }) {
                 image={<Icons.search />}
                 isText
                 titleText={t('selectDeliveryAddressPage.selectDeliveryAddress')} />
-            <AddNew text={'selectDeliveryAddressPage.addNewAddress'} onPress={visibleModal} />
+            <AddNew text={t('selectDeliveryAddressPage.addNewAddress')} onPress={visibleModal} />
             <AddressView />
 
-            <Button text={'selectDeliveryAddressPage.proceedToPayment'} style={styles.btn}
+            <Button text={t('selectDeliveryAddressPage.proceedToPayment')} style={styles.btn}
                 color={appColors.white} onPress={payment} />
             <CommonModal
                 modal={

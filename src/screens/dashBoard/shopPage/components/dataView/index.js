@@ -10,7 +10,7 @@ import appColors from "../../../../../theme/appColors";
 
 export function DataView() {
 
-    const {isDark,viewRtlStyle,textRtlStyle,t}=useValues()
+    const {isDark,viewRtlStyle,textRtlStyle,t,currSymbol,currValue}=useValues()
     const {colors}=useTheme()
 
     return (
@@ -29,10 +29,10 @@ export function DataView() {
                             </TouchableOpacity>
                             <View style={[styles.priceView,{flexDirection:viewRtlStyle}]}>
                                 <View style={[styles.discountPriceView,{flexDirection:viewRtlStyle}]}>
-                                    <Text style={[styles.price,{color:colors.text}]}>{item.price}</Text>
+                                    <Text style={[styles.price,{color:colors.text}]}>{currSymbol}{(item.price * currValue).toFixed(2)}</Text>
                                     <View style={[styles.discountView,{flexDirection:viewRtlStyle}]}>
                                         <Text style={styles.discount}>{item.discount}% </Text>
-                                        <Text style={styles.discount}>{t('cartList.OFF')}</Text>
+                                        <Text style={styles.discount}>{t('cartlist.OFF')}</Text>
                                     </View>
                                 </View>
                                 <Counter />

@@ -15,7 +15,7 @@ export function NotificationsView() {
             contentContainerStyle={styles.list}
             renderItem={({ item }) =>
                 <View style={styles.dataView}>
-                    <Text style={[styles.day,{textAlign:textRtlStyle}]}>{item.day}</Text>
+                    <Text style={[styles.day,{textAlign:textRtlStyle}]}>{t(item.day)}</Text>
                     {item.value.map((data, index) =>
                         <View key={index} style={[styles.value,{flexDirection:viewRtlStyle}]}>
                            <View

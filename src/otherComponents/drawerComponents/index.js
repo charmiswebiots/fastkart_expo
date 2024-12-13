@@ -94,7 +94,7 @@ export function DrawerComponent() {
                             onPress={() => goToScreen(key)}
                         />
                     ))}
-                    <SwitchComponents style={{ [rtl ? 'top' : 'bottom']: rtl ? windowHeight(22) : windowHeight(3) }} />
+                    <SwitchComponents style={{ [rtl ? 'top' : 'top']: rtl ? windowHeight(22) : windowHeight(20) }} />
                     <TouchableOpacity
                         onPress={login}
                         activeOpacity={0.7}

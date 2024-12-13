@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     leftIcon: {
         position: 'absolute',
         marginTop: windowHeight(25),
-        paddingHorizontal: windowWidth(13)
+        paddingHorizontal: windowHeight(272)
 
     },
 })

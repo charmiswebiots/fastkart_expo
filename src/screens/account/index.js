@@ -76,7 +76,7 @@ export function Account({ navigation }) {
                 <Header
                     onPress={() => navigation.goBack()}
                     isText
-                    titleText={'pagesListArr.account'}
+                    titleText={t('pagesListArr.account')}
                     imageOnPress={home}
                 />
                 <View style={styles.mainView}>
@@ -91,7 +91,7 @@ export function Account({ navigation }) {
                             onPress={() => goToScreen(key)}
                         />
                     ))}
-                    <SwitchComponents style={[styles.switch,{ [rtl ? 'top' : 'bottom']: rtl ? windowHeight(22) : windowHeight(3) }]}/>
+                    <SwitchComponents style={[styles.switch,{ [rtl ? 'top' : 'top']: rtl ? windowHeight(22) : windowHeight(20) }]}/>
                     <TouchableOpacity onPress={login} activeOpacity={0.7} style={[styles.signOutView, { backgroundColor: isDark ? colors.primary : appColors.gray }]}>
                         <Icons.signOut />
                         <Text style={[styles.signOut,{color:colors.text}]}>{t('account.signOut')}</Text>
