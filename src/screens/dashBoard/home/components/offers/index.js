@@ -10,16 +10,13 @@ import appColors from "../../../../../theme/appColors";
 
 export function Offers({onPress}) {
 
-    const {isDark}=useValues()
+    const {isDark,t}=useValues()
     const {colors}=useTheme()
 
-    const productDetails=()=>{
-        navigation.navigate('ProductsDetails')
-    }
     return (
         <View style={[styles.mainView,{backgroundColor:isDark?colors.primary:appColors.drawer}]}>
 
-            <SeeAllHeader title={'Say hello to Offers!'} subtitle={'Best price ever of all the time'} />
+            <SeeAllHeader title={t('homepage.sayHelloOffers')} subtitle={t('homepage.bestPrice')} />
             {
                 offers.map((item) =>
                     <View style={styles.view}>

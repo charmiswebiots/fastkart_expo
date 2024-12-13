@@ -11,47 +11,47 @@ import { useValues } from "../../../../utils/context";
 
 const payments = [
     {
-        type: "Select Card",
+        type: 'paymentsArr.selectCard',
         isCard: true,
         values: [
-            { value: "9800 XXXX XXXX 0545", icons: images.mastercard },
-            { value: "6580 XXXX XXXX 2562", icons: images.visacard },
-            { value: "5125 XXXX XXXX 6262", icons: images.discovercard },
+            { value: 'paymentsArr.card1', icons: images.mastercard },
+            {  value: 'paymentsArr.card2', icons: images.visacard },
+            {  value: 'paymentsArr.card3', icons: images.discovercard },
         ],
     },
     {
-        type: "Net Banking",
+        type: 'paymentsArr.netBanking',
         isCard: false,
         values: [
-            { value: "Industrial & Commercial Bank" },
-            { value: "Agricultural Bank" },
-            { value: "Bank of America" },
-            { value: "Construction Bank Corp." },
-            { value: "HSBC Holdings" },
-            { value: "JPMorgan Chase & Co." },
+            { value: 'paymentsArr.netBankingType1' },
+            { value: 'paymentsArr.netBankingType2' },
+            { value: 'paymentsArr.netBankingType3' },
+            { value: 'paymentsArr.netBankingType4' },
+            { value: 'paymentsArr.netBankingType5' },
+            { value: 'paymentsArr.netBankingType6' },
         ],
     },
     {
-        type: "Wallet/UPI",
+        type: 'paymentsArr.walletUPI',
         isCard: false,
         values: [
-            { value: "Adyen" },
-            { value: "AlliedWallet" },
-            { value: "Brinks" },
-            { value: "Airtel Money" },
-            { value: "Apple Pay" },
-            { value: "CardFree" },
+            { value: 'paymentsArr.waleetUPIType1' },
+            { value: 'paymentsArr.waleetUPIType2' },
+            { value: 'paymentsArr.waleetUPIType3' },
+            { value: 'paymentsArr.waleetUPIType4' },
+            { value: 'paymentsArr.waleetUPIType5' },
+            { value: 'paymentsArr.waleetUPIType6' },
         ],
     },
     {
-        type: "Cash on Delivery",
+        type: 'paymentsArr.cashOnDelivery',
         isCard: true,
-        values: [{ value: "Cash on Delivery", icons: images.cashOnDelivery }],
+        values: [{ value: 'paymentsArr.cashOnDelivery', icons: images.cashOnDelivery }],
     },
 ];
 
 export function SelectValueView() {
-    const { isDark, viewRtlStyle, rtl } = useValues()
+    const { isDark, viewRtlStyle, rtl ,t} = useValues()
     const { colors } = useTheme()
     const [selectedType, setSelectedType] = useState(0);
     const [selectedMethod, setSelectedMethod] = useState(0);
@@ -68,7 +68,7 @@ export function SelectValueView() {
                 }
                 style={[styles.arrowView, { flexDirection: viewRtlStyle }]}
             >
-                <Text style={[styles.type, { color: colors.text }]}>{item.type}</Text>
+                <Text style={[styles.type, { color: colors.text }]}>{t(item.type)}</Text>
                 <View
                     style={[
                         styles.arrow,
@@ -105,13 +105,13 @@ export function SelectValueView() {
                                     source={data.icons}
                                     style={[
                                         styles.icon,
-                                        data.value === "Cash on Delivery" && styles.cashOnDeliveryIcon,
+                                        data.value === "paymentsArr.cashOnDelivery" && styles.cashOnDeliveryIcon,
 
                                         {
                                             flexDirection: viewRtlStyle,
                                         }]}
                                 />
-                                <Text style={[styles.value, { color: colors.text }]}>{data.value}</Text>
+                                <Text style={[styles.value, { color: colors.text }]}>{t(data.value)}</Text>
                                 {selectedMethod === key && (
 
                                     <Selected />
@@ -158,7 +158,7 @@ export function SelectValueView() {
                                                 rtl ? styles.valueLeft : styles.valueRight,
                                             ]}
                                         >
-                                            {item.value}
+                                            {t(item.value)}
                                         </Text>
 
                                     </TouchableOpacity>

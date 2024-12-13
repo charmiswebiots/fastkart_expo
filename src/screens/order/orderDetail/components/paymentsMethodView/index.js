@@ -8,15 +8,15 @@ import { useValues } from "../../../../../utils/context";
 export function PaymentsMethodView() {
 
     const {colors}=useTheme()
-    const {textRtlStyle,viewRtlStyle}=useValues()
+    const {textRtlStyle,viewRtlStyle,t}=useValues()
     
     return (
         <View style={styles.paymentView}>
-            <Text style={[styles.addTxt,{textAlign:textRtlStyle}]}>Payment Method</Text>
+            <Text style={[styles.addTxt,{textAlign:textRtlStyle}]}>{t('orderDetailPage.paymentMethod')}</Text>
 
             <View style={[styles.number,{flexDirection:viewRtlStyle}]}>
                 <Image source={images.mastercard} style={styles.masterCardImg} />
-                <Text style={[styles.cardNumber,{color:colors.text}]}>**** **** ****  6502 </Text>
+                <Text style={[styles.cardNumber,{color:colors.text}]}>{t('orderDetail.cardNumber')}</Text>
             </View>
         </View>
     )

@@ -8,7 +8,7 @@ import { useValues } from "../../../../utils/context";
 
 export function ChangePasswordView(props) {
     const { colors } = useTheme()
-    const { isDark,textRtlStyle,viewSelfRtlStyle } = useValues()
+    const { isDark,textRtlStyle,viewSelfRtlStyle,t } = useValues()
     const [isFocus, setIsFocus] = useState(false);
 
 
@@ -25,9 +25,9 @@ export function ChangePasswordView(props) {
                     { borderColor: isDark ? colors.primary : appColors.drawer },
                     isFocus && { backgroundColor: appColors.border },
                     isFocus && { backgroundColor: isDark ? colors.primary : appColors.drawer, borderColor: isDark ? appColors.primary : appColors.primary },]}>
-                <Text style={[styles.changePasswordTxt, { color: colors.text },{textAlign:textRtlStyle}]}>Change Password</Text>
+                <Text style={[styles.changePasswordTxt, { color: colors.text },{textAlign:textRtlStyle}]}>{t('editProfilePage.changePassword')}</Text>
                 <TextInput
-                    placeholder={'Password'}
+                    placeholder={t('loginNRegister.password')}
                     onFocus={() => focus(true)}
                     secureTextEntry={false}
                     onBlur={() => focus(false)}

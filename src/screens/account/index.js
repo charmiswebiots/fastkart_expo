@@ -20,7 +20,7 @@ export function Account({ navigation }) {
     }
     
     const {colors}=useTheme()
-    const { isDark,rtl } = useValues();
+    const { isDark,rtl ,t} = useValues();
     const [showModal, setShowModal] = useState(false);
     const [showCurrencyModal, setShowCurrencyModal] = useState(false);
 
@@ -76,7 +76,7 @@ export function Account({ navigation }) {
                 <Header
                     onPress={() => navigation.goBack()}
                     isText
-                    titleText="Account"
+                    titleText={'pagesListArr.account'}
                     imageOnPress={home}
                 />
                 <View style={styles.mainView}>
@@ -94,7 +94,7 @@ export function Account({ navigation }) {
                     <SwitchComponents style={[styles.switch,{ [rtl ? 'top' : 'bottom']: rtl ? windowHeight(22) : windowHeight(3) }]}/>
                     <TouchableOpacity onPress={login} activeOpacity={0.7} style={[styles.signOutView, { backgroundColor: isDark ? colors.primary : appColors.gray }]}>
                         <Icons.signOut />
-                        <Text style={[styles.signOut,{color:colors.text}]}>Sign Out</Text>
+                        <Text style={[styles.signOut,{color:colors.text}]}>{t('account.signOut')}</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>

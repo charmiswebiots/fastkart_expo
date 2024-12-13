@@ -6,10 +6,12 @@ import { Input } from "../../../commonComponents";
 import { Icons } from "../../../utils/icons";
 import { Slider, RecentlyBought, ShopByCategory, Offers, LowestPrice, BestPrice, Coupons, NotFound } from "./components";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
 
 export function Home({ navigation }) {
-    const {colors}=useTheme()
+    const { t } = useValues()
+    const { colors } = useTheme()
 
     const productDetails = () => {
         navigation.navigate('ProductsDetails')
@@ -25,19 +27,19 @@ export function Home({ navigation }) {
     };
 
     return (
-        <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
+        <SafeAreaView style={[styles.mainView, { backgroundColor: colors.background }]}>
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
                 <HomeHeader navigation={navigation} toogle={toogle} />
-                <Input placeholder={'Search Products here..'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
+                <Input placeholder={'commonText.searchProducts'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
                 <Slider />
                 <RecentlyBought onPress={productDetails} />
                 <ShopByCategory onPress={shopPage} />
                 <Offers onPress={productDetails} />
-                <LowestPrice headerData={{ title: 'Lowest Price', subtitle: 'Pay less, Get More' }} onPress={productDetails} />
-                <BestPrice headerData={{ title: 'Everyday Essentials', subtitle: 'Best price ever of all the time' }} onPress={productDetails} />
+                <LowestPrice headerData={{ title: t('homepage.lowestPrice'), subtitle: t('homepage.payless') }} onPress={productDetails} />
+                <BestPrice headerData={{ title: t('homepage.everydayEssentials'), subtitle: t('homepage.bestPrice') }} onPress={productDetails} />
                 <Coupons />
                 <View style={styles.priceView}>
-                    <LowestPrice headerData={{ title: 'Lowest Price', subtitle: 'Pay less, Get More' }} onPress={productDetails} />
+                    <LowestPrice headerData={{ title: t('homepage.lowestPrice'), subtitle: t('homepage.payless') }} onPress={productDetails} />
                 </View>
                 <NotFound />
             </ScrollView>

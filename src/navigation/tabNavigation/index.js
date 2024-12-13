@@ -33,7 +33,7 @@ export function TabNavigation() {
                 name="DrawerNavigation"
                 component={DrawerNavigation}
                 options={{
-                    tabBarLabel: {t('tabBar.home')},
+                    tabBarLabel: 'tabBar.home',
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}> 
                             <Icons.home />
@@ -46,7 +46,7 @@ export function TabNavigation() {
                 name="Category"
                 component={Category}
                 options={{
-                    tabBarLabel: 'Category',
+                    tabBarLabel: 'tabBar.category',
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}>
                             <Icons.category color={focused ? appColors.white : appColors.white} />
@@ -59,7 +59,7 @@ export function TabNavigation() {
                 name="Search"
                 component={Search}
                 options={{
-                    tabBarLabel: 'Search',
+                    tabBarLabel: 'tabBar.search',
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}>
                             <Icons.search color={focused ? appColors.white : appColors.white} />
@@ -72,7 +72,7 @@ export function TabNavigation() {
                 name="Offers"
                 component={Offers}
                 options={{
-                    tabBarLabel: 'Offers',
+                    tabBarLabel: 'tabBar.offers',
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}>
                             <Image source={images.offer} style={[styles.img, { tintColor: focused ? appColors.white : appColors.white },]} />
@@ -84,7 +84,7 @@ export function TabNavigation() {
                 name="Cart"
                 component={Cart}
                 options={{
-                    tabBarLabel: 'Cart',
+                    tabBarLabel: 'tabBar.cart',
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.icon}>
                             <Icons.cart color={focused ? appColors.white : appColors.white} />

@@ -9,7 +9,7 @@ import appColors from "../../../../../theme/appColors";
 
 export function ItemsView() {
     const {colors}=useTheme()
-    const { isDark,viewRtlStyle } = useValues()
+    const { isDark,viewRtlStyle ,t} = useValues()
 
     return (
         <FlatList
@@ -21,20 +21,20 @@ export function ItemsView() {
                     <View style={[styles.subView,{flexDirection:viewRtlStyle}]}>
                         <View>
                             <View style={[{flexDirection:'row'}]}>
-                                <Text style={[styles.data,{color:colors.text}]}>ID: {item.id} , </Text>
-                                <Text style={[styles.data,{color:colors.text}]}>Dt: {item.date}</Text>
+                                <Text style={[styles.data,{color:colors.text}]}>{t('orderHistoryPage.idTxt')}: {t(item.id)}, </Text>
+                                <Text style={[styles.data,{color:colors.text}]}>{t('orderHistoryPage.dt')}: {t(item.date)}</Text>
                             </View>
-                            <Text style={styles.add}>{item.add}</Text>
+                            <Text style={styles.add}>{t(item.add)}</Text>
                             <View style={[styles.paidView,{flexDirection:viewRtlStyle}]}>
-                                <Text style={[styles.data,{color:colors.text}]}>Paid: <Text style={styles.paid}>{item.paid}, </Text></Text>
-                                <Text style={[styles.data,{color:colors.text}]}>Items: <Text style={styles.paid}>{item.item}</Text></Text>
+                                <Text style={[styles.data,{color:colors.text}]}>{t('orderHistoryPage.paid')}: <Text style={styles.paid}>{item.paid}, </Text></Text>
+                                <Text style={[styles.data,{color:colors.text}]}>{t('orderDetailPage.items')} <Text style={styles.paid}>{t(item.item)}</Text></Text>
                             </View>
                         </View>
                         <Image source={images.orderHistoryMap} />
                     </View>
                     <View style={[styles.orderAgain,{flexDirection:viewRtlStyle}]}>
-                        <Text style={[styles.data,{color:colors.text}]}>Order Again</Text>
-                        <Text style={styles.reteNReview}> Rate & Review Product</Text>
+                        <Text style={[styles.data,{color:colors.text}]}>{t('orderHistoryPage.orderAgain')}</Text>
+                        <Text style={styles.reteNReview}>{t('orderHistoryPage.rateNReviewProduct')}</Text>
                     </View>
                 </TouchableOpacity>
             }

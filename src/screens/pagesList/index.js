@@ -17,7 +17,7 @@ export function PageList({ navigation }) {
     }
 
     const { colors } = useTheme()
-    const { isDark, textRtlStyle } = useValues()
+    const { isDark, textRtlStyle, t } = useValues()
 
     const goToScreen = (key) => {
         if (key === 0) {
@@ -74,9 +74,9 @@ export function PageList({ navigation }) {
                 <Header
                     onPress={() => navigation.goBack()}
                     isText
-                    titleText={'Pages List'} imageOnPress={home} />
+                    titleText={t('pageListPage.pagesList')} imageOnPress={home} />
                 <View style={[styles.checkOut, { backgroundColor: isDark ? colors.primary : appColors.gray }]}>
-                    <Text style={[styles.checkOutTxt, { textAlign: textRtlStyle }]}>Checkout all pages and their varations over here. following are the list of all the pages.</Text>
+                    <Text style={[styles.checkOutTxt, { textAlign: textRtlStyle }]}>{t('pageListPage.checkoutPages')}</Text>
                 </View>
                 {pagesList.map((item, key) =>
                     <MenuItem

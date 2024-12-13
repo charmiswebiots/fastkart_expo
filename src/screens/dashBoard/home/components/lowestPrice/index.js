@@ -11,7 +11,7 @@ import { useValues } from "../../../../../utils/context";
 
 export function LowestPrice({headerData,onPress,style}) {
     const { colors}=useTheme()
-    const {viewRtlStyle,textRtlStyle}=useValues()
+    const {viewRtlStyle,textRtlStyle,t}=useValues()
     return (
         <View style={styles.mainView}>
             <SeeAllHeader  {...headerData} />
@@ -20,8 +20,8 @@ export function LowestPrice({headerData,onPress,style}) {
                     lowestPrice.map((item, key) =>
                         <TouchableOpacity key={key} style={[styles.lowestPriceView,style]} activeOpacity={0.8} onPress={onPress} >
                             <Image resizeMode='contain' source={item.image} style={styles.image} />
-                            <Text style={[styles.name,{color:colors.text},{textAlign:textRtlStyle}]} numberOfLines={2}>{item.name}</Text>
-                            <Text style={[styles.gram,{textAlign:textRtlStyle}]}>{item.weight}</Text>
+                            <Text style={[styles.name,{color:colors.text},{textAlign:textRtlStyle}]} numberOfLines={2}>{t(item.name)}</Text>
+                            <Text style={[styles.gram,{textAlign:textRtlStyle}]}>{t(item.weight)}</Text>
                             <View style={[styles.priceView,{flexDirection:viewRtlStyle}]}>
                                 <Text style={[styles.price,{color:colors.text}]}>{item.price}</Text>
                                 <View style={styles.increase}>

@@ -1,8 +1,6 @@
 import { View, Text } from "react-native";
 import styles from "./styles";
-import appColors from "../../theme/appColors";
 import { Icons } from "../../utils/icons";
-import { windowHeight } from "../../theme/appConstant";
 import { GlobalStyle } from "../../styles/style";
 import { Input, OptionButton } from "../../commonComponents";
 import { useState } from "react";
@@ -10,8 +8,8 @@ import { useValues } from "../../utils/context";
 import { useTheme } from "@react-navigation/native";
 
 export function AddNewCardModal({ showModal, showModal1 }) {
-    const {colors}=useTheme()
-    const {viewRtlStyle,textRtlStyle}=useValues()
+    const { colors } = useTheme()
+    const { viewRtlStyle, textRtlStyle,t } = useValues()
     const [inputValue, setInputValue] = useState('');
 
     const [expiryDate, setExpiryDate] = useState('');
@@ -62,21 +60,21 @@ export function AddNewCardModal({ showModal, showModal1 }) {
 
     return (
         <View style={[GlobalStyle.modal, { backgroundColor: colors.background }]}>
-            <Text style={[styles.addCard,{textAlign:textRtlStyle},{color:colors.text}]}>Add Card</Text>
+            <Text style={[styles.addCard, { textAlign: textRtlStyle }, { color: colors.text }]}>{t('addCard.addCard')}</Text>
             <View style={styles.mainView}>
                 <Input
-                    placeholder={'Card Holder Name'}
+                    placeholder={t('addCard.cardHolderName')}
                     style={styles.input} />
                 <Input
-                    placeholder={'Card Number'}
+                    placeholder={t('addCard.cardNum')}
                     style={styles.input}
                     keyboardType={'numeric'}
                     maxLength={19}
                     value={inputValue}
                     onChangeText={handleChange1} />
-                <View style={[styles.inputView,{flexDirection:viewRtlStyle}]}>
+                <View style={[styles.inputView, { flexDirection: viewRtlStyle }]}>
                     <Input
-                        placeholder={'Expiry Date'}
+                        placeholder={t('addCard.expiryDate')}
                         style={styles.input1}
                         value={expiryDate}
                         onChangeText={handleChange}
@@ -84,15 +82,15 @@ export function AddNewCardModal({ showModal, showModal1 }) {
                         maxLength={5}
                         rightIcon={<Icons.calender />} />
                     <Input
-                        placeholder={'CVV'}
+                        placeholder={t('addCard.cvv')}
                         style={styles.input1}
                         keyboardType={'numeric'}
                         maxLength={3} />
                 </View>
             </View>
             <OptionButton
-                txt1={'Close'}
-                txt2={'Add'}
+                txt1={'commonText.close'}
+                txt2={'productDetailsPage.add'}
                 onPress1={showModal}
                 onPress2={showModal1}
 

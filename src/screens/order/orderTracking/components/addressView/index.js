@@ -3,9 +3,11 @@ import styles from "./styles";
 import images from "../../../../../utils/images";
 import { Icons } from "../../../../../utils/icons";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../../../utils/context";
 
 export function AddressView() {
     const {colors}=useTheme()
+    const {t}=useValues()
     return (
         <View style={[styles.location]}>
             <View>
@@ -21,12 +23,12 @@ export function AddressView() {
             </View>
             <View style={[styles.storeLocation, styles.storeRight]}>
                 <View>
-                    <Text style={[styles.locationTxt,{color:colors.text}]}>8857 Morris Rd. ,Charlottesville, VA 22901</Text>
-                    <Text style={[styles.storeLocationTxt]}>Store Location</Text>
+                    <Text style={[styles.locationTxt,{color:colors.text}]}>{t('orderTrackingPage.location')}</Text>
+                    <Text style={[styles.storeLocationTxt]}>{t('orderTrackingPage.storeLocation')}</Text>
                 </View>
                 <View>
-                    <Text style={[styles.locationTxt,{color:colors.text}]}>8857 Morris Rd. ,Charlottesville, VA 22901</Text>
-                    <Text style={[styles.storeLocationTxt]}>Delivery Location</Text>
+                    <Text style={[styles.locationTxt,{color:colors.text}]}>{t('orderTrackingPage.location')}</Text>
+                    <Text style={[styles.storeLocationTxt]}>{t('orderTrackingPage.deliveryLocation')}</Text>
                 </View>
             </View>
         </View>

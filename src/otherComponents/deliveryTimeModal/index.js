@@ -11,7 +11,7 @@ import { useValues } from "../../utils/context";
 
 export function DeliveryTimeModal(props) {
     const {colors}=useTheme()
-    const { isDark,viewRtlStyle}=useValues()
+    const { isDark,viewRtlStyle,t}=useValues()
 
     const [selectDeli, setSelectDeli] = useState(0);
 
@@ -28,11 +28,11 @@ export function DeliveryTimeModal(props) {
                     <TouchableOpacity activeOpacity={0.8} onPress={() => selectDelivery(index)} style={[{ backgroundColor:isDark?colors.primary: appColors.gray, borderColor: selectDeli === index ? appColors.primary : appColors.gray }, styles.view]}>
                         {selectDeli === index &&
                             <Selected />}
-                        <Text style={[styles.text,{color:colors.text}]}>{item.delivery}</Text>
+                        <Text style={[styles.text,{color:colors.text}]}>{t(item.delivery)}</Text>
                     </TouchableOpacity>
                 }
             />
-            <OptionButton txt1={'Cancel'} txt2={'Apply'} onPress1={props.onPress} onPress2={props.onPress} />
+            <OptionButton txt1={'commonText.cancle'} txt2={'productFilter.apply'} onPress1={props.onPress} onPress2={props.onPress} />
         </View>
     )
 }

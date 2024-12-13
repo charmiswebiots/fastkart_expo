@@ -18,7 +18,7 @@ export function OptionsView(props) {
                 <Icons.dropDown />
             </TouchableOpacity>
             <TouchableOpacity activeOpacity={0.8} onPress={props.visibleDeliveryModal} style={[styles.option,{backgroundColor:isDark?colors.primary:appColors.gray},{flexDirection:viewRtlStyle}]}>
-                <Text style={[styles.optionTxt,{color:colors.text}]}>Delivery Time</Text>
+                <Text style={[styles.optionTxt,{color:colors.text}]}>{t('productDetailsPage.deliveryTime')}</Text>
                 <Icons.dropDown />
             </TouchableOpacity>
         </View>

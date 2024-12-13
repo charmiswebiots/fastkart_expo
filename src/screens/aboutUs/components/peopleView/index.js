@@ -3,12 +3,14 @@ import styles from "./styles";
 import images from "../../../../utils/images";
 import { Icons } from "../../../../utils/icons";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../../utils/context";
 
 export function PeopleView(){
     const {colors}=useTheme()
+    const {t}=useValues()
     return(
         <View>
-        <Text style={[styles.peopleWhoBuild,{color:colors.text}]}>People who Build Fastkart</Text>
+        <Text style={[styles.peopleWhoBuild,{color:colors.text}]}>{t('aboutUsPage.peopleWhoBuild')}</Text>
         <FlatList
             data={[{}, {}, {}, {}]}
             numColumns={2}
@@ -20,7 +22,7 @@ export function PeopleView(){
                     <View style={[styles.buildView]}>
                         <Image source={images.fastKartbuild} style={styles.buildImg} resizeMode='contain' />
                     </View>
-                    <Text style={[styles.buildTxt,{color:colors.text}]}>Patty O'Furniture</Text>
+                    <Text style={[styles.buildTxt,{color:colors.text}]}>{t('aboutUsPage.builtFastkart')}</Text>
                     <View style={styles.social}>
                         <Icons.Facebook />
                         <Icons.LinkedIn />

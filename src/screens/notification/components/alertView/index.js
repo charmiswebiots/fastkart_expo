@@ -8,7 +8,7 @@ import { useTheme } from "@react-navigation/native";
 
 export function AlertView() {
     const [tab, setTab] = useState(0);
-    const {isDark,viewRtlStyle}=useValues()
+    const {isDark,viewRtlStyle,t}=useValues()
     const {colors}=useTheme()
 
     const changeTab = (value) => {
@@ -27,7 +27,7 @@ export function AlertView() {
                             { color: tab === 0 ? appColors.primary : appColors.black } 
                         ]}
                     >
-                        Alerts
+                        {t('notificationPage.alerts')}
                     </Text>
                 </View>
                 <View style={styles.lineViewRight}>
@@ -38,14 +38,14 @@ export function AlertView() {
                             { color: tab === 1 ? appColors.primary :isDark?colors.text: appColors.black } 
                         ]}
                     >
-                        Offers
+                        {t('notificationPage.offer')}
                     </Text>
                     {tab === 1 && <View style={styles.line} />}
                 </View>
             </View>
             <View style={[styles.readView,{flexDirection:viewRtlStyle}]}>
                 <Icons.markRead />
-                <Text style={styles.readTxt}>Mark all as read</Text>
+                <Text style={styles.readTxt}>{t('notificationPage.markAsRead')}</Text>
             </View>
         </View>
     );

@@ -9,16 +9,16 @@ import { useValues } from "../../utils/context";
 
 
 export function CurrencyConverterModal() {
-    const {textRtlStyle,viewRtlStyle}=useValues()
+    const {textRtlStyle,viewRtlStyle,t}=useValues()
     const {colors}=useTheme()
     
     return (
         <View style={[GlobalStyle.modal, { backgroundColor: colors.background }]}>
-            <Text style={[styles.text, { color: colors.text, textAlign: textRtlStyle }]}>Select Currency</Text>
+            <Text style={[styles.text, { color: colors.text, textAlign: textRtlStyle }]}>{t('multicurrencyModal.selectCurrency')}</Text>
             {currencys.map((item) =>
                 <TouchableOpacity activeOpacity={0.8}  style={[styles.icon, { flexDirection: viewRtlStyle }]}>
                     {item.icons}
-                    <Text style={[styles.text, { color: colors.text, marginHorizontal: windowWidth(12) }]}>{item.name}  </Text>
+                    <Text style={[styles.text, { color: colors.text, marginHorizontal: windowWidth(12) }]}>{t(item.name)}  </Text>
                 </TouchableOpacity>
             )}
         </View>

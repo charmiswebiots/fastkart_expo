@@ -13,6 +13,7 @@ import { useValues } from "../../../utils/context";
 
 export function Register() {
     const { colors } = useTheme()
+    const {t}=useValues()
     const navigation = useNavigation()
 
     const login = () => {

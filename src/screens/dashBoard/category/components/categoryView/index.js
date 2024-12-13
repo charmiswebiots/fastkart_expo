@@ -3,12 +3,11 @@ import { View, TouchableOpacity, Text, Image, FlatList } from "react-native";
 import styles from "./styles";
 import { categoryData } from "../../../../data";
 import appColors from "../../../../../theme/appColors";
-import { windowHeight } from "../../../../../theme/appConstant";
 import { useValues } from "../../../../../utils/context";
 import { useTheme } from "@react-navigation/native";
 
 export function CategoryView({ onPress }) {
-    const { isDark,viewRtlStyle } = useValues();
+    const { isDark,viewRtlStyle,t } = useValues();
     const { colors } = useTheme();
     const [categoryId, setCategoryId] = useState(categoryData[1]?.id);
     const [subCategories, setSubCategories] = useState(categoryData[1]?.subCategory || []);
@@ -48,7 +47,7 @@ export function CategoryView({ onPress }) {
                             ]}
                         >
                             <Image source={item.image} style={styles.image} resizeMode="cover" />
-                            <Text style={[styles.name,{color:colors.text}]}>{item.name}</Text>
+                            <Text style={[styles.name,{color:colors.text}]}>{t(item.name)}</Text>
                         </TouchableOpacity>
                         <View style={styles.line} />
                     </View>
@@ -75,7 +74,7 @@ export function CategoryView({ onPress }) {
                             >
                                 <Image resizeMode="contain" source={item.image} style={styles.img} />
                             </View>
-                            <Text style={[styles.nameTxt]}>{item.name}</Text>
+                            <Text style={[styles.nameTxt]}>{t(item.name)}</Text>
                         </TouchableOpacity>
                     )}
                 />

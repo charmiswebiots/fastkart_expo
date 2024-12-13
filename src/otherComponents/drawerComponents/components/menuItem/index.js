@@ -9,7 +9,7 @@ import { useValues } from "../../../../utils/context";
 
 export function MenuItem(props) {
     const { colors } = useTheme();
-    const { isDark, viewRtlStyle, rtl, viewSelfRtlStyle } = useValues();
+    const { isDark, viewRtlStyle, rtl, viewSelfRtlStyle,t } = useValues();
 
     return (
         <TouchableOpacity
@@ -36,7 +36,7 @@ export function MenuItem(props) {
                         { color: colors.text },
                     ]}
                 >
-                    {props.text}
+                    {t(props.text)}
                 </Text>
             </View>
             {!props.showSwitch && (

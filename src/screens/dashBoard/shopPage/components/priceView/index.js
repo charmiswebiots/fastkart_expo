@@ -7,7 +7,7 @@ import { useValues } from "../../../../../utils/context";
 
 export function PriceView() {
 
-    const {viewRtlStyle,textRtlStyle}=useValues()
+    const {viewRtlStyle,textRtlStyle,t}=useValues()
     const navigation = useNavigation();
     const cart = () => {
         navigation.navigate('Cart')
@@ -16,11 +16,11 @@ export function PriceView() {
     return (
         <View style={[styles.price,{flexDirection:viewRtlStyle}]}>
             <View>
-                <Text style={styles.listItem}>2 Items</Text>
+                <Text style={styles.listItem}>{t('productList.listItems')}</Text>
                 <Text style={[styles.listItem,{textAlign:textRtlStyle}]}>$250.00</Text>
             </View>
             <TouchableOpacity activeOpacity={0.7} onPress={cart} style={{ flexDirection: "row" }}>
-                <Text style={[styles.viewCart,{textAlign:textRtlStyle}]}>View Cart</Text>
+                <Text style={[styles.viewCart,{textAlign:textRtlStyle}]}>{t('productList.viewCart')}</Text>
                 <View style={{ transform: [{ scaleX: 1 }] }}>
                     <Icons.sideArrow color={appColors.white} />
                 </View>

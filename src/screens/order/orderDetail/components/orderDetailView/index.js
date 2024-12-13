@@ -5,14 +5,14 @@ import { Icons } from "../../../../../utils/icons";
 import { useValues } from "../../../../../utils/context";
 
 export function OrderDetailView() {
-    const {viewRtlStyle}=useValues()
+    const {viewRtlStyle,t}=useValues()
     return (
 
         <View style={[styles.orderDetailView,{flexDirection:viewRtlStyle}]}>
             <Icons.OrderDetails />
             <View style={styles.idView}>
-                <Text style={styles.id}>Order ID : #5151515</Text>
-                <Text style={[styles.orderDeliver]}>Order Delivered</Text>
+                <Text style={styles.id}>{t('orderSuccessPage.orderID')}</Text>
+                <Text style={[styles.orderDeliver]}>{t('orderDetailPage.orderDelivered')}  </Text>
             </View>
         </View>
     )

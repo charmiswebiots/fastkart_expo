@@ -7,7 +7,7 @@ import { useValues } from "../../../../../utils/context";
 import { useTheme } from "@react-navigation/native";
 
 export function RecentlyBought({ onPress }) {
-    const { isDark, rtl } = useValues();
+    const { isDark, rtl ,t} = useValues();
     const { colors } = useTheme();
 
     return (
@@ -29,7 +29,7 @@ export function RecentlyBought({ onPress }) {
                     { color: colors.text, textAlign: rtl ? 'right' : 'left' },
                 ]}
             >
-                Buy from Recently Bought
+                {t('homepage.recentlyBrought')}
             </Text>
             <View style={[styles.imageView]}>
                 <ScrollView

@@ -7,8 +7,10 @@ import { ScrollView, SafeAreaView, View } from "react-native";
 import styles from "./styles";
 import { TotalView } from "./components";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
 export function Cart({ navigation }) {
+    const {t}=useValues()
     const [showModal, setShowModal] = useState(false);
     const [showDeleteModal, setShowDeleteModal] = useState(false);
     const { colors } = useTheme()
@@ -38,7 +40,7 @@ export function Cart({ navigation }) {
             <Header
                 onPress={() => navigation.goBack()}
                 isText
-                titleText={'My Cart'}
+                titleText={t('cartPage.myCart')}
                 imageOnPress={home}
             />
             <ScrollView showsVerticalScrollIndicator={false}>

@@ -14,7 +14,7 @@ interface HomeHeaderProps {
 
 export function HomeHeader({ navigation, toogle }: HomeHeaderProps) {
 
-  const { isDark, viewRtlStyle ,textRtlStyle} = useValues()
+  const { isDark, viewRtlStyle ,textRtlStyle,t} = useValues()
   const { colors } = useTheme()
 
   return (
@@ -27,7 +27,7 @@ export function HomeHeader({ navigation, toogle }: HomeHeaderProps) {
       </View>
       <View style={[styles.view, { flexDirection: viewRtlStyle }]}>
         <Icons.location />
-        <Text style={[styles.locationText, { color: colors.text }]}>Los Angeles</Text>
+        <Text style={[styles.locationText, { color: colors.text }]}>{('homeHeader.losAngeles')}</Text>
         <Image source={images.demoProfile} style={[styles.profile]} resizeMode="contain" />
       </View>
     </View>

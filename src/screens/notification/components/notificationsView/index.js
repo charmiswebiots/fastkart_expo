@@ -8,7 +8,7 @@ import { useValues } from '../../../../utils/context';
 
 export function NotificationsView() {
     const {colors}=useTheme()
-    const {viewRtlStyle,textRtlStyle}=useValues()
+    const {viewRtlStyle,textRtlStyle,t}=useValues()
     return (
         <FlatList
             data={notification}
@@ -30,10 +30,10 @@ export function NotificationsView() {
                             </View>
                             <View style={[styles.titleView,{flexDirection:viewRtlStyle}]}>
                                 <View style={styles.offerLeft}>
-                                    <Text style={[styles.title,{color:colors.text},{textAlign:textRtlStyle}]}>{data.title}</Text>
-                                    <Text style={[styles.subTxt,{textAlign:textRtlStyle}]}>{data.subtxt}</Text>
+                                    <Text style={[styles.title,{color:colors.text},{textAlign:textRtlStyle}]}>{t(data.title)}</Text>
+                                    <Text style={[styles.subTxt,{textAlign:textRtlStyle}]}>{t(data.subtxt)}</Text>
                                 </View>
-                                <Text style={styles.tag}>{data.tag}</Text>
+                                <Text style={styles.tag}>{t(data.tag)}</Text>
                             </View>
                         </View>
                     )}

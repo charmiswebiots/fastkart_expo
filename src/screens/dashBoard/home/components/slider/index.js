@@ -6,7 +6,7 @@ import appColors from "../../../../../theme/appColors";
 import { useValues } from "../../../../../utils/context";
 
 export function Slider() {
-    const { rtl, imageRtlStyle } = useValues()
+    const { rtl, t } = useValues()
     return (
         <View style={styles.sliderView}>
             <FlatList
@@ -28,13 +28,13 @@ export function Slider() {
                                 styles.title,
                                 { textAlign: rtl ? 'right' : 'left' },
                                 item.id === 2 && { color: appColors.white },
-                            ]}>{item.title}</Text>
+                            ]}>{t(item.title)}</Text>
                             <Text style={[
                                 styles.subTitle,
                                 { textAlign: rtl ? 'right' : 'left' },
                                 item.id === 2 && { color: appColors.white },
                             ]}>
-                                {item.subTitle}</Text>
+                                {t(item.subTitle)}</Text>
                             <TouchableOpacity
                                 activeOpacity={0.7}
                                 style={[
@@ -46,7 +46,7 @@ export function Slider() {
                                 <Text style={[
                                     styles.shopNow,
                                     item.id === 2 && { color: appColors.primary },
-                                ]}>{item.shopNow}</Text>
+                                ]}>{t(item.shopNow)}</Text>
                             </TouchableOpacity>
                         </View>
                     </View>

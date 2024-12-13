@@ -7,7 +7,7 @@ import { useTheme } from "@react-navigation/native";
 import appColors from "../../../../../theme/appColors";
 
 export function TrendingProducts({ onPress }) {
-    const {isDark,viewRtlStyle,textRtlStyle}=useValues()
+    const {isDark,viewRtlStyle,textRtlStyle,t}=useValues()
     const {colors}=useTheme()
     return (
         <View style={styles.view}>
@@ -17,15 +17,15 @@ export function TrendingProducts({ onPress }) {
                     <View style={styles.lineView} />
                     <View style={styles.counterView}>
                         <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
-                            <Text style={[styles.name,{color:colors.text},{textAlign:textRtlStyle}]}>{item.name}</Text>
-                            <Text style={[styles.weight,{textAlign:textRtlStyle}]}>{item.weight}</Text>
+                            <Text style={[styles.name,{color:colors.text},{textAlign:textRtlStyle}]}>{t(item.name)}</Text>
+                            <Text style={[styles.weight,{textAlign:textRtlStyle}]}>{t(item.weight)}</Text>
                         </TouchableOpacity>
                         <View style={[styles.priceView,{flexDirection:viewRtlStyle}]}>
                             <View style={[styles.discountPriceView,{flexDirection:viewRtlStyle}]}>
                                 <Text style={[styles.price,{color:colors.text}]}>{item.price}</Text>
                                 <View style={[styles.discountView,{flexDirection:viewRtlStyle}]}>
                                     <Text style={styles.discount}>{item.discount}% </Text>
-                                    <Text style={styles.discount}>off</Text>
+                                    <Text style={styles.discount}>{t('cartlist.off')}</Text>
                                 </View>
                                 <Counter />
                             </View>

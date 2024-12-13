@@ -8,8 +8,8 @@ import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../../../utils/context";
 
 export function DetailsView() {
-    const {textRtlStyle,viewRtlStyle,rtl}=useValues()
-    const {colors}=useTheme()
+    const { textRtlStyle, viewRtlStyle, rtl ,t} = useValues()
+    const { colors } = useTheme()
     const [showManufacturer, setShowManufacturer] = useState(true);
     const [showProductDesc, setShowProductDesc] = useState(false);
     const [showFeature, setShowFeature] = useState(false);
@@ -36,9 +36,9 @@ export function DetailsView() {
 
     return (
         <View>
-            <Text style={[styles.detail,{color:colors.text},{textAlign:textRtlStyle}]}>Product Details</Text>
-            <Text style={[styles.title,{textAlign:textRtlStyle}]}>
-                Refillable, Reusable, High Quality Glass Roll on Bottles with Silver cap For Essential Oil Blends DIY Perfume Cosmetics Beauty Products Ideal
+            <Text style={[styles.detail, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.detailTitle')}</Text>
+            <Text style={[styles.title, { textAlign: textRtlStyle }]}>
+                {t('productDetailsPage.detailDesc')}
             </Text>
             <View style={{
                 borderBottomWidth: 0.7,
@@ -49,17 +49,16 @@ export function DetailsView() {
             <TouchableOpacity
                 onPress={() => showValue(!showManufacturer, false, false)}
                 activeOpacity={0.7}
-                style={[styles.optionView,{flexDirection:viewRtlStyle}]}
+                style={[styles.optionView, { flexDirection: viewRtlStyle }]}
             >
-                <Text style={[styles.txt,{color:colors.text},{textAlign:textRtlStyle}]}>Manufacturer Details</Text>
-                <View style={{ transform: [{ scaleX: rtl?-1:1 }] }}>
+                <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.manufacturerDetails')}</Text>
+                <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }] }}>
                     <Icons.sideArrow />
                 </View>
             </TouchableOpacity>
             {showManufacturer && (
-                <Text style={[styles.title,{textAlign:textRtlStyle}]}>
-                    Manufacturer: Refillable, Reusable, High Quality Glass Roll on Bottles with Silver cap For Essential Oil Blends DIY Perfume Cosmetics Beauty Products Ideal
-                </Text>
+                <Text style={[styles.title, { textAlign: textRtlStyle }]}>
+                    {t('productDetailsPage.manufacturerDetailsDesc')}                </Text>
             )}
             <View style={{
                 borderBottomWidth: 0.7,
@@ -71,18 +70,17 @@ export function DetailsView() {
                 <TouchableOpacity
                     onPress={() => showValue(false, !showProductDesc, false)}
                     activeOpacity={0.7}
-                    style={[styles.optionView,{flexDirection:viewRtlStyle}]}
+                    style={[styles.optionView, { flexDirection: viewRtlStyle }]}
                 >
-                    <Text style={[styles.txt,{color:colors.text},{textAlign:textRtlStyle}]}>Product Disclaimer</Text>
-                    <View style={{ transform: [{ scaleX: rtl?-1:1 }] }}>
-                    <Icons.sideArrow />
+                    <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.productDisclaimer')}</Text>
+                    <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }] }}>
+                        <Icons.sideArrow />
                     </View>
                 </TouchableOpacity>
                 {showProductDesc && (
                     <>
 
-                        <Text style={[styles.title,{textAlign:textRtlStyle}]}>
-                            Disclaimer: Refillable, Reusable, High Quality Glass Roll on Bottles with Silver cap For Essential Oil Blends DIY Perfume Cosmetics Beauty Products Ideal
+                        <Text style={[styles.title, { textAlign: textRtlStyle }]}>{t('productDetailsPage.disclaimerDetails')}
                         </Text>
                     </>
                 )}
@@ -91,17 +89,16 @@ export function DetailsView() {
                 <TouchableOpacity
                     onPress={() => showValue(false, false, !showFeature)}
                     activeOpacity={0.7}
-                    style={[styles.optionView,{flexDirection:viewRtlStyle}]}
+                    style={[styles.optionView, { flexDirection: viewRtlStyle }]}
                 >
-                    <Text style={[styles.txt,{color:colors.text},{textAlign:textRtlStyle}]}>Features & details</Text>
-                    <View style={{ transform: [{ scaleX: rtl?-1:1 }] }}>
+                    <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.featureDetails')}</Text>
+                    <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }] }}>
                         <Icons.sideArrow />
                     </View>
                 </TouchableOpacity>
                 {showFeature && (
-                    <Text style={[styles.title,{textAlign:textRtlStyle}]}>
-                        Features: Refillable, Reusable, High Quality Glass Roll on Bottles with Silver cap For Essential Oil Blends DIY Perfume Cosmetics Beauty Products Ideal
-                    </Text>
+                    <Text style={[styles.title, { textAlign: textRtlStyle }]}>
+                        {t('productDetailsPage.featureDetailsDesc')}                    </Text>
                 )}
             </View>
         </View>

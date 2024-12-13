@@ -36,19 +36,19 @@ import { Icons } from "../../utils/icons";
 import { useValues } from "../../utils/context";
 
 export function SwitchComponents({ style }) {
-    const { isDark, setIsDark, rtl, setRtl } = useValues();
+    const { isDark, setIsDark, rtl, setRtl,t } = useValues();
 
     return (
         <View>
             <Switch
-                text="RTL"
+                text={t("drawer.rtl")}
                 icon={<Icons.rtl />}
                 isOn={rtl}
                 onToggle={() => setRtl(!rtl)} 
                 style={style}
             />
             <Switch
-                text="Dark Mode"
+                text={t("drawer.dark")}
                 icon={<Icons.dark />}
                 isOn={isDark}
                 onToggle={() => setIsDark(!isDark)}

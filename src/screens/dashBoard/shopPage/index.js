@@ -13,7 +13,7 @@ import { useValues } from "../../../utils/context";
 
 export function ShopPage() {
     const {colors}=useTheme()
-    const {isDark}=useValues()
+    const {isDark,t}=useValues()
 
     const [showModal, setShowModal] = useState(false);
 
@@ -28,7 +28,7 @@ export function ShopPage() {
                 lightStyle={styles.header}
                 darkStyle={styles.header}
                 showImage
-                text={'Fresh Fruits & Vegetables'}
+                text={t('categoryArr.freshFruitsVegetables')}
                 image={images.offer}
             />
             <View style={{ flex: 0.99 }}>

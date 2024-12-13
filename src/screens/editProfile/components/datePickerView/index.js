@@ -4,6 +4,7 @@ import styles from './styles';
 import { useValues } from '../../../../utils/context';
 
 export function DatePickerView({ showDatePicker, onCancel, onConfirm }) {
+    const {t}=useValues()
     const [date, setDate] = useState({
         day: new Date().getDate(),
         month: new Date().getMonth() + 1,
@@ -49,22 +50,22 @@ const {viewRtlStyle}=useValues()
         <Modal visible={showDatePicker} transparent={true} animationType="slide">
             <View style={styles.modalOverlay}>
                 <View style={styles.modalContainer}>
-                    <Text style={styles.headerText}>Select Date</Text>
+                    <Text style={styles.headerText}>{t('commonText.selectDate')}</Text>
                     <View style={[styles.pickerContainer,{flexDirection:viewRtlStyle}]}>
                         <View style={styles.picker}>
-                            <Text style={styles.pickerLabel}>Day</Text>
+                            <Text style={styles.pickerLabel}>{t('commonText.day')}</Text>
                             {renderOptions(days, (value) =>
                                 setDate((prev) => ({ ...prev, day: value })), date.day)}
                         </View>
 
                         <View style={styles.picker}>
-                            <Text style={styles.pickerLabel}>Month</Text>
+                            <Text style={styles.pickerLabel}>{t('commonText.month')}</Text>
                             {renderOptions(months, (value) =>
                                 setDate((prev) => ({ ...prev, month: value })), date.month)}
                         </View>
 
                         <View style={styles.picker}>
-                            <Text style={styles.pickerLabel}>Year</Text>
+                            <Text style={styles.pickerLabel}>{t('commonText.year')}</Text>
                             {renderOptions(years, (value) =>
                                 setDate((prev) => ({ ...prev, year: value })), date.year)}
                         </View>
@@ -75,13 +76,13 @@ const {viewRtlStyle}=useValues()
                             style={[styles.button, styles.cancelButton]}
                             onPress={onCancel}
                         >
-                            <Text style={styles.buttonText}>Cancel</Text>
+                            <Text style={styles.buttonText}>{t('commonText.cancle')}</Text>
                         </TouchableOpacity>
                         <TouchableOpacity
                             style={[styles.button, styles.confirmButton]}
                             onPress={handleConfirm}
                         >
-                            <Text style={styles.buttonText}>Confirm</Text>
+                            <Text style={styles.buttonText}>{t('commonText.confirm')}</Text>
                         </TouchableOpacity>
                     </View>
                 </View>

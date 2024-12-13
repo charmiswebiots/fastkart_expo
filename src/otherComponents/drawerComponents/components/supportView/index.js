@@ -5,14 +5,14 @@ import { useValues } from "../../../../utils/context";
 import { useTheme } from "@react-navigation/native";
 
 export function SupportView() {
-    const {isDark}=useValues()
+    const {isDark,t}=useValues()
     const {colors}=useTheme()
     return (
         <View style={[styles.supportView, { backgroundColor:isDark? colors.primary:appColors.drawer }]}>
-            <Text style={[styles.supportTxt,{color:colors.text}]}>Contact Support</Text>
-            <Text style={styles.reactOut}>If you have any problem,queries or questions feel free to reach out</Text>
+            <Text style={[styles.supportTxt,{color:colors.text}]}>{t('drawer.contactSupport')}</Text>
+            <Text style={styles.reactOut}>{t('drawer.reactOut')}</Text>
             <TouchableOpacity style={styles.contactUs}>
-                <Text style={styles.contactUsTxt}>Contact Us</Text>
+                <Text style={styles.contactUsTxt}>{t('drawer.contactUs')}</Text>
             </TouchableOpacity>
         </View>
     )

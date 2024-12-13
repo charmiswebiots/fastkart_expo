@@ -4,10 +4,11 @@ import images from "../../utils/images";
 import { Header } from "../../commonComponents";
 import { QuestionsView ,PeopleView} from './components';
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function AboutUs({navigation}){
     const {colors}=useTheme()
-
+    const {t}=useValues()
     const home = () => {
         navigation.navigate('Home')
     }
@@ -17,7 +18,7 @@ export function AboutUs({navigation}){
             <Header
                 onPress={() => navigation.goBack()}
                 isText
-                titleText={'About us'} imageOnPress={home}/>
+                titleText={t('aboutUsPage.aboutUsTxt')}  imageOnPress={home}/>
             <Image source={images.aboutUs} style={styles.img} resizeMode='contain' />
             <QuestionsView  />
             <PeopleView/>

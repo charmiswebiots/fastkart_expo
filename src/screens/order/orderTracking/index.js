@@ -36,7 +36,7 @@ export function OrderTracking({ navigation }) {
                         <EstimatedDeliveryView />
                         <UserDetailView />
                         <AddressView />
-                        <Button text={'Order Details'} style={styles.btn}
+                        <Button text={'orderTrackingPage.orderDetails'} style={styles.btn}
                             color={appColors.white} onPress={order} />
                     </ScrollView>
                 </View>

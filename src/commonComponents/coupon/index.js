@@ -7,32 +7,32 @@ import { useTheme } from "@react-navigation/native";
 
 export function Coupon(props) {
 
-    const {isDark,viewRtlStyle,textRtlStyle}=useValues()
-    const {colors}=useTheme()
+    const { isDark, viewRtlStyle, textRtlStyle, t } = useValues()
+    const { colors } = useTheme()
 
     return (
         <View style={styles.containerView}>
-        <ImageBackground source={isDark? images.cartListDark:images.cartList} resizeMode='contain' style={styles.mainView}>
-            <TouchableOpacity onPress={props.onPress} activeOpacity={0.8} style={[styles.subView,{flexDirection:viewRtlStyle}]}>
-                <View style={[styles.view,{flexDirection:viewRtlStyle}]}>
-                    <View style={[styles.view,{flexDirection:viewRtlStyle}]}>
-                        <Text style={styles.priceTxt}>{props.price}</Text>
-                        <View style={styles.offView}>
-                            <Text style={styles.percent}>%</Text>
-                            <Text style={styles.off}>OFF</Text>
+            <ImageBackground source={isDark ? images.cartListDark : images.cartList} resizeMode='contain' style={styles.mainView}>
+                <TouchableOpacity onPress={props.onPress} activeOpacity={0.8} style={[styles.subView, { flexDirection: viewRtlStyle }]}>
+                    <View style={[styles.view, { flexDirection: viewRtlStyle }]}>
+                        <View style={[styles.view, { flexDirection: viewRtlStyle }]}>
+                            <Text style={styles.priceTxt}>{props.price}</Text>
+                            <View style={styles.offView}>
+                                <Text style={styles.percent}>%</Text>
+                                <Text style={styles.off}>{t('cartlist.off')}</Text>
+                            </View>
+                        </View>
+                        <View style={[styles.titleView]}>
+                            <Text style={[styles.titleTxt, { color: isDark ? appColors.white : appColors.secondBlack }, { textAlign: textRtlStyle }]}>{t(props.onOrder)}</Text>
+                            <Text style={[styles.titleTxt, { color: appColors.content }, { textAlign: textRtlStyle }]}>{t(props.onOrderAbove)}</Text>
                         </View>
                     </View>
-                    <View style={[ styles.titleView]}>
-                        <Text style={[styles.titleTxt,{color:isDark?appColors.white:appColors.secondBlack},{textAlign:textRtlStyle}]}>{props.onOrder}</Text>
-                        <Text style={[styles.titleTxt,{color:appColors.content},{textAlign:textRtlStyle}]}>{props.onOrderAbove}</Text>
+                    <View>
+                        <Text style={[styles.useCode, { color: colors.text }]}>{t('coupon.useCode')} </Text>
+                        <Text style={styles.code}>{('myOffersArr.offerCode')}</Text>
                     </View>
-                </View>
-                <View>
-                    <Text style={[styles.useCode,{color:colors.text}]}>Use Code: </Text>
-                    <Text style={styles.code}>SCD450</Text>
-                </View>
-            </TouchableOpacity>
-        </ImageBackground>
+                </TouchableOpacity>
+            </ImageBackground>
         </View>
     )
 }

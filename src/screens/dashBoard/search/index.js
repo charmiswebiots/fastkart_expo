@@ -9,7 +9,7 @@ import { useTheme } from '@react-navigation/native'
 
 
 export function Search({navigation}) {
-  const {textRtlStyle}=useValues()
+  const {textRtlStyle,t}=useValues()
   const {colors}=useTheme()
 
   const productDetails=()=>{
@@ -20,10 +20,10 @@ export function Search({navigation}) {
     <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
       <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
         <HomeHeader />
-         <Input placeholder={'Search Products here..'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input}/>
+        <Input placeholder={t('commonText.searchProducts')}  rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input}/>
          <RecentlySearchView/>
          <TrendingCategoryView/>
-         <Text style={[styles.txt,{color:colors.text},{textAlign:textRtlStyle}]}>Trending Products</Text>
+         <Text style={[styles.txt,{color:colors.text},{textAlign:textRtlStyle}]}>{t('searchPage.trendingProducts')}</Text>
          <TrendingProducts onPress={productDetails}/>
       </ScrollView>
     </SafeAreaView>

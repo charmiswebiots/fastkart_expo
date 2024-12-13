@@ -36,7 +36,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export function MultiLangaugeModal() {
     const { colors } = useTheme();
-    const { textRtlStyle, viewRtlStyle } = useValues();
+    const { textRtlStyle, viewRtlStyle ,t} = useValues();
 
     const changeLanguage = async (languageCode) => {
         try {
@@ -50,8 +50,8 @@ export function MultiLangaugeModal() {
     return (
         <View style={[GlobalStyle.modal, { backgroundColor: colors.background }]}>
             <Text style={[styles.text, { color: colors.text, textAlign: textRtlStyle }]}>
-                Select Language
-            </Text>
+            {t('multiLangaugeModal.selectLanguage')}
+                        </Text>
             {langauges.map((item) => (
                 <TouchableOpacity
                     key={item.code} 
@@ -60,7 +60,7 @@ export function MultiLangaugeModal() {
                     onPress={() => changeLanguage(item.code)} 
                 >
                     {item.icons}
-                    <Text style={[styles.text1, { color: colors.text }]}>{item.name}</Text>
+                    <Text style={[styles.text1, { color: colors.text }]}>{t(item.name)}</Text>
                 </TouchableOpacity>
             ))}
         </View>

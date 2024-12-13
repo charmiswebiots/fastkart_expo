@@ -9,16 +9,19 @@ import { CommonModal, AddAddressModal } from '../../otherComponents'
 import { AddressView } from "./components";
 import { useState } from "react";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function SelectAddress({ navigation }) {
     const { colors } = useTheme()
     const [showModal, setShowModal] = useState(false);
 
+    const {t}=useValues()
+
     const visibleModal = () => [
         setShowModal(!showModal)
     ]
 
-    const payment=()=>{
+    const payment = () => {
         navigation.navigate('Payment')
     }
 
@@ -28,12 +31,12 @@ export function SelectAddress({ navigation }) {
                 onPress={() => navigation.goBack()}
                 image={<Icons.search />}
                 isText
-                titleText={'Select delivery address'} />
-            <AddNew text={'Add New Address'} onPress={visibleModal} />
+                titleText={t('selectDeliveryAddressPage.selectDeliveryAddress')} />
+            <AddNew text={'selectDeliveryAddressPage.addNewAddress'} onPress={visibleModal} />
             <AddressView />
 
-            <Button text={'Proceed to Payment'} style={styles.btn}
-                color={appColors.white}  onPress={payment}/>
+            <Button text={'selectDeliveryAddressPage.proceedToPayment'} style={styles.btn}
+                color={appColors.white} onPress={payment} />
             <CommonModal
                 modal={
                     <AddAddressModal showModal={visibleModal} />}

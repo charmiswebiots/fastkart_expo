@@ -4,20 +4,8 @@ import appColors from "../theme/appColors";
 import { windowHeight, windowWidth } from "../theme/appConstant";
 
 export const swiperData = [
-    {
-        id: 1,
-        title: 'Farm Fresh Vegies',
-        subTitle: 'Get instant delivery',
-        shopNow: 'Shop Now',
-        image: images.banner1,
-    },
-    {
-        id: 2,
-        title: 'Farm Fresh Vegies',
-        subTitle: 'Get instant delivery',
-        shopNow: 'Shop Now',
-        image: images.banner2,
-    },
+    { id: 1, title: 'homepage.farmFreshVegies', subTitle: 'homepage.getInstantDelivery', shopNow: 'homepage.shopNow', image: images.banner1 },
+    { id: 2, title: 'homepage.farmFreshVegies', subTitle: 'homepage.getInstantDelivery', shopNow: 'homepage.shopNow', image: images.banner2 },
 ];
 
 export const recentlyBrought = [
@@ -32,35 +20,35 @@ export const recentlyBrought = [
 
 
 export const category = [
-    { id: '1', name: 'Oils,Refined & Ghee', image: images.category1 },
-    { id: '2', name: 'Rice, Flour & Grains', image: images.category2 },
-    { id: '3', name: 'Food Cupboard', image: images.category3 },
-    { id: '4', name: 'Fresh Fruits& Vegetables', image: images.category4 },
-    { id: '5', name: 'Drinks & Beverages', image: images.category5 },
-    { id: '6', name: 'Instant Mixes', image: images.category6 },
-    { id: '7', name: 'Ready to Eat', image: images.category7 },
-    { id: '8', name: 'Dals & Pulses', image: images.category8 },
+    { id: '1', name: 'categoryArr.oilsRefinedGhee', image: images.category1 },
+    { id: '2', name: 'categoryArr.riceFlourGrains', image: images.category2 },
+    { id: '3', name: 'categoryArr.foodCupboard', image: images.category3 },
+    { id: '4', name: 'categoryArr.freshFruitsVegetables', image: images.category4 },
+    { id: '5', name: 'categoryArr.drinksBeverages', image: images.category5 },
+    { id: '6', name: 'categoryArr.instantMixes', image: images.category6 },
+    { id: '7', name: 'categoryArr.readytoEat', image: images.category7 },
+    { id: '8', name: 'categoryArr.dalsPulses', image: images.category8 },
 ];
 
 
 export const offers = [
-    { name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought3, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
 ];
 
 export const lowestPrice = [
-    { name: 'Assorted Capsicum Combo ', image: images.product3, price: '$25.00', weight: '500g' },
-    { name: 'Assorted Capsicum Combo ', image: images.product2, price: '$25.00', weight: '500g' },
-    { name: 'Assorted Capsicum Combo ', image: images.product1, price: '$25.00', weight: '500g' },
-    { name: 'Assorted Capsicum Combo ', image: images.product4, price: '$25.00', weight: '500g' },
+    { name: 'product.assortedCapsicumCombo', image: images.product3, price: '$25.00', weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product2, price: '$25.00', weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product1, price: '$25.00', weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product4, price: '$25.00', weight: 'productArr.weight10' },
 ];
 
 export const bestPrice = [
-    { name: 'Assorted Capsicum Combo ', image: images.product6, price: '$25.00', weight: '500g' },
-    { name: 'Assorted Capsicum Combo ', image: images.product5, price: '$25.00', weight: '500g' },
-    { name: 'Assorted Capsicum Combo ', image: images.product4, price: '$25.00', weight: '500g' },
-    { name: 'Assorted Capsicum Combo ', image: images.product2, price: '$25.00', weight: '500g' },
+    { name: 'product.assortedCapsicumCombo', image: images.product6, price: '$25.00', weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product5, price: '$25.00', weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product4, price: '$25.00', weight: 'productArr.weight10' },
+    { name: 'product.assortedCapsicumCombo', image: images.product2, price: '$25.00', weight: 'productArr.weight10' },
 ];
 
 export const coupons = [
@@ -85,46 +73,46 @@ export const drawerItems = [
 
 export const notification = [
     {
-        day: 'Yesterday',
+        day: 'notificationArr.title1',
         value: [
-            { title: 'UPTO 40% OFF, Sales Ends..', subtxt: '3.00pm, 10 July, 2021', icon: <Icons.discount />, tag: 'offer', color: appColors.drawer },
-            { title: 'FLAT 30% OFF, Sales Ends..', subtxt: '5.00pm, 10 July, 2021', icon: <Icons.offer />, tag: 'offer', color: appColors.yellow },
+            { title: 'notificationArr.value1', subtxt: 'notificationArr.time1', icon: <Icons.discount />, tag: 'notificationArr.type3', color: appColors.drawer },
+            { title: 'notificationArr.value1', subtxt: 'notificationArr.time1', icon: <Icons.offer />, tag: 'notificationArr.type3', color: appColors.yellow },
         ]
     },
     {
-        day: 'Last 7 Days',
+        day: 'notificationArr.title2',
         value: [
-            { title: 'Password Succesfully Changed', subtxt: '8.00am, 15 Jan, 2021', icon: <Icons.passChange />, tag: 'Signin', color: appColors.pink },
-            { title: '$200 top up successfully', subtxt: '9.00am, 10 Jan, 2021', icon: <Icons.topUp />, tag: 'Topup', color: appColors.topUp },
-            { title: 'UPTO 40% OFF, Sales Ends..', subtxt: '3.00pm, 10 July, 2021', icon: <Icons.discount />, tag: 'offer', color: appColors.drawer },
-            { title: 'FLAT 30% OFF, Sales Ends..', subtxt: '5.00pm, 05 July, 2021', icon: <Icons.offer />, tag: 'offer', color: appColors.yellow },
-            { title: 'Password Succesfully Changed', subtxt: '8.00am, 15 Jan, 2021', icon: <Icons.passChange />, tag: 'Signin', color: appColors.pink },
-            { title: '$200 top up successfully', subtxt: '9.00am, 10 Jan, 2021', icon: <Icons.topUp />, tag: 'Signin', color: appColors.topUp },
-            { title: 'UPTO 40% OFF, Sales Ends..', subtxt: '3.00pm, 10 July, 2021', icon: <Icons.discount />, tag: 'Topup', color: appColors.drawer },
-            { title: 'FLAT 30% OFF, Sales Ends..', subtxt: '5.00pm, 05 July, 2021', icon: <Icons.offer />, tag: 'offer', color: appColors.drawer },
+            { title: 'notificationArr.value3', subtxt: 'notificationArr.time3', icon: <Icons.passChange />, tag: 'notificationArr.type1', color: appColors.pink },
+            { title: 'notificationArr.topSucc', subtxt: 'notificationArr.time4', icon: <Icons.topUp />, tag: 'notificationArr.type2', color: appColors.topUp },
+            { title: 'notificationArr.value1', subtxt: 'notificationArr.time1', icon: <Icons.discount />, tag: 'notificationArr.type3', color: appColors.drawer },
+            { title: 'notificationArr.value2', subtxt: 'notificationArr.time2', icon: <Icons.offer />, tag: 'notificationArr.type3', color: appColors.yellow },
+            { title: 'notificationArr.value3', subtxt: 'notificationArr.time3', icon: <Icons.passChange />, tag: 'notificationArr.type1', color: appColors.pink },
+            { title: 'notificationArr.topSucc', subtxt: 'notificationArr.time4', icon: <Icons.topUp />, tag: 'notificationArr.type1', color: appColors.topUp },
+            { title: 'notificationArr.value1.', subtxt: 'notificationArr.time1', icon: <Icons.discount />, tag: 'notificationArr.type2', color: appColors.drawer },
+            { title: 'notificationArr.value2', subtxt: 'notificationArr.time2', icon: <Icons.offer />, tag: 'notificationArr.type3', color: appColors.drawer },
         ]
     },
 ];
 
 
 export const myOffers = [
-    { off: '50', onOrderAbove: 'on order above $250.00', onOrder: 'on your first order', code: 'Use Code: ' },
-    { off: '25', onOrderAbove: 'hdfc credit card', onOrder: 'on your first order', code: 'Use Code: ' },
-    { off: '40', onOrderAbove: 'on order above $250.00', onOrder: 'on your first order', code: 'Use Code: ' },
-    { off: '30', onOrderAbove: 'on order above $250.00', onOrder: 'on your first order', code: 'Use Code: ' },
-    { off: '15', onOrderAbove: 'on order above $250.00', onOrder: 'on your first order', code: 'Use Code: ' },
-    { off: '10', onOrderAbove: 'on order above $250.00', onOrder: 'on your first order', code: 'Use Code: ' },
+    { off: '50', onOrderAbove: 'myOffersArr.aboveOn', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '25', onOrderAbove: 'myOffersArr.hdfc', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '40', onOrderAbove: 'myOffersArr.aboveOn', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '30', onOrderAbove: 'myOffersArr.aboveOn', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '15', onOrderAbove: 'myOffersArr.aboveOn', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode' },
+    { off: '10', onOrderAbove: 'myOffersArr.aboveOn', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
 ];
 
 export const termsCondition = [
     {
-        terms: '1. Information on how to participate forms part of these Terms & Conditions. By participating, claimants agree to be bound by these Terms & Conditions. Claimants must comply with these Terms & Conditions for a coupon to be valid.'
+        terms: '1. couponModal.terms1'
     },
-    { terms: "2. Each claimant is entitled to one coupon per accommodation establishment. Coupons are not transferable and are not redeemable for cash and cannot be combined with any other coupons or any other offer or discounts or promotions offered by Quovai." }
+    { terms: "2.couponModal.terms2" }
 ];
 
 export const offersFilter = [
-    { offer: 'All Offers' },
+    { offer: 'offersFilterArr.allOffer' },
     { offer: '10-30% off' },
     { offer: '30-50% off' },
     { offer: '50-70% off' },
@@ -133,10 +121,10 @@ export const offersFilter = [
 ];
 
 export const recentlySearch = [
-    { name: 'Vegetables' },
-    { name: 'Fruits' },
-    { name: 'Beauty' },
-    { name: 'Fruits' },
+    { name: 'subCategoryArr.vegetables' },
+    { name: 'subCategoryArr.fruits' },
+    { name: 'recentlySearch.beauty' },
+    { name: 'subCategoryArr.fruits' },
 ];
 
 
@@ -153,86 +141,86 @@ export const category1 = [
 
 
 export const trendingProducts = [
-    { name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought5, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought5, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
 ];
 
 
 export const howIOrder = [
-    { question: 'Browse products using the search feature', answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
-    { question: 'Add item to your Shopping Cart', answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
-    { question: 'Choose a convenient delivery time', answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
-    { question: 'Select suitable payment option', answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
+    { question: 'aboutUsArr.question1', answer: 'aboutUsArr.answer1' },
+    { question: 'aboutUsArr.question2', answer: 'aboutUsArr.answer2' },
+    { question: 'aboutUsArr.question3', answer: 'aboutUsArr.answer3' },
+    { question: 'aboutUsArr.question4', answer: 'aboutUsArr.answer4' },
 ];
 
 export const orderHistoryTime = [
-    { time: 'Processing' },
-    { time: 'Last 30 days' },
-    { time: 'November' },
-    { time: 'October' },
+    { time: 'orderHistoryPage.processing' },
+    { time: 'orderHistoryPage.last30days' },
+    { time: 'orderHistory.historyTime' },
+    { time: 'orderHistory.historyTime1' },
 ];
 
 export const orderHistory = [
     {
-        id: '#5151515',
-        date: '20 Dec, 2020',
-        add: '8857 Morris Rd. ,Charlottesville..',
+        id: 'orderHistory.orderHistoryId',
+        date: 'orderHistory.orderHistoryDate',
+        add: 'orderHistory.orderHistoryAdd',
         paid: '$250.00',
         item: 15,
         review: 0
     },
     {
-        id: '#5151515',
-        date: '20 Dec, 2020',
-        add: '8857 Morris Rd. ,Charlottesville..',
+        id: 'orderHistory.orderHistoryId',
+        date: 'orderHistory.orderHistoryDate',
+        add: 'orderHistory.orderHistoryAdd',
         paid: '$250.00',
         item: 15,
         review: 2
     },
     {
-        id: '#5151515',
-        date: '20 Dec, 2020',
-        add: '8857 Morris Rd. ,Charlottesville..',
+        id: 'orderHistory.orderHistoryId',
+        date: 'orderHistory.orderHistoryDate',
+        add: 'orderHistory.orderHistoryAdd',
         paid: '$250.00',
         item: 15,
         review: 2
     },
     {
-        id: '#5151515',
-        date: '20 Dec, 2020',
-        add: '8857 Morris Rd. ,Charlottesville..',
+        id: 'orderHistory.orderHistoryId',
+        date: 'orderHistory.orderHistoryDate',
+        add: 'orderHistory.orderHistoryAdd',
         paid: '$250.00',
         item: 15,
         review: 5
     },
     {
-        id: '#5151515',
-        date: '20 Dec, 2020',
-        add: '8857 Morris Rd. ,Charlottesville..',
+        id: 'orderHistory.orderHistoryId',
+        date: 'orderHistory.orderHistoryDate',
+        add: 'orderHistory.orderHistoryAdd',
         paid: '$250.00',
         item: 15,
         review: 2
     },
     {
-        id: '#5151515',
-        date: '20 Dec, 2020',
-        add: '8857 Morris Rd. ,Charlottesville..',
+        id: 'orderHistory.orderHistoryId',
+        date: 'orderHistory.orderHistoryDate',
+        add: 'orderHistory.orderHistoryAdd',
         paid: '$250.00',
         item: 15,
         review: 3
     },
     {
-        id: '#5151515',
-        date: '20 Dec, 2020',
-        add: '8857 Morris Rd. ,Charlottesville..',
+        id: 'orderHistory.orderHistoryId',
+        date: 'orderHistory.orderHistoryDate',
+        add: 'orderHistory.orderHistoryAdd',
         paid: '$250.00',
         item: 15,
         review: 2
     },
     {
-        id: '#5151515',
+        id: 'orderHistory.orderHistoryId',
         date: '20 Dec, 2020',
-        add: '8857 Morris Rd. ,Charlottesville..',
+        add: 'orderHistory.orderHistoryAdd',
         paid: '$250.00',
         item: 15,
         review: 1
@@ -242,21 +230,21 @@ export const orderHistory = [
 
 export const orderHistoryFilter = [
     {
-        day: 'Filter',
+        day: 'commonText.filter',
         value: [
-            { txt: 'All Order', id: 0 },
-            { txt: 'Open Order', id: 1 },
-            { txt: 'ReturnOrders', id: 2 },
-            { txt: 'Cancelled Order', id: 3 },
+            { txt: 'orderHistoryFilterArr.allOrder', id: 0 },
+            { txt: 'orderHistoryFilterArr.openOrder', id: 1 },
+            { txt: 'orderHistoryFilterArr.returnOrders', id: 2 },
+            { txt: 'orderHistoryFilterArr.cancelledOrder', id: 3 },
         ]
     },
     {
-        day: 'Time Filter',
+        day: 'orderHistoryFilterArr.timeFilter',
         value: [
-            { txt: 'Last 30 days', id: 4 },
-            { txt: 'Last 6 Month', id: 5 },
-            { txt: '2021', id: 6 },
-            { txt: '2022', id: 7 },
+            { txt: 'orderHistoryFilterArr.last30days', id: 4 },
+            { txt: 'orderHistoryFilterArr.last6Month', id: 5 },
+            { txt: 'orderHistoryFilterArr.year1', id: 6 },
+            { txt: 'orderHistoryFilterArr.year2', id: 7 },
         ]
     },
 ];
@@ -307,47 +295,47 @@ export const payments = [
 
 
 export const cart = [
-    { id: 1, name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
-    { id: 2, name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
-    { id: 3, name: 'Assorted Capsicum Combo', image: images.recentBought3, price: '$25.00', weight: '500g', discount: '50' },
-    { id: 4, name: 'Assorted Capsicum Combo', image: images.recentBought4, price: '$25.00', weight: '500g', discount: '50' },
+    { id: 1, name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { id: 2, name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { id: 3, name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { id: 4, name: 'product.assortedCapsicumCombo', image: images.recentBought4, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
 ];
 
 export const shopCategory = [
-    { name: 'Fresh Vegetables' },
-    { name: 'Herbs & Seasonings' },
-    { name: 'Drinks & Beverages' },
-    { name: 'Instant Mixes' },
+    { name: 'productList.freshVegetables' },
+    { name: 'productCategory.herbsSeasonings' },
+    { name: 'categoryArr.drinksBeverages' },
+    { name: 'categoryArr.instantMixes' },
 ];
 
 
 export const data = [
-    { name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought3, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought4, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought5, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought4, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought3, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought2, price: '$25.00', weight: '500g', discount: '50' },
-    { name: 'Assorted Capsicum Combo', image: images.recentBought1, price: '$25.00', weight: '500g', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought4, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought5, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought4, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought3, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought2, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
+    { name: 'product.assortedCapsicumCombo', image: images.recentBought1, price: '$25.00', weight: 'productArr.weight10', discount: '50' },
 ];
 
 export const packSize = [
-    { size: '100g-500g' },
-    { size: 'p500g-1kg' },
-    { size: '1kg-1.5kg' },
-    { size: '1.5kg-2kg' },
+    { size: 'packsizeArr.size1' },
+    { size: 'packsizeArr.size2' },
+    { size: 'packsizeArr.size3' },
+    { size: 'packsizeArr.size4' },
 ];
 
 export const location = [
-    { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: true },
-    { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: false },
-    { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: true },
-    { name: "Noah Hamilton", address: "8857 Morris Rd.,Charlottesville, VA 22901", isWork: false },
+    { name: 'locationArr.locationName', address: 'locationArr.locationAddress', isWork: true },
+    { name: 'locationArr.locationName', address: 'locationArr.locationAddress', isWork: false },
+    { name: 'locationArr.locationName', address: 'locationArr.locationAddress', isWork: true },
+    { name: 'locationArr.locationName', address: 'locationArr.locationAddress', isWork: false },
 ];
 
 export const cityArr = [
@@ -377,9 +365,9 @@ export const stateArr = [
 ];
 
 export const orderDetails = [
-    { name: 'Assorted Capsicum Combo ', gram: '500g', quantity: '2', price: '$25.00' },
-    { name: 'Assorted Capsicum Combo ', gram: '500g', quantity: '1', price: '$25.00' },
-    { name: 'Assorted Capsicum Combo ', gram: '500g', quantity: '1', price: '$25.00' },
+    { name: 'product.assortedCapsicumCombo', gram: 'productArr.weight10', quantity: '2', price: '$25.00' },
+    { name: 'product.assortedCapsicumCombo', gram: 'productArr.weight10', quantity: '1', price: '$25.00' },
+    { name: 'product.assortedCapsicumCombo', gram: 'productArr.weight10', quantity: '1', price: '$25.00' },
 ];
 
 export const reviewStar = [
@@ -393,28 +381,28 @@ export const reviewStar = [
 
 export const reviewList = [
     {
-        reviewName: 'Andrea Joanne',
-        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+        reviewName: 'orderTrackingPage.name',
+        review: "reviewArr.review",
     },
     {
-        reviewName: 'Andrea Joanne',
-        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+        reviewName: 'orderTrackingPage.name',
+        review: "reviewArr.review",
     },
     {
-        reviewName: 'Andrea Joanne',
-        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+        reviewName: 'orderTrackingPage.name',
+        review: "reviewArr.review",
     },
     {
-        reviewName: 'Andrea Joanne',
-        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+        reviewName: 'orderTrackingPage.name',
+        review: "reviewArr.review",
     },
     {
-        reviewName: 'Andrea Joanne',
-        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+        reviewName: 'orderTrackingPage.name',
+        review: "reviewArr.review",
     },
     {
-        reviewName: 'Andrea Joanne',
-        review: "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly",
+        reviewName: 'orderTrackingPage.name',
+        review: "reviewArr.review",
     },
 ];
 
@@ -429,111 +417,111 @@ export const quantity = [
 ];
 
 export const delivery = [
-    { delivery: '7 Am' },
-    { delivery: '9 Am' },
-    { delivery: '11 Am' },
-    { delivery: '5 Pm' },
-    { delivery: '7 Pm' },
-    { delivery: '9 Pm' },
+    { delivery: 'deliveryTimeArr.deliveryTime1' },
+    { delivery: 'deliveryTimeArr.deliveryTime2' },
+    { delivery: 'deliveryTimeArr.deliveryTime3' },
+    { delivery: 'deliveryTimeArr.deliveryTime4' },
+    { delivery: 'deliveryTimeArr.deliveryTime5' },
+    { delivery: 'deliveryTimeArr.deliveryTime6' },
 ];
 
 export const categoryData = [
     {
         id: '1',
-        name: 'Oils, Refined & Ghee',
+        name: 'categoryArr.oilsRefinedGhee',
         image: images.category1,
         subCategory: [
-            { id: '1', name: 'Vegetables', image: images.categoryPro1 },
-            { id: '2', name: 'Organic', image: images.categoryPro8 },
+            { id: '1', name: 'subCategoryArr.vegetables', image: images.categoryPro1 },
+            { id: '2', name: 'subCategoryArr.organic', image: images.categoryPro8 },
         ]
     },
     {
-        id: '2', name: 'Rice, Flour & Grains', image: images.category2, subCategory: [{ id: '1', name: 'Fruits', image: images.categoryPro2 },
-        { id: '2', name: 'Herbs', image: images.categoryPro3 },
+        id: '2', name: 'categoryArr.riceFlourGrains', image: images.category2, subCategory: [{ id: '1', name: 'subCategoryArr.fruits', image: images.categoryPro2 },
+        { id: '2', name: 'subCategoryArr.herbs', image: images.categoryPro3 },
         ]
     },
     {
-        id: '3', name: 'Food Cupboard', image: images.category3, subCategory: [{ id: '1', name: 'Organic', image: images.categoryPro8 },
-        { id: '2', name: 'Cuts Fruits', image: images.categoryPro9 },]
+        id: '3', name: 'categoryArr.foodCupboard', image: images.category3, subCategory: [{ id: '1', name: 'subCategoryArr.organic', image: images.categoryPro8 },
+        { id: '2', name: 'subCategoryArr.cutsFruit', image: images.categoryPro9 },]
     },
     {
-        id: '4', name: 'Fresh Fruits & Vegetables', image: images.category4, subCategory: [{ id: '1', name: 'Bouquets', image: images.categoryPro10 },
-        { id: '2', name: 'Fruits', image: images.categoryPro2 },]
+        id: '4', name: 'categoryArr.freshFruitsVegetables', image: images.category4, subCategory: [{ id: '1', name: 'subCategoryArr.bouquets', image: images.categoryPro10 },
+        { id: '2', name: 'subCategoryArr.fruits', image: images.categoryPro2 },]
     },
     {
-        id: '5', name: 'Drinks & Beverages', image: images.category5, subCategory: [{ id: '1', name: 'Cuts Fruits', image: images.categoryPro7 },
-        { id: '2', name: 'Herbs', image: images.categoryPro3 },
+        id: '5', name: 'categoryArr.drinksBeverages', image: images.category5, subCategory: [{ id: '1', name: 'subCategoryArr.cutsFruit', image: images.categoryPro7 },
+        { id: '2', name: 'subCategoryArr.herbs', image: images.categoryPro3 },
         ]
     },
     {
-        id: '6', name: 'Instant Mixes', image: images.category6, subCategory: [{ id: '1', name: 'Sprouts', image: images.categoryPro5 },
-        { id: '2', name: 'Organic', image: images.categoryPro8 },
+        id: '6', name: 'categoryArr.instantMixes', image: images.category6, subCategory: [{ id: '1', name: 'subCategoryArr.sprouts', image: images.categoryPro5 },
+        { id: '2', name: 'subCategoryArr.organic', image: images.categoryPro8 },
         ]
     },
     {
-        id: '7', name: 'Ready to Eat', image: images.category7, subCategory: [{ id: '1', name: 'Flowers', image: images.categoryPro6 },
-        { id: '2', name: 'Herbs', image: images.categoryPro3 },]
+        id: '7', name: 'categoryArr.readytoEat', image: images.category7, subCategory: [{ id: '1', name: 'subCategoryArr.flowers', image: images.categoryPro6 },
+        { id: '2', name: 'subCategoryArr.herbs', image: images.categoryPro3 },]
     },
     {
-        id: '8', name: 'Dals & Pulses', image: images.category8, subCategory: [{ id: '1', name: 'Cuts Fruits', image: images.categoryPro9, }, { id: '2', name: 'Herbs', image: images.categoryPro3 },
+        id: '8', name: 'categoryArr.dalsPulses', image: images.category8, subCategory: [{ id: '1', name: 'subCategoryArr.cutsFruit', image: images.categoryPro9, }, { id: '2', name: 'subCategoryArr.herbs', image: images.categoryPro3 },
 
         ]
     },
 ];
 
 export const DrawerItems = [
-    { name: 'Home', icons: <Icons.DrawerHome />, showSwitch: false },
-    { name: 'FastKart Pages List', icons: <Icons.pageList />, showSwitch: false },
-    { name: 'Shop by Category', icons: <Icons.category />, showSwitch: false },
-    { name: 'Orders', icons: <Icons.order />, showSwitch: false },
-    { name: 'Your Wishlist', icons: <Icons.wishlist />, showSwitch: false },
-    { name: 'Langauge', icons: <Icons.language />, showSwitch: false },
-    { name: 'Your Account', icons: <Icons.profile />, showSwitch: false },
-    { name: 'Notification', icons: <Icons.notification />, showSwitch: false },
-    { name: 'Settings', icons: <Icons.settings />, showSwitch: false },
-    { name: 'Currency Converter', icons: <Icons.currencyConverter />, showSwitch: false },
+    { name: 'tabBar.home', icons: <Icons.DrawerHome />, showSwitch: false },
+    { name: 'drawer.fastKartPagesList', icons: <Icons.pageList />, showSwitch: false },
+    { name: 'homepage.shopByCategory', icons: <Icons.category />, showSwitch: false },
+    { name: 'drawer.orders', icons: <Icons.order />, showSwitch: false },
+    { name: 'drawer.yourWishlist', icons: <Icons.wishlist />, showSwitch: false },
+    { name: 'drawer.langauge', icons: <Icons.language />, showSwitch: false },
+    { name: 'drawer.yourAccount', icons: <Icons.profile />, showSwitch: false },
+    { name: 'drawer.notification', icons: <Icons.notification />, showSwitch: false },
+    { name: 'drawer.settings', icons: <Icons.settings />, showSwitch: false },
+    { name: 'drawer.currencyConverter', icons: <Icons.currencyConverter />, showSwitch: false },
 ];
 
 
 export const pagesList = [
-    { name: '404' },
-    { name: 'About Us' },
-    { name: 'Account' },
-    { name: 'Address Type 1' },
-    { name: 'Address Type 2' },
-    { name: 'Cart' },
-    { name: 'Category Wide' },
-    { name: 'Home Page' },
-    { name: 'Login' },
-    { name: 'Notification' },
-    { name: 'Offers' },
-    { name: 'On Boarding' },
-    { name: 'Order Detail' },
-    { name: 'Order History' },
-    { name: 'Order Success' },
-    { name: 'Order Tracking' },
-    { name: 'Payment' },
-    { name: 'Product' },
-    { name: 'Register' },
-    { name: 'Search' },
-    { name: 'Setting' },
-    { name: 'Shop' },
-    { name: 'Wishlist' },
+    { name: 'pagesListArr.404' },
+    { name: 'aboutUsPage.aboutUsTxt' },
+    { name: 'pagesListArr.account' },
+    { name: 'pagesListArr.addressType1' },
+    { name: 'pagesListArr.addressType2' },
+    { name: 'tabBar.cart' },
+    { name: 'pagesListArr.categoryWide' },
+    { name: 'pagesListArr.homePage' },
+    { name: 'pagesListArr.login' },
+    { name: 'drawer.notification' },
+    { name: 'tabBar.offers' },
+    { name: 'pagesListArr.onBoarding' },
+    { name: 'pagesListArr.orderDetail' },
+    { name: 'orderHistoryPage.orderHistoryTxt' },
+    { name: 'pagesListArr.orderSuccess' },
+    { name: 'pagesListArr.orderTracking' },
+    { name: 'pagesListArr.payment' },
+    { name: 'pagesListArr.product' },
+    { name: 'pagesListArr.register' },
+    { name: 'tabBar.search' },
+    { name: 'pagesListArr.setting' },
+    { name: 'pagesListArr.shop' },
+    { name: 'pagesListArr.wishlist' },
 ];
 
 
 export const langauges = [
-    { key: 'hi', name: 'Hindi', icons: <Icons.hindi /> },
-    { key: 'en', name: 'English', icons: <Icons.language width={windowWidth(34)} height={windowHeight(34)} /> },
-    { key: 'kr', name: 'Korean', icons: <Icons.korea /> },
-    { key: 'ar', name: 'Arabic', icons: <Icons.arabic /> },
+    { key: 'hi', name: 'langaugesArr.hindi', icons: <Icons.hindi /> },
+    { key: 'en', name: 'langaugesArr.english', icons: <Icons.language width={windowWidth(34)} height={windowHeight(34)} /> },
+    { key: 'kr', name: 'langaugesArr.korean', icons: <Icons.korea /> },
+    { key: 'ar', name: 'langaugesArr.arabic', icons: <Icons.arabic /> },
 ];
 
 
 export const currencys = [
-    { key: '₹', name: 'Indian rupees', icons: <Icons.rupees />, value: 1 },
-    { key: '$', name: 'United State dollar', icons: <Icons.dollar />, value: 0.013 },
-    { key: '€', name: 'Euro', icons: <Icons.euro />, value: 0.012 },
-    { key: 'A$', name: 'Australian Dollar', icons: <Icons.australianDollar />, value: 0.018 },
-    { key: '₩', name: 'Korean Won', icons: <Icons.koreanWon />, value: 16.44 },
+    { key: '₹', name: 'currencyConverterArr.indianRupees', icons: <Icons.rupees />, value: 1 },
+    { key: '$', name: 'currencyConverterArr.usDollar', icons: <Icons.dollar />, value: 0.013 },
+    { key: '€', name: 'currencyConverterArr.euro', icons: <Icons.euro />, value: 0.012 },
+    { key: 'A$', name: 'currencyConverterArr.australianDollar', icons: <Icons.australianDollar />, value: 0.018 },
+    { key: '₩', name: 'currencyConverterArr.koreanWon', icons: <Icons.koreanWon />, value: 16.44 },
 ];

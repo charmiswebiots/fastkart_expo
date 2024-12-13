@@ -10,13 +10,13 @@ import { useValues } from "../../../../../utils/context";
 export function ReviewView(props) {
 
     const {colors}=useTheme()
-    const {viewRtlStyle,isDark}=useValues()
+    const {viewRtlStyle,isDark,t}=useValues()
 
     return (
         <View>
             <TouchableOpacity activeOpacity={0.8} style={[styles.reviewView,{flexDirection:viewRtlStyle}]} onPress={props.visibleReviewModal}>
-                <Text style={[styles.txt,{color:colors.text}]}>Product Review(15)</Text>
-                <Text style={styles.seeAll}>See all</Text>
+                <Text style={[styles.txt,{color:colors.text}]}>{t('productDetailsPage.productReview')}</Text>
+                <Text style={styles.seeAll}>{t('homepage.seeAll')}</Text>
             </TouchableOpacity>
             <View style={styles.list}>
                 {reviewList.splice(0, 2).map((item) =>
@@ -26,7 +26,7 @@ export function ReviewView(props) {
                         <View style={[styles.reviewDetail,{flexDirection:viewRtlStyle}]}>
                             <Image source={images.demoProfile} style={styles.demoProfile} />
                             <View style={styles.reviewNameViewRight}>
-                                <Text style={[styles.reviewName,{color:colors.text}]}>{item.reviewName}</Text>
+                                <Text style={[styles.reviewName,{color:colors.text}]}>{t(item.reviewName)}</Text>
                                 <View style={{ flexDirection: viewRtlStyle }}>
                                     {reviewStar.map((item, key) =>
                                         <Image source={key === 4 ? images.star1 : images.star} style={styles.star} />
@@ -34,7 +34,7 @@ export function ReviewView(props) {
                                 </View>
                             </View>
                         </View>
-                        <Text style={[styles.reviewTxt]}>{item.review}</Text>
+                        <Text style={[styles.reviewTxt]}>{t(item.review)}</Text>
                     </View>
                 )}
             </View>

@@ -8,22 +8,22 @@ import { useValues } from "../../../../../utils/context";
 
 export function NameView() {
     const { colors } = useTheme()
-    const { viewRtlStyle, textRtlStyle } = useValues()
+    const { viewRtlStyle, textRtlStyle ,t} = useValues()
     return (
         <View>
-            <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>Assorted Capsicum Combo- (Red, Yellow, Green)</Text>
+            <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.productName')}</Text>
             <View style={[styles.ratingsView, { flexDirection: viewRtlStyle }]}>
                 <View style={{ flexDirection: viewRtlStyle }}>
                     {reviewStar.map((item, key) =>
                         <Image source={key === 4 ? images.star1 : images.star} style={styles.star} key={item.id} />
                     )}
                 </View>
-                <Text style={[styles.ratings]}>(150 Ratings)</Text>
+                <Text style={[styles.ratings]}>{t('productDetailsPage.productRatings')}</Text>
             </View>
             <View style={[{ flexDirection: viewRtlStyle }]}>
                 <Text style={[styles.txt, { color: colors.text }]}>$25.00</Text>
                 <Text style={styles.originalPrice}>$45.00</Text>
-                <Text style={styles.discount}>25% off</Text>
+                <Text style={styles.discount}>{t('productDetailsPage.productDiscount')}</Text>
             </View>
         </View>
     );

@@ -4,21 +4,23 @@ import { Input } from "../../../../commonComponents";
 import { Icons } from "../../../../utils/icons";
 import { windowWidth } from "../../../../theme/appConstant";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../../utils/context";
 
 export function DetailsView(props) {
-    const {colors}=useTheme()
+    const { colors } = useTheme()
+    const { t } = useValues()
     return (
         <View style={styles.container}>
             <Input
                 style={styles.input}
                 width={windowWidth(30)}
 
-                placeholder={'Andrea Joanne'}
+                placeholder={t('orderTrackingPage.name')}
                 rightIcon={<Icons.fullName color />}
             />
             <Input
                 style={styles.input}
-                placeholder={'andreajoanne@gmail.com'}
+                placeholder={t('editprofilePage.demoemail')}
                 rightIcon={<Icons.atSign />}
             />
             <Input

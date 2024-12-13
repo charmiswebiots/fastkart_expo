@@ -8,7 +8,7 @@ import { useValues } from "../../../../../utils/context";
 
 export function CounterView({ navigation }) {
 
-    const { viewRtlStyle, rtl } = useValues()
+    const { viewRtlStyle, rtl ,t} = useValues()
     const cart = () => {
         navigation.navigate('Cart')
     }
@@ -17,7 +17,7 @@ export function CounterView({ navigation }) {
         <View style={[styles.counterView, { flexDirection: viewRtlStyle }]}>
             <Counter color={appColors.primary} style={styles.counter} />
             <TouchableOpacity activeOpacity={0.7} onPress={cart} style={{ flexDirection: viewRtlStyle }}>
-                <Text style={styles.addToCart}>Add to Cart</Text>
+                <Text style={styles.addToCart}>{t('productDetailsPage.addToCart')}</Text>
                 <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }] }}>
                     <Icons.sideArrow color={appColors.white} />
                 </View>

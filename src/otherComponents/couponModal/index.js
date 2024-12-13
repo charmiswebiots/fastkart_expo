@@ -7,23 +7,23 @@ import { useValues } from "../../utils/context";
 export function CouponModal(props) {
 
     const { colors } = useTheme()
-    const { textRtlStyle, viewRtlStyle } = useValues()
+    const { textRtlStyle, viewRtlStyle ,t} = useValues()
 
     return (
         <View style={[styles.mainView, { backgroundColor: colors.background }]}>
             <View style={styles.offView}>
-                <Text style={[styles.flatTxt, { textAlign: textRtlStyle }]}>Flat 50% off</Text>
-                <Text style={[styles.offTxt, { textAlign: textRtlStyle }]}>on order above $250.00</Text>
+                <Text style={[styles.flatTxt, { textAlign: textRtlStyle }]}>{('cartlist.flat')} 50% off</Text>
+                <Text style={[styles.offTxt, { textAlign: textRtlStyle }]}>{t('myOffersArr.aboveOn')}</Text>
                 <TouchableOpacity onPress={props.showModal} activeOpacity={0.8} style={[styles.codeView, { flexDirection: viewRtlStyle }]}>
-                    <Text style={styles.codeTxt}>Code: SCD450</Text>
-                    <Text style={styles.copyCode}>Copy Code</Text>
+                    <Text style={styles.codeTxt}>{t('cartlist.code')} {('myOffersArr.offerCode')}</Text>
+                    <Text style={styles.copyCode}>{t('couponModal.copyCode')}</Text>
                 </TouchableOpacity>
             </View>
             <View style={[styles.termsView, { backgroundColor: colors.primary }]}>
-                <Text style={[styles.txt,{ textAlign: textRtlStyle }]}>Terms & conditions</Text>
+                <Text style={[styles.txt,{ textAlign: textRtlStyle }]}>{t('couponModal.termsConditions')}</Text>
                 {termsCondition.map((item) => (
                     <View style={[styles.keyView, { flexDirection: viewRtlStyle }]} key={item.id}>
-                        <Text style={[styles.txt,{ textAlign: textRtlStyle }]}>{item.terms}</Text>
+                        <Text style={[styles.txt,{ textAlign: textRtlStyle }]}>{t(item.terms)}</Text>
                     </View>
                 ))}
             </View>

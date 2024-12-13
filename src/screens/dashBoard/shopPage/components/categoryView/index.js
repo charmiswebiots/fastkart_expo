@@ -7,7 +7,7 @@ import { useValues } from "../../../../../utils/context";
 import { useTheme } from "@react-navigation/native";
 
 export function CategoryView() {
-    const {isDark,viewRtlStyle}=useValues()
+    const {isDark,viewRtlStyle,t}=useValues()
     const {colors}=useTheme()
     const [selectCategory, setSelectCategory] = useState(0);
 
@@ -21,7 +21,7 @@ export function CategoryView() {
                 {
                     shopCategory.map((item, key) =>
                         <TouchableOpacity activeOpacity={0.8} onPress={() => selectedCategory(key)}>
-                            <Text key={key} style={[styles.name, { color: key === selectCategory ? appColors.primary : colors.text }]}>{item.name}</Text>
+                            <Text key={key} style={[styles.name, { color: key === selectCategory ? appColors.primary : colors.text }]}>{t(item.name)}</Text>
                         </TouchableOpacity>
                     )}
             </View>

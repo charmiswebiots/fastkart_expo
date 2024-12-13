@@ -6,7 +6,7 @@ import { useTheme } from "@react-navigation/native";
 
 export function Total(props) {
 
-    const { isDark, textRtlStyle, viewRtlStyle } = useValues()
+    const { isDark, textRtlStyle, viewRtlStyle,t } = useValues()
     const { colors } = useTheme()
 
     return (
@@ -21,23 +21,23 @@ export function Total(props) {
             <View style={{ paddingHorizontal: windowHeight(13) }}>
                 <Text style={[styles.title, props.style, { color: colors.text }, { textAlign: textRtlStyle }]}>{(props.title)}</Text>
                 <View style={[styles.dataView, { flexDirection: viewRtlStyle }]}>
-                    <Text style={styles.data}>Bag total</Text>
+                    <Text style={styles.data}>{t('commonTotal.bagTotal')}</Text>
                     <Text style={styles.data}>$220.00</Text>
                 </View>
                 <View style={[styles.dataView, { flexDirection: viewRtlStyle }]}>
-                    <Text style={styles.data}>Bag savings</Text>
+                    <Text style={styles.data}>{t('commonTotal.bagSavings')}</Text>
                     <Text style={styles.price}>-$20.00</Text>
                 </View>
                 <View style={[styles.dataView, { flexDirection: viewRtlStyle }]}>
-                    <Text style={styles.data}>Coupon Discount</Text>
-                    <Text style={styles.coupon}>Apply Coupon</Text>
+                    <Text style={styles.data}>{t('commonTotal.couponDiscount')}</Text>
+                    <Text style={styles.coupon}>{t('totalModule.applyCoupon')}</Text>
                 </View>
                 <View style={[styles.dataView, styles.deliveryView, { flexDirection: viewRtlStyle }]}>
-                    <Text style={styles.data}>Delivery</Text>
+                    <Text style={styles.data}>{t('commonTotal.delivery')}</Text>
                     <Text style={styles.data}>$50.00</Text>
                 </View>
                 <View style={[styles.amountView, { flexDirection: viewRtlStyle }]}>
-                    <Text style={[styles.amount, { color: colors.text }]}>Total Amount</Text>
+                    <Text style={[styles.amount, { color: colors.text }]}>{t('commonTotal.totalAmount')}</Text>
 
                     <Text style={[styles.amount, { color: colors.text }]}>$270.00</Text>
                 </View>

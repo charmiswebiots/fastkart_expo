@@ -10,12 +10,12 @@ import { useValues } from "../../utils/context";
 
 export function OfferFilterModal({ showModal }) {
     const { colors } = useTheme();
-    const { isDark } = useValues();
+    const { isDark ,t} = useValues();
     const [selectedOffer, setSelectedOffer] = useState(0);
 
     return (
         <View style={[GlobalStyle.modal, { backgroundColor: colors.background }]}>
-            <Text style={[styles.filter, { color: colors.text }]}>Filter</Text>
+            <Text style={[styles.filter, { color: colors.text }]}>{t('commonText.filter')}</Text>
             <FlatList
                 data={offersFilter}
                 numColumns={2}
@@ -50,15 +50,15 @@ export function OfferFilterModal({ showModal }) {
                                 },
                             ]}
                         >
-                            {item.offer}
+                            {t(item.offer)}
                         </Text>
                     </TouchableOpacity>
                 )}
                 keyExtractor={(item, index) => index.toString()}
             />
             <OptionButton
-                txt1={'Close'}
-                txt2={'Apply'}
+                 txt1={'commonText.close'}
+                 txt2={'productFilter.apply'}
                 onPress1={showModal}
                 onPress2={showModal}
             />

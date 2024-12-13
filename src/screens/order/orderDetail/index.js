@@ -11,7 +11,7 @@ import { useValues } from "../../../utils/context";
 export function OrderDetail({ navigation }) {
 
     const { colors } = useTheme()
-    const { isDark } = useValues()
+    const { isDark ,t} = useValues()
 
     const shopPage = () => {
         navigation.navigate('ShopPage')
@@ -28,15 +28,15 @@ export function OrderDetail({ navigation }) {
                     onPress={() => navigation.replace('Drawer')}
                     showImage={false}
                     isText
-                    titleText={'Order Summary'} imageOnPress={home} />
+                    titleText={t('orderDetailPage.orderSummary')} imageOnPress={home} />
                 <OrderDetailView />
                 <ItemsView />
                 <View style={styles.view}>
-                    <Total title={'Payment Details'} style={{ color: isDark ? appColors.primary : appColors.primary }} style1={{ backgroundColor: colors.background, marginHorizontal: windowHeight(0) }} />
+                    <Total title={t('orderDetailPage.paymentDetails')} style={{ color: isDark ? appColors.primary : appColors.primary }} style1={{ backgroundColor: colors.background, marginHorizontal: windowHeight(0) }} />
                 </View>
                 <AddressView />
                 <PaymentsMethodView />
-                <Button text={'Reorder'} style={styles.btn}
+                <Button text={'orderDetailPage.reorder'} style={styles.btn}
                     color={appColors.white} onPress={shopPage} />
             </ScrollView>
         </SafeAreaView>

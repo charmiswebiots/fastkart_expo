@@ -12,22 +12,22 @@ export function CheckDeliveryView() {
     const {viewRtlStyle,textRtlStyle}=useValues()
     return (
         <View>
-            <Text style={[styles.checkDelivery,{color:colors.text},{textAlign:textRtlStyle}]}>Check Delivery</Text>
-            <Text style={[styles.content, { marginTop: windowHeight(6) },{textAlign:textRtlStyle}]}>Enter Pincode to check delivery date / pickup option</Text>
+            <Text style={[styles.checkDelivery,{color:colors.text},{textAlign:textRtlStyle}]}>{t('productDetailsPage.checkDelivery')}</Text>
+            <Text style={[styles.content, { marginTop: windowHeight(6) },{textAlign:textRtlStyle}]}>{props.t('productDetailsPage.enterPincode')}</Text>
             <View style={{  marginTop: windowHeight(16) }}>
-                <Input placeholder='Pin code' isText text={'Check'} style={styles.input} />
+                <Input placeholder={t('productDetailsPage.pinCode')} isText text={t('productDetailsPage.check')} style={styles.input} />
             </View>
             <View style={[styles.deliveryView,{flexDirection:viewRtlStyle}]}>
                 <Icons.deliveryTruck />
-                <Text style={[styles.content, styles.reviewNameView]}>Free Delivery on order above $200.00</Text>
+                <Text style={[styles.content, styles.reviewNameView]}>{t('productDetailsPage.freeDelivery')}</Text>
             </View>
             <View style={[styles.deliveryView,{flexDirection:viewRtlStyle}]}>
                 <Icons.payment />
-                <Text style={[styles.content, styles.reviewNameView]}>Cash On delivery Available</Text>
+                <Text style={[styles.content, styles.reviewNameView]}>{props.t('productDetailsPage.cod')}</Text>
             </View>
             <View style={[styles.deliveryView,{flexDirection:viewRtlStyle}]}>
                 <Icons.refund />
-                <Text style={[styles.content, styles.reviewNameView]}>Easy 21 days returns and exchanges</Text>
+                <Text style={[styles.content, styles.reviewNameView]}>{props.t('productDetailsPage.easyReturn')}</Text>
             </View>
         </View>
     )

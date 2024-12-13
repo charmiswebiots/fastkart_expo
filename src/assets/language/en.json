@@ -93,6 +93,11 @@
             "filter": "Filter",
             "cancle": "Cancel",
             "close": "Close",
+            "confirm":"Confirm",
+            "year":"Year",
+            "month":"Month",
+            "day":"Day",
+            "selectDate":"Select Date",
             "searchProducts": "Search here.."
         },
         "totalModule": {
@@ -141,7 +146,7 @@
         "orderSuccessPage": {
             "thankYouforOrder": "Thank you for your order!",
             "orderDate": "Order Date",
-            "orderID": "Order ID",
+            "orderID": "Order ID : #5151515",
             "trackOnMap": "Track Package on Map",
             "orderSuccessfull": "your order has been placed successfully. your order ID is #548475151",
             "date": "Sun, 14 Apr, 19:12",
@@ -281,6 +286,7 @@
             "productDisclaimer": "Product Disclaimer",
             "productDisclaimerDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam iste aliquam, commodi voluptates doloremque. Autem exercitationem vel eaque in odit expedita non blanditiis, perspiciatis maiores cum tempora quo distinctio?",
             "featureDetails": "Features & details",
+            "disclaimerDetails":"Disclaimer: Refillable, Reusable, High Quality Glass Roll on Bottles with Silver cap For Essential Oil Blends DIY Perfume Cosmetics Beauty Products Ideal",
             "featureDetailsDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam iste aliquam, commodi voluptates doloremque. Autem exercitationem vel eaque in odit expedita non blanditiis, perspiciatis maiores cum tempora quo distinctio?",
             "productReview": "Product Review(15)",
             "add": "Add",
@@ -291,13 +297,17 @@
             "freeDelivery": "Free Delivery on order above $200.00",
             "cod": "Cash On delivery Available",
             "easyReturn": "Easy 21 days returns and exchanges",
-            "allReview": "All Review"
+            "allReview": "All Review",
+            "pinCode":"Pin code",
+            "check":"Check",
+            "recentlyView":"Recently viewed"
         },
         "cartlist": {
             "flat": "Flat",
             "off": "OFF",
             "orderabove": "on order above ",
-            "code": "Code:"
+            "code": "Code:",
+            "OFF":"off"
         },
         "orderDetail": {
             "cardNumber": "**** **** **** 6502"
@@ -336,7 +346,7 @@
             "orderHistoryId": "#5151515",
             "orderHistoryDate": "20 Dec, 2020",
             "orderHistoryAdd": "8857 Morris Rd. ,Charlottesville..",
-            "totalItem": "15"
+            "totalItem": "15",
         },
         "productList": {
             "listItems": "2 Items",
@@ -471,7 +481,11 @@
             "off5": "15",
             "off6": "10",
             "onOrder": "on your first order",
-            "offerCode": "SCD450"
+            "offerCode": "SCD450",
+             "aboveOn":"on order above $250.00",
+             "hdfc":"hdfc credit card"
+
+
         },
         "orderDetailArr": {
             "gram1": "500g",

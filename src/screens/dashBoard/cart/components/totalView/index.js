@@ -1,17 +1,17 @@
 import React from "react";
 import { View } from "react-native";
-import { Total,Button } from "../../../../../commonComponents";
+import { Total, Button } from "../../../../../commonComponents";
 import appColors from "../../../../../theme/appColors";
 import styles from "./styles";
+import { useValues } from "../../../../../utils/context";
 
-
-
-export function TotalView({onPress}){
-    return(
+export function TotalView({ onPress }) {
+    const {t}=useValues()
+    return (
         <View style={styles.total}>
-            <Total title={'Order Details'} />
-                <Button text={'Proceed to Checkout'} style={styles.btn}
-                    color={appColors.white} onPress={onPress} />
+            <Total title={t('cartPage.orderDetails')} />
+            <Button text={'commonTotal.proceedtoCheckout'} style={styles.btn}
+                color={appColors.white} onPress={onPress} />
         </View>
     )
 }

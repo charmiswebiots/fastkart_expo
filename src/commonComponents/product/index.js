@@ -7,7 +7,7 @@ import appColors from "../../theme/appColors";
 
 export function Product(props) {
 
-    const { isDark, viewRtlStyle, textRtlStyle } = useValues()
+    const { isDark, viewRtlStyle, textRtlStyle ,t} = useValues()
     const { colors } = useTheme()
 
     return (
@@ -20,9 +20,9 @@ export function Product(props) {
                 <TouchableOpacity onPress={props.onPress} activeOpacity={0.7}>
                     <Text style={[styles.name, {
                         color: colors.text
-                    }, { textAlign: textRtlStyle }]}>{props.name}</Text>
+                    }, { textAlign: textRtlStyle }]}>{t(props.name)}</Text>
                     <Text style={[styles.weight, {textAlign: textRtlStyle
-                    }]}>{props.weight}</Text>
+                    }]}>{t(props.weight)}</Text>
                 </TouchableOpacity>
                 <View style={[styles.priceView, {
                     flexDirection: viewRtlStyle
@@ -34,7 +34,7 @@ export function Product(props) {
                         <View style={[styles.discountView, {  flexDirection: viewRtlStyle
                         }]}>
                             <Text style={styles.discount}>{props.discount}% </Text>
-                            <Text style={styles.discount}>off</Text>
+                            <Text style={styles.discount}>{t('cartlist.OFF')}</Text>
                         </View>
                     </View>
                     <Counter />

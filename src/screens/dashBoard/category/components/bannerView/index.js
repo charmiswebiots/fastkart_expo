@@ -6,35 +6,33 @@ import { useValues } from "../../../../../utils/context";
 import { windowHeight } from "../../../../../theme/appConstant";
 
 export function BannerView() {
-    const { textRtlStyle, rtl } = useValues();
+    const { textRtlStyle, rtl, t } = useValues();
 
     return (
         <View
             style={[
                 styles.view,
                 rtl
-                    ? { left: windowHeight(130) } 
-                    : { right: windowHeight(130) }, 
+                    ? { left: windowHeight(130) }
+                    : { right: windowHeight(130) },
             ]}
         >
             <Image
                 style={[
                     styles.bannerImg,
                     {
-                        transform: [{ scaleX: rtl ? -1 : 1 }], 
+                        transform: [{ scaleX: rtl ? -1 : 1 }],
                     },
                 ]}
                 source={images.banner1}
             />
             <View style={styles.contentView}>
                 <Text style={[styles.title, { textAlign: textRtlStyle }]}>
-                    Farm Fresh Vegies
+                    {t('homepage.farmFreshVegies')}
                 </Text>
                 <Text style={[styles.subTitle, { textAlign: textRtlStyle }]}>
-                    Get instant delivery
-                </Text>
+                    {t('homepage.getInstantDelivery')}                </Text>
             </View>
         </View>
     );
 }
- 

@@ -7,9 +7,11 @@ import { WhishListProduct } from "./components";
 import { useNavigation } from "@react-navigation/native";
 import { CommonModal,DeleteProductModal} from '../../otherComponents'
 import {useTheme} from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function WhishList() {
     const {colors}=useTheme()
+    const {t}=useValues()
 
     const navigation=useNavigation()
     const [showModal, setShowModal] = useState(false);
@@ -23,7 +25,7 @@ export function WhishList() {
                 onPress={() => navigation.goBack()}
                 isText
                 image={<Icons.Mywishlist />}
-                titleText={'My Wishlist'}
+                titleText={t('wishlistPage.myWishlist')} 
                 imageOnPress={() => navigation.navigate('Cart')}
             />
             <ScrollView showsVerticalScrollIndicator={false}>

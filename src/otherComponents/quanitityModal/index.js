@@ -31,7 +31,7 @@ export function QuanitityModal(props) {
                     </TouchableOpacity>
                 }
             />
-            <OptionButton txt1={'Cancel'} txt2={'Apply'} onPress1={props.onPress} onPress2={props.onPress} />
+            <OptionButton txt1={'commonText.cancle'} txt2={'productFilter.apply'} onPress1={props.onPress} onPress2={props.onPress} />
         </View>
     )
 }

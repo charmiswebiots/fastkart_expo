@@ -12,7 +12,7 @@ import appColors from "../../../../theme/appColors";
 
 export function WhishListProduct() {
     const {colors}=useTheme()
-    const {isDark,viewRtlStyle ,textRtlStyle}=useValues()
+    const {isDark,viewRtlStyle ,textRtlStyle,t}=useValues()
     const [cartItems, setCartItems] = useState(cart);
     const handleDelete = (id) => {
         setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
@@ -54,15 +54,15 @@ export function WhishListProduct() {
                         <View style={styles.lineView} />
                         <View style={styles.counterView}>
                             <TouchableOpacity activeOpacity={0.7}>
-                                <Text style={[styles.name,{color:colors.text},{textAlign:textRtlStyle}]}>{item.name}</Text>
-                                <Text style={[styles.weight,{textAlign:textRtlStyle}]}>{item.weight}</Text>
+                                <Text style={[styles.name,{color:colors.text},{textAlign:textRtlStyle}]}>{t(item.name)}</Text>
+                                <Text style={[styles.weight,{textAlign:textRtlStyle}]}>{t(item.weight)}</Text>
                             </TouchableOpacity>
                             <View style={[styles.priceView,{flexDirection:viewRtlStyle}]}>
                                 <View style={[styles.discountPriceView,{flexDirection:viewRtlStyle}]}>
                                     <Text style={[styles.price,{color:colors.text}]}>{item.price}</Text>
                                     <View style={[styles.discountView,{flexDirection:viewRtlStyle}]}>
                                         <Text style={styles.discount}>{item.discount}% </Text>
-                                        <Text style={styles.discount}>off</Text>
+                                        <Text style={styles.discount}>{('cartlist.OFF')}</Text>
                                     </View>
                                     <View style={{ paddingHorizontal: windowHeight(6.8) }}>
                                         <Counter />

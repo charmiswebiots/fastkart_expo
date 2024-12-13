@@ -10,7 +10,7 @@ import appColors from "../../../../../theme/appColors";
 
 export function DataView() {
 
-    const {isDark,viewRtlStyle,textRtlStyle}=useValues()
+    const {isDark,viewRtlStyle,textRtlStyle,t}=useValues()
     const {colors}=useTheme()
 
     return (
@@ -24,15 +24,15 @@ export function DataView() {
                         <View style={styles.lineView} />
                         <View style={styles.counterView}>
                             <TouchableOpacity onPress={item.onPress} activeOpacity={0.7}>
-                                <Text style={[styles.name,{color:colors.text},{textAlign:textRtlStyle}]}>{item.name}</Text>
-                                <Text style={[styles.weight,{textAlign:textRtlStyle}]}>{item.weight}</Text>
+                                <Text style={[styles.name,{color:colors.text},{textAlign:textRtlStyle}]}>{t(item.name)}</Text>
+                                <Text style={[styles.weight,{textAlign:textRtlStyle}]}>{t(item.weight)}</Text>
                             </TouchableOpacity>
                             <View style={[styles.priceView,{flexDirection:viewRtlStyle}]}>
                                 <View style={[styles.discountPriceView,{flexDirection:viewRtlStyle}]}>
                                     <Text style={[styles.price,{color:colors.text}]}>{item.price}</Text>
                                     <View style={[styles.discountView,{flexDirection:viewRtlStyle}]}>
                                         <Text style={styles.discount}>{item.discount}% </Text>
-                                        <Text style={styles.discount}>off</Text>
+                                        <Text style={styles.discount}>{t('cartList.OFF')}</Text>
                                     </View>
                                 </View>
                                 <Counter />

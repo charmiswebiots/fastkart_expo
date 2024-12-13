@@ -36,11 +36,11 @@ export function OrderSuccess({ navigation }) {
                     <Image source={images.orderSuccess} style={styles.orderSuccess} />
                     <ThankyouView />
                     <OrderDataView />
-                    <Total style title={'Order Details'} />
+                    <Total style title={'orderTrackingPage.orderDetails'}  />
                 </ScrollView>
             </View>
             <View style={{ flex: 0.13 }}>
-                <Button text={'Track Package on Map'} style={styles.btn} color={appColors.white} onPress={orderTracking} />
+                <Button text={'orderSuccessPage.trackOnMap'} style={styles.btn} color={appColors.white} onPress={orderTracking} />
             </View>
         </SafeAreaView>
     )

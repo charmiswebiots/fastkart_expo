@@ -9,11 +9,11 @@ import appColors from "../../../../../theme/appColors";
 import { useTheme } from "@react-navigation/native";
 
 export function Coupons() {
-    const {isDark,viewRtlStyle}=useValues()
+    const {isDark,viewRtlStyle,t}=useValues()
     const {colors}=useTheme()
     return (
         <View style={[styles.mainView,{backgroundColor:isDark?colors.primary:appColors.drawer}]}>
-            <SeeAllHeader title={'Coupons For You'} subtitle={'Popular Offers of the Day'} />
+            <SeeAllHeader title={t('homepage.couponsForYou')} subtitle={t('homepage.popularOffer')} />
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{flexDirection:viewRtlStyle}}>
                 {
                     coupons.map((item, key) =>
@@ -36,8 +36,8 @@ export function Coupons() {
                             style={[styles.dataView]}
                         >
                             <Image source={item.icon} resizeMode='contain' style={styles.image} />
-                            <Text style={styles.discount}>{item.discount}% OFF</Text>
-                            <Text style={styles.upto}>UPTO $20.00</Text>
+                            <Text style={styles.discount}>{item.discount}% {t('cartlist.off')}</Text>
+                            <Text style={styles.upto}>{t('notificationPage.upto')} $20.00</Text>
                         </ImageBackground>
                     )
                 }

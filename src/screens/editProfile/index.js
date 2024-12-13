@@ -7,8 +7,10 @@ import { Button } from "../../commonComponents";
 import appColors from "../../theme/appColors";
 import styles from './styles';
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function EditProfile({ navigation }) {
+    const {t}=useValues()
     const { colors } = useTheme()
     const [date, setDate] = useState('28-12-1990');
     const [showDatePicker, setShowDatePicker] = useState(false);
@@ -36,7 +38,7 @@ export function EditProfile({ navigation }) {
                 <Header
                     onPress={() => navigation.goBack()}
                     isText
-                    titleText={'Edit Profile'}
+                    titleText={t('editProfilePage.editProfile')}
                     imageOnPress={home}
                 />
                 <ProfileView />
@@ -48,7 +50,7 @@ export function EditProfile({ navigation }) {
                 />
                 <ChangePasswordView />
                 <Button
-                    text={'Update Settings'}
+                    text={'editProfilePage.updateSettings'}
                     style={styles.btn}
                     color={appColors.white}
                 />

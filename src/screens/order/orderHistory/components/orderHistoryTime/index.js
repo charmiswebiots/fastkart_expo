@@ -8,7 +8,7 @@ import appColors from "../../../../../theme/appColors";
 
 export function OrderHistoryTime() {
 
-    const {isDark,viewRtlStyle}=useValues()
+    const {isDark,viewRtlStyle,t}=useValues()
     const {colors}=useTheme()
     const [selected, setSelected] = useState(0);
 
@@ -21,7 +21,7 @@ export function OrderHistoryTime() {
             {orderHistoryTime.map((item, key) => (
                 <TouchableOpacity key={key} activeOpacity={0.8} onPress={() => changeSelected(key)}>
                     <Text style={[styles.time,{color:colors.text}, key === selected && styles.primaryText]}>
-                        {item.time}
+                        {t(item.time)}
                     </Text>
                 </TouchableOpacity>
             ))}

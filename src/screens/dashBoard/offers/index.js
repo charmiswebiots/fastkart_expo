@@ -7,6 +7,7 @@ import { CouponsView } from "./components/couponsView";
 import { CommonModal, CouponModal, OfferFilterModal} from "../../../otherComponents/index";
 import { useState } from "react";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
 export function Offers({navigation}) {
     const [showModal, setShowModal] = useState(false);
@@ -15,6 +16,7 @@ export function Offers({navigation}) {
     const [subTxt, setSubTxt] = useState(null);
     const [code, setCode] = useState('');
     const {colors}=useTheme()
+    const {t}=useValues()
 
     const visibleFilterModal = () => {
         setFilterModal(!filterModal)
@@ -30,7 +32,7 @@ export function Offers({navigation}) {
     return (
         <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
-                <Header isText titleText={'My Offers'} onPress={() => navigation.goBack()} />
+                <Header isText  titleText={t('offerPage.myOffers')} onPress={() => navigation.goBack()} />
                 <SearchFilter onPress={visibleFilterModal} />
                 <CouponsView visibleModal={visibleModal} />
             </ScrollView>

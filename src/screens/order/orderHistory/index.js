@@ -6,9 +6,12 @@ import { SearchFilter } from "../../../commonComponents";
 import { CommonModal, OrderHistoryFilterModal } from '../../../otherComponents/index';
 import { useState } from "react";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../../utils/context";
 
 
 export function OrderHistory({ navigation }) {
+
+    const {t}=useValues()
     
     const { colors } = useTheme()
     const [filterModal, setFilterModal] = useState(false);
@@ -28,7 +31,7 @@ export function OrderHistory({ navigation }) {
                 imageOnPress={home}
                 onPress={() => navigation.goBack()}
                 isText
-                titleText={'Order History'}  />
+                titleText={t('orderHistoryPage.orderHistoryTxt')}   />
             <OrderHistoryTime />
             <View style={styles.container}>
                 <SearchFilter onPress={visibleFilterModal} />

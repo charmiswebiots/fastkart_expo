@@ -4,8 +4,10 @@ import styles from "./styles";
 import images from "../../utils/images";
 import appColors from "../../theme/appColors";
 import { useTheme } from "@react-navigation/native";
+import { useValues } from "../../utils/context";
 
 export function NotFound({navigation}) {
+    const {t}=useValues()
     const home=()=>{
         navigation.navigate('Home')
     }
@@ -15,10 +17,10 @@ export function NotFound({navigation}) {
             <HomeHeader />
             <View style={styles.subView}>
                 <Image resizeMode='contain' source={images.notFound} />
-                <Text style={[styles.notFound,{color:colors.text}]}>PAGE NOT FOUND</Text>
+                <Text style={[styles.notFound,{color:colors.text}]}>{t('404.pageNotFound')}</Text>
                 <View style={styles.line} />
-                <Text style={styles.notExist}>We Are Sorry But The Page You Are Looking For Doesn't Exist Or Has Been Removed. Please Check Back Later Or Search Again.</Text>
-                <Button text={'Back to Home'} style={styles.btn} color={appColors.white} onPress={home}
+                <Text style={styles.notExist}>{t('404.pageNotExist')}</Text>
+                <Button text={'404.backToHome'} style={styles.btn} color={appColors.white} onPress={home}
                 />
             </View>
         </SafeAreaView>

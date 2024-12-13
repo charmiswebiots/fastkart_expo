@@ -13,7 +13,7 @@ import { useValues } from "../../utils/context";
 
 export function Address({ navigation }) {
     const { colors } = useTheme()
-    const {viewRtlStyle,rtl,textRtlStyle}=useValues()
+    const {viewRtlStyle,rtl,textRtlStyle,t}=useValues()
 
     const payment = () => {
         navigation.navigate('Payment')
@@ -25,7 +25,7 @@ export function Address({ navigation }) {
                     onPress={() => navigation.goBack()}
                     image={<Icons.search />}
                     isText
-                    titleText={'Add Address'} />
+                    titleText={t('addAddressPage.addAddress')} />
                 <View>
                     <Image source={images.map} style={styles.mapImg} resizeMode='stretch' />
                 </View>
@@ -33,7 +33,7 @@ export function Address({ navigation }) {
 
             <View style={[styles.truckView, { backgroundColor: colors.background, flexDirection: viewRtlStyle}]}>
                 <Icons.truck />
-                <Text style={[styles.deliveryTime, { color: colors.text }]}>Delivery on 7th Aug, Slot: 7am to 9am</Text>
+                <Text style={[styles.deliveryTime, { color: colors.text }]}>{t('addAddressPage.deliverTime')}</Text>
             </View>
             <View style={styles.mapView}>
                 <View style={[styles.map, { alignSelf:rtl?'flex-end': 'flex-start' }]}>
@@ -42,14 +42,14 @@ export function Address({ navigation }) {
                 <View style={[styles.paymentView, { backgroundColor: colors.background }]}>
                     <ScrollView showsVerticalScrollIndicator={false}>
                         <View style={styles.inputView}>
-                            <Input placeholder={'Search Location'} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
+                        <Input placeholder={t('addAddressPage.searchLocation')}  rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
                         </View>
 
                         <View style={[styles.locationView, { flexDirection: viewRtlStyle }]}>
                             <View style={styles.location}>
                                 <Icons.currentLocation />
                             </View>
-                            <Text style={[styles.locationTxt, { color: colors.text }]}>Use current location</Text>
+                            <Text style={[styles.locationTxt, { color: colors.text }]}>{t('addAddressPage.useCurrentLocation')} </Text>
                         </View>
                         {location.slice(0, 2).map((item, index) => (
                             <View
@@ -66,13 +66,13 @@ export function Address({ navigation }) {
                                 <View style={[styles.nameView, { flexDirection:viewRtlStyle}]}>
                                     <Icons.location />
                                     <Text style={[styles.name, { color: colors.text }]}>
-                                        {item.name}
+                                        {t(item.name)}
                                     </Text>
                                 </View>
-                                <Text style={[styles.add, { textAlign: textRtlStyle }]}>{item.address}</Text>
+                                <Text style={[styles.add, { textAlign: textRtlStyle }]}>{t(item.address)}</Text>
                             </View>
                         ))}
-                        <Button text={'Confirm location & proceed'} style={styles.btn}
+                        <Button text={'addAddressPage.confirmLocation'} style={styles.btn}
                             color={appColors.white} onPress={payment} />
                     </ScrollView>
                 </View>

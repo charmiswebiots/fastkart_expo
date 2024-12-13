@@ -14,7 +14,7 @@ import { windowHeight } from "../../theme/appConstant";
 
 export function DrawerComponent() {
     const { colors } = useTheme();
-    const { isDark, rtl } = useValues();
+    const { isDark, rtl, t } = useValues();
     const navigation = useNavigation();
     const [showModal, setShowModal] = useState(false);
     const [showCurrencyModal, setShowCurrencyModal] = useState(false);
@@ -101,7 +101,7 @@ export function DrawerComponent() {
                         style={[styles.signOutView, { backgroundColor: isDark ? colors.primary : appColors.drawer }]}
                     >
                         <Icons.signOut />
-                        <Text style={[styles.signOut, { color: colors.text }]}>Sign Out</Text>
+                        <Text style={[styles.signOut, { color: colors.text }]}>{t('account.signOut')}</Text>
                     </TouchableOpacity>
                     <SupportView />
                 </View>

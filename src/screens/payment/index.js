@@ -11,7 +11,7 @@ import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../utils/context";
 
 export function Payment({ navigation }) {
-    const { isDark } = useValues()
+    const { isDark,t } = useValues()
     const { colors } = useTheme()
     const [showModal, setShowModal] = useState(false);
 
@@ -38,13 +38,13 @@ export function Payment({ navigation }) {
                     onPress={() => navigation.goBack()}
                     isText
                     imageOnPress={home}
-                    titleText={'Add Payment Method'} />
-                <AddNew onPress={visibleModal} text={'Add New Card'} />
+                    titleText={t('addPaymentPage.addPaymentMethod')}/>
+                <AddNew onPress={visibleModal} text={'addPaymentPage.addNewCard'}/>
                 <SelectValueView />
                 <View style={{ height: windowHeight(350), bottom: windowHeight(22) }}>
-                    <Total bottom={windowHeight(80)} title={'Order Details'} style1={{ backgroundColor: isDark ? colors.primary : appColors.gray }} />
+                    <Total bottom={windowHeight(80)} title={'cartPage.orderDetails'} style1={{ backgroundColor: isDark ? colors.primary : appColors.gray }} />
                 </View>
-                <Button text={'Confirm Payment'} style={styles.btn}
+                <Button  text={'addPaymentPage.confirmPayment'} style={styles.btn}
                     color={appColors.white} onPress={orderDetails} />
             </ScrollView>
 

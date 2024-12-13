@@ -19,7 +19,7 @@ import { useTheme } from '@react-navigation/native';
 import { useValues } from '../../../utils/context';
 
 export function ProductsDetails({ navigation }) {
-    const { isDark } = useValues()
+    const { isDark, t } = useValues()
     const { colors } = useTheme()
     const [quantityModal, setQuantityModal] = useState(false);
     const [deliveryModal, setDeliveryModal] = useState(false);
@@ -58,7 +58,7 @@ export function ProductsDetails({ navigation }) {
                     <CheckDeliveryView />
                 </View>
                 <View style={{ backgroundColor: isDark ? colors.primary : appColors.lowestPrice, paddingVertical: windowHeight(13) }}>
-                    <LowestPrice headerData={{ title: 'Recently viewed', subtitle: 'Pay less, Get More' }} style={[styles.color, { backgroundColor: isDark ? colors.primary : appColors.white }]} />
+                    <LowestPrice headerData={{ title: t('productDetailsPage.recentlyView'), subtitle: t('homepage.payless') }} style={[styles.color, { backgroundColor: isDark ? colors.primary : appColors.white }]} />
                 </View>
                 <View style={[styles.line, { backgroundColor: colors.background }]} />
                 <CounterView />

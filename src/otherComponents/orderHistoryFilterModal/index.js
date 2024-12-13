@@ -1,7 +1,6 @@
 import { View, FlatList, Text, TouchableOpacity } from "react-native";
 import styles from "./styles";
 import appColors from "../../theme/appColors";
-import { windowWidth } from "../../theme/appConstant";
 import { OptionButton } from "../../commonComponents";
 import { orderHistoryFilter } from "../../screens/data";
 import { useState } from "react";
@@ -11,7 +10,7 @@ import { useValues } from "../../utils/context";
 
 export function OrderHistoryFilterModal({ showModal }) {
 
-    const { isDark, textRtlStyle, viewRtlStyle } = useValues()
+    const { isDark, textRtlStyle, viewRtlStyle ,t} = useValues()
     const { colors } = useTheme()
     const [selectedOffer, setSelectedOffer] = useState(null);
 
@@ -25,7 +24,7 @@ export function OrderHistoryFilterModal({ showModal }) {
                 data={orderHistoryFilter}
                 renderItem={({ item }) =>
                     <View style={styles.listView}>
-                        <Text style={[styles.dayTxt, { textAlign: textRtlStyle }]}>{item.day}</Text>
+                        <Text style={[styles.dayTxt, { textAlign: textRtlStyle }]}>{t(item.day)}</Text>
                         <FlatList
                             data={item.value}
                             numColumns={2}
@@ -39,7 +38,7 @@ export function OrderHistoryFilterModal({ showModal }) {
                                             : appColors.white,
                                     borderColor: appColors.primary,
                                 }]}>
-                                    <Text style={[styles.txt, { color: item.id === selectedOffer ? appColors.white : appColors.content }]}>{item.txt}</Text>
+                                    <Text style={[styles.txt, { color: item.id === selectedOffer ? appColors.white : appColors.content }]}>{t(item.txt)}</Text>
                                 </TouchableOpacity>
                             }
                         />
@@ -47,8 +46,8 @@ export function OrderHistoryFilterModal({ showModal }) {
                 }
             />
             <OptionButton
-                txt1={'Close'}
-                txt2={'Apply'}
+                txt1={'commonText.close'}
+                txt2={'productFilter.apply'}
                 onPress1={showModal}
                 onPress2={showModal}
                 style={styles.btn}

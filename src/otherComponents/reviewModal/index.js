@@ -14,12 +14,12 @@ import { useValues } from "../../utils/context";
 export function ReviewModal(props) {
 
     const { colors } = useTheme()
-    const { isDark, viewRtlStyle } = useValues()
+    const {  viewRtlStyle,t } = useValues()
 
     return (
         <View style={[GlobalStyle.modal, { backgroundColor: colors.background, flex: 1 }]}>
             <View style={[styles.allReviewView, { flexDirection: viewRtlStyle}]}>
-                <Text style={[styles.allReviewText, { color: colors.text }]}>All Review</Text>
+                <Text style={[styles.allReviewText, { color: colors.text }]}>{('productDetailsPage.allReview')}</Text>
                 <TouchableOpacity onPress={props.onPress}>
                     <Icons.into width={windowWidth(44)} height={windowHeight(44)} />
                 </TouchableOpacity>
@@ -32,7 +32,7 @@ export function ReviewModal(props) {
                         <View style={[styles.reviewDetail, { flexDirection: viewRtlStyle }]}>
                             <Image source={images.demoProfile} style={styles.demoProfile} />
                             <View style={[styles.reviewName]}>
-                                <Text style={[styles.reviewName]}>{item.reviewName}</Text>
+                                <Text style={[styles.reviewName]}>{t(item.reviewName)}</Text>
                                 <View style={{ flexDirection: viewRtlStyle }}>
                                     {reviewStar.map((item, key) =>
                                         <Image source={key === 4 ? images.star1 : images.star} style={styles.star} />
@@ -40,7 +40,7 @@ export function ReviewModal(props) {
                                 </View>
                             </View>
                         </View>
-                        <Text style={[styles.reviewTxt]}>{item.review}</Text>
+                        <Text style={[styles.reviewTxt]}>{t(item.review)}</Text>
                     </View>
                 )}
             </ScrollView>

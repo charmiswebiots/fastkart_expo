@@ -7,10 +7,10 @@ import { useValues } from "../../../../../utils/context";
 
 export function TrendingCategoryView() {
     const {colors}=useTheme()
-    const {textRtlStyle}=useValues()
+    const {textRtlStyle,t}=useValues()
     return (
         <View>
-            <Text style={[styles.txt,{color:colors.text},{textAlign:textRtlStyle}]}>Trending category</Text>
+            <Text style={[styles.txt,{color:colors.text},{textAlign:textRtlStyle}]}>{t('searchPage.trendingCategory')}</Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.scrollView}>
                 {
                     category1.map((item, key) =>
