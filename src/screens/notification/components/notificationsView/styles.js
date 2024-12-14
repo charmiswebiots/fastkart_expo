@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT16,
         color: appColors.primary,
-        paddingHorizontal: windowWidth(18),
+        paddingHorizontal: windowWidth(13),
         height: windowHeight(24),
         textAlignVertical: 'center',
         borderRadius: windowWidth(6),

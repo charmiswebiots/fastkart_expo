@@ -22,6 +22,10 @@ export function Offers({navigation}) {
         setFilterModal(!filterModal)
     }
 
+    const home=()=>{
+        navigation.navigate('Home')
+    }
+
     const visibleModal = (item) => {
         setOff(item.off)
         setSubTxt(item.onOrderAbove)
@@ -32,7 +36,7 @@ export function Offers({navigation}) {
     return (
         <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
             <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
-                <Header isText  titleText={t('offerPage.myOffers')} onPress={() => navigation.goBack()} />
+                <Header isText  titleText={t('offerPage.myOffers')} onPress={() => navigation.goBack()} imageOnPress={home} />
                 <SearchFilter onPress={visibleFilterModal} />
                 <CouponsView visibleModal={visibleModal} />
             </ScrollView>

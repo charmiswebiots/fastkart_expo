@@ -1,25 +1,37 @@
 import { StyleSheet } from "react-native";
-import { windowHeight, fontSizes, windowWidth } from "../../../../../theme/appConstant";
+import { windowHeight, fontSizes } from "../../../../../theme/appConstant";
 import appColors from "../../../../../theme/appColors";
 
 const styles = StyleSheet.create({
     txt: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        color:appColors.black,
-        top:windowHeight(2),
+        color: appColors.black,
+        top: windowHeight(2),
     },
     detail: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishBold',
         marginTop: windowHeight(14),
-        color:appColors.black,
+        color: appColors.black,
     },
     title: {
         fontSize: fontSizes.FONT18,
         fontFamily: 'mulishSemiBold',
         color: appColors.content,
         marginTop: windowHeight(4),
+    },
+    style1: {
+        borderBottomWidth: 0.7,
+        marginTop: windowHeight(13),
+        marginBottom: windowHeight(10),
+        borderBottomColor: appColors.content,
+    },
+    style2: {
+        borderBottomWidth: 0.7,
+        marginTop: windowHeight(16),
+        marginBottom: windowHeight(0),
+        borderBottomColor: appColors.content,
     },
     manufacturer: {
         borderTopWidth: 0.7,

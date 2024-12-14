@@ -40,32 +40,22 @@ export function DetailsView() {
             <Text style={[styles.title, { textAlign: textRtlStyle }]}>
                 {t('productDetailsPage.detailDesc')}
             </Text>
-            <View style={{
-                borderBottomWidth: 0.7,
-                marginTop: windowHeight(13),
-                marginBottom: windowHeight(10),
-                borderBottomColor: appColors.content,
-            }} />
+            <View style={styles.style1} />
             <TouchableOpacity
                 onPress={() => showValue(!showManufacturer, false, false)}
                 activeOpacity={0.7}
                 style={[styles.optionView, { flexDirection: viewRtlStyle }]}
             >
                 <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.manufacturerDetails')}</Text>
-                <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }] }}>
-                    <Icons.sideArrow />
+                <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }],top:windowHeight(5.5) }}>
+                <Icons.sideArrow />
                 </View>
             </TouchableOpacity>
             {showManufacturer && (
                 <Text style={[styles.title, { textAlign: textRtlStyle }]}>
                     {t('productDetailsPage.manufacturerDetailsDesc')}                </Text>
             )}
-            <View style={{
-                borderBottomWidth: 0.7,
-                marginTop: windowHeight(16),
-                marginBottom: windowHeight(0),
-                borderBottomColor: appColors.content,
-            }} />
+            <View style={styles.style2} />
             <View style={styles.product}>
                 <TouchableOpacity
                     onPress={() => showValue(false, !showProductDesc, false)}
@@ -73,7 +63,7 @@ export function DetailsView() {
                     style={[styles.optionView, { flexDirection: viewRtlStyle }]}
                 >
                     <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.productDisclaimer')}</Text>
-                    <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }] }}>
+                    <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }],top:windowHeight(5.5) }}>
                         <Icons.sideArrow />
                     </View>
                 </TouchableOpacity>
@@ -92,7 +82,7 @@ export function DetailsView() {
                     style={[styles.optionView, { flexDirection: viewRtlStyle }]}
                 >
                     <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.featureDetails')}</Text>
-                    <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }] }}>
+                    <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }],top:windowHeight(5.5) }}>
                         <Icons.sideArrow />
                     </View>
                 </TouchableOpacity>

@@ -180,7 +180,8 @@
             "paid": "Paid",
             "rateNReviewProduct": "Rate & Review Product",
             "idTxt": "ID",
-            "dt": "DT"
+            "dt": "DT",
+            "text":"ID: #5151515 , Dt: 20 Dec, 2020"
         },
         "addAddressModal": {
             "zip": "Zip",
@@ -484,7 +485,6 @@
             "onOrder": "on your first order",
             "offerCode": "SCD450",
             "aboveOn": "on order above $250.00",
-            "onAbove":"on order above",
             "hdfc": "hdfc credit card"
         },
         "orderDetailArr": {

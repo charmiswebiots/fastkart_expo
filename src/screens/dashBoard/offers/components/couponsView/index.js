@@ -11,9 +11,10 @@ export function CouponsView(props) {
                     price={item.off}
                     code={item.code}
                     onOrder={item.onOrder}
-                    onOrderAbove={item.onAbove}
+                    onOrderAbove={item.onOrderAbove}
                     onPress={() => props.visibleModal(item)}
                 />
+                
             )}
         </View>
     )

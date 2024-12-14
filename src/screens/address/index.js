@@ -33,7 +33,7 @@ export function Address({ navigation }) {
 
             <View style={[styles.truckView, { backgroundColor: colors.background, flexDirection: viewRtlStyle}]}>
                 <Icons.truck />
-                <Text style={[styles.deliveryTime, { color: colors.text }]}>{t('addAddressPage.deliverTime')}</Text>
+                <Text style={[styles.deliveryTime, { color: colors.text }]}>{t('addAddressPage.deliverTime').substring(0, 60) + ""}</Text>
             </View>
             <View style={styles.mapView}>
                 <View style={[styles.map, { alignSelf:rtl?'flex-end': 'flex-start' }]}>

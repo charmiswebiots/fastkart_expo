@@ -83,12 +83,12 @@ export const notification = [
         day: 'notificationArr.title2',
         value: [
             { title: 'notificationArr.value3', subtxt: 'notificationArr.time3', icon: <Icons.passChange />, tag: 'notificationArr.type1', color: appColors.pink },
-            { title: 'notificationArr.topSucc', subtxt: 'notificationArr.time4', icon: <Icons.topUp />, tag: 'notificationArr.type2', color: appColors.topUp },
+            { title: 'notificationArr.value4', subtxt: 'notificationArr.time4', icon: <Icons.topUp />, tag: 'notificationArr.type2', color: appColors.topUp },
             { title: 'notificationArr.value1', subtxt: 'notificationArr.time1', icon: <Icons.discount />, tag: 'notificationArr.type3', color: appColors.drawer },
             { title: 'notificationArr.value2', subtxt: 'notificationArr.time2', icon: <Icons.offer />, tag: 'notificationArr.type3', color: appColors.yellow },
             { title: 'notificationArr.value3', subtxt: 'notificationArr.time3', icon: <Icons.passChange />, tag: 'notificationArr.type1', color: appColors.pink },
-            { title: 'notificationArr.topSucc', subtxt: 'notificationArr.time4', icon: <Icons.topUp />, tag: 'notificationArr.type1', color: appColors.topUp },
-            { title: 'notificationArr.value1.', subtxt: 'notificationArr.time1', icon: <Icons.discount />, tag: 'notificationArr.type2', color: appColors.drawer },
+            { title: 'notificationArr.value4', subtxt: 'notificationArr.time4', icon: <Icons.topUp />, tag: 'notificationArr.type2', color: appColors.topUp },
+            { title: 'notificationArr.value1', subtxt: 'notificationArr.time1', icon: <Icons.discount />, tag: 'notificationArr.type3', color: appColors.drawer },
             { title: 'notificationArr.value2', subtxt: 'notificationArr.time2', icon: <Icons.offer />, tag: 'notificationArr.type3', color: appColors.drawer },
         ]
     },
@@ -96,12 +96,12 @@ export const notification = [
 
 
 export const myOffers = [
-    { off: '50', onOrderAbove: 'myOffersArr.onAbove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
-    { off: '25', onOrderAbove: 'myOffersArr.hdfc', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
-    { off: '40', onOrderAbove: 'myOffersArr.onAbove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
-    { off: '30', onOrderAbove: 'myOffersArr.onAbove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
-    { off: '15', onOrderAbove: 'myOffersArr.onAbove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode' },
-    { off: '10', onOrderAbove: 'myOffersArr.onAbove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '50', onOrderAbove: 'cartlist.orderabove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '25', onOrderAbove: 'cartlist.orderabove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '40', onOrderAbove: 'cartlist.orderabove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '30', onOrderAbove: 'cartlist.orderabove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
+    { off: '15', onOrderAbove: 'cartlist.orderabove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode' },
+    { off: '10', onOrderAbove: 'cartlist.orderabove', onOrder: 'myOffersArr.onOrder', code: 'coupon.useCode ' },
 ];
 
 export const termsCondition = [
@@ -337,29 +337,29 @@ export const location = [
 ];
 
 export const cityArr = [
-    { title: "Paris" },
-    { title: "New York" },
-    { title: "Mumbai" },
-    { title: "Delhi" },
-    { title: "Chicago" },
-    { title: "Vancouver" },
-    { title: "Las Vegas" },
-    { title: "Seoul" },
-    { title: "Franklin" },
-    { title: "Madison" },
+    { title: "cityArr.city1" },
+    { title: "cityArr.city2" },
+    { title: "cityArr.city3"},
+    { title: "cityArr.city4" },
+    { title: "cityArr.city5" },
+    { title: "cityArr.city6"},
+    { title: "cityArr.city7" },
+    { title: "cityArr.city8" },
+    { title: "cityArr.city9" },
+    { title: "cityArr.city10" },
 ];
 
 export const stateArr = [
-    { title: 'Assam' },
-    { title: 'Argentina' },
-    { title: 'Gujarat' },
-    { title: 'Andhra Pradesh' },
-    { title: 'Finland' },
-    { title: 'France' },
-    { title: 'Germany' },
-    { title: 'South Korea' },
-    { title: 'Himachal Pradesh' },
-    { title: 'Kerala' },
+    { title: 'stateArr.state1' },
+    { title: 'stateArr.state2' },
+    { title: 'stateArr.state3' },
+    { title: 'stateArr.state4' },
+    { title: 'stateArr.state5' },
+    { title: 'stateArr.state6' },
+    { title: 'stateArr.state7' },
+    { title: 'stateArr.state8' },
+    { title: 'stateArr.state9' },
+    { title: 'stateArr.state10' },
 ];
 
 export const orderDetails = [

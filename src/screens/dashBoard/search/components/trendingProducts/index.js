@@ -29,8 +29,9 @@ export function TrendingProducts({ onPress }) {
                                     <Text style={styles.discount}>{item.discount}%</Text>
                                     <Text style={styles.discount}>{t('cartlist.OFF')}</Text>
                                 </View>
-                                <Counter />
+                               
                             </View>
+                            <Counter />
                         </View>
                     </View>
                 </View>

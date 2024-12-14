@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
+import { windowHeight, fontSizes, windowWidth } from "../../theme/appConstant";
 import appColors from "../../theme/appColors";
-import { windowHeight, windowWidth } from "../../theme/appConstant";
 
 const styles = StyleSheet.create({
     switchView: {
@@ -23,6 +23,8 @@ const styles = StyleSheet.create({
         width: windowWidth(23),
         height: windowWidth(23),
         borderRadius: windowHeight(8),
+        backgroundColor: appColors.primary,
+
         alignItems: "center",
         justifyContent: 'center',
         alignSelf: "flex-end",
@@ -35,5 +37,5 @@ const styles = StyleSheet.create({
         elevation: 2,
         alignSelf: "flex-start",
     },
-});
+})
 export default styles;

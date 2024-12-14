@@ -23,10 +23,9 @@ export function OrderSuccess({ navigation }) {
 
     return (
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
-            <View style={{ flex: 0.9 }}>
+            <View style={styles.mainView}>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <Header
-                        onPress={() => navigation.toggleDrawer()}
                         isText={false}
                         imageOnPress={home}
                         showImage={false}
@@ -36,10 +35,10 @@ export function OrderSuccess({ navigation }) {
                     <Image source={images.orderSuccess} style={styles.orderSuccess} />
                     <ThankyouView />
                     <OrderDataView />
-                    <Total style title={t('orderTrackingPage.orderDetails')} style1={{ backgroundColor: isDark ? colors.primary : appColors.gray }} />
+                    <Total  title={t('orderTrackingPage.orderDetails')} style1={{ backgroundColor: isDark ? colors.primary : appColors.gray }} style={{color:isDark?appColors.white:colors.primary}} />
                 </ScrollView>
             </View>
-            <View style={{ flex: 0.13 }}>
+            <View style={styles.view}>
                 <Button text={t('orderSuccessPage.trackOnMap')} style={styles.btn} color={appColors.white} onPress={orderTracking} />
             </View>
         </SafeAreaView>

@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
     },
     deliveryTime: {
         fontSize: fontSizes.FONT21,
-        fontFamily: 'mulishSemiBold'
+        fontFamily: 'mulishSemiBold',
+        paddingHorizontal:windowHeight(7.5)
     },
     mapView: {
         position: 'absolute',

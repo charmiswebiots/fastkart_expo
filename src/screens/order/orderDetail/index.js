@@ -25,7 +25,7 @@ export function OrderDetail({ navigation }) {
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Header
-                    onPress={() => navigation.replace('Drawer')}
+                    onPress={() => navigation.goBack()}
                     showImage={false}
                     isText
                     titleText={t('orderDetailPage.orderSummary')} imageOnPress={home} />

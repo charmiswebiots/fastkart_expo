@@ -32,8 +32,13 @@ const styles = StyleSheet.create({
     leftIcon: {
         position: 'absolute',
         marginTop: windowHeight(25),
-        paddingHorizontal: windowHeight(272)
+        paddingHorizontal: windowHeight(8.5)
 
     },
+    rightIcon:{
+        position: 'absolute',
+        paddingHorizontal:windowHeight(8),
+        marginTop: windowHeight(25),
+    }
 })
 export default styles;

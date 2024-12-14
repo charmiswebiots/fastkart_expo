@@ -4,26 +4,28 @@ import appColors from "../../../../../theme/appColors";
 
 const styles = StyleSheet.create({
     reviewNameView: {
-        marginHorizontal:windowWidth(8)
+        marginHorizontal: windowWidth(8)
     },
+    inputView: { marginTop: windowHeight(16) },
     checkDelivery: {
         fontSize: fontSizes.FONT21,
-        fontFamily:'mulishBold',
+        fontFamily: 'mulishBold',
         marginTop: windowHeight(16),
-        color:appColors.black,
+        color: appColors.black,
     },
     content: {
         fontSize: fontSizes.FONT17,
         fontFamily: 'mulishSemiBold',
         color: appColors.content,
+        marginTop: windowHeight(6)
     },
     deliveryView: {
         marginTop: windowHeight(10),
         marginHorizontal: windowWidth(10),
     },
-    input:{
-        paddingHorizontal:windowHeight(12),
-        width:windowWidth(440),
+    input: {
+        paddingHorizontal: windowHeight(12),
+        width: windowWidth(440),
     },
 })
 export default styles;

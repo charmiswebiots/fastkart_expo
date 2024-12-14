@@ -7,13 +7,13 @@ import { useValues } from "../../utils/context";
 export function CouponModal(props) {
 
     const { colors } = useTheme()
-    const { textRtlStyle, viewRtlStyle, t } = useValues()
+    const { textRtlStyle, viewRtlStyle, t,currSymbol,currValue } = useValues()
 
     return (
         <View style={[styles.mainView, { backgroundColor: colors.background }]}>
             <View style={styles.offView}>
                 <Text style={[styles.flatTxt, { textAlign: textRtlStyle }]}>{t('cartlist.flat')} 50% off</Text>
-                <Text style={[styles.offTxt, { textAlign: textRtlStyle }]}>{t('myOffersArr.aboveOn')}</Text>
+                <Text style={[styles.offTxt, { textAlign: textRtlStyle }]}>{t('cartlist.orderabove')}{currSymbol}{(currValue * 250).toFixed(2)}</Text>
                 <TouchableOpacity onPress={props.showModal} activeOpacity={0.8} style={[styles.codeView, { flexDirection: viewRtlStyle }]}>
                     <Text style={styles.codeTxt}>{t('cartlist.code')} {t('myOffersArr.offerCode')}</Text>
                     <Text style={styles.copyCode}>{t('couponModal.copyCode')}</Text>

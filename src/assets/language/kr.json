@@ -180,7 +180,9 @@
             "paid": "지불됨",
             "rateNReviewProduct": "제품 평가 및 리뷰",
             "idTxt": "ID",
-            "dt": "DT"
+            "dt": "DT",
+            "text":"ID: #5151515, 날짜: 2020년 12월 20일"
+
         },
         "addAddressModal": {
             "zip": "우편번호",
@@ -337,9 +339,9 @@
             "time3": "오전 8시, 2021년 1월 15일",
             "value4": "성공적으로 충전되었습니다",
             "time4": "오전 9시, 2021년 1월 10일",
-            "type1": "로그인",
-            "type2": "충전",
-            "type3": "혜택"
+            "type1": "충전",
+            "type2": "까지",
+            "type3": "권하다"
         },
         "orderHistory": {
             "historyTime": "11월",

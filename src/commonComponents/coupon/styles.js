@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
         fontFamily: 'quickSandMedium',
         fontSize: fontSizes.FONT20,
         top:windowHeight(2),
-        // left:windowHeight(3)
     },
     off: {
         color: appColors.primary,

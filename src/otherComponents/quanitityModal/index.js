@@ -11,7 +11,7 @@ import { useValues } from "../../utils/context";
 
 export function QuanitityModal(props) {
     const { colors } = useTheme()
-    const { isDark, viewRtlStyle, textRtlStyle } = useValues()
+    const { isDark, viewRtlStyle, textRtlStyle ,t} = useValues()
     const [selectQty, setSelectQty] = useState(0);
 
     const selectQuantity = (key) => {
@@ -31,7 +31,7 @@ export function QuanitityModal(props) {
                     </TouchableOpacity>
                 }
             />
-            <OptionButton txt1={'commonText.cancle'} txt2={'productFilter.apply'} onPress1={props.onPress} onPress2={props.onPress} />
+            <OptionButton txt1={t('commonText.cancle')} txt2={t('productFilter.apply')} onPress1={props.onPress} onPress2={props.onPress} />
         </View>
     )
 }

@@ -1,4 +1,4 @@
-import {  View, Modal, TouchableOpacity } from "react-native";
+import { View, Modal, TouchableOpacity } from "react-native";
 import styles from "./styles";
 
 export function CommonModal(props) {

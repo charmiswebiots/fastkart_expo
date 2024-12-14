@@ -38,11 +38,7 @@ export function Total(props) {
                 </View>
                 <View style={[styles.amountView, { flexDirection: viewRtlStyle }]}>
                     <Text style={[styles.amount, { color: colors.text }]}>{t('commonTotal.totalAmount')}</Text>
-
                     <Text style={[styles.amount, { color: colors.text }]}>{currSymbol}{(270 * currValue).toFixed(2)}</Text>
-                    {/* <Text style={[styles.price, { color: colors.text }]}>
-                        {currSymbol}{(item.price * currValue).toFixed(2)}
-                    </Text> */}
                 </View>
             </View>
             {props.btn}

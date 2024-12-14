@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         width: windowWidth(50),
         resizeMode: 'contain'
     },
-    cashOnDeliveryIcon:{
+    cashOnDeliveryIcon: {
         width: windowWidth(35),
         height: windowHeight(50),
         resizeMode: 'contain'
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     value: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
-        marginHorizontal:windowWidth(14)
+        marginHorizontal: windowWidth(14)
     },
     selectView: {
         backgroundColor: appColors.primary,
@@ -80,13 +80,12 @@ const styles = StyleSheet.create({
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
         width: windowWidth(180),
-        marginHorizontal:windowHeight(7)
+        marginHorizontal: windowHeight(7)
     },
     valueLeft: {
-        // right: windowWidth(12),
     },
     valueRight: {
-        marginHorizontal:windowWidth(8)
+        marginHorizontal: windowWidth(8)
     }
 
 })

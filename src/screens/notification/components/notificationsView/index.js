@@ -4,11 +4,12 @@ import styles from './styles';
 import { notification } from '../../../data';
 import { useTheme } from '@react-navigation/native';
 import { useValues } from '../../../../utils/context';
+import appColors from '../../../../theme/appColors';
 
 
 export function NotificationsView() {
     const {colors}=useTheme()
-    const {viewRtlStyle,textRtlStyle,t}=useValues()
+    const {viewRtlStyle,textRtlStyle,t,isDark}=useValues()
     return (
         <FlatList
             data={notification}
@@ -33,7 +34,7 @@ export function NotificationsView() {
                                     <Text style={[styles.title,{color:colors.text},{textAlign:textRtlStyle}]}>{t(data.title)}</Text>
                                     <Text style={[styles.subTxt,{textAlign:textRtlStyle}]}>{t(data.subtxt)}</Text>
                                 </View>
-                                <Text style={styles.tag}>{t(data.tag)}</Text>
+                                <Text style={[styles.tag,{backgroundColor:isDark?colors.primary:appColors.drawer}]}>{t(data.tag)}</Text>
                             </View>
                         </View>
                     )}

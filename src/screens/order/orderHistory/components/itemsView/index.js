@@ -21,8 +21,7 @@ export function ItemsView() {
                     <View style={[styles.subView,{flexDirection:viewRtlStyle}]}>
                         <View>
                             <View style={[{flexDirection:'row'}]}>
-                                <Text style={[styles.data,{color:colors.text}]}>{t('orderHistoryPage.idTxt')}: {t(item.id)}, </Text>
-                                <Text style={[styles.data,{color:colors.text}]}>{t('orderHistoryPage.dt')}: {t(item.date)}</Text>
+                                <Text style={[styles.data,{color:colors.text}]}>{t('orderHistoryPage.text').substring(0, 27) + ".."} </Text>
                             </View>
                             <Text style={styles.add}>{t(item.add)}</Text>
                             <View style={[styles.paidView,{flexDirection:viewRtlStyle}]}>

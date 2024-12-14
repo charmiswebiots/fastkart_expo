@@ -8,7 +8,7 @@ import { useValues } from "../../../../utils/context";
 
 export function ChangePasswordView(props) {
     const { colors } = useTheme()
-    const { isDark,textRtlStyle,viewSelfRtlStyle,t } = useValues()
+    const { isDark,textRtlStyle,viewSelfRtlStyle,t,rtl } = useValues()
     const [isFocus, setIsFocus] = useState(false);
 
 
@@ -27,13 +27,13 @@ export function ChangePasswordView(props) {
                     isFocus && { backgroundColor: isDark ? colors.primary : appColors.drawer, borderColor: isDark ? appColors.primary : appColors.primary },]}>
                 <Text style={[styles.changePasswordTxt, { color: colors.text },{textAlign:textRtlStyle}]}>{t('editProfilePage.changePassword')}</Text>
                 <TextInput
-                    placeholder={t('loginNRegister.password')}
+                    placeholder={t('orderTrackingPage.name')}
                     onFocus={() => focus(true)}
                     secureTextEntry={false}
                     onBlur={() => focus(false)}
                     placeholderTextColor={appColors.content}
                     style={[styles.input,{textAlign:textRtlStyle}]}/>
-                <TouchableOpacity style={[styles.leftIcon,{alignSelf:viewSelfRtlStyle}]} activeOpacity={0.7}>
+                <TouchableOpacity style={[rtl?styles.rightIcon:styles.leftIcon,{alignSelf:viewSelfRtlStyle}]} activeOpacity={0.7}>
                     <Icons.password />
                 </TouchableOpacity>
             </View>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SafeAreaView, ScrollView, View, TouchableOpacity, Text } from "react-native";
 import styles from "./styles";
-import { Header, Switch } from "../../commonComponents";
+import { Header } from "../../commonComponents";
 import appColors from "../../theme/appColors";
 import { MenuItem } from "../../otherComponents/drawerComponents/components";
 import { ProfileView } from "./components";
@@ -89,9 +89,11 @@ export function Account({ navigation }) {
                             text={item.name}
                             showSwitch={item.showSwitch}
                             onPress={() => goToScreen(key)}
+                            fill={isDark ? appColors.white : appColors.black}
+
                         />
                     ))}
-                    <SwitchComponents style={[styles.switch,{ [rtl ? 'top' : 'top']: rtl ? windowHeight(22) : windowHeight(20) }]}/>
+                    <SwitchComponents style={[styles.switch,{ [rtl ? 'top' : 'top']: rtl ? windowHeight(22) : windowHeight(0) }]}/>
                     <TouchableOpacity onPress={login} activeOpacity={0.7} style={[styles.signOutView, { backgroundColor: isDark ? colors.primary : appColors.gray }]}>
                         <Icons.signOut />
                         <Text style={[styles.signOut,{color:colors.text}]}>{t('account.signOut')}</Text>

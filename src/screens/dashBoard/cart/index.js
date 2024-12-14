@@ -10,7 +10,7 @@ import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../utils/context";
 
 export function Cart({ navigation }) {
-    const {t}=useValues()
+    const {t,isDark}=useValues()
     const [showModal, setShowModal] = useState(false);
     const [showDeleteModal, setShowDeleteModal] = useState(false);
     const { colors } = useTheme()
@@ -47,7 +47,7 @@ export function Cart({ navigation }) {
                 <WhishListProduct onPress={productDetails} />
                 <CommonModal modal={<DeleteProductModal onPress={visibleDeleteModal} />} showModal={showDeleteModal} visibleModal={visibleDeleteModal} />
                 <View style={styles.view}>
-                    <Coupon price={50} onPress={visibleModal} onOrder={t('myOffersArr.onOrder')} onOrderAbove={t('myOffersArr.aboveOn')} code={'SCD450'} />
+                    <Coupon price={50} onPress={visibleModal} onOrder={t('myOffersArr.onOrder')} onOrderAbove={t('cartlist.orderabove')} code={'SCD450'} />
                     <TotalView onPress={address} />
                 </View>
             </ScrollView>

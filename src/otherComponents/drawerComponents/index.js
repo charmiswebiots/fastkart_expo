@@ -72,7 +72,7 @@ export function DrawerComponent() {
     return (
         <View style={{ backgroundColor: isDark ? colors.card : appColors.white }}>
             <CommonModal
-                modal={<MultiLangaugeModal onPress={visibleModal} navigation={navigation} />}
+                modal={<MultiLangaugeModal onPress={visibleModal}  />}
                 showModal={showModal}
                 visibleModal={visibleModal}
             />
@@ -92,9 +92,11 @@ export function DrawerComponent() {
                             text={item.name}
                             showSwitch={item.showSwitch}
                             onPress={() => goToScreen(key)}
+                            fill={isDark ? appColors.white : appColors.black}
+
                         />
                     ))}
-                    <SwitchComponents style={{ [rtl ? 'top' : 'top']: rtl ? windowHeight(22) : windowHeight(20) }} />
+                    <SwitchComponents style={{ [rtl ? 'top' : 'bottom']: rtl ? windowHeight(22) : windowHeight(4.5) }} />
                     <TouchableOpacity
                         onPress={login}
                         activeOpacity={0.7}

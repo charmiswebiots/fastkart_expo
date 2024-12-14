@@ -7,7 +7,7 @@ import { useValues } from "../../utils/context";
 export function Counter({color,style}) {
     const {viewRtlStyle}=useValues()
 
-    const [count, setCount] = useState(1)
+    const [count, setCount] = useState(0)
 
     const increaseCount = () => {
         setCount(count + 1)

@@ -1,20 +1,23 @@
 import React from "react";
 import { View, TouchableOpacity } from "react-native";
-import { MenuItem } from "../../otherComponents/drawerComponents/components";
 import styles from "./styles";
-import { useValues } from "../../utils/context";
-import { Icons } from "../../utils/icons";
 
-export function Switch({
-    isOn,
+import { useValues } from "../../utils/context";
+import { MenuItem } from "../../otherComponents/drawerComponents/components";
+import { Icons } from "../../utils/icons";
+import appColors from "../../theme/appColors";
+
+
+export function RtlSwitch({ isOn,
     onToggle,
+
     width = "100%",
     text = "",
     icon = null,
+    switchIcon,
     style,
 }) {
-    const { viewRtlStyle, viewSelfRtlStyle } = useValues();
-
+    const { viewRtlStyle, viewSelfRtlStyle } = useValues()
     return (
         <View
             style={[
@@ -33,14 +36,10 @@ export function Switch({
                 onPress={onToggle}
                 activeOpacity={0.7}
             >
-                <View style={isOn ? styles.circleOn : styles.circleOff} >
-                    {isOn &&<Icons.darkIcon/> }
-                    </View>
+                <View style={[isOn ? styles.circleOn : styles.circleOff]} >
+
+                </View>
             </TouchableOpacity>
         </View>
-    );
+    )
 }
-
-
-
-

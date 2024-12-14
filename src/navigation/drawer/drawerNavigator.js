@@ -28,15 +28,15 @@ export function DrawerNavigation() {
             }}
             drawerContent={() => <DrawerComponent />}>
             <Drawer.Screen name="Home" component={TabNavigation} />
-            <Drawer.Screen name="Category" component={Category} />
+            {/* <Drawer.Screen name="Category" component={Category} /> */}
             <Drawer.Screen name="OrderHistory" component={OrderHistory} />
             <Drawer.Screen name="WhishList" component={WhishList} />
-            <Drawer.Screen name="Account" component={Account} />
+            {/* <Drawer.Screen name="Account" component={Account} /> */}
             <Drawer.Screen name="Notification" component={Notification} />
-            <Drawer.Screen name="NotFound" component={NotFound} />
+            {/* <Drawer.Screen name="NotFound" component={NotFound} /> */}
 
             <Drawer.Screen name="AboutUs" component={AboutUs} />
-            <Drawer.Screen name="PageList" component={PageList} />
+            {/* <Drawer.Screen name="PageList" component={PageList} /> */}
         </Drawer.Navigator>
     );
 }

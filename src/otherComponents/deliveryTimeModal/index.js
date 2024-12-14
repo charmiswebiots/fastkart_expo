@@ -32,7 +32,7 @@ export function DeliveryTimeModal(props) {
                     </TouchableOpacity>
                 }
             />
-            <OptionButton txt1={'commonText.cancle'} txt2={'productFilter.apply'} onPress1={props.onPress} onPress2={props.onPress} />
+            <OptionButton txt1={t('commonText.cancle')} txt2={t('productFilter.apply')} onPress1={props.onPress} onPress2={props.onPress} />
         </View>
     )
 }

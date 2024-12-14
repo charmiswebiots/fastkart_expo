@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
         height: windowHeight(45),
         fontSize: fontSizes.FONT19,
         fontFamily: 'mulishSemiBold',
-        // paddingHorizontal:windowWidth(15),
     },
     leftIcon: {
         position: 'absolute',

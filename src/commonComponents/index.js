@@ -11,4 +11,6 @@ export * from './optionButton';
 export * from './total';
 export * from './addNew';
 export * from './selected';
-export * from './switch'
+export * from './switch';
+export * from './rtlSwitch';
+export * from './loader';

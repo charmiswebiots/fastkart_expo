@@ -1,8 +1,10 @@
 import { StyleSheet } from "react-native";
-import { windowHeight,fontSizes,windowWidth } from "../../../theme/appConstant";
+import { windowHeight} from "../../../theme/appConstant";
 import appColors from "../../../theme/appColors";
 
-const styles=StyleSheet.create({
+const styles = StyleSheet.create({
+    mainView: { flex: 0.9 },
+    view:{ flex: 0.13 },
     orderSuccess: {
         width: '100%',
         height: windowHeight(250),

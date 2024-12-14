@@ -43,16 +43,16 @@ const styles = StyleSheet.create({
     image: {
         width: windowWidth(80),
         height: windowHeight(80),
-        left:windowHeight(12)
+        left: windowHeight(12)
     },
     lineView: {
         width: windowWidth(1),
         height: windowHeight(50),
         backgroundColor: appColors.placeholder,
-        left:windowHeight(21)
+        left: windowHeight(21)
     },
     counterView: {
-        marginHorizontal:windowWidth(45),
+        marginHorizontal: windowWidth(45),
         justifyContent: 'center'
     },
     name: {
@@ -93,5 +93,6 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT15
     },
+    counter: { paddingHorizontal: windowHeight(14) }
 })
 export default styles;

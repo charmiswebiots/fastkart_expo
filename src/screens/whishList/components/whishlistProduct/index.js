@@ -61,12 +61,12 @@ export function WhishListProduct() {
                                 <View style={[styles.discountPriceView, { flexDirection: viewRtlStyle }]}>
                                     <Text style={[styles.price, { color: colors.text }]}>
                                         {currSymbol}{(item.price * currValue).toFixed(2)}
-                                    </Text>                                    
+                                    </Text>
                                     <View style={[styles.discountView, { flexDirection: viewRtlStyle }]}>
                                         <Text style={styles.discount}>{item.discount}% </Text>
                                         <Text style={styles.discount}>{t('cartlist.OFF')}</Text>
                                     </View>
-                                    <View style={{ paddingHorizontal: windowHeight(6.8) }}>
+                                    <View style={styles.counter}>
                                         <Counter />
                                     </View>
                                 </View>

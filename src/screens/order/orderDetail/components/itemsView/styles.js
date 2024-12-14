@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     price: {
         fontSize: fontSizes.FONT24,
         fontFamily: 'mulishSemiBold',
-        marginHorizontal:windowHeight(22)
+        marginHorizontal:windowHeight(32)
     },
 })
 export default styles;
