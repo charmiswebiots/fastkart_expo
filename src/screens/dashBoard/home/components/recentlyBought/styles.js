@@ -38,5 +38,22 @@ const styles = StyleSheet.create({
         width: windowWidth(60),
         height: windowHeight(60)
     },
+
+
+
+    loaderContainer: {
+        width: windowWidth(440),
+        marginTop: windowHeight(12)
+        },
+        skeletonImage: {
+            height: windowHeight(55),
+        width: windowWidth(85),
+        backgroundColor:appColors.loaderBackground,
+        borderRadius: windowHeight(16),
+        alignItems: 'center',
+        marginHorizontal:windowHeight(5),
+        justifyContent: 'center',
+    
+        },
 })
 export default styles;

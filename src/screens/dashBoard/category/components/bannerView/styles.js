@@ -32,7 +32,19 @@ const styles = StyleSheet.create({
     bannerImg: {
         width: windowWidth(280),
         height: windowHeight(140),
+        backgroundColor: appColors.loaderBackground,
         borderRadius: windowHeight(16)
+    },
+    loaderContainer: {
+        justifyContent: 'center',
+        alignSelf: 'center',
+        alignItems: 'center',
+    },
+    skeletonImage: {
+        width: windowWidth(280),
+        height: windowHeight(140),
+        borderRadius: windowHeight(16),
+        backgroundColor: appColors.loaderBackground,
     },
 })
 export default styles;

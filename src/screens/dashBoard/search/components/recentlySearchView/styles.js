@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { windowHeight,fontSizes,windowWidth } from "../../../../../theme/appConstant";
+import appColors from "../../../../../theme/appColors";
 
 const styles=StyleSheet.create({
     txt: {
@@ -20,5 +21,16 @@ const styles=StyleSheet.create({
         borderRadius: windowWidth(10),
         paddingVertical: windowHeight(7),
     },
+    view: {
+        marginTop: windowHeight(1.5),
+        marginHorizontal:windowWidth(14),
+    },
+    skeletonText:{
+        backgroundColor:appColors.loaderBackground,
+        paddingHorizontal: windowWidth(50),
+        marginHorizontal:windowWidth(8.5),
+        borderRadius: windowWidth(10),
+        paddingVertical: windowHeight(15),
+    }
 })
 export default styles;
