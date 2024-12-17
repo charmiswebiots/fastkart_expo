@@ -1,36 +1,61 @@
-import React from "react";
-import { View, FlatList, Image, Text, TouchableOpacity, Dimensions } from "react-native";
+import React, { useEffect, useRef, useState } from "react";
+import { View, FlatList, Image, Text, TouchableOpacity, Dimensions, Animated } from "react-native";
 import styles from "./styles";
 import { swiperData } from "../../../../data";
 import appColors from "../../../../../theme/appColors";
 import { useValues } from "../../../../../utils/context";
-import Loader from "./loader";
 
-export function Slider(props) {
-    const { rtl, t } = useValues();
+export function Slider() {
+
+    const { rtl, t } = useValues()
+
+    const [loading, setLoading] = useState(true);
+    const fadeAnim = useRef(new Animated.Value(1)).current;
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+            Animated.timing(fadeAnim, {
+                toValue: 0,
+                duration: 1200,
+                useNativeDriver: true,
+            }).start();
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    const SkeletonLoader = () => (
+        <View style={styles.loaderContainer}>
+            <View style={[styles.skeletonItem]}>
+                <Animated.View style={[styles.skeletonImage, { opacity: fadeAnim }]} />
+                <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
+                <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
+            </View>
+        </View>
+    );
 
     return (
         <View style={styles.sliderView}>
-            <FlatList
-                data={swiperData}
-                pagingEnabled={true}
-                horizontal={true}
-                showsHorizontalScrollIndicator={false}
-                decelerationRate={0}
-                snapToInterval={Dimensions.get("window").width - 60}
-                snapToAlignment={"center"}
-                keyExtractor={(item) => item.id.toString()}
-                renderItem={({ item }) =>
-                    props.showLoader ? 
-                        <Loader context={props.context} />
-                     : 
-                        <View style={styles.sliderView}>
+            {loading ? (
+                <SkeletonLoader />
+            ) : (
+                <FlatList
+                    data={swiperData}
+                    pagingEnabled={true}
+                    horizontal={true}
+                    showsHorizontalScrollIndicator={false}
+                    decelerationRate={0}
+                    snapToInterval={Dimensions.get("window").width - 60}
+                    snapToAlignment={"center"}
+                    centerContent={true}
+                    contentInset={styles.content}
+                    keyExtractor={(item) => item.id.toString()}
+                    renderItem={({ item }) => (
+                        <View style={[styles.sliderView]}>
                             <Image
                                 source={item.image}
-                                style={[
-                                    styles.image,
-                                    { transform: [{ scaleX: rtl ? -1 : 1 }] },
-                                ]}
+                                style={[styles.image, { transform: [{ scaleX: rtl ? -1 : 1 }] }]}
                             />
                             <View style={styles.contentView}>
                                 <Text
@@ -70,9 +95,11 @@ export function Slider(props) {
                                 </TouchableOpacity>
                             </View>
                         </View>
-                    
-                }
-            />
+                    )}
+                />
+            )}
         </View>
     );
+
 }
+

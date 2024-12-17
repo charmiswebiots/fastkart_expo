@@ -93,6 +93,65 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT15
     },
-    counter: { paddingHorizontal: windowHeight(14) }
+    counter: { paddingHorizontal: windowHeight(14) },
+    loaderContainer: {
+        width: '95%',
+        marginTop: windowHeight(15),
+        paddingVertical: windowHeight(14.8),
+        borderRadius: windowHeight(10),
+        alignItems: 'center',
+        alignSelf: 'center',
+        backgroundColor: appColors.gray,
+    },
+    skeletonImage: {
+        width: windowWidth(80),
+        height: windowHeight(60),
+        backgroundColor: appColors.loaderBackground,
+        borderRadius: windowHeight(2.5),
+        alignItems: "center",
+        alignSelf: 'center',
+        left: windowWidth(20),
+        paddingHorizontal: windowHeight(10),
+    },
+    skeletonText: {
+        width: windowWidth(285),
+        height: windowHeight(15),
+        backgroundColor: appColors.loaderBackground,
+        borderRadius: windowHeight(2),
+        bottom: windowHeight(19),
+        marginHorizontal: windowHeight(25)
+    },
+    skeletonText1: {
+        width: windowWidth(80),
+        height: windowHeight(12.5),
+        backgroundColor: appColors.loaderBackground,
+        marginTop: windowHeight(4),
+        right: windowHeight(222),
+        borderRadius: windowHeight(2),
+    },
+    skeletonText2: {
+        width: windowWidth(80),
+        height: windowHeight(12.5),
+        backgroundColor: appColors.loaderBackground,
+        marginTop: windowHeight(48),
+        right: '458%',
+        borderRadius: windowHeight(2),
+    },
+    skeletonText3: {
+        width: windowWidth(80),
+        height: windowHeight(12.5),
+        backgroundColor: appColors.loaderBackground,
+        marginTop: windowHeight(48),
+        right: '440%',
+        borderRadius: windowHeight(2),
+    },
+    skeletonText4: {
+        width: windowWidth(80),
+        height: windowHeight(12.5),
+        backgroundColor: appColors.loaderBackground,
+        marginTop: windowHeight(48),
+        right: '380%',
+        borderRadius: windowHeight(2),
+    }
 })
 export default styles;

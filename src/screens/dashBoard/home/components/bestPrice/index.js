@@ -23,7 +23,7 @@ export function BestPrice({ headerData, onPress }) {
                 duration: 1200,
                 useNativeDriver: true,
             }).start();
-        }, 2000);
+        }, 3000);
 
         return () => clearTimeout(timer);
     }, []);

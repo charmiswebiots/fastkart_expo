@@ -94,7 +94,6 @@ export function RecentlySearchView() {
             </Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={[styles.scrollView]}>
                 {loading ? (
-                    // Render skeleton loader for each item
                     Array.from({ length: 5 }).map((_, index) => (
                         <SkeletonLoader key={index} />
                     ))

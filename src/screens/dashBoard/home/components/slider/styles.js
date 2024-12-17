@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 import { windowHeight, fontSizes, windowWidth } from "../../../../../theme/appConstant";
 import appColors from "../../../../../theme/appColors";
 
@@ -63,6 +63,30 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishBold',
         color: appColors.white,
         fontSize: fontSizes.FONT17,
+    },
+    loaderContainer: {
+        width: "100%",
+        height: windowHeight(220),
+        marginBottom: windowHeight(10),
+        borderRadius: windowHeight(10),
+    },
+    skeletonImage: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignContent: 'center',
+    },
+    skeletonText: {
+        width: windowWidth(358),
+        height: windowHeight(190),
+        marginTop: windowHeight(18),
+        resizeMode: 'cover',
+        borderRadius: windowHeight(10),
+        backgroundColor: appColors.loaderBackground
+    },
+    skeletonItem: {
+        gap: 18,
+        right: windowWidth(5),
+        flexDirection: 'row'
     },
 })
 export default styles;

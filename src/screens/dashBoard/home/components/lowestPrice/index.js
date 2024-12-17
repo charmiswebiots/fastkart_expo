@@ -27,7 +27,7 @@ export function LowestPrice({ headerData, onPress, style }) {
     }, []);
 
     const { colors } = useTheme();
-    const { viewRtlStyle, textRtlStyle, t, currSymbol, currValue, isDark } = useValues();
+    const { viewRtlStyle, textRtlStyle, t, currSymbol, currValue } = useValues();
 
     const SkeletonLoader = () => (
         <View style={styles.loaderContainer}>

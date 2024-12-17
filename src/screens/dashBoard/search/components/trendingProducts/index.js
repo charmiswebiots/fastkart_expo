@@ -132,7 +132,7 @@ export function TrendingProducts({ onPress }) {
     return (
         <View>
             {loading ? (
-                Array.from({ length: 5 }).map((_, index) => (
+                Array.from({ length: 2 }).map((_, index) => (
                     <SkeletonLoader key={index} />
                 ))
             ) : (

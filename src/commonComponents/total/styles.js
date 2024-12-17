@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
     amount: {
         fontSize: fontSizes.FONT21,
         fontFamily: 'mulishSemiBold',
-
     },
     price: {
         fontSize: fontSizes.FONT21,
@@ -48,5 +47,21 @@ const styles = StyleSheet.create({
         color: appColors.highLight,
         fontFamily: 'mulishSemiBold',
     },
+    skeletonTittle:{
+        backgroundColor:appColors.loaderBackground,
+        height:windowHeight(17),
+        width:windowWidth(180),
+        bottom:windowHeight(3),
+    },
+    skeletonText:{
+        backgroundColor:appColors.loaderBackground,
+        height:windowHeight(17),
+        width:windowWidth(150)
+    },
+    skeletonText1:{
+        backgroundColor:appColors.loaderBackground,
+        height:windowHeight(17),
+        width:windowWidth(65)
+    }
 })
 export default styles;

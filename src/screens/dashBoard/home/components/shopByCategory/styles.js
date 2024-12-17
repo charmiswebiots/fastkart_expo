@@ -53,5 +53,33 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginTop: windowHeight(10)
     },
+    skeletonImageView: {
+        width: windowWidth(70),
+        height: windowWidth(70),
+        borderRadius: windowHeight(2.4),
+        backgroundColor: appColors.loaderBackground,
+        marginTop: windowHeight(15),
+    },
+    skeletonText: {
+        height: windowHeight(8),
+        borderRadius: windowHeight(2.4),
+        marginTop: windowHeight(12),
+
+        backgroundColor: appColors.loaderBackground,
+    },
+    skeletonItem: {
+        alignItems: "center",
+        justifyContent: "center",
+        flex: 1,
+        margin: windowHeight(8),
+    },
+    listView: {
+        alignItems: "center",
+        justifyContent: "center",
+        marginHorizontal: windowHeight(3.5),
+    },
+    separator: {
+        height: windowHeight(10),
+    },
 })
 export default styles;

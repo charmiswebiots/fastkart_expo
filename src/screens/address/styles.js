@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     deliveryTime: {
         fontSize: fontSizes.FONT21,
         fontFamily: 'mulishSemiBold',
-        paddingHorizontal:windowHeight(7.5)
+        paddingHorizontal: windowHeight(7.5)
     },
     mapView: {
         position: 'absolute',
@@ -97,6 +97,28 @@ const styles = StyleSheet.create({
         position: 'absolute',
         alignSelf: 'center',
         width: '100%',
+    },
+    loaderContainer:{
+        paddingVertical:windowHeight(3),
+
+    },
+    skeletonImage: {
+        marginTop: windowHeight(11),
+        width: windowWidth(52),
+        height: windowHeight(38),
+        backgroundColor: appColors.loaderBackground,
+        borderRadius: windowHeight(2.5),
+        alignItems: "center",
+        alignSelf: 'center',
+        paddingHorizontal: windowHeight(10),
+    },
+    skeletonText: {
+        width: windowWidth(285),
+        height: windowHeight(17),
+        backgroundColor: appColors.loaderBackground,
+        borderRadius: windowHeight(2),
+        top:windowHeight(12),
+        marginHorizontal: windowHeight(10)
     },
 })
 export default styles;

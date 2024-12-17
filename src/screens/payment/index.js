@@ -42,7 +42,7 @@ export function Payment({ navigation }) {
                 <AddNew onPress={visibleModal} text={t('addPaymentPage.addNewCard')}/>
                 <SelectValueView />
                 <View style={styles.totalView}>
-                    <Total bottom={windowHeight(80)} title={t('cartPage.orderDetails')} style1={{ backgroundColor: isDark ? colors.primary : appColors.gray }} style={{color:isDark?appColors.white:colors.primary}} />
+                    <Total bottom={windowHeight(80)} title={t('cartPage.orderDetails')} style1={{ backgroundColor: isDark ? colors.primary : appColors.gray }} style={{color:isDark?appColors.white:appColors.black}} />
                 </View>
                 <Button  text={t('addPaymentPage.confirmPayment')} style={styles.btn}
                     color={appColors.white} onPress={orderDetails} />
