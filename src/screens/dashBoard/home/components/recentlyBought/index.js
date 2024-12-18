@@ -28,14 +28,7 @@ export function RecentlyBought({ onPress }) {
         return () => clearTimeout(timer);
     }, []);
 
-    // const SkeletonLoader = () => (
-    //     <View style={styles.loaderContainer}>
-    //         <View style={[styles.skeletonItem]}>
-    //             <Animated.View style={[styles.skeletonImage, { opacity: fadeAnim }]} />
 
-    //         </View>
-    //     </View>
-    // );
 
     const SkeletonLoader = () => {
         const skeletonData = Array(6).fill({}); 
@@ -57,51 +50,7 @@ export function RecentlyBought({ onPress }) {
         );
     };
 
-    // return (
-    //     <View style={styles.mainView}>
-    //         <Image
-    //             source={isDark ? images.recentlyBoughtDark : images.recentlyBought}
-    //             style={[
-    //                 styles.mainView,
-    //                 {
-    //                     position: 'absolute',
-    //                     transform: [{ scaleX: rtl ? -1 : 1 }],
-    //                 },
-    //             ]}
-    //             resizeMode="stretch"
-    //         />
-    //         <Text
-    //             style={[
-    //                 styles.recentlyBought,
-    //                 { color: colors.text, textAlign: rtl ? 'right' : 'left' },
-    //             ]}
-    //         >
-    //             {t('homepage.recentlyBrought')}
-    //         </Text>
-    //         <View style={[styles.imageView]}>
-    //             <ScrollView
-    //                 showsHorizontalScrollIndicator={false}
-    //                 contentContainerStyle={styles.container}
-    //                 horizontal
-    //             >
-    //                 {recentlyBrought.map((item, key) => (
-    //                     <TouchableOpacity
-    //                         key={key}
-    //                         activeOpacity={0.8}
-    //                         style={[styles.recentlyImage, { backgroundColor: colors.card }]}
-    //                         onPress={onPress}
-    //                     >
-    //                         <Image
-    //                             source={item.image}
-    //                             style={styles.image}
-    //                             resizeMode="contain"
-    //                         />
-    //                     </TouchableOpacity>
-    //                 ))}
-    //             </ScrollView>
-    //         </View>
-    //     </View>
-    // );
+ 
     return (
         <View style={styles.mainView}>
             <Image

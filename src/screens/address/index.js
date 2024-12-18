@@ -487,20 +487,22 @@ import { useValues } from '../../utils/context';
 import { useLoadingContext } from '../../utils/context';
 
 export function Address({ navigation }) {
-  const [loading, setLoading] = useState(false);
-  const { addressLoaded, setAddressLoaded } = useLoadingContext(); 
+
   const { colors } = useTheme();
   const { viewRtlStyle, rtl, textRtlStyle, t } = useValues();
+  const [loading, setLoading] = useState(false);
+  const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
   useEffect(() => {
-    if (!addressLoaded) {
-      setLoading(true);
-      setTimeout(() => {
-        setLoading(false);
-        setAddressLoaded(true); 
+      if (addressLoaded) {
+          setLoading(true);
+          console.log('loaijhng',loading)
+          setTimeout(() => {
+              setLoading(false);
+              setAddressLoaded(true);
 
-      }, 7000);
-    }
+          }, 2000);
+      }
   }, [addressLoaded, setAddressLoaded]);
 
   const payment = () => {
@@ -516,14 +518,31 @@ export function Address({ navigation }) {
       backgroundColor={appColors.interpolateBackground}
       foregroundColor={appColors.placeholder}
     >
-      <Rect x="0" y="10" rx="4" ry="4" width="10%" height="40"/>
-      <Rect x="12%" y="10" rx="4" ry="4" width="70%"height="18"/>
 
-      <Rect x="0" y="80" rx="4" ry="4" width="100%" height="40"/>
-      <Rect x="0" y="150" rx="4" ry="4" width="100%" height="10" />
+      
+      <Rect x="0" y="10" rx="4" ry="4" width="10%" height="40"/>
+      <Rect x="12%" y="10" rx="4" ry="4" width="70%"height="22"/>
+
+      <Rect x="0" y="65" rx="4" ry="4" width="100%" height="25"/>
     </ContentLoader>
   );
 
+
+  const SkeletonImg = () => (
+    <ContentLoader
+      speed={1}
+      width={400}
+      height={900}
+      viewBox="0 0 400 900"
+      backgroundColor={appColors.interpolateBackground}
+      foregroundColor={appColors.placeholder}
+    >
+
+      
+      <Rect x="0" y="0" rx="4" ry="4" width="100%" height='900'/>
+     
+    </ContentLoader>
+  );
   return (
     <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
       <View>
@@ -534,22 +553,22 @@ export function Address({ navigation }) {
           titleText={t("addAddressPage.addAddress")}
         />
         <View>
-          {/* {loading ? (
+          {loading ? (
             <View
               style={[
                 styles.mapImg,
                 { backgroundColor: appColors.loaderBackground },
               ]}
             >
-              <SkeletonLoader />
+              <SkeletonImg />
             </View>
-          ) : ( */}
+          ) : (
             <Image
               source={images.map}
               style={styles.mapImg}
               resizeMode="stretch"
             />
-          {/* )} */}
+          )}
         </View>
       </View>
 

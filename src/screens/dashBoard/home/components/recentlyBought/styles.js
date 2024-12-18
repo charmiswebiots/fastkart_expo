@@ -45,19 +45,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     skeletonItem: {
-        height: windowHeight(55),
-        width: windowWidth(85),
-        backgroundColor: appColors.loaderBackground,
-        borderRadius: windowHeight(16),
-        alignItems: 'center',
+    
         marginHorizontal: windowHeight(5),
-        justifyContent: 'center',
+
     },
-    skeletonImage: {
-        width: windowWidth(60),
-        height: windowHeight(60),
-        borderRadius: windowHeight(8),
-        backgroundColor: appColors.loaderBackground,
-    },
+
 })
 export default styles;

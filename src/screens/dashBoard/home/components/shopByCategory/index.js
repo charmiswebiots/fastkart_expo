@@ -2,10 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { View, Text, FlatList, TouchableOpacity, Image, Animated } from "react-native";
 import styles from "./styles";
 import { category } from "../../../../data";
-import { windowWidth } from "../../../../../theme/appConstant";
+import { windowWidth, windowHeight } from "../../../../../theme/appConstant";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../../../utils/context";
-
+import ContentLoader, { Rect } from "react-content-loader/native";
+import appColors from "../../../../../theme/appColors";
 
 export function ShopByCategory({ onPress }) {
 
@@ -25,59 +26,50 @@ export function ShopByCategory({ onPress }) {
         return () => clearTimeout(timer);
     }, []);
 
-
     const SkeletonLoader = () => {
-        const skeletonData = Array(8).fill({});
-    
         return (
             <FlatList
-                data={skeletonData}
+                data={Array(8).fill({})} 
                 numColumns={4}
                 keyExtractor={(_, index) => `skeleton-${index}`}
                 contentContainerStyle={styles.list}
                 ItemSeparatorComponent={() => <View style={styles.separator} />}
                 renderItem={() => (
                     <View style={styles.listView}>
-                        <View style={styles.skeletonImageView}>
-                            <Animated.View style={[styles.skeletonImage, { opacity: fadeAnim }]} />
+                        <View style={[styles.skeletonImageView, { marginTop: windowHeight(13) }]}>
+                            <ContentLoader
+                                speed={1}
+                                width={windowWidth(70)}
+                                height={windowWidth(70)}
+                                viewBox="0 0 70 70"
+                                backgroundColor={appColors.interpolateBackground}
+                                foregroundColor={appColors.placeholder}
+                            >
+                                <Rect x="0" y="0" rx="4" ry="4" width="70" height="70" />
+                            </ContentLoader>
                         </View>
-                        <View style={{ width: windowWidth(99) }}>
-                            <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
+
+                        <View style={{ marginTop: windowHeight(13) }}>
+                            <ContentLoader
+                                speed={1}
+                                width={windowWidth(99)}
+                                height={windowHeight(12)}
+                                viewBox="0 0 100 8"
+                                backgroundColor={appColors.interpolateBackground}
+                                foregroundColor={appColors.placeholder}
+                            >
+                                <Rect x="0" y="0" rx="4" ry="4" width="95" height="12" />
+                            </ContentLoader>
                         </View>
                     </View>
                 )}
             />
         );
     };
-    
-    const { colors } = useTheme()
-    const { t } = useValues()
 
-    // return (
-    //     <View>
-    //         <View style={styles.category}>
-    //             <View style={styles.line} />
-    //             <Text style={[styles.shopByCategory, { color: colors.text }]}>{t('homepage.shopByCategory')}</Text>
-    //         </View>
-    //         <FlatList
-    //             data={category}
-    //             numColumns={4}
-    //             style={styles.list}
-    //             ItemSeparatorComponent={() => <View style={styles.separator} />}
-    //             renderItem={({ item, index }) =>
-    //                 <TouchableOpacity style={styles.listView} activeOpacity={0.7} onPress={onPress} >
-    //                     <View style={[styles.imageView, {
-    //                     }]}>
-    //                         <Image source={item.image} style={styles.image} resizeMode='contain' />
-    //                     </View>
-    //                     <View style={{ width: windowWidth(99) }}>
-    //                         <Text style={[styles.name, { color: colors.text }]} numberOfLines={2}>{t(item.name)}</Text>
-    //                     </View>
-    //                 </TouchableOpacity>
-    //             }
-    //         />
-    //     </View>
-    // )
+    const { colors } = useTheme();
+    const { t } = useValues();
+
     return (
         <View>
             <View style={styles.category}>
@@ -100,7 +92,7 @@ export function ShopByCategory({ onPress }) {
                             activeOpacity={0.7}
                             onPress={onPress}
                         >
-                            <View style={styles.imageView}>
+                            <View style={[styles.imageView]}>
                                 <Image
                                     source={item.image}
                                     style={styles.image}

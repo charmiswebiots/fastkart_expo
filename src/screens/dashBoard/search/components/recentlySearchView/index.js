@@ -26,7 +26,7 @@
 //         <View style={[styles.loaderContainer, { backgroundColor: isDark ? colors.primary : appColors.drawer }]}>
 //             <Animated.View style={[styles.view, { opacity: fadeAnim }]} />
 //             <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
-           
+
 //         </View>
 //     );
 
@@ -53,37 +53,51 @@
 
 
 import { View, Text, ScrollView, Animated } from "react-native";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import styles from "./styles";
 import { recentlySearch } from "../../../../data";
 import { useTheme } from "@react-navigation/native";
-import { useValues } from "../../../../../utils/context";
+import { useLoadingContext, useValues } from '../../../../../utils/context'
 import appColors from "../../../../../theme/appColors";
+import ContentLoader, { Rect } from 'react-content-loader/native';
+
 
 export function RecentlySearchView() {
-    const [loading, setLoading] = useState(true);
-    const fadeAnim = useRef(new Animated.Value(1)).current;
+    const [loading, setLoading] = useState(false);
+    const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-            Animated.timing(fadeAnim, {
-                toValue: 0,
-                duration: 1200,
-                useNativeDriver: true,
-            }).start();
-        }, 3000);
+        if (addressLoaded) {
+            setLoading(true);
+            console.log('loaijhng', loading)
+            setTimeout(() => {
+                setLoading(false);
+                setAddressLoaded(true);
 
-        return () => clearTimeout(timer);
-    }, []);
+            }, 2000);
+        }
+    }, [addressLoaded, setAddressLoaded]);
 
     const SkeletonLoader = () => (
-        <View >
-            <Animated.View style={[styles.view, { opacity: fadeAnim }]} />
-            <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
-        </View>
-    );
+        <ContentLoader
+            speed={1}
+            width={400}
+            height={55}
+            viewBox="0 0 400 55"
+            backgroundColor={appColors.interpolateBackground}
+            foregroundColor={appColors.placeholder}
+        >
 
+
+            <Rect x="7" y="5" rx="4" ry="4" width="30%" height="35" />
+            <Rect x="140" y="5" rx="4" ry="4" width="18%" height="35" />
+            <Rect x="225" y="5" rx="4" ry="4" width="20%" height="35" />
+            <Rect x="318" y="5" rx="4" ry="4" width="20%" height="35" />
+
+
+
+        </ContentLoader>
+    );
     const { colors } = useTheme();
     const { isDark, textRtlStyle, t } = useValues();
 
@@ -94,7 +108,7 @@ export function RecentlySearchView() {
             </Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={[styles.scrollView]}>
                 {loading ? (
-                    Array.from({ length: 5 }).map((_, index) => (
+                    Array.from({ length: 4 }).map((_, index) => (
                         <SkeletonLoader key={index} />
                     ))
                 ) : (

@@ -3,42 +3,58 @@ import { View, FlatList, Image, Text, TouchableOpacity, Dimensions, Animated } f
 import styles from "./styles";
 import { swiperData } from "../../../../data";
 import appColors from "../../../../../theme/appColors";
-import { useValues } from "../../../../../utils/context";
+import { useLoadingContext, useValues } from "../../../../../utils/context";
+import ContentLoader, { Rect } from 'react-content-loader/native';
+import { windowHeight, windowWidth } from "../../../../../theme/appConstant";
 
 export function Slider() {
 
     const { rtl, t } = useValues()
-
-    const [loading, setLoading] = useState(true);
-    const fadeAnim = useRef(new Animated.Value(1)).current;
+      const [loading, setLoading] = useState(false);
+      const { addressLoaded, setAddressLoaded } = useLoadingContext(); 
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-            Animated.timing(fadeAnim, {
-                toValue: 0,
-                duration: 1200,
-                useNativeDriver: true,
-            }).start();
+      if (!addressLoaded) {
+        setLoading(true);
+        setTimeout(() => {
+          setLoading(false);
+          setAddressLoaded(true); 
+  
         }, 3000);
+      }
+    }, [addressLoaded, setAddressLoaded]);
 
-        return () => clearTimeout(timer);
-    }, []);
-
-    const SkeletonLoader = () => (
-        <View style={styles.loaderContainer}>
-            <View style={[styles.skeletonItem]}>
-                <Animated.View style={[styles.skeletonImage, { opacity: fadeAnim }]} />
-                <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
-                <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
-            </View>
+    const SkeletonSlider = () => (
+        <View style={{ flexDirection: "row", justifyContent: "space-between", right: windowWidth(63) }}>
+            <SkeletonImg />
         </View>
     );
-
+    
+    const SkeletonImg = () => (
+        <ContentLoader
+            speed={1}
+            width={windowWidth(558)} 
+            height={windowHeight(210)} 
+            viewBox="0 0 400 400"
+            backgroundColor={appColors.interpolateBackground}
+            foregroundColor={appColors.placeholder}
+        >
+            <Rect 
+                x={windowWidth(0)}  
+                y={30} 
+   
+                width={windowWidth(1000)} 
+                height={windowHeight(600)}
+            />
+        </ContentLoader>
+    );
+    
+    
+    
     return (
         <View style={styles.sliderView}>
             {loading ? (
-                <SkeletonLoader />
+                <SkeletonSlider />
             ) : (
                 <FlatList
                     data={swiperData}

@@ -3,33 +3,49 @@ import styles from "./styles";
 import { category1 } from "../../../../data";
 import { windowHeight } from "../../../../../theme/appConstant";
 import { useTheme } from "@react-navigation/native";
-import { useValues } from "../../../../../utils/context";
+import { useValues,useLoadingContext } from "../../../../../utils/context";
 import { useState, useEffect, useRef } from "react";
 import appColors from "../../../../../theme/appColors"; 
+import ContentLoader, { Rect } from 'react-content-loader/native';
+
 
 export function TrendingCategoryView() {
-    const [loading, setLoading] = useState(true);
-    const fadeAnim = useRef(new Animated.Value(1)).current;
+    const [loading, setLoading] = useState(false);
+    const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-            Animated.timing(fadeAnim, {
-                toValue: 0,
-                duration: 1200,
-                useNativeDriver: true,
-            }).start();
-        }, 3000);
+        if (addressLoaded) {
+            setLoading(true);
+            console.log('loaijhng', loading)
+            setTimeout(() => {
+                setLoading(false);
+                setAddressLoaded(true);
 
-        return () => clearTimeout(timer);
-    }, []);
+            }, 2000);
+        }
+    }, [addressLoaded, setAddressLoaded]);
 
     const SkeletonLoader = () => (
-        <View style={styles.skeletonItem}>
-            <Animated.View style={[styles.image1, { opacity: fadeAnim }]} />
-        </View>
-    );
+        <ContentLoader
+            speed={1}
+            width={400}
+            height={55}
+            viewBox="0 0 400 55"
+            backgroundColor={appColors.interpolateBackground}
+            foregroundColor={appColors.placeholder}
+        >
 
+
+            <Rect x="7" y="5" rx="4" ry="4" width="15%" height="55" />
+            <Rect x="90" y="5" rx="4" ry="4" width="15%" height="55" />
+            <Rect x="170" y="5" rx="4" ry="4" width="15%" height="55" />
+            <Rect x="250" y="5" rx="4" ry="4" width="15%" height="55" />
+            <Rect x="325" y="5" rx="4" ry="4" width="15%" height="55" />
+
+
+
+        </ContentLoader>
+    );
     const { colors } = useTheme();
     const { textRtlStyle, t } = useValues();
 
@@ -40,7 +56,7 @@ export function TrendingCategoryView() {
             </Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.scrollView}>
                 {loading ? (
-                    Array.from({ length: 5 }).map((_, index) => (
+                    Array.from({ length: 1 }).map((_, index) => (
                         <SkeletonLoader key={index} />
                     ))
                 ) : (
