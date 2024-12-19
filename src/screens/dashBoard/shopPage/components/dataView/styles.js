@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         borderRadius: windowHeight(24),
         marginHorizontal: windowHeight(8),
         justifyContent: 'space-between',
-        paddingHorizontal: windowWidth(15),
+        paddingHorizontal: windowWidth(13.5),
         alignItems: 'center',
     },
     discount: {

@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
         borderRadius: windowHeight(4),
         alignItems: 'center',
         justifyContent: 'center',
-        left: windowWidth(20)
+        left: windowWidth(22)
     },
     key: {
         fontSize: fontSizes.FONT20,

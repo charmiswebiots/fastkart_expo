@@ -312,7 +312,7 @@
             "OFF": "off"
         },
         "orderDetail": {
-            "cardNumber": "**** **** **** 6502"
+            "cardNumber": "6502"
         },
         "aboutUsArr": {
             "question1": "Browse products using the search feature",

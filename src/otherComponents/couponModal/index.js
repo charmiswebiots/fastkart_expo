@@ -20,7 +20,7 @@ export function CouponModal(props) {
                 </TouchableOpacity>
             </View>
             <View style={[styles.termsView, { backgroundColor: colors.white }]}>
-                <Text style={[styles.txt, { textAlign: textRtlStyle }]}>{t('couponModal.termsConditions')}</Text>
+                <Text style={[styles.txt1, { textAlign: textRtlStyle }]}>{t('couponModal.termsConditions')}</Text>
                 {termsCondition.map((item, key) => (
                     <View style={[styles.keyView, { flexDirection: viewRtlStyle }]} key={item.id}>
                         <Text style={[styles.txt, { textAlign: textRtlStyle }]}>{key + 1}. </Text>

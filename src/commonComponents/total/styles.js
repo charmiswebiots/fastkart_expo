@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     title: {
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT24,
+        marginTop:windowHeight(2)
     },
     data: {
         fontSize: fontSizes.FONT21,
@@ -20,7 +21,9 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
     },
     dataView: {
-        marginTop: windowHeight(10),
+        // marginTop: windowHeight(7),
+        top:windowHeight(8),
+        paddingVertical:windowHeight(3.8),
         justifyContent: 'space-between',
     },
     deliveryView: {
@@ -29,7 +32,7 @@ const styles = StyleSheet.create({
         borderBottomColor: appColors.line
     },
     amountView: {
-        marginTop: windowHeight(8),
+        marginTop: windowHeight(14),
         justifyContent: 'space-between',
         marginBottom: windowHeight(14),
     },

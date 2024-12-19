@@ -98,68 +98,36 @@ import { useState, useEffect, useRef } from 'react';
 import ContentLoader, { Rect } from "react-content-loader/native";
 
 export function TrendingProducts({ onPress }) {
-    // const [loading, setLoading] = useState(true);
-    // const fadeAnim = useRef(new Animated.Value(1)).current;
-
-    // useEffect(() => {
-    //     const timer = setTimeout(() => {
-    //         setLoading(false);
-    //         Animated.timing(fadeAnim, {
-    //             toValue: 0,
-    //             duration: 1200,
-    //             useNativeDriver: true,
-    //         }).start();
-    //     }, 3000);
-
-    //     return () => clearTimeout(timer);
-    // }, []);
-
-    // const SkeletonLoader = () => (
-    //     <View style={[styles.loaderContainer, { backgroundColor: isDark ? colors.card : appColors.gray }, { flexDirection: viewRtlStyle }]}>
-    //         <Animated.View style={[styles.skeletonImage, { opacity: fadeAnim }]} />
-    //         <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
-    //         <Animated.View style={[styles.skeletonText1, { opacity: fadeAnim }]} />
-    //         <View style={{ justifyContent: 'space-between', flexDirection: viewRtlStyle }}>
-    //             <Animated.View style={[styles.skeletonText2, { opacity: fadeAnim }]} />
-    //             <Animated.View style={[styles.skeletonText3, { opacity: fadeAnim }]} />
-    //             <Animated.View style={[styles.skeletonText4, { opacity: fadeAnim }]} />
-    //         </View>
-    //     </View>
-    // );
+  
     const [loading, setLoading] = useState(false);
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        if (addressLoaded) {
+        if (!addressLoaded) {
             setLoading(true);
-            console.log('loaijhng', loading)
             setTimeout(() => {
                 setLoading(false);
                 setAddressLoaded(true);
-
-            }, 20000);
+            }, 3000);
         }
     }, [addressLoaded, setAddressLoaded]);
 
     const SkeletonLoader = () => (
         <ContentLoader
             speed={1}
-            width={400}
-            height={70}
-            viewBox="0 0 400 70"
-            backgroundColor={appColors.interpolateBackground}
+            width="100%"
+            height={110}
+            viewBox="0 0 340 80"
+
+            backgroundColor={isDark ? colors.card : appColors.loaderBackground}
             foregroundColor={appColors.placeholder}
         >
-
-
-            <Rect x="20" y="5" rx="4" ry="4" width="15%" height="70" />
-
-
-      <Rect x="22%" y="10" rx="4" ry="4" width="70%"height="22"/>
-
-
-
-
+            <Rect x="18" y="10" rx="10" ry="10" width="60" height="60" />
+            <Rect x="90" y="12" rx="5" ry="5" width="180" height="13" />
+            <Rect x="90" y="32" rx="5" ry="5" width="100" height="12" />
+            <Rect x="90" y="58" rx="5" ry="5" width="60" height="12" />
+            <Rect x="160" y="58" rx="5" ry="5" width="50" height="12" />
+            <Rect x="245" y="50" rx="5" ry="5" width="75" height="22" />
         </ContentLoader>
     );
     const { isDark, viewRtlStyle, textRtlStyle, t, currSymbol, currValue } = useValues();

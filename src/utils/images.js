@@ -1,6 +1,7 @@
 export default Images = {
     splash: require('../../src/assets/images/splash.png'),
     logo: require('../../src/assets/images/logo.png'),
+    appLogo:require('../../src/assets/images/appLogo.png'),
     login: require('../../src/assets/images/login.png'),
     onBoarding: require("../../src/assets/images/onBoarding.png"),
     notFound: require('../../src/assets/images/notFound.png'),
@@ -81,4 +82,5 @@ export default Images = {
     star1: require('../../src/assets/images/star1.png'),
     star: require('../../src/assets/images/star.png'),
     cashOnDelivery:require('../../src/assets/images/cashOnDelivery.png'),
+    lineCategory:require('../../src/assets/images/lineCategory.png'),
 };

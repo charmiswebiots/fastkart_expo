@@ -21,7 +21,7 @@ export function Splash({ navigation }) {
         <SafeAreaView style={[styles.mainView,{backgroundColor:colors.background}]}>
             <Image source={images.splash} style={{ width: '100%' }} />
             <View style={styles.logo}>
-                <Image source={isDark?images.fastKartDark:images.logo} style={styles.img} />
+                <Image source={isDark?images.fastKartDark:images.appLogo} style={styles.img} />
             </View>
         </SafeAreaView>
     )

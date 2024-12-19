@@ -10,6 +10,7 @@ import { useState } from "react";
 import { ProductFilter } from "../../../otherComponents";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../utils/context";
+import { Icons } from "../../../utils/icons";
 
 export function ShopPage({navigation}) {
     const {colors}=useTheme()
@@ -24,8 +25,8 @@ export function ShopPage({navigation}) {
         <SafeAreaView style={{ backgroundColor: colors.background, flex: 1 }}>
             <Header
                 onPress={() => navigation.navigate('PageList')}
-                lightImage={isDark?images.darkSmallLogo:images.smallLogo}
-                lightStyle={styles.header}
+                lightImage={isDark?<Icons.fkDark/>:<Icons.fkLight/>}
+                lightStyle={{right:windowHeight(4)}}
                 darkStyle={styles.header}
                 showImage
                 text={t('categoryArr.freshFruitsVegetables')}

@@ -6,18 +6,24 @@ import appColors from "../../theme/appColors";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../utils/context";
 
-export function NotFound({navigation}) {
-    const {t}=useValues()
-    const home=()=>{
+export function NotFound({ navigation }) {
+    const { t } = useValues()
+
+    const home = () => {
         navigation.navigate('Home')
     }
-    const {colors}=useTheme()
+    const { colors } = useTheme()
+
+    const toogle = () => {
+        navigation.openDrawer();
+    };
+
     return (
         <SafeAreaView style={[styles.mainView]}>
-            <HomeHeader />
+            <HomeHeader toogle={toogle} />
             <View style={styles.subView}>
                 <Image resizeMode='contain' source={images.notFound} />
-                <Text style={[styles.notFound,{color:colors.text}]}>{t('404.pageNotFound')}</Text>
+                <Text style={[styles.notFound, { color: colors.text }]}>{t('404.pageNotFound')}</Text>
                 <View style={styles.line} />
                 <Text style={styles.notExist}>{t('404.pageNotExist')}</Text>
                 <Button text={t('404.backToHome')} style={styles.btn} color={appColors.white} onPress={home}

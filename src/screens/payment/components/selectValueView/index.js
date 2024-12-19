@@ -15,8 +15,8 @@ const payments = [
         isCard: true,
         values: [
             { value: 'paymentsArr.card1', icons: images.mastercard },
-            {  value: 'paymentsArr.card2', icons: images.visacard },
-            {  value: 'paymentsArr.card3', icons: images.discovercard },
+            { value: 'paymentsArr.card2', icons: images.visacard },
+            { value: 'paymentsArr.card3', icons: images.discovercard },
         ],
     },
     {
@@ -51,7 +51,7 @@ const payments = [
 ];
 
 export function SelectValueView() {
-    const { isDark, viewRtlStyle, rtl ,t} = useValues()
+    const { isDark, viewRtlStyle, rtl, t } = useValues()
     const { colors } = useTheme()
     const [selectedType, setSelectedType] = useState(0);
     const [selectedMethod, setSelectedMethod] = useState(0);
@@ -74,12 +74,16 @@ export function SelectValueView() {
                         styles.arrow,
                         {
                             backgroundColor: isDark ? colors.primary : appColors.drawer,
-                            transform: [{ scaleX: rtl ? -1 : 1 }],
+                            transform: [
+                                { scaleX: rtl ? -1 : 1 },
+                                selectedType === item.type ? { rotate: '90deg' } : null,
+                            ].filter(Boolean),
                         },
                     ]}
                 >
                     <Icons.sideArrow />
                 </View>
+
             </TouchableOpacity>
 
             {selectedType === item.type && (

@@ -5,9 +5,10 @@ import { categoryData } from "../../../../data";
 import appColors from "../../../../../theme/appColors";
 import { useValues } from "../../../../../utils/context";
 import { useTheme } from "@react-navigation/native";
+import { windowHeight } from "../../../../../theme/appConstant";
 
 export function CategoryView({ onPress }) {
-   
+
 
     const { isDark, viewRtlStyle, t } = useValues();
     const { colors } = useTheme();
@@ -26,7 +27,7 @@ export function CategoryView({ onPress }) {
         setSubCategories(subCategory);
     };
 
-   
+
 
     return (
         <View style={{ flexDirection: viewRtlStyle }}>
@@ -61,6 +62,7 @@ export function CategoryView({ onPress }) {
             <View style={styles.view}>
                 <FlatList
                     data={subCategories}
+                    columnWrapperStyle={styles.colum} 
                     keyExtractor={(item) => item.id.toString()}
                     ItemSeparatorComponent={() => <View style={styles.separator} />}
                     contentContainerStyle={[styles.containerStyle, { flexDirection: viewRtlStyle }]}

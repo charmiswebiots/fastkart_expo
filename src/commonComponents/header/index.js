@@ -35,10 +35,8 @@ export function Header({
                     <Text style={[styles.text, styles.headerImg,{color:colors.text}]}>{titleText}<Text style={styles.text1}>{titleText1}</Text></Text>
                     
                 ) : (
-                    <Image
-                        source={lightImage}
-                        style={[styles.headerImg ,lightStyle]}
-                    />
+              
+                    <View style={[styles.headerImg ,lightStyle]}>{lightImage}</View>
                 )}
             </TouchableOpacity>
 

@@ -16,10 +16,14 @@ export function Search({ navigation }) {
     navigation.navigate('ProductsDetails')
   }
 
+  const toogle = () => {
+    navigation.openDrawer();
+};
+
   return (
     <SafeAreaView style={[styles.mainView, { backgroundColor: colors.background }]}>
       <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
-        <HomeHeader />
+        <HomeHeader toogle={toogle} />
         <Input placeholder={t('commonText.searchProducts')} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
         <RecentlySearchView />
         <TrendingCategoryView />

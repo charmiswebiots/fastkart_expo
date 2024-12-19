@@ -5,7 +5,7 @@ import appColors from "../../theme/appColors";
 const styles = StyleSheet.create({
     mainView: {
         alignItems: 'center',
-        borderWidth: 1,
+        borderWidth: windowHeight(1.5),
         paddingHorizontal: windowWidth(30),
         borderRadius: windowHeight(6),
         borderColor: appColors.countBorder,

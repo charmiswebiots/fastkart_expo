@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     },
     buttonImage: {
         width: windowWidth(26),
-        height: windowHeight(20),
+        // height: windowHeight(20),
         resizeMode: 'contain'
     },
     buttonText: {

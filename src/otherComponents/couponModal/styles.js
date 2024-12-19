@@ -54,6 +54,11 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         paddingHorizontal: windowWidth(25)
     },
+    txt1: {
+        fontFamily: 'mulishBold',
+        color: appColors.content,
+        fontSize: fontSizes.FONT20,
+    },
     txt: {
         fontFamily: 'mulishSemiBold',
         color: appColors.content,

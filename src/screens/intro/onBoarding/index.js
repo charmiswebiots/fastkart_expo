@@ -6,6 +6,7 @@ import { ContinueButton } from "../../../commonComponents";
 import { windowHeight } from "../../../theme/appConstant";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../utils/context";
+import { Icons } from "../../../utils/icons";
 
 export function OnBoarding() {
     const { colors } = useTheme()
@@ -21,9 +22,9 @@ export function OnBoarding() {
                     <Text style={[styles.safeDelivery, { color: colors.text }]}>{t('onBoarding.safeDelivery')}</Text>
                     <Text style={styles.onlineSupermarket}>{t('loginNRegister.onlineSupermarket')}</Text>
 
-                    <ContinueButton image={images.phone} text={t('loginNRegister.continueWithPhone')} />
+                    <ContinueButton image={<Icons.Phone/>} text={t('loginNRegister.continueWithPhone')} />
                     <View style={{ bottom: windowHeight(15) }}>
-                        <ContinueButton image={images.google} text={t('loginNRegister.continueWithGoogle')} />
+                        <ContinueButton image={<Icons.googleIcon/>} text={t('loginNRegister.continueWithGoogle')} />
                     </View>
                 </View>
             </ScrollView>

@@ -8,6 +8,7 @@ import { ThankyouView, OrderDataView } from "./components";
 import { Icons } from "../../../utils/icons";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../utils/context";
+import { windowHeight } from "../../../theme/appConstant";
 
 export function OrderSuccess({ navigation }) {
     const { colors } = useTheme()
@@ -29,13 +30,14 @@ export function OrderSuccess({ navigation }) {
                         isText={false}
                         imageOnPress={home}
                         showImage={false}
+                        lightStyle={{right:windowHeight(4)}}
                         firstIcon={<Icons.category />}
-                        lightImage={isDark ? images.fastKartDark : images.fastkart}
+                        lightImage={isDark ? <Icons.faskartLogoDark/> : <Icons.faskartLogo/>}
                     />
                     <Image source={images.orderSuccess} style={styles.orderSuccess} />
                     <ThankyouView />
                     <OrderDataView />
-                    <Total  title={t('orderTrackingPage.orderDetails')} style1={{ backgroundColor: isDark ? colors.primary : appColors.gray }} style={{color:isDark?appColors.white:colors.primary}} />
+                    <Total  title={t('orderTrackingPage.orderDetails')} style1={{ backgroundColor: isDark ? colors.primary : appColors.gray }} style={{color:isDark?appColors.white:appColors.black}} />
                 </ScrollView>
             </View>
             <View style={styles.view}>

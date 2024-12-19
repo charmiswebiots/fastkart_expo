@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     },
     arrowView: {
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     text: {
         fontSize: fontSizes.FONT21,
@@ -35,14 +35,21 @@ const styles = StyleSheet.create({
         width: windowWidth(30)
     },
     headerImg: {
-        marginHorizontal:windowHeight(14),
+        marginHorizontal:windowHeight(12),
         resizeMode:"contain",
+        
     },
 
     propText: {
         fontSize: fontSizes.FONT18,
         color: appColors.content,
         fontFamily: 'mulishSemiBold',
+        alignSelf:'center',
+        right:windowWidth(20),
+        alignContent:'center',
+        alignItems:'center',
+        textAlign:'center',
+   
     },
 })
 export default styles;

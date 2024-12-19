@@ -236,6 +236,18 @@ export const orderHistoryFilter = [
             { txt: 'orderHistoryFilterArr.cancelledOrder', id: 3 },
         ]
     },
+    // {
+    // day: 'orderHistoryFilterArr.timeFilter',
+    // value: [
+    //     { txt: 'orderHistoryFilterArr.last30days', id: 4 },
+    //     { txt: 'orderHistoryFilterArr.last6Month', id: 5 },
+    //     { txt: 'orderHistoryFilterArr.year1', id: 6 },
+    //     { txt: 'orderHistoryFilterArr.year2', id: 7 },
+    // ]
+    // },
+];
+
+export const filterHistory = [
     {
         day: 'orderHistoryFilterArr.timeFilter',
         value: [
@@ -244,8 +256,8 @@ export const orderHistoryFilter = [
             { txt: 'orderHistoryFilterArr.year1', id: 6 },
             { txt: 'orderHistoryFilterArr.year2', id: 7 },
         ]
-    },
-];
+    }
+]
 
 
 export const payments = [
@@ -339,10 +351,10 @@ export const location = [
 export const cityArr = [
     { title: "cityArr.city1" },
     { title: "cityArr.city2" },
-    { title: "cityArr.city3"},
+    { title: "cityArr.city3" },
     { title: "cityArr.city4" },
     { title: "cityArr.city5" },
-    { title: "cityArr.city6"},
+    { title: "cityArr.city6" },
     { title: "cityArr.city7" },
     { title: "cityArr.city8" },
     { title: "cityArr.city9" },
@@ -431,11 +443,13 @@ export const categoryData = [
         subCategory: [
             { id: '1', name: 'subCategoryArr.vegetables', image: images.categoryPro1 },
             { id: '2', name: 'subCategoryArr.organic', image: images.categoryPro8 },
+            { id: '3', name: 'subCategoryArr.bouquets', image: images.categoryPro10 },
+            // { id: '4', name: 'subCategoryArr.bouquets', image: images.categoryPro10 },
         ]
     },
     {
         id: '2', name: 'categoryArr.riceFlourGrains', image: images.category2, subCategory: [{ id: '1', name: 'subCategoryArr.fruits', image: images.categoryPro2 },
-        { id: '2', name: 'subCategoryArr.herbs', image: images.categoryPro3 },
+        { id: '2', name: 'subCategoryArr.herbs', image: images.categoryPro3 }, { id: '3', name: 'subCategoryArr.herbs', image: images.categoryPro4 },
         ]
     },
     {
@@ -448,12 +462,11 @@ export const categoryData = [
     },
     {
         id: '5', name: 'categoryArr.drinksBeverages', image: images.category5, subCategory: [{ id: '1', name: 'subCategoryArr.cutsFruit', image: images.categoryPro7 },
-        { id: '2', name: 'subCategoryArr.herbs', image: images.categoryPro3 },
         ]
     },
     {
         id: '6', name: 'categoryArr.instantMixes', image: images.category6, subCategory: [{ id: '1', name: 'subCategoryArr.sprouts', image: images.categoryPro5 },
-        { id: '2', name: 'subCategoryArr.organic', image: images.categoryPro8 },
+
         ]
     },
     {
@@ -461,7 +474,7 @@ export const categoryData = [
         { id: '2', name: 'subCategoryArr.herbs', image: images.categoryPro3 },]
     },
     {
-        id: '8', name: 'categoryArr.dalsPulses', image: images.category8, subCategory: [{ id: '1', name: 'subCategoryArr.cutsFruit', image: images.categoryPro9, }, { id: '2', name: 'subCategoryArr.herbs', image: images.categoryPro3 },
+        id: '8', name: 'categoryArr.dalsPulses', image: images.category8, subCategory: [{ id: '1', name: 'subCategoryArr.cutsFruit', image: images.categoryPro9 },
 
         ]
     },

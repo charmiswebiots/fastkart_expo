@@ -5,6 +5,7 @@ import images from "../../../../utils/images";
 import { ContinueButton } from "../../../../commonComponents";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../../utils/context";
+import { Icons } from "../../../../utils/icons";
 
 
 export function ContinueView({ txt, signTxt, onPress }) {
@@ -20,9 +21,9 @@ export function ContinueView({ txt, signTxt, onPress }) {
                 <Text style={[styles.signIn, { backgroundColor: colors.background }]}>{signTxt}</Text>
             </View>
             <View style={{ alignItems: 'center' }}>
-                <ContinueButton text={t('loginNRegister.continueWithPhone')} image={images.phone} />
+                <ContinueButton text={t('loginNRegister.continueWithPhone')} image={<Icons.Phone/>} />
                 <View style={styles.btnContainer}>
-                    <ContinueButton text={t('loginNRegister.continueWithGoogle')} image={images.google} />
+                    <ContinueButton text={t('loginNRegister.continueWithGoogle')} image={<Icons.googleIcon/>} />
                 </View>
             </View>
             <View style={styles.view} />

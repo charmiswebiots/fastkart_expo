@@ -11,7 +11,7 @@ import { useValues } from "../../../utils/context";
 
 export function OrderTracking({ navigation }) {
     const { colors } = useTheme()
-    const {t,isDark}=useValues()
+    const { t, isDark } = useValues()
 
     const order = () => {
         navigation.navigate('OrderDetail')
@@ -28,7 +28,9 @@ export function OrderTracking({ navigation }) {
                     onPress={() => navigation.goBack()}
                     isText={false}
                     showImage={false}
-                    lightImage={isDark?images.fastKartDark:images.fastkart} imageOnPress={home} />
+                    lightStyle={{ right: windowHeight(4) }}
+                    lightImage={isDark ? <Icons.faskartLogoDark /> : <Icons.faskartLogo />}
+                    imageOnPress={home} />
                 <MapImageView />
             </ScrollView>
 

@@ -173,6 +173,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'yellow',
         marginTop: windowHeight(5),
     },
+
 });
 
 export default styles;

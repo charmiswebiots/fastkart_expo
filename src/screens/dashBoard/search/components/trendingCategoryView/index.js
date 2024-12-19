@@ -14,7 +14,7 @@ export function TrendingCategoryView() {
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        if (addressLoaded) {
+        if (!addressLoaded) {
             setLoading(true);
             console.log('loaijhng', loading)
             setTimeout(() => {

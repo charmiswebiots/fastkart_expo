@@ -22,8 +22,13 @@ const styles=StyleSheet.create({
         width: windowWidth(60),
         resizeMode: 'contain'
     },
+    point:{
+        left:windowHeight(12),
+        top:windowHeight(2)
+
+    },
     cardNumber: {
-        marginHorizontal:windowWidth(10),
+        marginHorizontal:windowWidth(28),
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT21,
         color:appColors.black,

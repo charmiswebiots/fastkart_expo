@@ -6,10 +6,11 @@ const styles = StyleSheet.create({
     mainView: { flex: 0.9 },
     view:{ flex: 0.13 },
     orderSuccess: {
-        width: '100%',
+        width: '88%',
         height: windowHeight(250),
         resizeMode: 'contain',
-        marginTop: windowHeight(30)
+        marginTop: windowHeight(30),
+        alignSelf:'center'
     },
     btn: {
         width: '92%',

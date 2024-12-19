@@ -7,37 +7,41 @@ import { Icons } from "../../../../../utils/icons";
 import { windowHeight, windowWidth } from "../../../../../theme/appConstant";
 import appColors from "../../../../../theme/appColors";
 import { useTheme } from "@react-navigation/native";
-import { useValues } from "../../../../../utils/context";
+import { useLoadingContext, useValues } from "../../../../../utils/context";
+import ContentLoader, { Rect } from "react-content-loader/native";
 
 export function BestPrice({ headerData, onPress }) {
     const { colors } = useTheme()
-    const [loading, setLoading] = useState(true);
     const { textRtlStyle, viewRtlStyle, t, currSymbol, currValue } = useValues()
-    const fadeAnim = useRef(new Animated.Value(1)).current;
+    const [loading, setLoading] = useState(false);
+    const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-            Animated.timing(fadeAnim, {
-                toValue: 0,
-                duration: 1200,
-                useNativeDriver: true,
-            }).start();
-        }, 3000);
+        if (!addressLoaded) {
+            setLoading(true);
+            setTimeout(() => {
+                setLoading(false);
+                setAddressLoaded(true);
+            }, 3000);
+        }
+    }, [addressLoaded, setAddressLoaded]);
 
-        return () => clearTimeout(timer);
-    }, []);
+
 
     const SkeletonLoader = () => (
-        <View style={styles.loaderContainer}>
-            <Animated.View style={[styles.skeletonImage, { opacity: fadeAnim }]} />
-            <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
-            <Animated.View style={[styles.skeletonText1, { opacity: fadeAnim }]} />
-            <View style={{ justifyContent: "space-between", flexDirection: viewRtlStyle }}>
-                <Animated.View style={[styles.skeletonText2, { opacity: fadeAnim }]} />
-                <Animated.View style={[styles.skeletonText3, { opacity: fadeAnim }]} />
-            </View>
-        </View>
+        <ContentLoader
+            speed={1}
+            width={150}
+            height={200}
+            viewBox="0 0 150 200"
+            backgroundColor={appColors.loaderBackground}
+            foregroundColor={appColors.placeholder}
+        >
+            <Rect x="35" y="15" rx="10" ry="10" width="70" height="70" />
+            <Rect x="15" y="110" rx="5" ry="5" width="95" height="10" />
+            <Rect x="15" y="130" rx="5" ry="5" width="60" height="10" />
+            <Rect x="15" y="150" rx="5" ry="5" width="80" height="10" />
+        </ContentLoader>
     );
     return (
         <View style={styles.mainView}>
@@ -73,7 +77,7 @@ export function BestPrice({ headerData, onPress }) {
                             </TouchableOpacity>
                         </TouchableOpacity>
                     ))
-                    }
+                }
             </ScrollView>
         </View>
     )

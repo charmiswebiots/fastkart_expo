@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignSelf: 'center',
         alignItems: 'center',
+        position:'absolute',
     },
     bannerImg: {
         width: windowWidth(280),

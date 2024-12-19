@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { View, FlatList, Image, Text, TouchableOpacity, Dimensions, Animated } from "react-native";
+import React, { useEffect, useState } from "react";
+import { View, FlatList, Image, Text, TouchableOpacity, Dimensions } from "react-native";
 import styles from "./styles";
 import { swiperData } from "../../../../data";
 import appColors from "../../../../../theme/appColors";
@@ -36,7 +36,7 @@ export function Slider() {
             width={windowWidth(558)} 
             height={windowHeight(210)} 
             viewBox="0 0 400 400"
-            backgroundColor={appColors.interpolateBackground}
+            backgroundColor={appColors.loaderBackground}
             foregroundColor={appColors.placeholder}
         >
             <Rect 

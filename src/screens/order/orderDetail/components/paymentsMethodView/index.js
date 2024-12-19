@@ -16,6 +16,7 @@ export function PaymentsMethodView() {
 
             <View style={[styles.number,{flexDirection:viewRtlStyle}]}>
                 <Image source={images.mastercard} style={styles.masterCardImg} />
+                <Text style={[styles.point,{color:colors.text}]}>**** **** ****</Text>
                 <Text style={[styles.cardNumber,{color:colors.text}]}>{t('orderDetail.cardNumber')}</Text>
             </View>
         </View>

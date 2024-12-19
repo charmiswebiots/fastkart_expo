@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'space-between',
         paddingHorizontal: windowWidth(20),
-        height:windowHeight(60),
+        height:windowHeight(66),
     },
     view: {
         alignItems: 'center'
@@ -14,14 +14,15 @@ const styles = StyleSheet.create({
     locationText: {
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT20,
-        marginHorizontal:windowHeight(9),
+        marginHorizontal:windowHeight(7.5),
     },
     profile: {
         width: windowWidth(50),
         height: windowHeight(50)
     },
     logoImg: {
-        marginHorizontal:windowHeight(10)
+        marginHorizontal:windowHeight(8),
+        // resizeMode:'contain'
     },
 })
 export default styles;

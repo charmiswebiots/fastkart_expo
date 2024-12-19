@@ -8,7 +8,7 @@ import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../../../utils/context";
 
 export function DetailsView() {
-    const { textRtlStyle, viewRtlStyle, rtl ,t} = useValues()
+    const { textRtlStyle, viewRtlStyle, rtl, t } = useValues()
     const { colors } = useTheme()
     const [showManufacturer, setShowManufacturer] = useState(true);
     const [showProductDesc, setShowProductDesc] = useState(false);
@@ -47,8 +47,16 @@ export function DetailsView() {
                 style={[styles.optionView, { flexDirection: viewRtlStyle }]}
             >
                 <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.manufacturerDetails')}</Text>
-                <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }],top:windowHeight(5.5) }}>
-                <Icons.sideArrow />
+                <View
+                    style={{
+                        transform: [
+                            { scaleX: rtl ? -1 : 1 },
+                            showManufacturer ? { rotate: '90deg' } : null,
+                        ].filter(Boolean),
+                        top: windowHeight(5.5),
+                    }}
+                >
+                    <Icons.sideArrow />
                 </View>
             </TouchableOpacity>
             {showManufacturer && (
@@ -62,8 +70,18 @@ export function DetailsView() {
                     activeOpacity={0.7}
                     style={[styles.optionView, { flexDirection: viewRtlStyle }]}
                 >
-                    <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.productDisclaimer')}</Text>
-                    <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }],top:windowHeight(5.5) }}>
+                    <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>
+                        {t('productDetailsPage.productDisclaimer')}
+                    </Text>
+                    <View
+                        style={{
+                            transform: [
+                                { scaleX: rtl ? -1 : 1 },
+                                showProductDesc ? { rotate: '90deg' } : null,
+                            ].filter(Boolean),
+                            top: windowHeight(5.5),
+                        }}
+                    >
                         <Icons.sideArrow />
                     </View>
                 </TouchableOpacity>
@@ -81,14 +99,25 @@ export function DetailsView() {
                     activeOpacity={0.7}
                     style={[styles.optionView, { flexDirection: viewRtlStyle }]}
                 >
-                    <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>{t('productDetailsPage.featureDetails')}</Text>
-                    <View style={{ transform: [{ scaleX: rtl ? -1 : 1 }],top:windowHeight(5.5) }}>
+                    <Text style={[styles.txt, { color: colors.text }, { textAlign: textRtlStyle }]}>
+                        {t('productDetailsPage.featureDetails')}
+                    </Text>
+                    <View
+                        style={{
+                            transform: [
+                                { scaleX: rtl ? -1 : 1 },
+                                showFeature ? { rotate: '90deg' } : null, // Use showFeature here
+                            ].filter(Boolean),
+                            top: windowHeight(5.5),
+                        }}
+                    >
                         <Icons.sideArrow />
                     </View>
                 </TouchableOpacity>
                 {showFeature && (
                     <Text style={[styles.title, { textAlign: textRtlStyle }]}>
-                        {t('productDetailsPage.featureDetailsDesc')}                    </Text>
+                        {t('productDetailsPage.featureDetailsDesc')}
+                    </Text>
                 )}
             </View>
         </View>

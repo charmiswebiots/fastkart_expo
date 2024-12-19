@@ -1,41 +1,39 @@
-import React, { useEffect, useRef, useState } from "react";
-import { View, Text, FlatList, TouchableOpacity, Image, Animated } from "react-native";
+import React, { useEffect, useState } from "react";
+import { View, Text, FlatList, TouchableOpacity, Image } from "react-native";
 import styles from "./styles";
 import { category } from "../../../../data";
 import { windowWidth, windowHeight } from "../../../../../theme/appConstant";
 import { useTheme } from "@react-navigation/native";
-import { useValues } from "../../../../../utils/context";
+import { useLoadingContext, useValues } from "../../../../../utils/context";
 import ContentLoader, { Rect } from "react-content-loader/native";
 import appColors from "../../../../../theme/appColors";
 
 export function ShopByCategory({ onPress }) {
 
-    const [loading, setLoading] = useState(true);
-    const fadeAnim = useRef(new Animated.Value(1)).current;
+    const [loading, setLoading] = useState(false);
+    const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-            Animated.timing(fadeAnim, {
-                toValue: 0,
-                duration: 1200,
-                useNativeDriver: true,
-            }).start();
-        }, 3000);
-
-        return () => clearTimeout(timer);
-    }, []);
+        if (!addressLoaded) {
+            setLoading(true);
+            setTimeout(() => {
+                setLoading(false);
+                setAddressLoaded(true);
+            }, 3000);  // Simulated loading time (3 seconds)
+        }
+    }, [addressLoaded, setAddressLoaded]);
 
     const SkeletonLoader = () => {
         return (
             <FlatList
-                data={Array(8).fill({})} 
+                data={Array(8).fill({})}  // Skeleton with 8 items (adjust as needed)
                 numColumns={4}
                 keyExtractor={(_, index) => `skeleton-${index}`}
                 contentContainerStyle={styles.list}
                 ItemSeparatorComponent={() => <View style={styles.separator} />}
                 renderItem={() => (
                     <View style={styles.listView}>
+                        {/* Skeleton for Image */}
                         <View style={[styles.skeletonImageView, { marginTop: windowHeight(13) }]}>
                             <ContentLoader
                                 speed={1}
@@ -49,6 +47,7 @@ export function ShopByCategory({ onPress }) {
                             </ContentLoader>
                         </View>
 
+                        {/* Skeleton for Category Name */}
                         <View style={{ marginTop: windowHeight(13) }}>
                             <ContentLoader
                                 speed={1}
@@ -72,12 +71,19 @@ export function ShopByCategory({ onPress }) {
 
     return (
         <View>
+            {/* Category Title */}
             <View style={styles.category}>
                 <View style={styles.line} />
-                <Text style={[styles.shopByCategory, { color: colors.text }]}>
-                    {t('homepage.shopByCategory')}
-                </Text>
+                <View style={{ flexDirection: 'row' }}>
+                    <View style={{ backgroundColor: appColors.loaderBackground, width: windowHeight(70), height: windowHeight(1), top: windowHeight(17), right: windowHeight(14) }} />
+                    <Text style={[styles.shopByCategory, { color: colors.text }]}>
+                        {t('homepage.shopByCategory')}
+                    </Text>
+                    <View style={{ backgroundColor: appColors.loaderBackground, width: windowHeight(70), height: windowHeight(1), top: windowHeight(17), left: windowHeight(14) }} />
+                </View>
             </View>
+
+            {/* Conditionally Render Skeleton or Content */}
             {loading ? (
                 <SkeletonLoader />
             ) : (
@@ -92,7 +98,7 @@ export function ShopByCategory({ onPress }) {
                             activeOpacity={0.7}
                             onPress={onPress}
                         >
-                            <View style={[styles.imageView]}>
+                            <View style={styles.imageView}>
                                 <Image
                                     source={item.image}
                                     style={styles.image}

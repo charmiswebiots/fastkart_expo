@@ -47,7 +47,7 @@ export function Cart({ navigation }) {
                 <WhishListProduct onPress={productDetails} />
                 <CommonModal modal={<DeleteProductModal onPress={visibleDeleteModal} />} showModal={showDeleteModal} visibleModal={visibleDeleteModal} />
                 <View style={styles.view}>
-                    {/* <Coupon price={50} onPress={visibleModal} onOrder={t('myOffersArr.onOrder')} onOrderAbove={t('cartlist.orderabove')} code={'SCD450'} /> */}
+                    <Coupon price={50} onPress={visibleModal} onOrder={t('myOffersArr.onOrder')} onOrderAbove={t('cartlist.orderabove')} code={'SCD450'} />
                     <TotalView onPress={address} />
                 </View>
             </ScrollView>

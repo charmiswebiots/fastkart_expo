@@ -494,14 +494,14 @@ export function Address({ navigation }) {
   const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
   useEffect(() => {
-      if (addressLoaded) {
+      if (!addressLoaded) {
           setLoading(true);
           console.log('loaijhng',loading)
           setTimeout(() => {
               setLoading(false);
               setAddressLoaded(true);
 
-          }, 2000);
+          }, 3000);
       }
   }, [addressLoaded, setAddressLoaded]);
 

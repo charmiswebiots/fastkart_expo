@@ -52,7 +52,7 @@ export function StackNavigation() {
         <Stack.Screen name="OnBoarding" component={OnBoarding} />
         <Stack.Screen name="OrderDetail" component={OrderDetail} />
         <Stack.Screen name="ProductsDetails" component={ProductsDetails} />
-        <Stack.Screen name="EditProfile" component={EditProfile} />
+        {/* <Stack.Screen name="EditProfile" component={EditProfile} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   )

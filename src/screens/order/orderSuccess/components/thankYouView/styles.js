@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         fontSize: fontSizes.FONT26,
         fontFamily: 'quickSandBold',
         alignSelf: 'center',
-        marginTop: windowHeight(10),
+        marginTop: windowHeight(0),
         color:appColors.black,
     },
     orderSuccessfull: {

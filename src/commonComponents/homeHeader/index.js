@@ -23,7 +23,10 @@ export function HomeHeader({ navigation, toogle }: HomeHeaderProps) {
         <TouchableOpacity onPress={toogle}>
           <Icons.category />
         </TouchableOpacity>
-        <Image source={isDark ? images.fastKartDark : images.fastkart} style={[styles.logoImg]} />
+        <View style={[styles.logoImg]}>
+        {isDark ? <Icons.faskartLogoDark /> : <Icons.faskartLogo />}
+
+        </View>
       </View>
       <View style={[styles.view, { flexDirection: viewRtlStyle }]}>
         <Icons.location />
