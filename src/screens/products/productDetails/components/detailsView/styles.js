@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
         color: appColors.black,
-        top: windowHeight(2),
+        // top: windowHeight(2),
     },
     detail: {
         fontSize: fontSizes.FONT20,
@@ -16,10 +16,10 @@ const styles = StyleSheet.create({
         color: appColors.black,
     },
     title: {
-        fontSize: fontSizes.FONT18,
+        // fontSize: fontSizes.FONT18,
         fontFamily: 'mulishSemiBold',
         color: appColors.content,
-        marginTop: windowHeight(4),
+        marginTop: windowHeight(10),
     },
     style1: {
         borderBottomWidth: 0.7,

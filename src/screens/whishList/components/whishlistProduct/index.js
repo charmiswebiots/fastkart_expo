@@ -601,18 +601,17 @@ import { useTheme } from "@react-navigation/native";
 import { useLoadingContext, useValues } from "../../../../utils/context";
 import appColors from "../../../../theme/appColors";
 import ContentLoader, { Rect } from "react-content-loader/native";
+import { windowHeight } from "../../../../theme/appConstant";
 
-// Skeleton Loader Component with length 4
 const SkeletonLoader = ({ isDark, colors }) => (
     <ContentLoader
         speed={1}
         width="100%"
-        height={440} // Adjusted to show 4 skeleton items
+        height={440} 
         viewBox="0 0 340 440"
-        backgroundColor={isDark ? colors.card : appColors.loaderBackground}
-        foregroundColor={appColors.placeholder}
+        backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+        foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
     >
-        {/* Repeat the skeleton structure 4 times */}
         {[...Array(4)].map((_, index) => (
             <React.Fragment key={index}>
                 <Rect x="18" y={index * 110 + 10} rx="10" ry="10" width="60" height="60" />
@@ -626,7 +625,93 @@ const SkeletonLoader = ({ isDark, colors }) => (
     </ContentLoader>
 );
 
-export function WhishListProduct() {
+// export function WhishListProduct() {
+    // const [loading, setLoading] = useState(false);
+    // const { addressLoaded, setAddressLoaded } = useLoadingContext();
+    // const { colors } = useTheme();
+    // const { isDark, viewRtlStyle, textRtlStyle, t, currSymbol, currValue } = useValues();
+    // const [cartItems, setCartItems] = useState(cart);
+
+    // useEffect(() => {
+    //     if (addressLoaded) {
+    //         setLoading(true);
+    //         setTimeout(() => {
+    //             setLoading(false);
+    //             setAddressLoaded(true);
+    //         }, 3000);
+    //     }
+    // }, [addressLoaded, setAddressLoaded]);
+
+    // const limitedCartItems = cartItems.slice(0, 4);
+
+//     const handleDelete = (id) => {
+//         setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
+//     };
+
+//     const renderRightActions = (progress, dragX, id) => {
+//         const scale = dragX.interpolate({
+//             inputRange: [-100, 0],
+//             outputRange: [1.5, 0],
+//             extrapolate: "clamp",
+//         });
+
+//         return (
+//             <View style={{marginHorizontal:windowHeight(-22),left:windowHeight(25)}}>
+//             <TouchableOpacity onPress={() => handleDelete(id)} style={styles.deleteButton}>
+//                 <Animated.View style={{ transform: [{ scale }] ,left:windowHeight(7)}}>
+//                     <Icons.Delete />
+//                 </Animated.View>
+//             </TouchableOpacity>
+//             </View>
+//         );
+//     };
+
+//     return (
+        // <GestureHandlerRootView style={styles.container}>
+        //     {loading ? (
+        //         <SkeletonLoader isDark={isDark} colors={colors} />
+        //     ) : (
+        //         limitedCartItems.map((item) => (
+        //             <Swipeable
+        //                 key={item.id}
+        //                 renderRightActions={(progress, dragX) => renderRightActions(progress, dragX, item.id)}
+        //                 friction={2}
+        //                 leftThreshold={80}
+        //                 rightThreshold={100}
+        //             >
+        //                 <View style={[styles.mainView, { backgroundColor: isDark ? colors.primary : appColors.gray }, { flexDirection: viewRtlStyle }]}>
+        //                     <Image source={item.image} style={styles.image} resizeMode="contain" />
+        //                     <View style={styles.lineView} />
+        //                     <View style={styles.counterView}>
+        //                         <TouchableOpacity activeOpacity={0.7}>
+        //                             <Text style={[styles.name, { color: colors.text }, { textAlign: textRtlStyle }]}>{t(item.name)}</Text>
+        //                             <Text style={[styles.weight, { textAlign: textRtlStyle }]}>{t(item.weight)}</Text>
+        //                         </TouchableOpacity>
+        //                         <View style={[styles.priceView, { flexDirection: viewRtlStyle }]}>
+        //                             <View style={[styles.discountPriceView, { flexDirection: viewRtlStyle }]}>
+        //                                 <Text style={[styles.price, { color: colors.text }]}>{currSymbol}{(item.price * currValue).toFixed(2)}</Text>
+        //                                 <View style={[styles.discountView, { flexDirection: viewRtlStyle }]}>
+        //                                     <Text style={styles.discount}>{item.discount}% </Text>
+        //                                     <Text style={styles.discount}>{t('cartlist.OFF')}</Text>
+        //                                 </View>
+        //                                 <View style={styles.counter}>
+        //                                     <Counter />
+        //                                 </View>
+        //                             </View>
+        //                         </View>
+        //                     </View>
+        //                 </View>
+        //             </Swipeable>
+        //         ))
+        //     )}
+        // </GestureHandlerRootView>
+//     );
+// }
+
+
+
+export function WhishListProduct({ onItemDelete }) {
+
     const [loading, setLoading] = useState(false);
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
     const { colors } = useTheme();
@@ -634,7 +719,7 @@ export function WhishListProduct() {
     const [cartItems, setCartItems] = useState(cart);
 
     useEffect(() => {
-        if (!addressLoaded) {
+        if (addressLoaded) {
             setLoading(true);
             setTimeout(() => {
                 setLoading(false);
@@ -645,23 +730,30 @@ export function WhishListProduct() {
 
     const limitedCartItems = cartItems.slice(0, 4);
 
+
     const handleDelete = (id) => {
-        setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
+        setCartItems((prevItems) => {
+            const updatedItems = prevItems.filter((item) => item.id !== id);
+            onItemDelete(updatedItems.length);
+            return updatedItems;
+        });
     };
 
     const renderRightActions = (progress, dragX, id) => {
         const scale = dragX.interpolate({
             inputRange: [-100, 0],
-            outputRange: [1, 0],
+            outputRange: [1.5, 0],
             extrapolate: "clamp",
         });
 
         return (
-            <TouchableOpacity onPress={() => handleDelete(id)} style={styles.deleteButton}>
-                <Animated.View style={{ transform: [{ scale }] }}>
-                    <Icons.Delete />
-                </Animated.View>
-            </TouchableOpacity>
+            <View style={{ marginHorizontal: windowHeight(-22), left: windowHeight(25) }}>
+                <TouchableOpacity onPress={() => handleDelete(id)} style={styles.deleteButton}>
+                    <Animated.View style={{ transform: [{ scale }], left: windowHeight(7) }}>
+                        <Icons.Delete />
+                    </Animated.View>
+                </TouchableOpacity>
+            </View>
         );
     };
 

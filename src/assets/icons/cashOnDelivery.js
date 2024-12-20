@@ -3,7 +3,7 @@ import Svg, { G, Path, Defs, ClipPath } from "react-native-svg"
 
 export function CashOnDelievry() {
     <Svg
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/3000/svg"
         width={20}
         height={20}
         fill="none"

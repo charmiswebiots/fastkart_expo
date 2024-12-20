@@ -103,7 +103,7 @@ export function TrendingProducts({ onPress }) {
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        if (!addressLoaded) {
+        if (addressLoaded) {
             setLoading(true);
             setTimeout(() => {
                 setLoading(false);
@@ -119,8 +119,8 @@ export function TrendingProducts({ onPress }) {
             height={110}
             viewBox="0 0 340 80"
 
-            backgroundColor={isDark ? colors.card : appColors.loaderBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
             <Rect x="18" y="10" rx="10" ry="10" width="60" height="60" />
             <Rect x="90" y="12" rx="5" ry="5" width="180" height="13" />

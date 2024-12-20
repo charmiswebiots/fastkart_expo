@@ -4,9 +4,9 @@ import Svg, { Path } from "react-native-svg"
 export function faskartLogo() {
     return (
         <Svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={85}
-        height={25}
+        xmlns="http://www.w3.org/3000/svg"
+        width={92}
+        height={35}
         viewBox="0 0 78 23"
       >
         <Path

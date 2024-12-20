@@ -19,7 +19,7 @@ export function ShopByCategory({ onPress }) {
             setTimeout(() => {
                 setLoading(false);
                 setAddressLoaded(true);
-            }, 3000);  // Simulated loading time (3 seconds)
+            }, 3000);
         }
     }, [addressLoaded, setAddressLoaded]);
 
@@ -40,8 +40,8 @@ export function ShopByCategory({ onPress }) {
                                 width={windowWidth(70)}
                                 height={windowWidth(70)}
                                 viewBox="0 0 70 70"
-                                backgroundColor={appColors.interpolateBackground}
-                                foregroundColor={appColors.placeholder}
+                                backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+                                foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
                             >
                                 <Rect x="0" y="0" rx="4" ry="4" width="70" height="70" />
                             </ContentLoader>
@@ -54,7 +54,6 @@ export function ShopByCategory({ onPress }) {
                                 width={windowWidth(99)}
                                 height={windowHeight(12)}
                                 viewBox="0 0 100 8"
-                                backgroundColor={appColors.interpolateBackground}
                                 foregroundColor={appColors.placeholder}
                             >
                                 <Rect x="0" y="0" rx="4" ry="4" width="95" height="12" />
@@ -67,7 +66,7 @@ export function ShopByCategory({ onPress }) {
     };
 
     const { colors } = useTheme();
-    const { t } = useValues();
+    const { t ,isDark} = useValues();
 
     return (
         <View>

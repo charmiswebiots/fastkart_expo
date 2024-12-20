@@ -4,7 +4,7 @@ import { category1 } from "../../../../data";
 import { windowHeight } from "../../../../../theme/appConstant";
 import { useTheme } from "@react-navigation/native";
 import { useValues,useLoadingContext } from "../../../../../utils/context";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import appColors from "../../../../../theme/appColors"; 
 import ContentLoader, { Rect } from 'react-content-loader/native';
 
@@ -14,14 +14,14 @@ export function TrendingCategoryView() {
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        if (!addressLoaded) {
+        if (addressLoaded) {
             setLoading(true);
             console.log('loaijhng', loading)
             setTimeout(() => {
                 setLoading(false);
                 setAddressLoaded(true);
 
-            }, 2000);
+            }, 3000);
         }
     }, [addressLoaded, setAddressLoaded]);
 
@@ -31,8 +31,8 @@ export function TrendingCategoryView() {
             width={400}
             height={55}
             viewBox="0 0 400 55"
-            backgroundColor={appColors.interpolateBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
 
 
@@ -47,7 +47,7 @@ export function TrendingCategoryView() {
         </ContentLoader>
     );
     const { colors } = useTheme();
-    const { textRtlStyle, t } = useValues();
+    const { textRtlStyle, t,isDark } = useValues();
 
     return (
         <View>

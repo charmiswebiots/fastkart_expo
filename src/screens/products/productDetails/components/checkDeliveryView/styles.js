@@ -10,14 +10,14 @@ const styles = StyleSheet.create({
     checkDelivery: {
         fontSize: fontSizes.FONT21,
         fontFamily: 'mulishBold',
-        marginTop: windowHeight(16),
+        marginTop: windowHeight(15),
         color: appColors.black,
     },
     content: {
         fontSize: fontSizes.FONT17,
         fontFamily: 'mulishSemiBold',
         color: appColors.content,
-        marginTop: windowHeight(6)
+        marginTop: windowHeight(1)
     },
     deliveryView: {
         marginTop: windowHeight(10),

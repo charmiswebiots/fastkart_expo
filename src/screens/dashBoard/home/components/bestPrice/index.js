@@ -12,7 +12,7 @@ import ContentLoader, { Rect } from "react-content-loader/native";
 
 export function BestPrice({ headerData, onPress }) {
     const { colors } = useTheme()
-    const { textRtlStyle, viewRtlStyle, t, currSymbol, currValue } = useValues()
+    const { textRtlStyle, viewRtlStyle, t, currSymbol, currValue, isDark } = useValues()
     const [loading, setLoading] = useState(false);
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
@@ -34,8 +34,8 @@ export function BestPrice({ headerData, onPress }) {
             width={150}
             height={200}
             viewBox="0 0 150 200"
-            backgroundColor={appColors.loaderBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
             <Rect x="35" y="15" rx="10" ry="10" width="70" height="70" />
             <Rect x="15" y="110" rx="5" ry="5" width="95" height="10" />

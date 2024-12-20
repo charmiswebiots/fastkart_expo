@@ -6,7 +6,7 @@ import { windowWidth, windowHeight } from '../../theme/appConstant';
 
 export function select ()  {
     return (
-        <Svg width={windowWidth(16)} height={windowHeight(16)} viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <Svg width={windowWidth(16)} height={windowHeight(16)} viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/3000/svg">
             <Path d="M1 3.33333L3.5 8L11 1" stroke="white" strokeWidth="2" />
         </Svg>
     )

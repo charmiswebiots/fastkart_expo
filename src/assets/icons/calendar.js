@@ -8,7 +8,7 @@ import { useValues } from '../../utils/context';
 export function calender (props)  {
     const {isDark}=useValues()
     return (
-        <Svg width={windowWidth(22)} height={windowHeight(22)} viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <Svg width={windowWidth(22)} height={windowHeight(22)} viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/3000/svg">
             <Path opacity="0.4" d="M1.07275 6.84113H15.1339" stroke={props.color ? props.color : "white"}  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <Path opacity="0.4" d="M4.59521 12.9881H4.60252M11.6038 9.92208H11.6111H11.6038ZM8.10318 9.92208H8.11049H8.10318ZM4.59521 9.92208H4.60252H4.59521ZM11.6038 12.9881H11.6111H11.6038ZM8.10318 12.9881H8.11049H8.10318Z" stroke={props.color ? props.color : "white"}   strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <Path d="M11.2896 1V3.59606" stroke={props.color ? props.color : "white"}  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

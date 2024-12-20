@@ -4,7 +4,7 @@ import Svg, { Path } from "react-native-svg"
 export function Phone() {
     return (
 
-        <Svg xmlns="http://www.w3.org/2000/svg" width={14} height={20} >
+        <Svg xmlns="http://www.w3.org/3000/svg" width={14} height={20} >
             <Path fill="#E9DEDC" d="M0 0h14v20H0V0Z" />
             <Path
                 fill="#265B5F"

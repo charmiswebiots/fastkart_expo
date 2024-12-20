@@ -20,7 +20,7 @@
 //         setTimeout(() => {
 //           setLoading(false);
 //           setAddressLoaded(true); 
-  
+
 //         }, 3000);
 //       }
 //     }, [addressLoaded, setAddressLoaded]);
@@ -128,8 +128,8 @@ export function Product(props) {
             height={115}
             viewBox="0 0 340 80"
 
-            backgroundColor={isDark ? colors.card : appColors.loaderBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
             <Rect x="10" y="10" rx="10" ry="10" width="70" height="70" />
             <Rect x="90" y="12" rx="5" ry="5" width="200" height="15" />

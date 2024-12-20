@@ -190,7 +190,7 @@ export const AppContext = createContext(initialContextVal);
 export const AppContextProvider = ({ children }) => {
   const [currSymbol, setCurrSymbolState] = useState('₹');
   const [currValue, setCurrValueState] = useState(1);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [rtl, setRtl] = useState(false);
   const { t } = useTranslation();
 

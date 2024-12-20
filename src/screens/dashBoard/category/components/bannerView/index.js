@@ -97,7 +97,7 @@ export function BannerView() {
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        if (!addressLoaded) {
+        if (addressLoaded) {
             setLoading(true);
             setTimeout(() => {
                 setLoading(false);

@@ -9,7 +9,7 @@ import { windowHeight, windowWidth } from "../../../../../theme/appConstant";
 
 export function Slider() {
 
-    const { rtl, t } = useValues()
+    const { rtl, t,isDark } = useValues()
       const [loading, setLoading] = useState(false);
       const { addressLoaded, setAddressLoaded } = useLoadingContext(); 
 
@@ -36,8 +36,8 @@ export function Slider() {
             width={windowWidth(558)} 
             height={windowHeight(210)} 
             viewBox="0 0 400 400"
-            backgroundColor={appColors.loaderBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark?appColors.loaderDarkBackground:appColors.loaderBackground}
+            foregroundColor={isDark?appColors.loaderDarkHighlight:appColors.loaderLightHighlight}
         >
             <Rect 
                 x={windowWidth(0)}  

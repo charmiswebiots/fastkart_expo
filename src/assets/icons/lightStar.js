@@ -4,7 +4,7 @@ import Svg, { Path } from "react-native-svg"
 export function LightStar() {
     return (
         <Svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/3000/svg"
             width={16}
             height={17}
             fill="none"

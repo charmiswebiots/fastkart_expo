@@ -18,9 +18,7 @@ export function OrderSuccess({ navigation }) {
         navigation.navigate('OrderTracking')
     }
 
-    const home = () => {
-        navigation.navigate('Home')
-    }
+
 
     return (
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
@@ -28,7 +26,6 @@ export function OrderSuccess({ navigation }) {
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <Header
                         isText={false}
-                        imageOnPress={home}
                         showImage={false}
                         lightStyle={{right:windowHeight(4)}}
                         firstIcon={<Icons.category />}

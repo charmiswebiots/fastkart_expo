@@ -4,7 +4,7 @@ import Svg, { Path } from "react-native-svg"
 export function faskartLogoDark() {
     return (
         <Svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/3000/svg"
             width={97}
             height={18}
             fill="none"

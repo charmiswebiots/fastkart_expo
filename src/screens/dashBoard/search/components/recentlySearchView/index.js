@@ -52,7 +52,7 @@
 
 
 
-import { View, Text, ScrollView, Animated } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import { useState, useEffect } from "react";
 import styles from "./styles";
 import { recentlySearch } from "../../../../data";
@@ -67,14 +67,14 @@ export function RecentlySearchView() {
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        if (!addressLoaded) {
+        if (addressLoaded) {
             setLoading(true);
             console.log('loaijhng', loading)
             setTimeout(() => {
                 setLoading(false);
                 setAddressLoaded(true);
 
-            }, 2000);
+            }, 3000);
         }
     }, [addressLoaded, setAddressLoaded]);
 
@@ -84,8 +84,8 @@ export function RecentlySearchView() {
             width={400}
             height={55}
             viewBox="0 0 400 55"
-            backgroundColor={appColors.interpolateBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
 
 

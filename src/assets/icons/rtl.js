@@ -8,7 +8,7 @@ import { useTheme } from "@react-navigation/native";
 export function rtl  ()  {
     const { colors } = useTheme();
     return (
-        <Svg width={windowWidth(30)} height={windowHeight(30)} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <Svg width={windowWidth(30)} height={windowHeight(30)} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/3000/svg">
             <Path d="M11 17.5H4" stroke={colors.text} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             <Path fillRule="evenodd" clipRule="evenodd" d="M20 17.5C20 18.8807 18.8807 20 17.5 20C16.1193 20 15 18.8807 15 17.5C15 16.1183 16.1193 15 17.5 15C18.8807 15 20 16.1183 20 17.5Z" stroke="#0BAF9A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             <Path d="M13 6.5H20" stroke={colors.text} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

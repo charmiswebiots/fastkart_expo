@@ -7,7 +7,7 @@ import { windowWidth, windowHeight } from '../../theme/appConstant';
 
 export function language(props) {
     return (
-        <Svg xmlns="http://www.w3.org/2000/svg" width={props.width ? props.width : windowWidth(26)} height={props.height ? props.height : windowHeight(26)} viewBox="0 0 640 480">
+        <Svg xmlns="http://www.w3.org/3000/svg" width={props.width ? props.width : windowWidth(26)} height={props.height ? props.height : windowHeight(26)} viewBox="0 0 640 480">
             <G fill-rule="evenodd" transform="scale(.9375)">
                 <G stroke-width="1pt">
                     <Path fill="#bd3d44" d="M0 0h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0z" />

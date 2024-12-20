@@ -8,7 +8,7 @@ import { useTheme } from "@react-navigation/native";
 export function koreanWon ()  {
 	const { colors } = useTheme();
 	return (
-		<Svg xmlns="http://www.w3.org/2000/svg" width={windowWidth(29)} height={windowHeight(29)} enable-background="new 0 0 460 460" viewBox="0 0 460 460">
+		<Svg xmlns="http://www.w3.org/3000/svg" width={windowWidth(29)} height={windowHeight(29)} enable-background="new 0 0 460 460" viewBox="0 0 460 460">
 			<Path fill={colors.text} d="M230,2.22C104.2,2.22,2.22,104.2,2.22,230.001C2.22,355.8,104.2,457.78,230,457.78
 				S457.78,355.8,457.78,230.001C457.78,104.2,355.8,2.22,230,2.22z M230,411.513c-100.246,0-181.513-81.266-181.513-181.512
 				c0-100.248,81.267-181.514,181.513-181.514s181.513,81.266,181.513,181.514C411.513,330.247,330.246,411.513,230,411.513z"/>

@@ -9,7 +9,7 @@ import { useTheme } from "@react-navigation/native";
 export function deliveryTruck(props) {
 	const { colors } = useTheme();
 	return (
-		<Svg version="1.1" width={windowWidth(20)} height={windowHeight(20)} id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+		<Svg version="1.1" width={windowWidth(20)} height={windowHeight(20)} id="Capa_1" xmlns="http://www.w3.org/3000/svg" x="0px" y="0px"
 			viewBox="0 0 297.004 297.004" style="enable-background:new 0 0 297.004 297.004;">
 			<Path d="M286.832,142.98h-12.218l-17.449-52.677c-1.381-4.162-5.27-6.974-9.655-6.974h-29.557V34.754
 	c0-5.616-4.555-10.17-10.172-10.17H10.172C4.555,24.584,0,29.138,0,34.754v178.043c0,5.617,4.555,10.171,10.172,10.171h9.83

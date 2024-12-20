@@ -45,5 +45,8 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         marginHorizontal:windowHeight(32)
     },
+    skeletonContainer:{
+        top:windowHeight(20)
+    }
 })
 export default styles;

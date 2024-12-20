@@ -328,7 +328,7 @@ export function Total(props) {
 
 
     useEffect(() => {
-        if (!addressLoaded) {
+        if (addressLoaded) {
             setLoading(true);
             setTimeout(() => {
                 setLoading(false);
@@ -343,8 +343,8 @@ export function Total(props) {
             width="100%"
             height={30}
             viewBox="0 0 340 30"
-            backgroundColor={isDark ? colors.card : appColors.loaderBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
             <Rect x="0" y="0" rx="4" ry="4" width="50%" height="30" />
         </ContentLoader>
@@ -356,8 +356,8 @@ export function Total(props) {
             width="100%"
             height={100}
             viewBox="0 0 380 100"
-            backgroundColor={isDark ? colors.card : appColors.loaderBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
             <Rect x="0" y="18" rx="4" ry="4" width="60%" height="20" />
             <Rect x="285" y="18" rx="4" ry="4" width="25%" height="20" />

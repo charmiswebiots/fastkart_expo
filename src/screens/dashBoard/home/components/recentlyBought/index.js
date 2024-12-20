@@ -149,8 +149,9 @@ export function RecentlyBought({ onPress }) {
                         width={60}
                         height={65}
                         viewBox="0 0 100 100"
-                        backgroundColor={appColors.interpolateBackground}
-                        foregroundColor={appColors.placeholder}
+                        backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+                        foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
+                        
                         style={styles.skeletonItem}
                     >
                         <Rect x="0" y="0" rx="10" ry="10" width="90" height="90" />
@@ -159,7 +160,7 @@ export function RecentlyBought({ onPress }) {
             </ScrollView>
         );
     };
-    
+
 
     return (
         <View style={styles.mainView}>

@@ -11,7 +11,7 @@ import { windowWidth, windowHeight } from '../../theme/appConstant';
 
 export function korea() {
   return (
-    <Svg width={windowWidth(34)} height={windowHeight(34)} xmlns="http://www.w3.org/2000/svg" id="flag-icons-kr" viewBox="0 0 640 480">
+    <Svg width={windowWidth(34)} height={windowHeight(34)} xmlns="http://www.w3.org/3000/svg" id="flag-icons-kr" viewBox="0 0 640 480">
       <Defs>
         <ClipPath id="a">
           <Path fillOpacity=".7" d="M-95.8-.4h682.7v512H-95.8z" />

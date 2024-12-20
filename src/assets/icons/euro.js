@@ -8,7 +8,7 @@ import { useTheme } from "@react-navigation/native";
 export function euro() {
 	const { colors } = useTheme();
 	return (
-		<Svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+		<Svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/3000/svg" x="0px" y="0px"
 			width={windowWidth(31)} height={windowHeight(31)} viewBox="0 0 24 24">
 			<Path fill="#0BAF9A" d="M12.535,7.67c1.041,0.027,2.01,0.537,2.62,1.38c0.335,0.439,0.961,0.524,1.399,0.19
 	c0.439-0.336,0.522-0.963,0.188-1.402c-0.002-0.002-0.005-0.005-0.007-0.008c-0.986-1.336-2.54-2.135-4.2-2.16

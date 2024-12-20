@@ -17,6 +17,7 @@ export function Header({
     titleText1,
     imageOnPress,
     lightStyle,
+    titleTextstyle,
 }) {
     const {colors}=useTheme()
     const {rtl,viewRtlStyle}=useValues()
@@ -32,7 +33,7 @@ export function Header({
                 )}
 
                 {isText ? (
-                    <Text style={[styles.text, styles.headerImg,{color:colors.text}]}>{titleText}<Text style={styles.text1}>{titleText1}</Text></Text>
+                    <Text style={[styles.text, styles.headerImg,{color:colors.text}]}>{titleText}<Text style={[styles.text1,titleTextstyle]}>{titleText1}</Text></Text>
                     
                 ) : (
               

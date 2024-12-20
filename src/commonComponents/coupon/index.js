@@ -14,7 +14,7 @@ export function Coupon(props) {
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        if (!addressLoaded) {
+        if (addressLoaded) {
             setLoading(true);
             setTimeout(() => {
                 setLoading(false);
@@ -34,14 +34,14 @@ export function Coupon(props) {
             width="100%"
             height={150} 
             viewBox="0 0 340 150"
-            backgroundColor={isDark ? colors.card : appColors.loaderBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
-            <Rect x="18" y="10" rx="10" ry="10" width="55" height="55" /> 
-            <Rect x="85" y="14" rx="5" ry="5" width="175" height="19" />  
-            <Rect x="85" y="44" rx="5" ry="5" width="150" height="20" /> 
-            <Rect x="273" y="14" rx="5" ry="5" width="61" height="19" />  
-            <Rect x="269" y="45" rx="5" ry="5" width="65" height="19" />  
+            <Rect x="0" y="10" rx="10" ry="10" width="65" height="60" /> 
+            <Rect x="78" y="14" rx="5" ry="5" width="178" height="19" />  
+            <Rect x="78" y="44" rx="5" ry="5" width="150" height="20" /> 
+            <Rect x="289" y="14" rx="5" ry="5" width="61" height="19" />  
+            <Rect x="285" y="45" rx="5" ry="5" width="65" height="19" />  
         </ContentLoader>
     );
 

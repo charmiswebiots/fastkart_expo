@@ -14,6 +14,7 @@ export function Payment({ navigation }) {
     const { isDark,t } = useValues()
     const { colors } = useTheme()
     const [showModal, setShowModal] = useState(false);
+    
 
     const visibleModal = () => {
         setShowModal(!showModal)

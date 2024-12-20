@@ -8,7 +8,7 @@ import { useTheme } from "@react-navigation/native";
 export function order () {
     const { colors } = useTheme();
     return (
-        <Svg width={windowWidth(24)} height={windowHeight(24)} viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <Svg width={windowWidth(24)} height={windowHeight(24)} viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/3000/svg">
             <Path d="M11.7517 13.1955H5.43417" stroke="#0BAF9A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <Path d="M11.3175 9.65471H5" stroke="#0BAF9A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <Path d="M7.4107 6H5.00008" stroke="#0BAF9A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

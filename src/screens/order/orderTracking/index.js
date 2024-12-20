@@ -7,6 +7,8 @@ import { Header, Button } from "../../../commonComponents";
 import { MapImageView, EstimatedDeliveryView, UserDetailView, AddressView } from "./components";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../utils/context";
+import { windowHeight } from "../../../theme/appConstant";
+import { Icons } from "../../../utils/icons";
 
 
 export function OrderTracking({ navigation }) {

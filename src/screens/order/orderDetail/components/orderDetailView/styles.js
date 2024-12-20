@@ -12,6 +12,15 @@ const styles = StyleSheet.create({
         paddingHorizontal: windowWidth(22),
         paddingVertical: windowHeight(12),
     },
+    orderDetailView1:{
+        width: '92%',
+        alignSelf: 'center',
+        backgroundColor: appColors.gray,
+        borderRadius: windowHeight(10),
+        alignItems: 'center',
+        paddingHorizontal: windowWidth(22),
+        paddingVertical: windowHeight(12),
+    },
     idView: {
         marginHorizontal: windowWidth(10),
     },

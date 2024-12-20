@@ -8,7 +8,7 @@ import { useTheme } from "@react-navigation/native";
 export function offer  () {
     const { colors } = useTheme();
     return (
-        <Svg width={windowWidth(25)} height={windowHeight(25)} viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <Svg width={windowWidth(25)} height={windowHeight(25)} viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/3000/svg">
             <Path d="M12.8496 1.2503V3.6703" stroke={colors.text} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <Path d="M12.8496 14.7601V16.7841" stroke={colors.text} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <Path d="M12.8496 11.3246V6.5036" stroke={colors.text} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

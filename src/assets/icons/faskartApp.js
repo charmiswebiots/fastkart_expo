@@ -5,7 +5,7 @@ import Svg, { G, Path, Defs } from "react-native-svg"
 export function faskartApp() {
     return (
         <Svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/3000/svg"
             width={219}
             height={46}
             fill="none"

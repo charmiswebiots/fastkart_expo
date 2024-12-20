@@ -489,12 +489,12 @@ import { useLoadingContext } from '../../utils/context';
 export function Address({ navigation }) {
 
   const { colors } = useTheme();
-  const { viewRtlStyle, rtl, textRtlStyle, t } = useValues();
+  const { viewRtlStyle, rtl, textRtlStyle, t ,isDark} = useValues();
   const [loading, setLoading] = useState(false);
   const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
   useEffect(() => {
-      if (!addressLoaded) {
+      if (addressLoaded) {
           setLoading(true);
           console.log('loaijhng',loading)
           setTimeout(() => {
@@ -513,15 +513,15 @@ export function Address({ navigation }) {
     <ContentLoader
       speed={1}
       width={400}
-      height={160}
-      viewBox="0 0 400 160"
-      backgroundColor={appColors.interpolateBackground}
-      foregroundColor={appColors.placeholder}
+      height={130}
+      viewBox="0 0 400 110"
+      backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+      foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
     >
 
       
       <Rect x="0" y="10" rx="4" ry="4" width="10%" height="40"/>
-      <Rect x="12%" y="10" rx="4" ry="4" width="70%"height="22"/>
+      <Rect x="12%" y="10" rx="4" ry="4" width="70%"height="25"/>
 
       <Rect x="0" y="65" rx="4" ry="4" width="100%" height="25"/>
     </ContentLoader>
@@ -534,8 +534,8 @@ export function Address({ navigation }) {
       width={400}
       height={900}
       viewBox="0 0 400 900"
-      backgroundColor={appColors.interpolateBackground}
-      foregroundColor={appColors.placeholder}
+      backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+      foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
     >
 
       

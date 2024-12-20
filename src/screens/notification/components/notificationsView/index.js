@@ -74,46 +74,49 @@
 //     );
 // }
 
-
-
-
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, FlatList, Text, Animated } from 'react-native';
 import styles from './styles';
 import { notification } from '../../../data';
 import { useTheme } from '@react-navigation/native';
-import { useValues } from '../../../../utils/context';
+import { useLoadingContext, useValues } from '../../../../utils/context';
 import appColors from '../../../../theme/appColors';
+import ContentLoader, { Rect } from "react-content-loader/native";
 
 export function NotificationsView() {
-    const [loading, setLoading] = useState(true);
-    const fadeAnim = useRef(new Animated.Value(1)).current;
+    const [loading, setLoading] = useState(false);
+    const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-            Animated.timing(fadeAnim, {
-                toValue: 0,
-                duration: 1200,
-                useNativeDriver: true,
-            }).start();
-        }, 3000);
-
-        return () => clearTimeout(timer);
-    }, []);
+        if (addressLoaded) {
+            setLoading(true);
+            setTimeout(() => {
+                setLoading(false);
+                setAddressLoaded(true);
+            }, 3000);
+        }
+    }, [addressLoaded, setAddressLoaded]);
 
     const { colors } = useTheme();
     const { viewRtlStyle, textRtlStyle, t, isDark } = useValues();
 
+    // SkeletonLoader using ContentLoader
     const SkeletonLoader = () => (
-        <View style={[styles.loaderContainer, { flexDirection: viewRtlStyle }]}>
-            <Animated.View style={[styles.skeletonIcon, { opacity: fadeAnim }]} />
-            <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
-            <Animated.View style={[styles.skeletonText1, { opacity: fadeAnim }]} />
-            <View style={{ justifyContent: "space-between", flexDirection: viewRtlStyle }}>
-                <Animated.View style={[styles.skeletonText2, { opacity: fadeAnim }]} />
-            </View>
-        </View>
+        <ContentLoader
+            speed={1}
+            width="100%"
+            height={90}
+            viewBox="0 0 340 50"
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
+        >
+            <Rect x="15" y="12" rx="5" ry="5" width="50" height="50" />
+            <Rect x="80" y="16" rx="5" ry="5" width="150" height="18" />
+            <Rect x="80" y="40" rx="5" ry="5" width="100" height="18" />
+            <Rect x="245" y="35" rx="5" ry="5" width="80" height="25" />
+            {/* <Rect x="60" y="85" rx="5" ry="5" width="50" height="15" />
+            <Rect x="200" y="90" rx="5" ry="5" width="60" height="20" /> */}
+        </ContentLoader>
     );
 
     const renderNotificationItem = ({ item }) => (

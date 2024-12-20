@@ -7,7 +7,7 @@ import { windowWidth, windowHeight } from '../../theme/appConstant';
 
 export function darkIcon() {
 	return (
-		<Svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+		<Svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/3000/svg" x="0px" y="0px"
 			width={windowWidth(24)} height={windowHeight(24)} viewBox="0 0 256 256" enable-background="new 0 0 256 256">
 			<G transform="translate(128 128) scale(0.72 0.72)">
 				<G transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)">

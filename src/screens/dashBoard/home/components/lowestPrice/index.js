@@ -24,7 +24,7 @@ export function LowestPrice({ headerData, onPress, style }) {
     }, [addressLoaded, setAddressLoaded]);
 
     const { colors } = useTheme();
-    const { viewRtlStyle, textRtlStyle, t, currSymbol, currValue } = useValues();
+    const { viewRtlStyle, textRtlStyle, t, currSymbol, currValue, isDark } = useValues();
 
     const SkeletonLoader = () => (
         <ContentLoader
@@ -32,8 +32,8 @@ export function LowestPrice({ headerData, onPress, style }) {
             width={150}
             height={200}
             viewBox="0 0 150 200"
-            backgroundColor={appColors.loaderBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
             <Rect x="35" y="15" rx="10" ry="10" width="70" height="70" />
             <Rect x="15" y="110" rx="5" ry="5" width="95" height="10" />
