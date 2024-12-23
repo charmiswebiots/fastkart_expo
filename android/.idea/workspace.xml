@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dbb9147c-18b0-4e2f-aa2c-d4f50c546266" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.expo/devices.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.expo/devices.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/+.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/_.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/arabic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/atsign.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/australianDollar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/bottomCart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/bottomCategory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/bottomHome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/bottomSearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/call.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/cashOnDelivery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/chat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/currencyConverter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/currentLocation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/dark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/darkIcon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/delete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/delivery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/deliveryTruck.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/discount.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/dollar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/drawerArrow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/drawerHome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/dropDown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/editProfileImage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/emptyStar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/euro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/facebook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/faskartApp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/faskartLogo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/faskartLogoDark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/filledStar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/fkDark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/fkLight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/fullName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/googleIcon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/headerArrow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/hidePassword.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/hindi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/into.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/korea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/koreanWon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/language.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/lightStar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/linkedIn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/location.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/mappin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/markRead.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/moon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/myWishList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/notification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/offer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/orderDetail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/orderId.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/pageList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/passChange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/password.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/payment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/phone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/pin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/refund.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/rtl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/rupees.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/selected.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/selectedTab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/share.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/showPassword.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/sideArrow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/signOut.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/star.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/starGrey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/starYellow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/topUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/truck.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/twitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/unSelected.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/voiceSearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/wishlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/icons/work.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/language/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/addNew/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/addNew/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/button/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/button/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/continueButton/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/continueButton/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/counter/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/counter/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/coupon/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/coupon/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/header/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/header/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/homeHeader/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/homeHeader/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/input/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/input/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/loader/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/optionButton/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/optionButton/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/product/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/product/loader/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/product/loader/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/product/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/rtlSwitch/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/rtlSwitch/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/searchFilter/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/searchFilter/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/selected/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/selected/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/switch/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/switch/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/total/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/commonComponents/total/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/navigation/drawer/drawerNavigator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/navigation/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/navigation/stackNavigation/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/navigation/tabNavigation/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/navigation/tabNavigation/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/addAddressModal/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/addAddressModal/components/pickerView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/addAddressModal/components/pickerView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/addAddressModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/addAddressModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/addNewCardModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/addNewCardModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/commonModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/commonModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/couponModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/couponModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/currencyConverterModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/currencyConverterModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/deleteProductModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/deleteProductModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/deliveryTimeModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/deliveryTimeModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/drawerComponents/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/drawerComponents/components/menuItem/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/drawerComponents/components/menuItem/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/drawerComponents/components/supportView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/drawerComponents/components/supportView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/drawerComponents/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/drawerComponents/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/multiLangaugeModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/multiLangaugeModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/offerFilterModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/offerFilterModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/orderHistoryFilterModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/orderHistoryFilterModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/productFilter/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/productFilter/components/picker/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/productFilter/components/picker/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/productFilter/components/rangeSlider/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/productFilter/components/rangeSlider/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/productFilter/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/productFilter/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/quanitityModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/quanitityModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/reviewModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/reviewModal/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/switchComponents/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/switchComponents/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/tabComponents/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/otherComponents/tabComponents/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/404/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/404/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/aboutUs/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/aboutUs/components/peopleView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/aboutUs/components/peopleView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/aboutUs/components/questionsView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/aboutUs/components/questionsView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/aboutUs/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/aboutUs/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/account/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/account/components/profileView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/account/components/profileView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/account/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/account/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/address/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/address/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/components/continueView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/components/continueView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/login/components/detailsView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/login/components/detailsView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/login/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/login/components/titleView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/login/components/titleView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/login/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/login/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/register/components/detailsView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/register/components/detailsView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/register/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/auth/register/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/cart/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/cart/components/totalView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/cart/components/totalView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/cart/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/cart/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/category/components/bannerView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/category/components/bannerView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/category/components/categoryView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/category/components/categoryView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/category/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/category/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/category/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/bestPrice/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/coupons/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/lowestPrice/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/lowestPrice/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/notFound/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/offers/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/recentlyBought/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/seeAllHeader/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/shopByCategory/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/slider/loader/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/slider/loader/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/components/slider/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/home/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/offers/components/couponsView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/offers/components/couponsView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/offers/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/offers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/offers/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/search/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/search/components/recentlySearchView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/search/components/recentlySearchView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/search/components/trendingCategoryView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/search/components/trendingCategoryView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/search/components/trendingProducts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/search/components/trendingProducts/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/search/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/search/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/shopPage/components/categoryView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/shopPage/components/categoryView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/shopPage/components/dataView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/shopPage/components/dataView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/shopPage/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/shopPage/components/priceView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/shopPage/components/priceView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/shopPage/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/dashBoard/shopPage/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/components/changePasswordView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/components/changePasswordView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/components/datePickerView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/components/datePickerView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/components/detailsView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/components/detailsView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/components/profileView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/components/profileView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/editProfile/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/intro/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/intro/onBoarding/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/intro/onBoarding/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/intro/splash/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/intro/splash/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/notification/components/alertView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/notification/components/alertView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/notification/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/notification/components/notificationsView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/notification/components/notificationsView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/notification/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/notification/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/components/addressView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/components/addressView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/components/itemsView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/components/itemsView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/components/orderDetailView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/components/orderDetailView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/components/paymentsMethodView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/components/paymentsMethodView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderDetail/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderHistory/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderHistory/components/itemsView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderHistory/components/itemsView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderHistory/components/orderHistoryTime/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderHistory/components/orderHistoryTime/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderHistory/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderHistory/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderSuccess/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderSuccess/components/orderDataView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderSuccess/components/orderDataView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderSuccess/components/thankYouView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderSuccess/components/thankYouView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderSuccess/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderSuccess/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/components/addressView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/components/addressView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/components/estimatedDeliveryView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/components/estimatedDeliveryView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/components/mapImageView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/components/mapImageView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/components/userDetailView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/components/userDetailView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/order/orderTracking/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/pagesList/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/pagesList/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/payment/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/payment/components/selectValueView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/payment/components/selectValueView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/payment/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/payment/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/checkDeliveryView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/checkDeliveryView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/counterView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/counterView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/detailsView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/detailsView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/nameView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/nameView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/optionsView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/optionsView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/reviewView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/components/reviewView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/products/productDetails/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/selectAddress/components/addressView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/selectAddress/components/addressView/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/selectAddress/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/selectAddress/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/selectAddress/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/whishList/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/whishList/components/whishlistProduct/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/whishList/components/whishlistProduct/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/whishList/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/rtlStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/theme/appColors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/theme/appConstant.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/theme/appFonts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/context/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/images.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=Default, isTemplate=false, identifier=serial=emulator-5554;connection=7f855c32)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="D:\fastkart_expo\android\app\debug.keystore" />
+    <option name="KEY_ALIAS" value="android" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2qVqd0pHJNk6xDxQxRM3PxvBrGx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ApkExportedModule&quot;: &quot;faskartExpo.app&quot;,
+    &quot;ExportApk.ApkPathForfaskartExpo.app&quot;: &quot;D:\\fastkart_expo\\android\\app&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;nandini/dashboard&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/fastkart_expo/android/app/debug.keystore&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ExportApk.BuildVariants&quot;: [
+      &quot;release&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="faskartExpo.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbb9147c-18b0-4e2f-aa2c-d4f50c546266" name="Changes" comment="" />
+      <created>1734758174363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734758174363</updated>
+    </task>
+    <servers />
+  </component>
+</project>
