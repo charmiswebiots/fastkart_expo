@@ -251,7 +251,7 @@ export function TrendingProducts({ onPress }: TrendingProductsProps): JSX.Elemen
                 trendingProducts.map((item: any, index: number) => (
                     <View
                         key={index}
-                        style={[styles.mainView, { backgroundColor: isDark ? colors.card : appColors.gray }, { flexDirection: viewRtlStyle }]}
+                        style={[styles.mainView, { backgroundColor: isDark ? colors.primary : appColors.gray }, { flexDirection: viewRtlStyle }]}
                     >
                         <Image source={item.image} style={styles.image} resizeMode="contain" />
                         <View style={styles.lineView} />

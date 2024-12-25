@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
     orderDetailView1:{
         width: '92%',
         alignSelf: 'center',
-        // backgroundColor: appColors.gray,
         borderRadius: windowHeight(10),
         alignItems: 'center',
         paddingHorizontal: windowWidth(22),
