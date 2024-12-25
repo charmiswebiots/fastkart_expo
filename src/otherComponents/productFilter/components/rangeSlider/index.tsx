@@ -54,8 +54,6 @@ export function RangeSlider () {
 
   return (
     <View style={styles.container}>
-   
-
       <View style={styles.sliderContainer}>
         <View style={styles.track} />
         <View

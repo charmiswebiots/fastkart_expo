@@ -80,13 +80,13 @@ export function OrderSuccess({ navigation }: OrderSuccessProps) {
         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
             <View style={styles.mainView}>
                 <ScrollView showsVerticalScrollIndicator={false}>
-                    {/* <Header
+                    <Header
                         isText={false}
                         showImage={false}
                         lightStyle={{ right: windowHeight(4) }}
                         firstIcon={<Icons.category />}
                         lightImage={isDark ? <Icons.faskartLogoDark /> : <Icons.faskartLogo />}
-                    /> */}
+                    />
                     <Image source={images.orderSuccess} style={styles.orderSuccess} />
                     <ThankyouView />
                     <OrderDataView/>

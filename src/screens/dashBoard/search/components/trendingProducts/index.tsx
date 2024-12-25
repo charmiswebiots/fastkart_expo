@@ -98,7 +98,7 @@
 // import ContentLoader, { Rect } from "react-content-loader/native";
 
 // export function TrendingProducts({ onPress }) {
-  
+
 //     const [loading, setLoading] = useState(false);
 //     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
@@ -191,7 +191,7 @@ interface TrendingProductsProps {
 }
 
 export function TrendingProducts({ onPress }: TrendingProductsProps): JSX.Element {
-  
+
     const [loading, setLoading] = useState<boolean>(false);
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
@@ -206,6 +206,21 @@ export function TrendingProducts({ onPress }: TrendingProductsProps): JSX.Elemen
     }, [addressLoaded, setAddressLoaded]);
 
     const SkeletonLoader = (): JSX.Element => (
+        // <ContentLoader
+        //     speed={1}
+        //     width="100%"
+        //     height={110}
+        //     viewBox="0 0 340 80"
+        //     backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+        //     foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
+        // >
+        //     <Rect x="18" y="10" rx="10" ry="10" width="60" height="60" />
+        //     <Rect x="90" y="12" rx="5" ry="5" width="180" height="13" />
+        //     <Rect x="90" y="32" rx="5" ry="5" width="100" height="12" />
+        //     <Rect x="90" y="58" rx="5" ry="5" width="60" height="12" />
+        //     <Rect x="160" y="58" rx="5" ry="5" width="50" height="12" />
+        //     <Rect x="245" y="50" rx="5" ry="5" width="75" height="22" />
+        // </ContentLoader>
         <ContentLoader
             speed={1}
             width="100%"
@@ -214,16 +229,16 @@ export function TrendingProducts({ onPress }: TrendingProductsProps): JSX.Elemen
             backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
             foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
-            <Rect x="18" y="10" rx="10" ry="10" width="60" height="60" />
-            <Rect x="90" y="12" rx="5" ry="5" width="180" height="13" />
-            <Rect x="90" y="32" rx="5" ry="5" width="100" height="12" />
-            <Rect x="90" y="58" rx="5" ry="5" width="60" height="12" />
-            <Rect x="160" y="58" rx="5" ry="5" width="50" height="12" />
-            <Rect x="245" y="50" rx="5" ry="5" width="75" height="22" />
+            <Rect x={rtl ? "260" : "18"} y="10" rx="10" ry="10" width="60" height="60" />
+            <Rect x={rtl ? "66" : "90"} y="12" rx="5" ry="5" width="180" height="13" />
+            <Rect x={rtl ? "147" : "90"} y="32" rx="5" ry="5" width="100" height="12" />
+            <Rect x={rtl ? "188" : "90"} y="58" rx="5" ry="5" width="60" height="12" />
+            <Rect x={rtl ? "130" : "160"} y="58" rx="5" ry="5" width="50" height="12" />
+            <Rect x={rtl ? "18" : "245"} y="50" rx="5" ry="5" width="75" height="22" />
         </ContentLoader>
     );
 
-    const { isDark, viewRtlStyle, textRtlStyle, t, currSymbol, currValue } = useValues();
+    const { isDark, viewRtlStyle, textRtlStyle, t, currSymbol, currValue, rtl } = useValues();
     const { colors } = useTheme();
 
     return (

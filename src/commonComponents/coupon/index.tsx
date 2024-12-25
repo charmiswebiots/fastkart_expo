@@ -210,20 +210,69 @@ export function Coupon({ onPress, price, onOrder, onOrderAbove }: CouponProps) {
     const { colors } = useTheme();
 
     const SkeletonLoader: FC = () => (
+        // <ContentLoader
+        //     speed={1}
+        //     width="100%"
+        //     height={windowHeight(145)}
+        //     viewBox="0 0 310 150"
+        //     backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+        //     foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
+        // >
+        //     <Rect x="0" y="10" rx="10" ry="10" width={windowHeight(45)} height={windowHeight(45)} />
+        //     <Rect x="70" y="14" rx="5" ry="5" width={windowWidth(140)} height={windowHeight(14)} />
+        //     <Rect x="70" y="44" rx="5" ry="5" width={windowWidth(100)} height={windowHeight(14)} />
+        //     <Rect x="245" y="14" rx="5" ry="5" width={windowWidth(70)} height={windowHeight(14)} />
+        //     <Rect x="245" y="45" rx="5" ry="5" width={windowWidth(70)} height={windowHeight(14)} />
+        // </ContentLoader>
         <ContentLoader
-            speed={1}
-            width="100%"
-            height={windowHeight(145)}
-            viewBox="0 0 310 150"
-            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
-            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
-        >
-            <Rect x="0" y="10" rx="10" ry="10" width={windowHeight(45)} height={windowHeight(45)} />
-            <Rect x="70" y="14" rx="5" ry="5" width={windowWidth(140)} height={windowHeight(14)} />
-            <Rect x="70" y="44" rx="5" ry="5" width={windowWidth(100)} height={windowHeight(14)} />
-            <Rect x="245" y="14" rx="5" ry="5" width={windowWidth(70)} height={windowHeight(14)} />
-            <Rect x="245" y="45" rx="5" ry="5" width={windowWidth(70)} height={windowHeight(14)} />
-        </ContentLoader>
+        speed={1}
+        width="100%"
+        height={windowHeight(145)}
+        viewBox="0 0 310 150"
+        backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+        foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
+    >
+        <Rect
+            x={rtl ? 248 : 0}
+            y="10"
+            rx="10"
+            ry="10"
+            width={windowHeight(45)}
+            height={windowHeight(45)}
+        />
+        <Rect
+            x={rtl ? 100 : 70}
+            y="14"
+            rx="5"
+            ry="5"
+            width={windowWidth(140)}
+            height={windowHeight(14)}
+        />
+        <Rect
+            x={rtl ? 140 : 70}
+            y="44"
+            rx="5"
+            ry="5"
+            width={windowWidth(100)}
+            height={windowHeight(14)}
+        />
+        <Rect
+            x={rtl ? 0 : 245}
+            y="14"
+            rx="5"
+            ry="5"
+            width={windowWidth(70)}
+            height={windowHeight(14)}
+        />
+        <Rect
+            x={rtl ? 0 : 245}
+            y="45"
+            rx="5"
+            ry="5"
+            width={windowWidth(70)}
+            height={windowHeight(14)}
+        />
+    </ContentLoader>
     );
 
     return (

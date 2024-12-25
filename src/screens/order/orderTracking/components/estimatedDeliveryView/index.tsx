@@ -7,7 +7,7 @@ import { windowHeight } from "../../../../../theme/appConstant";
 import appColors from "../../../../../theme/appColors";
 
 export function EstimatedDeliveryView() {
-    const { t ,isDark} = useValues();
+    const { t ,isDark,rtl} = useValues();
     const [loading, setLoading] = useState(false);
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
@@ -30,8 +30,24 @@ export function EstimatedDeliveryView() {
             backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
             foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
-            <Rect x="55" y="0" rx="4" ry="4" width="65%" height={windowHeight(20)} /> 
-            <Rect x="66" y="33" rx="4" ry="4" width="58%" height={windowHeight(18)} />
+            {/* <Rect x="55" y="0" rx="4" ry="4" width="65%" height={windowHeight(20)} /> 
+            <Rect x="66" y="33" rx="4" ry="4" width="58%" height={windowHeight(18)} /> */}
+             <Rect 
+        x={rtl ? '35%' : '55%'}  // For RTL, shift the position to the right
+        y="0" 
+        rx="4" 
+        ry="4" 
+        width="65%" 
+        height={windowHeight(20)} 
+      /> 
+      <Rect 
+        x={rtl ? '42%' : '66%'}  // For RTL, shift the position to the right
+        y="33" 
+        rx="4" 
+        ry="4" 
+        width="58%" 
+        height={windowHeight(18)} 
+      />
         </ContentLoader>
     );
 

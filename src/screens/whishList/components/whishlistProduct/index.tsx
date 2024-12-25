@@ -741,27 +741,97 @@ interface SkeletonLoaderProps {
     colors: any;
 }
 
-const SkeletonLoader: React.FC<SkeletonLoaderProps> = ({ isDark, colors }) => (
-    <ContentLoader
-        speed={1}
-        width="100%"
-        height={440} 
-        viewBox="0 0 340 440"
-        backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
-        foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
-    >
-        {[...Array(4)].map((_, index) => (
-            <React.Fragment key={index}>
-                <Rect x="18" y={index * 110 + 10} rx="10" ry="10" width="60" height="60" />
-                <Rect x="90" y={index * 110 + 12} rx="5" ry="5" width="180" height="13" />
-                <Rect x="90" y={index * 110 + 32} rx="5" ry="5" width="100" height="12" />
-                <Rect x="90" y={index * 110 + 58} rx="5" ry="5" width="60" height="12" />
-                <Rect x="160" y={index * 110 + 58} rx="5" ry="5" width="50" height="12" />
-                <Rect x="245" y={index * 110 + 50} rx="5" ry="5" width="75" height="22" />
-            </React.Fragment>
-        ))}
-    </ContentLoader>
-);
+// const SkeletonLoader: React.FC<SkeletonLoaderProps> = ({ isDark, colors }) => (
+//     <ContentLoader
+//         speed={1}
+//         width="100%"
+//         height={440} 
+//         viewBox="0 0 340 440"
+//         backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+//         foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
+//     >
+//         {[...Array(4)].map((_, index) => (
+//             <React.Fragment key={index}>
+    
+//                  <Rect
+//                             x={rtl ? 262 : 18}
+//                             y={baseY}
+//                             rx="10"
+//                             ry="10"
+//                             width="60"
+//                             height="60"
+//                         />
+//                         <Rect
+//                             x={rtl ? 70 : 90}
+//                             y={baseY + 2}
+//                             rx="5"
+//                             ry="5"
+//                             width="180"
+//                             height="13"
+//                         />
+//                         <Rect
+//                             x={rtl ? 140 : 90}
+//                             y={baseY + 22}
+//                             rx="5"
+//                             ry="5"
+//                             width="100"
+//                             height="12"
+//                         />
+//                         <Rect
+//                             x={rtl ? 220 : 90}
+//                             y={baseY + 48}
+//                             rx="5"
+//                             ry="5"
+//                             width="60"
+//                             height="12"
+//                         />
+//                         <Rect
+//                             x={rtl ? 160 : 160}
+//                             y={baseY + 48}
+//                             rx="5"
+//                             ry="5"
+//                             width="50"
+//                             height="12"
+//                         />
+//                         <Rect
+//                             x={rtl ? 20 : 245}
+//                             y={baseY + 40}
+//                             rx="5"
+//                             ry="5"
+//                             width="75"
+//                             height="22"
+//                         />
+//             </React.Fragment>
+//         ))}
+//     </ContentLoader>
+// );
+const SkeletonLoader: React.FC<SkeletonLoaderProps> = ({ isDark, colors }) => {
+    const { rtl } = useValues();
+    return (
+        <ContentLoader
+            speed={1}
+            width="100%"
+            height={440}
+            viewBox="0 0 340 440"
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
+        >
+            {[...Array(4)].map((_, index) => {
+                const baseY = 100 * index; // Define baseY
+                return (
+                    <React.Fragment key={index}>
+                        <Rect x={rtl ? 310 : 18} y={baseY} rx="10" ry="10" width="60" height="60" />
+                        <Rect x={rtl ? 110 : 90} y={baseY + 2} rx="5" ry="5" width="180" height="13" />
+                        <Rect x={rtl ? 188 : 90} y={baseY + 22} rx="5" ry="5" width="100" height="12" />
+                        <Rect x={rtl ? 165 : 90} y={baseY + 48} rx="5" ry="5" width="60" height="12" />
+                        <Rect x={rtl ? 238 : 160} y={baseY + 48} rx="5" ry="5" width="50" height="12" />
+                        <Rect x={rtl ? 20 : 245} y={baseY + 40} rx="5" ry="5" width="75" height="22" />
+                    </React.Fragment>
+                );
+            })}
+        </ContentLoader>
+    );
+};
 
 interface WhishListProductProps {
     onItemDelete: (length: number) => void;
@@ -771,7 +841,7 @@ export const WhishListProduct: React.FC<WhishListProductProps> = ({ onItemDelete
     const [loading, setLoading] = useState<boolean>(false);
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
     const { colors } = useTheme();
-    const { isDark, viewRtlStyle, textRtlStyle, t, currSymbol, currValue } = useValues();
+    const { isDark, viewRtlStyle, textRtlStyle, t, currSymbol, currValue,rtl } = useValues();
     const [cartItems, setCartItems] = useState<any[]>(cart);
 
     useEffect(() => {
@@ -853,3 +923,10 @@ export const WhishListProduct: React.FC<WhishListProductProps> = ({ onItemDelete
         </GestureHandlerRootView>
     );
 }
+
+
+
+
+
+
+

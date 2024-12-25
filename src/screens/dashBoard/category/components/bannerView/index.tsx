@@ -92,7 +92,7 @@ import { windowHeight, windowWidth } from "../../../../../theme/appConstant";
 import appColors from "../../../../../theme/appColors";
 
 export function BannerView() {
-    const { rtl, textRtlStyle, t } = useValues();
+    const { rtl, textRtlStyle, t, isDark } = useValues();
     const [loading, setLoading] = useState(false);
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
 
@@ -112,15 +112,15 @@ export function BannerView() {
             width={windowWidth(280)}
             height={windowHeight(140)}
             viewBox={`0 0 ${windowWidth(280)} ${windowHeight(140)}`}
-            backgroundColor={appColors.interpolateBackground}
-            foregroundColor={appColors.placeholder}
+            backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
             <Rect
                 x="0"
-                rx="10" 
+                rx="10"
                 ry="10"
                 width={windowWidth(280)}
-                height={ windowHeight(140)}
+                height={windowHeight(140)}
             />
         </ContentLoader>
     );

@@ -301,7 +301,6 @@ import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import { textRtlStyle, imageRtlStyle, viewRtlStyle, viewSelfRtlStyle } from '../../styles/rtlStyle';
 
-// LoadingContext types
 interface LoadingContextType {
   addressLoaded: boolean;
   setAddressLoaded: (loaded: boolean) => void;
@@ -331,7 +330,6 @@ export const useLoadingContext = (): LoadingContextType => {
   return context;
 };
 
-// AppContext types
 interface AppContextType {
   currSymbol: string;
   currValue: number;

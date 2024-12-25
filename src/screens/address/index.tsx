@@ -715,9 +715,33 @@ export function Address({ navigation }: AddressProps): JSX.Element {
       backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
       foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
     >
-      <Rect x="0" y="10" rx="4" ry="4" width="10%" height="40" />
+      {/* <Rect x="0" y="10" rx="4" ry="4" width="10%" height="40" />
       <Rect x="12%" y="10" rx="4" ry="4" width="70%" height="25" />
-      <Rect x="0" y="65" rx="4" ry="4" width="100%" height="25" />
+      <Rect x="0" y="65" rx="4" ry="4" width="100%" height="25" /> */}
+       <Rect 
+        x={rtl ? '90%' : 0}  // Adjust position for RTL
+        y="10" 
+        rx="4" 
+        ry="4" 
+        width="10%" 
+        height="40" 
+      />
+      <Rect 
+        x={rtl ? '15%' : '12%'}  // Adjust position for RTL
+        y="10" 
+        rx="4" 
+        ry="4" 
+        width="70%" 
+        height="25" 
+      />
+      <Rect 
+        x={rtl ? '0%' : 0}  // Adjust position for RTL
+        y="65" 
+        rx="4" 
+        ry="4" 
+        width="100%" 
+        height="25" 
+      />
     </ContentLoader>
   );
 

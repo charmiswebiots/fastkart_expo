@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     codeView: {
         width: '100%',
         borderRadius: windowHeight(6),
-        backgroundColor: '#38BEAD',
+        backgroundColor: appColors.color,
         paddingVertical: windowHeight(13),
         justifyContent: 'space-between',
         alignItems: 'center',

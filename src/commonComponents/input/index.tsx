@@ -107,7 +107,7 @@
 
 
 import React, { FC, useState } from "react";
-import { View, TouchableOpacity, TextInput, Text, ViewStyle, TextStyle } from "react-native";
+import { View, TouchableOpacity, TextInput, Text, ViewStyle } from "react-native";
 import styles from "./styles";
 import appColors from "../../theme/appColors";
 import { useTheme } from "@react-navigation/native";

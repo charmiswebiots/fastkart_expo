@@ -445,7 +445,7 @@ interface TotalProps {
 }
 
 export const Total: FC<TotalProps> = (props) => {
-    const { isDark, textRtlStyle, viewRtlStyle, t, currSymbol, currValue } = useValues();
+    const { isDark, textRtlStyle, viewRtlStyle, t, currSymbol, currValue, rtl } = useValues();
     const { colors } = useTheme();
 
     const [loading, setLoading] = useState<boolean>(false);
@@ -470,7 +470,8 @@ export const Total: FC<TotalProps> = (props) => {
             backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
             foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
-            <Rect x="0" y="0" rx="4" ry="4" width="50%" height="30" />
+            <Rect
+                x={rtl ? '50%' : 0} y="0" rx="4" ry="4" width="50%" height="30" />
         </ContentLoader>
     );
 
@@ -478,17 +479,17 @@ export const Total: FC<TotalProps> = (props) => {
         <ContentLoader
             speed={1}
             width="100%"
-            height={100}
-            viewBox="0 0 380 100"
+            height={130}
+            viewBox="0 0 380 130"
             backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
             foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
-            <Rect x="0" y="18" rx="4" ry="4" width="60%" height="20" />
-            <Rect x="285" y="18" rx="4" ry="4" width="25%" height="20" />
-            <Rect x="0" y="55" rx="4" ry="4" width="60%" height="20" />
-            <Rect x="285" y="55" rx="4" ry="4" width="25%" height="20" />
-            <Rect x="0" y="90" rx="4" ry="4" width="60%" height="20" />
-            <Rect x="285" y="90" rx="4" ry="4" width="25%" height="20" />
+            <Rect x={rtl ? 200 : 0} y="18" rx="4" ry="4" width="60%" height="20" />
+            <Rect x={rtl ? 1 : 285} y="18" rx="4" ry="4" width="25%" height="20" />
+            <Rect x={rtl ? 200 : 0} y="55" rx="4" ry="4" width="60%" height="20" />
+            <Rect x={rtl ? 1 : 285} y="55" rx="4" ry="4" width="25%" height="20" />
+            <Rect x={rtl ? 200 : 0} y="90" rx="4" ry="4" width="60%" height="20" />
+            <Rect x={rtl ? 0 : 285} y="90" rx="4" ry="4" width="25%" height="20" />
         </ContentLoader>
     );
 

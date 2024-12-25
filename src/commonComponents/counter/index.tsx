@@ -81,7 +81,7 @@
 
 
 
-import { View, TouchableOpacity, Text, ViewStyle, TextStyle } from "react-native";
+import { View, TouchableOpacity, Text, ViewStyle } from "react-native";
 import styles from "./styles";
 import { Icons } from "../../utils/icons";
 import { useState } from "react";
@@ -89,12 +89,12 @@ import { useValues } from "../../utils/context";
 
 interface CounterProps {
   color: string;
-  style?: ViewStyle; // Optional prop for custom styles
+  style?: ViewStyle;
 }
 
 export function Counter({ color, style }: CounterProps) {
   const { viewRtlStyle } = useValues();
-  const [count, setCount] = useState<number>(0); // Type the count state as a number
+  const [count, setCount] = useState<number>(0); 
 
   const increaseCount = () => {
     setCount(count + 1);

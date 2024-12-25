@@ -71,7 +71,6 @@ export const RtlSwitch: FC<RtlSwitchProps> = ({
     width = "100%",
     text = "",
     icon = null,
-    switchIcon,
     style,
 }) => {
     const { viewRtlStyle, viewSelfRtlStyle } = useValues();

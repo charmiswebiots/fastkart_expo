@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
     },
     list: {
         marginTop: windowHeight(20),
-        
     },
     seprator: {
         width: windowWidth(10),

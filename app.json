@@ -4,11 +4,11 @@
     "slug": "faskartExpo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/adaptive-icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,14 +20,14 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.nandini1066.faskartExpo"
+      "package": "com.faskartExpo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "7bda3421-62a4-4aee-9fbd-c514c60a344d"
+        "projectId": "5b095e3e-10e7-4f20-a09b-d71e506a40d9"
       }
     }
   }

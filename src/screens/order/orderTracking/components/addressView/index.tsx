@@ -11,7 +11,7 @@ import { windowHeight } from "../../../../../theme/appConstant";
 
 export function AddressView() {
     const { colors } = useTheme();
-    const { t, isDark } = useValues();
+    const { t, isDark, rtl } = useValues();
 
     const [loading, setLoading] = useState(false);
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
@@ -33,21 +33,13 @@ export function AddressView() {
             height={windowHeight(120)}
             viewBox="0 0 340 120"
             backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
-            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
-        >
-
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}>
             <Rect x="0" y="8" rx="4" ry="4" width="10%" height={windowHeight(33)} />
             <Rect x="45" y="9" rx="4" ry="4" width="85%" height={windowHeight(14)} />
             <Rect x="45" y="30" rx="4" ry="4" width="30%" height={windowHeight(14)} />
-
-
-
-
             <Rect x="0" y="80" rx="4" ry="4" width="10%" height={windowHeight(33)} />
             <Rect x="45" y="80" rx="4" ry="4" width="85%" height={windowHeight(14)} />
             <Rect x="45" y="103" rx="4" ry="4" width="30%" height={windowHeight(14)} />
-
-
         </ContentLoader>
     );
 

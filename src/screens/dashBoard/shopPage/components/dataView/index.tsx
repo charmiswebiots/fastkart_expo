@@ -10,7 +10,7 @@ import appColors from "../../../../../theme/appColors";
 import ContentLoader, { Rect } from "react-content-loader/native";
 
 export function DataView() {
-    const { isDark, viewRtlStyle, textRtlStyle, t, currSymbol, currValue } = useValues();
+    const { isDark, viewRtlStyle, textRtlStyle, t, currSymbol, currValue,rtl } = useValues();
     const { colors } = useTheme();
     const [loading, setLoading] = useState(false);
     const { addressLoaded, setAddressLoaded } = useLoadingContext();
@@ -34,12 +34,18 @@ export function DataView() {
             backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
             foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
         >
-            <Rect x="15" y="10" rx="10" ry="10" width="70" height="70" />
+            {/* <Rect x="15" y="10" rx="10" ry="10" width="70" height="70" />
             <Rect x="98" y="12" rx="5" ry="5" width="200" height="15" />
             <Rect x="98" y="35" rx="5" ry="5" width="100" height="15" />
             <Rect x="98" y="64" rx="5" ry="5" width="60" height="15" />
             <Rect x="166" y="64" rx="5" ry="5" width="50" height="15" />
-            <Rect x="250" y="59" rx="5" ry="5" width="75" height="22" />
+            <Rect x="250" y="59" rx="5" ry="5" width="75" height="22" /> */}
+              <Rect x={rtl ? '250' : '15'} y="10" rx="10" ry="10" width="70" height="70" />
+      <Rect x={rtl ? '40' : '98'} y="12" rx="5" ry="5" width="200" height="15" />
+      <Rect x={rtl ? '140' : '98'} y="35" rx="5" ry="5" width="100" height="15" />
+      <Rect x={rtl ? '120' : '98'} y="64" rx="5" ry="5" width="60" height="15" />
+      <Rect x={rtl ? '190' : '166'} y="64" rx="5" ry="5" width="50" height="15" />
+      <Rect x={rtl ? '20' : '250'} y="59" rx="5" ry="5" width="75" height="22" />
         </ContentLoader>
     );
 

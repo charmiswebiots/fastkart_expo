@@ -57,7 +57,7 @@
 
 
 import React, { FC, useState } from "react";
-import { ScrollView, SafeAreaView, StyleProp, ViewStyle } from "react-native";
+import { ScrollView, SafeAreaView } from "react-native";
 import styles from "./styles";
 import { Header } from "../../../commonComponents";
 import { SearchFilter } from "../../../commonComponents";

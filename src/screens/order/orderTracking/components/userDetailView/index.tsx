@@ -12,7 +12,7 @@ import { windowHeight } from "../../../../../theme/appConstant";
 export function UserDetailView() {
 
     const { colors } = useTheme();
-    const { t,isDark } = useValues();
+    const { t,isDark,rtl } = useValues();
 
     const [loading, setLoading] = useState(false);
     const { addressLoaded, setAddressLoaded } = useLoadingContext();

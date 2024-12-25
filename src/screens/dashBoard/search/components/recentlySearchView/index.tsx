@@ -69,7 +69,6 @@ export function RecentlySearchView() {
     useEffect(() => {
         if (addressLoaded) {
             setLoading(true);
-            console.log('loaijhng', loading)
             setTimeout(() => {
                 setLoading(false);
                 setAddressLoaded(true);

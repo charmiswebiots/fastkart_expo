@@ -55,7 +55,7 @@
 
 
 import React, { FC } from "react";
-import { SafeAreaView, StyleProp, ViewStyle } from "react-native";
+import { SafeAreaView } from "react-native";
 import styles from "./styles";
 import { GlobalStyle } from "../../styles/style";
 import appColors from "../../theme/appColors";
