@@ -236,15 +236,7 @@ export const orderHistoryFilter = [
             { txt: 'orderHistoryFilterArr.cancelledOrder', id: 3 },
         ]
     },
-    // {
-    // day: 'orderHistoryFilterArr.timeFilter',
-    // value: [
-    //     { txt: 'orderHistoryFilterArr.last30days', id: 4 },
-    //     { txt: 'orderHistoryFilterArr.last6Month', id: 5 },
-    //     { txt: 'orderHistoryFilterArr.year1', id: 6 },
-    //     { txt: 'orderHistoryFilterArr.year2', id: 7 },
-    // ]
-    // },
+
 ];
 
 export const filterHistory = [
@@ -398,22 +390,8 @@ export const reviewList = [
         reviewName: 'orderTrackingPage.name',
         review: "reviewArr.review",
     },
-    {
-        reviewName: 'orderTrackingPage.name',
-        review: "reviewArr.review",
-    },
-    {
-        reviewName: 'orderTrackingPage.name',
-        review: "reviewArr.review",
-    },
-    {
-        reviewName: 'orderTrackingPage.name',
-        review: "reviewArr.review",
-    },
-    {
-        reviewName: 'orderTrackingPage.name',
-        review: "reviewArr.review",
-    },
+ 
+    
 ];
 
 
@@ -444,7 +422,6 @@ export const categoryData = [
             { id: '1', name: 'subCategoryArr.vegetables', image: images.categoryPro1 },
             { id: '2', name: 'subCategoryArr.organic', image: images.categoryPro8 },
             { id: '3', name: 'subCategoryArr.bouquets', image: images.categoryPro10 },
-            // { id: '4', name: 'subCategoryArr.bouquets', image: images.categoryPro10 },
         ]
     },
     {

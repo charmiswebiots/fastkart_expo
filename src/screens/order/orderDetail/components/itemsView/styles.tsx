@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     price: {
         fontSize: fontSizes.FONT24,
         fontFamily: 'mulishSemiBold',
-        marginHorizontal:windowHeight(32)
+        marginHorizontal:windowHeight(24)
     },
     skeletonContainer:{
         top:windowHeight(20)

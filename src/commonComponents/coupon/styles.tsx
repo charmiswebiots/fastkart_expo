@@ -86,8 +86,6 @@ const styles = StyleSheet.create({
         alignItems: "center",
         alignSelf: 'center',
         right:'100%',
-        // left: windowWidth(20),
-        // paddingHorizontal: windowHeight(10),
     },
 })
 export default styles;

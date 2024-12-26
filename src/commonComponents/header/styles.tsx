@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     },
     image: {
         height: windowHeight(30),
-        width: windowWidth(30)
+        width: windowWidth(30),
     },
     headerImg: {
         marginHorizontal:windowHeight(12),

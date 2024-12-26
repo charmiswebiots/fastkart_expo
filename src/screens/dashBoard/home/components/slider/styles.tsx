@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: windowWidth(358),
-        height: windowHeight(190),
+        height: windowHeight(169),
         marginTop: windowHeight(18),
         resizeMode: 'cover',
         borderRadius: windowHeight(10),

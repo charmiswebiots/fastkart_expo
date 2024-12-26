@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
         alignItems: "center",
         paddingVertical: windowHeight(28),
         top: windowHeight(1.5),
-        // borderRadius: windowHeight(10),
         borderTopRightRadius:windowHeight(10),
         borderBottomRightRadius:windowHeight(10),
         zIndex:2,

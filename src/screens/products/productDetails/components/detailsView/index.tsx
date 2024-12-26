@@ -9,7 +9,7 @@ import { useValues } from "../../../../../utils/context";
 export function DetailsView() {
     const { textRtlStyle, viewRtlStyle, rtl, t } = useValues()
     const { colors } = useTheme()
-    const [showManufacturer, setShowManufacturer] = useState(true);
+    const [showManufacturer, setShowManufacturer] = useState(false);
     const [showProductDesc, setShowProductDesc] = useState(false);
     const [showFeature, setShowFeature] = useState(false);
 
@@ -60,7 +60,7 @@ export function DetailsView() {
             </TouchableOpacity>
             {showManufacturer && (
                 <Text style={[styles.title, { textAlign: textRtlStyle }]}>
-                    {t('productDetailsPage.manufacturerDetailsDesc')}                </Text>
+                    {t('productDetailsPage.manufacturerDetailsDesc')}</Text>
             )}
             <View style={styles.style2} />
             <View style={styles.product}>
@@ -105,7 +105,7 @@ export function DetailsView() {
                         style={{
                             transform: [
                                 { scaleX: rtl ? -1 : 1 },
-                                showFeature ? { rotate: '90deg' } : null, // Use showFeature here
+                                showFeature ? { rotate: '90deg' } : null,
                             ].filter(Boolean),
                             top: windowHeight(5.5),
                         }}

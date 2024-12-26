@@ -53,7 +53,6 @@ export function StackNavigation() {
         <RootStack.Screen name="OrderDetail" component={OrderDetail} />
         <RootStack.Screen name="ProductsDetails" component={ProductsDetails} />
         <RootStack.Screen name="EditProfile" component={EditProfile} />
-
       </RootStack.Navigator>
     </NavigationContainer>
   )

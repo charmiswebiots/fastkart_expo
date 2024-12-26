@@ -1,130 +1,3 @@
-// import React, { useEffect, useState } from "react";
-// import { View, SafeAreaView, Image, ScrollView, Text, Animated } from "react-native";
-// import styles from "./styles";
-// import { GlobalStyle } from "../../styles/style";
-// import appColors from "../../theme/appColors";
-// import { Icons } from "../../utils/icons";
-// import images from "../../utils/images";
-// import { Header, Button, Input } from "../../commonComponents";
-// import { location } from "../data";
-// import { windowHeight } from "../../theme/appConstant";
-// import { useTheme } from "@react-navigation/native";
-// import { useValues } from "../../utils/context";
-
-// export function Address({ navigation }) {
-
-//     const [loading, setLoading] = useState(true);
-
-//     const fadeAnim = new Animated.Value(1);
-
-//     useEffect(() => {
-//         const timer = setTimeout(() => {
-//             setLoading(false);
-//             Animated.timing(fadeAnim, {
-//                 toValue: 0,
-//                 duration: 500,
-//                 useNativeDriver: true,
-//             }).start();
-//         }, 3000);
-
-//         return () => clearTimeout(timer);
-//     }, []);
-
-
-//     const { colors } = useTheme()
-//     const { viewRtlStyle, rtl, textRtlStyle, t ,isDark} = useValues()
-
-//     const payment = () => {
-//         navigation.navigate('Payment')
-//     }
-
-
-//     const SkeletonLoader = () => (
-//         <View>
-//             <View style={[styles.loaderContainer, { backgroundColor: isDark ? colors.card : appColors.gray }, { flexDirection: viewRtlStyle }]}>
-//                 <Animated.View style={[styles.skeletonImage, { opacity: fadeAnim }]} />
-//                 <Animated.View style={[styles.skeletonText, { opacity: fadeAnim }]} />
-//                 <Animated.View style={[styles.skeletonText1, { opacity: fadeAnim }]} />
-//                 <View style={{
-//                     justifyContent: 'space-between',
-//                     flexDirection: viewRtlStyle
-//                 }}>
-//                     <Animated.View style={[styles.skeletonText2, { opacity: fadeAnim }]} />
-//                     <Animated.View style={[styles.skeletonText3, { opacity: fadeAnim }]} />
-//                     <Animated.View style={[styles.skeletonText4, { opacity: fadeAnim }]} />
-//                 </View>
-//             </View>
-//         </View>
-
-//     );
-
-//     return (
-//         <SafeAreaView style={[GlobalStyle.mainView, { backgroundColor: colors.background }]}>
-//             <View>
-//                 <Header
-//                     onPress={() => navigation.goBack()}
-//                     image={<Icons.search />}
-//                     isText
-//                     titleText={t('addAddressPage.addAddress')} />
-//                 <View>
-//                     <Image source={images.map} style={styles.mapImg} resizeMode='stretch' />
-//                 </View>
-//             </View>
-
-//             <View style={[styles.truckView, { backgroundColor: colors.background, flexDirection: viewRtlStyle }]}>
-//                 <Icons.truck />
-//                 <Text style={[styles.deliveryTime, { color: colors.text }]}>{t('addAddressPage.deliverTime').substring(0, 60) + ""}</Text>
-//             </View>
-//             <View style={styles.mapView}>
-//                 <View style={[styles.map, { alignSelf: rtl ? 'flex-end' : 'flex-start' }]}>
-//                     <Icons.map />
-//                 </View>
-//                 <View style={[styles.paymentView, { backgroundColor: colors.background }]}>
-//                     <ScrollView showsVerticalScrollIndicator={false}>
-//                         <View style={styles.inputView}>
-//                             <Input placeholder={t('addAddressPage.searchLocation')} rightIcon={<Icons.voiceSearch />} leftIcon={<Icons.search />} style={styles.input} />
-//                         </View>
-
-//                         <View style={[styles.locationView, { flexDirection: viewRtlStyle }]}>
-//                             <View style={styles.location}>
-//                                 <Icons.currentLocation />
-//                             </View>
-//                             <Text style={[styles.locationTxt, { color: colors.text }]}>{t('addAddressPage.useCurrentLocation')} </Text>
-//                         </View>
-//                         {location.slice(0, 2).map((item, index) => (
-//                             <View
-//                                 key={index}
-//                                 style={[
-//                                     styles.addView,
-//                                     (index === 0 || index === 1) && {
-//                                         borderBottomWidth: 0.5,
-//                                         borderBottomColor: appColors.placeholder,
-//                                         paddingBottom: windowHeight(15),
-//                                     },
-//                                 ]}
-//                             >
-//                                 <View style={[styles.nameView, { flexDirection: viewRtlStyle }]}>
-//                                     <Icons.location />
-//                                     <Text style={[styles.name, { color: colors.text }]}>
-//                                         {t(item.name)}
-//                                     </Text>
-//                                 </View>
-//                                 <Text style={[styles.add, { textAlign: textRtlStyle }]}>{t(item.address)}</Text>
-//                             </View>
-//                         ))}
-//                         <Button text={t('addAddressPage.confirmLocation')} style={styles.btn}
-//                             color={appColors.white} onPress={payment} />
-//                     </ScrollView>
-//                 </View>
-//                 <View style={styles.map}>
-//                     <Icons.mapPin />
-//                 </View>
-//             </View>
-//         </SafeAreaView>
-//     )
-// }
-
-
 import React, { useEffect, useState } from 'react';
 import { View, SafeAreaView, ScrollView, Text, Image } from 'react-native';
 import ContentLoader, { Rect } from 'react-content-loader/native';
@@ -156,7 +29,6 @@ export function Address({ navigation }: AddressProps): JSX.Element {
   useEffect(() => {
     if (addressLoaded) {
       setLoading(true);
-      console.log('loaijhng', loading);
       setTimeout(() => {
         setLoading(false);
         setAddressLoaded(true);
@@ -167,6 +39,10 @@ export function Address({ navigation }: AddressProps): JSX.Element {
   const payment = (): void => {
     navigation.navigate("Payment");
   };
+
+  const address=():void=>{
+    navigation.navigate('SelectAddress')
+  }
 
   const SkeletonLoader = (): JSX.Element => (
     <ContentLoader
@@ -224,6 +100,7 @@ export function Address({ navigation }: AddressProps): JSX.Element {
           onPress={() => navigation.goBack()}
           image={<Icons.search />}
           isText
+          imageOnPress={address}
           titleText={t("addAddressPage.addAddress")}
         />
         <View>

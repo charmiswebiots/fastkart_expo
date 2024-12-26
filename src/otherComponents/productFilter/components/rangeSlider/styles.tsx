@@ -7,35 +7,36 @@ const styles = StyleSheet.create({
         padding: windowHeight(0),
         marginHorizontal:windowHeight(15),
         marginVertical:windowHeight(5),
-        top:windowHeight(4)
+        top:windowHeight(8)
     },
-    rangeText: {
-        right: windowHeight(15),
-        fontSize: fontSizes.FONT20,
-        fontFamily: 'mulishSemiBold',
-        backgroundColor: appColors.gray,
-        paddingVertical: windowHeight(2),
-        borderRadius: windowHeight(4),
-        paddingHorizontal: windowHeight(10),
-        marginBottom: windowHeight(10),
-        top: windowHeight(18),
-        height:windowHeight(25)        
-    },
-    rangeText1: {
-        fontSize: fontSizes.FONT20,
-        width: windowWidth(108),
-        fontFamily: 'mulishSemiBold',
-        backgroundColor: appColors.gray,
-        paddingVertical: windowHeight(2),
-        marginHorizontal: windowWidth(220),
-        borderRadius: windowHeight(4),
-        paddingHorizontal: windowHeight(10),
-        top: windowHeight(18),
-        height:windowHeight(25)
-    },
+    // rangeText: {
+    //     right: windowHeight(15),
+    //     fontSize: fontSizes.FONT20,
+    //     fontFamily: 'mulishSemiBold',
+    //     backgroundColor: appColors.gray,
+    //     paddingVertical: windowHeight(2),
+    //     borderRadius: windowHeight(4),
+    //     paddingHorizontal: windowHeight(10),
+    //     marginBottom: windowHeight(10),
+    //     top: windowHeight(18),
+    //     height:windowHeight(25)        
+    // },
+    // rangeText1: {
+    //     fontSize: fontSizes.FONT20,
+    //     width: windowWidth(108),
+    //     fontFamily: 'mulishSemiBold',
+    //     backgroundColor: appColors.gray,
+    //     paddingVertical: windowHeight(2),
+    //     marginHorizontal: windowWidth(220),
+    //     borderRadius: windowHeight(4),
+    //     paddingHorizontal: windowHeight(10),
+    //     top: windowHeight(18),
+    //     height:windowHeight(25)
+    // },
     sliderContainer: {
+        bottom:windowHeight(8),
         width: '100%',
-        height: windowHeight(10),
+        height: windowHeight(30),
         justifyContent: 'center',
     },
     track: {

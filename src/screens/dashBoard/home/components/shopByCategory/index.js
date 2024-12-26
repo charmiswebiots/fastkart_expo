@@ -26,14 +26,13 @@ export function ShopByCategory({ onPress }) {
     const SkeletonLoader = () => {
         return (
             <FlatList
-                data={Array(8).fill({})}  // Skeleton with 8 items (adjust as needed)
+                data={Array(8).fill({})}  
                 numColumns={4}
                 keyExtractor={(_, index) => `skeleton-${index}`}
                 contentContainerStyle={styles.list}
                 ItemSeparatorComponent={() => <View style={styles.separator} />}
                 renderItem={() => (
                     <View style={styles.listView}>
-                        {/* Skeleton for Image */}
                         <View style={[styles.skeletonImageView, { marginTop: windowHeight(13) }]}>
                             <ContentLoader
                                 speed={1}
@@ -46,8 +45,6 @@ export function ShopByCategory({ onPress }) {
                                 <Rect x="0" y="0" rx="4" ry="4" width="70" height="70" />
                             </ContentLoader>
                         </View>
-
-                        {/* Skeleton for Category Name */}
                         <View style={{ marginTop: windowHeight(13) }}>
                             <ContentLoader
                                 speed={1}
@@ -70,7 +67,6 @@ export function ShopByCategory({ onPress }) {
 
     return (
         <View>
-            {/* Category Title */}
             <View style={styles.category}>
                 <View style={styles.line} />
                 <View style={{ flexDirection: 'row' }}>
@@ -82,7 +78,6 @@ export function ShopByCategory({ onPress }) {
                 </View>
             </View>
 
-            {/* Conditionally Render Skeleton or Content */}
             {loading ? (
                 <SkeletonLoader />
             ) : (

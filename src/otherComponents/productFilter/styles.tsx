@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
         marginTop: windowHeight(70),
         marginBottom: windowHeight(10),
     },
-    list: {
-        marginTop: windowHeight(20),
-    },
+    // list: {
+    //     marginTop: windowHeight(20),
+    // },
     seprator: {
         width: windowWidth(10),
         height: windowHeight(10)
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     priceRange: {
         fontSize: fontSizes.FONT20,
         fontFamily: 'mulishSemiBold',
+        bottom:windowHeight(5),
         marginTop: windowHeight(20),
     },
     list: {

@@ -6,7 +6,7 @@ import { SeeAllHeader } from "../seeAllHeader";
 import { Icons } from "../../../../../utils/icons";
 import { windowHeight, windowWidth } from "../../../../../theme/appConstant";
 import appColors from "../../../../../theme/appColors";
-import { useTheme } from "@react-navigation/native";
+import { useNavigation, useTheme } from "@react-navigation/native";
 import { useLoadingContext, useValues } from "../../../../../utils/context";
 import ContentLoader, { Rect } from "react-content-loader/native";
 
@@ -26,7 +26,11 @@ export function BestPrice({ headerData, onPress }) {
         }
     }, [addressLoaded, setAddressLoaded]);
 
+const navigation=useNavigation()
 
+const category=()=>{
+    navigation.navigate('Category')
+}
 
     const SkeletonLoader = () => (
         <ContentLoader
@@ -45,7 +49,7 @@ export function BestPrice({ headerData, onPress }) {
     );
     return (
         <View style={styles.mainView}>
-            <SeeAllHeader  {...headerData} />
+            <SeeAllHeader  {...headerData} onPress={category} />
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                 {loading ? (
                     Array.from({ length: 5 }).map((_, index) => (

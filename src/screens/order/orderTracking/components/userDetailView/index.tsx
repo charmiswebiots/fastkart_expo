@@ -58,12 +58,12 @@ export function UserDetailView() {
                         </View>
                     </View>
                     <View style={{ flexDirection: "row" }}>
-                        <TouchableOpacity activeOpacity={0.7} style={[styles.option, { backgroundColor: appColors.primary }]}>
+                        <View activeOpacity={0.7} style={[styles.option, { backgroundColor: appColors.primary }]}>
                             <Icons.call />
-                        </TouchableOpacity>
-                        <TouchableOpacity activeOpacity={0.7} style={[styles.chat, styles.option, styles.chatLeft]}>
+                        </View>
+                        <View activeOpacity={0.7} style={[styles.chat, styles.option, styles.chatLeft]}>
                             <Icons.chat />
-                        </TouchableOpacity>
+                        </View>
                     </View>
                 </>
             )}

@@ -13,15 +13,11 @@ const styles = StyleSheet.create({
         width: '100%',
         height: windowHeight(0),
         backgroundColor: appColors.text,
-        // marginTop: windowHeight(20)
     },
     shopByCategory: {
-        // position: 'absolute',
         fontSize: fontSizes.FONT22,
         fontFamily: 'mulishBold',
         top: windowHeight(6),
-
-        // width: windowWidth(220),
         textAlign: 'center',
         alignSelf:"center",
         alignItems:"center",

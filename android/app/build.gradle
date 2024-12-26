@@ -109,7 +109,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.faskartexpo"
+    namespace 'com.faskartExpo'
     defaultConfig {
         applicationId 'com.faskartExpo'
         minSdkVersion rootProject.ext.minSdkVersion

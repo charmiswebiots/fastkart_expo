@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
     },
     dataView: {
-        // marginTop: windowHeight(7),
         top:windowHeight(8),
         paddingVertical:windowHeight(3.8),
         justifyContent: 'space-between',

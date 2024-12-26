@@ -12,9 +12,7 @@ const styles = StyleSheet.create({
     },
     txt: {
         fontFamily: 'mulishSemiBold',
-        // color: appColors.secondaryText,
         color:appColors.white,
-
         fontSize: fontSizes.FONT20,
         paddingHorizontal: windowWidth(20)
     },

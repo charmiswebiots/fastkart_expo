@@ -7,6 +7,7 @@ import styles from "./styles";
 import { TotalView } from "./components";
 import { useTheme } from "@react-navigation/native";
 import { useValues } from "../../../utils/context";
+import { windowHeight } from "../../../theme/appConstant";
 
 interface CartProps {
     navigation: {
@@ -16,7 +17,7 @@ interface CartProps {
 }
 
 export function Cart ({ navigation }:CartProps)  {
-    const { t, isDark } = useValues();
+    const { t } = useValues();
     const [showModal, setShowModal] = useState<boolean>(false);
     const [showDeleteModal, setShowDeleteModal] = useState<boolean>(false);
     const { colors } = useTheme();
@@ -59,8 +60,11 @@ export function Cart ({ navigation }:CartProps)  {
                 <CommonModal modal={<DeleteProductModal onPress={visibleDeleteModal} />} showModal={showDeleteModal} visibleModal={visibleDeleteModal} />
                 <View style={styles.view}>
                     <Coupon price={50} onPress={visibleModal} onOrder={t('myOffersArr.onOrder')} onOrderAbove={t('cartlist.orderabove')} code={'SCD450'} />
+                    </View>
+                    <View style={{bottom:windowHeight(10)}}>
                     <TotalView onPress={address} />
-                </View>
+                    </View>
+               
             </ScrollView>
             <CommonModal
                 modal={<CouponModal showModal={visibleModal} price={50} subTxt={'250.00'} code={'SCD450'} />}

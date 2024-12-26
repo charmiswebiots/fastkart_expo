@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
         marginTop: windowHeight(20)
     },
     scrollView: {
-        // marginTop: windowHeight(10)
     },
     img: {
         height: windowHeight(50),

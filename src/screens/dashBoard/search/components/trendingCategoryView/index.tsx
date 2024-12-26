@@ -1,11 +1,11 @@
-import { View, Text, ScrollView, Image, Animated } from "react-native";
+import { View, Text, ScrollView, Image } from "react-native";
 import styles from "./styles";
 import { category1 } from "../../../../data";
 import { windowHeight } from "../../../../../theme/appConstant";
 import { useTheme } from "@react-navigation/native";
-import { useValues,useLoadingContext } from "../../../../../utils/context";
+import { useValues, useLoadingContext } from "../../../../../utils/context";
 import { useState, useEffect } from "react";
-import appColors from "../../../../../theme/appColors"; 
+import appColors from "../../../../../theme/appColors";
 import ContentLoader, { Rect } from 'react-content-loader/native';
 
 
@@ -16,7 +16,6 @@ export function TrendingCategoryView() {
     useEffect(() => {
         if (addressLoaded) {
             setLoading(true);
-            console.log('loaijhng', loading)
             setTimeout(() => {
                 setLoading(false);
                 setAddressLoaded(true);
@@ -32,22 +31,16 @@ export function TrendingCategoryView() {
             height={55}
             viewBox="0 0 400 55"
             backgroundColor={isDark ? appColors.loaderDarkBackground : appColors.loaderBackground}
-            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}
-        >
-
-
+            foregroundColor={isDark ? appColors.loaderDarkHighlight : appColors.loaderLightHighlight}>
             <Rect x="7" y="5" rx="4" ry="4" width="15%" height="55" />
             <Rect x="90" y="5" rx="4" ry="4" width="15%" height="55" />
             <Rect x="170" y="5" rx="4" ry="4" width="15%" height="55" />
             <Rect x="250" y="5" rx="4" ry="4" width="15%" height="55" />
             <Rect x="325" y="5" rx="4" ry="4" width="15%" height="55" />
-
-
-
         </ContentLoader>
     );
     const { colors } = useTheme();
-    const { textRtlStyle, t,isDark } = useValues();
+    const { textRtlStyle, t, isDark } = useValues();
 
     return (
         <View>

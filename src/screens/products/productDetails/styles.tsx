@@ -20,7 +20,7 @@ export default productDetailsStyles = StyleSheet.create({
         padding: windowWidth(20)
     },
     line: {
-        height: windowHeight(200),
+        height: windowHeight(100),
     },
 
 

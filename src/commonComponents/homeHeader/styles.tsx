@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
     },
     logoImg: {
         marginHorizontal:windowHeight(8),
-        // resizeMode:'contain'
     },
 })
 export default styles;

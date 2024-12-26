@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         backgroundColor: appColors.primary,
         width: '93%',
-        bottom:windowHeight(25),
+        bottom:windowHeight(73),
         height: windowHeight(50),
         justifyContent: 'space-between',
         paddingHorizontal:windowHeight(13),

@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         fontFamily: 'mulishSemiBold',
         fontSize: fontSizes.FONT20,
         color: appColors.black,
-        marginHorizontal: windowHeight(5)
+        marginHorizontal: windowHeight(3)
     },
     star: {
         width: windowWidth(19),
