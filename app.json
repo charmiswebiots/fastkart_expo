@@ -12,26 +12,33 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.faskartExpo"
+      "package": "com.faskartExpo",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "ebcf372f-64ae-4cd1-8ae2-8ffebd3436b8"
+        "projectId": "dca86860-724a-48a0-82a1-c0383f0fd660"
       }
     },
     "plugins": [
       "expo-font",
       "expo-localization"
-    ]
+    ],
+    "updates": {
+      "url": "https://u.expo.dev/dca86860-724a-48a0-82a1-c0383f0fd660"
+    }
   }
 }
