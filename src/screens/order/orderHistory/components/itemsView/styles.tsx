@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
     subView: {
         marginTop: windowHeight(10),
         justifyContent: 'space-between',
-        borderBottomWidth: windowHeight(1.5),
-        borderBottomColor: appColors.line,
+        borderBottomWidth: windowHeight(0.3),
+        borderBottomColor: 'black',
         paddingBottom: windowHeight(10)
     },
     data: {

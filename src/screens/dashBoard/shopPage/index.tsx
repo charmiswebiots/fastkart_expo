@@ -51,9 +51,10 @@ export function ShopPage({ navigation }: ShopPageProps) {
                         modal={<ProductFilter showModal={modalVisible} />}
                         showModal={showModal}
                         visibleModal={modalVisible} />
-                    <PriceView />
+                  
                 </ScrollView>
             </View>
+            <PriceView />
         </SafeAreaView>
     );
 };
